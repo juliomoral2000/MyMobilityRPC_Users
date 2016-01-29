@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="e8234e39-a108-4592-90c0-d33145302e2a" name="Default" comment="El otro Proyecto" />
-    <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Se realizaron las pruebas de Performance, la primera llamada es la que tarda (por la inicializacion del contexto local y la del remoto), pero las subsecuentes llamadas estan en el rango del 1 a 3 ms por llamada.&#10;Faltaria ya el desarrollo de las nuevas invocaciones a los nuevos servicios.&#10;Y adicional podria mover este proyecto de su ubicacion actual.&#10;Faltaria un detalle a definir por mi parte de generar un solo jar para todos los clientes o crear un jar para cliente." />
-    <list id="4ec6c0bb-c9a5-423a-9230-65f451467607" name="Idea" comment="Archivos de Idea">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Se realizaron las pruebas de Performance, la primera llamada es la que tarda (por la inicializacion del contexto local y la del remoto), pero las subsecuentes llamadas estan en el rango del 1 a 3 ms por llamada.&#10;Faltaria ya el desarrollo de las nuevas invocaciones a los nuevos servicios.&#10;Y adicional podria mover este proyecto de su ubicacion actual.&#10;Faltaria un detalle a definir por mi parte de generar un solo jar para todos los clientes o crear un jar para cliente.">
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\classes\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\ProductRPC.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\classes\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\client\caller\Product_Callers$GetProducts.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\classes\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\client\caller\Product_Callers.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\classes\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\persister\ServiceFactoryRegisterPersister$Impl.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\classes\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\persister\ServiceFactoryRegisterPersister.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\classes\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\persister\memory\ServiceFactoryRegisterMemPersister.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\classes\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\server\processor\Example_Processors.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\test-classes\com\enroquesw\mcs\comm\mobilityRPC\MyMovilityRPCCommTest.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\test-classes\com\enroquesw\mcs\comm\mobilityRPC\client\MyMovilityRPCClientTest$BoomerangObject.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\test-classes\com\enroquesw\mcs\comm\mobilityRPC\client\MyMovilityRPCClientTest.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\test-classes\com\enroquesw\mcs\comm\mobilityRPC\client\Stresstesting$1StressTask.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\test-classes\com\enroquesw\mcs\comm\mobilityRPC\client\Stresstesting$2StressTask.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\test-classes\com\enroquesw\mcs\comm\mobilityRPC\client\Stresstesting.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\test-classes\com\enroquesw\mcs\comm\mobilityRPC\server\MyMovilityRPCServerRunnerTest.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\test-classes\com\enroquesw\mcs\comm\mobilityRPC\server\MyMovilityRPCServerTest.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\test-classes\com\enroquesw\mcs\comm\mobilityRPC\util\TimerHelper$Time_M.class" afterPath="" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\target\test-classes\com\enroquesw\mcs\comm\mobilityRPC\util\TimerHelper.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -204,6 +219,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -224,9 +242,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -559,7 +574,6 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e8234e39-a108-4592-90c0-d33145302e2a" name="Default" comment="" />
-      <changelist id="4ec6c0bb-c9a5-423a-9230-65f451467607" name="otro" comment="" />
       <changelist id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="" />
       <created>1453680002223</created>
       <option name="number" value="Default" />
@@ -577,7 +591,9 @@
       <workItem from="1453859183862" duration="4649000" />
       <workItem from="1453915868672" duration="30679000" />
       <workItem from="1454036636068" duration="63000" />
-      <workItem from="1454036729831" duration="50000" />
+      <workItem from="1454036729831" duration="908000" />
+      <workItem from="1454038362307" duration="70000" />
+      <workItem from="1454038518017" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="nnn">
       <created>1453685565282</created>
@@ -609,11 +625,17 @@
       <option name="project" value="LOCAL" />
       <updated>1453928964920</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Archivos de Idea">
+      <created>1454036791711</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1454036791711</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75466000" />
+    <option name="totallyTimeSpent" value="76418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
@@ -626,7 +648,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.696934" sideWeight="0.5064447" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.696934" sideWeight="0.5064447" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.696934" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -638,7 +660,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4641638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4634434" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22354949" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -664,7 +686,8 @@
     <MESSAGE value="Inicial" />
     <MESSAGE value="Ya todas las pruebas Basicas Probadas solo falta terminar de definir todos los servicios" />
     <MESSAGE value="Se realizaron las pruebas de Performance, la primera llamada es la que tarda (por la inicializacion del contexto local y la del remoto), pero las subsecuentes llamadas estan en el rango del 1 a 3 ms por llamada.&#10;Faltaria ya el desarrollo de las nuevas invocaciones a los nuevos servicios.&#10;Y adicional podria mover este proyecto de su ubicacion actual.&#10;Faltaria un detalle a definir por mi parte de generar un solo jar para todos los clientes o crear un jar para cliente." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se realizaron las pruebas de Performance, la primera llamada es la que tarda (por la inicializacion del contexto local y la del remoto), pero las subsecuentes llamadas estan en el rango del 1 a 3 ms por llamada.&#10;Faltaria ya el desarrollo de las nuevas invocaciones a los nuevos servicios.&#10;Y adicional podria mover este proyecto de su ubicacion actual.&#10;Faltaria un detalle a definir por mi parte de generar un solo jar para todos los clientes o crear un jar para cliente." />
+    <MESSAGE value="Archivos de Idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Archivos de Idea" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
