@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class Product_Callers <P extends ProcessParameter>{
     /**
-     *
+     * Retorna la lista de Productos
      * @param remoteSystemName
      * @return
      * @throws Exception

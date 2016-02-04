@@ -75,6 +75,8 @@ public class MyMovilityRPCClientTest {
         //test_GetProducts();
         //test_boomerang();
         test_StressTestingGetProducts();
+        test_GetProducts();
+
         log.log(Level.INFO, "Parate Aqui");
     }
 
