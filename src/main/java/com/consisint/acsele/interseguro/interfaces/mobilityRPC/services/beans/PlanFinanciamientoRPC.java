@@ -1,8 +1,5 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans;
 
-import java.util.Hashtable;
-import java.util.Map;
-
 /**
  * La clase <code>PlanFinanciamientoRPC</code> representa el wrapper del ConfiguratedFinancialPlan
  * de Acsele para los servicios del MobilityRPC. (para Interseguro es el PERIODO DE PAGO)
