@@ -4,7 +4,8 @@ import java.util.Hashtable;
 import java.util.Map;
 
 /**
- * Los Planes de Financiamiento (para Interseguro es el PERIODO DE PAGO)
+ * La clase <code>PlanFinanciamientoRPC</code> representa el wrapper del ConfiguratedFinancialPlan
+ * de Acsele para los servicios del MobilityRPC. (para Interseguro es el PERIODO DE PAGO)
  */
 public class PlanFinanciamientoRPC {
     long id;

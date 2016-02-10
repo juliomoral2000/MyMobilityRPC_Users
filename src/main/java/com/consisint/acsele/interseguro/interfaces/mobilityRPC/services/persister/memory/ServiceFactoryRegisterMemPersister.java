@@ -1,6 +1,11 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.memory;
 
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.ProductRPC;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.PropertyValuesRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Product_Callers;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Property_Callers;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ProductParameter;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.PropertyParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.ServiceFactoryRegisterPersister;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.CallerRegister;
@@ -31,15 +36,15 @@ public class ServiceFactoryRegisterMemPersister implements ServiceFactoryRegiste
     @Override
     public List<CallerRegister> getCallerRegisters() {
         List<CallerRegister> list = new ArrayList<CallerRegister>();
-        list.add(new CallerRegister(
-                SystemName.COTIZADOR,
-                SystemName.ACSELE,
-                "getProducts",
-                "Product_Processors",
-                VoidParameter.class,
-                List.class,
-                Product_Callers.GetProducts.class)
-        );
+        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getProducts", "Product_Processors", VoidParameter.class, List.class, Product_Callers.GetProducts.class));
+        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getProduct", "Product_Processors", ProductParameter.class, ProductRPC.class, Product_Callers.GetProduct.class));
+        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getPropertyValues", "Property_Processors", PropertyParameter.class, PropertyValuesRPC.class, Property_Callers.GetPropertyValues.class));
+        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getPlanesFinanciamiento", "Product_Processors", ProductParameter.class, List.class, Product_Callers.GetPlanesFinanciamiento.class));
+        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getPlanes", "Product_Processors", ProductParameter.class, List.class, Product_Callers.GetPlanes.class));
+
+
         return list;
+
+
     }
 }

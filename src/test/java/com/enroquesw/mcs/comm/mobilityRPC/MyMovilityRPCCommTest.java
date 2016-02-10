@@ -24,7 +24,7 @@ public class MyMovilityRPCCommTest {
     private boolean isDebugEnabled;
     private SystemName serverSystemName;
 
-    @Before
+    //@Before
     public void setUp() throws Exception {
         /****************************************************/
         hostIp = "127.0.0.1";
@@ -35,7 +35,7 @@ public class MyMovilityRPCCommTest {
         /****************************************************/
     }
 
-    @Test
+    //@Test
     public void testMain() throws Exception {
         Thread t = Thread.currentThread();
         MyMovilityRPCCommRunner thread = MyMovilityRPCCommRunner.startMyMovilityRPCCommRunner(hostIp, hostPort, mapClients, isDebugEnabled, serverSystemName);

@@ -6,20 +6,21 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Beans RPC de Productos.
+ * La clase <code>ProductRPC</code> representa el wrapper del Product
+ * de Acsele para los servicios del MobilityRPC.
  */
 public class ProductRPC {
     long id;
     String name;
     Map<String, DynamicDataRPC> dataDynamic = new Hashtable<String, DynamicDataRPC>(); // propiedadNombre, <nombre, input, value>
-    List<PlanFinanciamientoRPC> plans = new ArrayList<PlanFinanciamientoRPC>();
+    /*List<PlanFinanciamientoRPC> plans = new ArrayList<PlanFinanciamientoRPC>();*/
     public static final transient String[] PROPERTIESTOTAKE = {"Ramo", "SubRamo", "RamoSBS", "EdadLimiteIngreso", "EdadMinima"};
 
-    public ProductRPC(long id, String name, Map<String, DynamicDataRPC> dataDynamic, List<PlanFinanciamientoRPC> plans) {
+    public ProductRPC(long id, String name, Map<String, DynamicDataRPC> dataDynamic/*, List<PlanFinanciamientoRPC> plans*/) {
         this.id = id;
         this.name = name;
         this.dataDynamic = dataDynamic;
-        this.plans = plans;
+        /*this.plans = plans;*/
     }
 
     public long getId() {
@@ -38,9 +39,9 @@ public class ProductRPC {
         this.name = name;
     }
 
-    public List<PlanFinanciamientoRPC> getPlans() {
+    /*public List<PlanFinanciamientoRPC> getPlans() {
         return plans;
-    }
+    }*/
 
     public Map<String, DynamicDataRPC> getDataDynamic() {
         return dataDynamic;

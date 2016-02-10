@@ -8,11 +8,13 @@ public class TRDataRPC {
     String input;
     double value;
     String display;
+    TRDataRPC[] trsArrParent;
 
-    public TRDataRPC(String input, double value, String display) {
+    public TRDataRPC(String input, double value, String display, TRDataRPC[] trsArrParent) {
         this.input = input;
         this.value = value;
         this.display = display;
+        this.trsArrParent = trsArrParent;
     }
 
     public String getInput() {
@@ -25,5 +27,9 @@ public class TRDataRPC {
 
     public String getDisplay() {
         return display;
+    }
+
+    public TRDataRPC[] getTrsArrParent() {
+        return trsArrParent;
     }
 }

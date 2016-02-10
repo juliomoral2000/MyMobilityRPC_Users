@@ -3,14 +3,16 @@ package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params;
 import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
 
 /**
- * Created by Julio on 03/02/2016.
+ * La clase <code>PropertyParameter</code> representa el Parametro de entrada Para los Servicios de Propiedades y Transformadores.
  */
 public class PropertyParameter implements ProcessParameter {
     public long propertyId;
     public String propertyName;
+    public boolean fetchDepends;
 
-    public PropertyParameter(long propertyId, String propertyName) {
+    public PropertyParameter(long propertyId, String propertyName, boolean fetchDepends) {
         this.propertyId = propertyId;
         this.propertyName = propertyName;
+        this.fetchDepends = fetchDepends;
     }
 }

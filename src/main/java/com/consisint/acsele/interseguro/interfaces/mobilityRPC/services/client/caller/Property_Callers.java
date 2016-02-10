@@ -14,25 +14,16 @@ import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
 public class Property_Callers<P extends ProcessParameter> {
     /**
      * Retorna la propiedad con su lista de Valores
+     *
      * @param remoteSystemName
-     * @param propertyId Id de la propiedad
+     * @param parameter
      * @return
      * @throws ServiceBaseException
      */
-    public static PropertyValuesRPC getPropertyValues(SystemName remoteSystemName, long propertyId) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetPropertyValues.class, new PropertyParameter(propertyId, null), remoteSystemName);
+    public static PropertyValuesRPC getPropertyValues(SystemName remoteSystemName, PropertyParameter parameter) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetPropertyValues.class, parameter, remoteSystemName);
     }
 
-    /**
-     * Retorna la propiedad con su lista de Valores
-     * @param remoteSystemName
-     * @param propertyname Nombre de la Propiedad
-     * @return
-     * @throws ServiceBaseException
-     */
-    public static PropertyValuesRPC getPropertyValues(SystemName remoteSystemName, String propertyname) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetPropertyValues.class, new PropertyParameter(0, propertyname), remoteSystemName);
-    }
 
     /**
      *

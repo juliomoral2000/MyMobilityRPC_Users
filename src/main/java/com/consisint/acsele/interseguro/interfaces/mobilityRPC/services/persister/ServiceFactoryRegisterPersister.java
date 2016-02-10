@@ -7,15 +7,23 @@ import com.enroquesw.mcs.comm.mobilityRPC.services.factory.ProcessorRegister;
 import java.util.List;
 
 /**
- * Created by Julio on 25/01/2016.
+ * Persistidor de los Registros de Servicios o ServiceFactoryRegister
  */
 public interface ServiceFactoryRegisterPersister {
+    String PROP_CLASS_NAME = "className.ServiceFactoryRegister";
     List<ProcessorRegister> getProcessorRegisters();
     List<CallerRegister> getCallerRegisters();
-    public static class Impl{
+    class Impl{
         private static ServiceFactoryRegisterPersister instance;
         public static ServiceFactoryRegisterPersister getInstance(){
-            return instance == null? new ServiceFactoryRegisterMemPersister(): instance;
+            String className = System.getProperty(PROP_CLASS_NAME);
+            className = (className != null && className.length() > 0)? className : ServiceFactoryRegisterMemPersister.class.getName();
+            try {
+                instance = (ServiceFactoryRegisterPersister) Class.forName(className).newInstance();
+            } catch (Exception e) {
+                instance = new ServiceFactoryRegisterMemPersister();
+            }
+            return instance;
         }
     }
 }

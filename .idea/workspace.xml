@@ -3,16 +3,22 @@
   <component name="ChangeListManager">
     <list id="e8234e39-a108-4592-90c0-d33145302e2a" name="Default" comment="El otro Proyecto" />
     <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Antes configurar el proyecto para generar un jar para cada cliente.&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/DynamicDataRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PlanFinanciamientoRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PropertyValuesRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/TRDataRPC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_InvocarRemoto.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_MyMovilityRPCCommRunner.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PlanRPC.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PlanFinanciamientoRPC.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PlanFinanciamientoRPC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PropertyValuesRPC.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PropertyValuesRPC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/TRDataRPC.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/TRDataRPC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,65 +45,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-              <folding>
-                <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-                <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceFactoryRegisterMemPersister.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ServiceFactoryRegisterMemPersister.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.84386617">
-              <caret line="42" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="47" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="47" />
               <folding>
-                <element signature="method#getProcessorRegisters#0;class#ServiceFactoryRegisterMemPersister#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="docComment;class#ServiceFactoryRegisterMemPersister#0" expanded="false" />
+                <element signature="method#getProcessorRegisters#0;class#ServiceFactoryRegisterMemPersister#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductRPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java">
+      <file leaf-file-name="Example_MyMovilityRPCCommRunner.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_MyMovilityRPCCommRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductParameter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.33248082">
+              <caret line="16" column="71" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="71" />
               <folding>
-                <element signature="docComment;class#ProductParameter#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#main#0;class#Example_MyMovilityRPCCommRunner#0" expanded="true" />
+                <element signature="method#getMapClients#0;class#Example_MyMovilityRPCCommRunner#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyMovilityRPCClientTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java">
+      <file leaf-file-name="Example_InvocarRemoto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_InvocarRemoto.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
+              <caret line="32" column="68" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -107,8 +87,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
               <folding>
+                <element signature="docComment;class#ServiceFactoryRegisterPersister#0" expanded="true" />
                 <element signature="class#Impl#0;class#ServiceFactoryRegisterPersister#0" expanded="true" />
                 <element signature="method#getInstance#0;class#Impl#0;class#ServiceFactoryRegisterPersister#0" expanded="true" />
               </folding>
@@ -116,65 +97,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PropertyParameter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java">
+      <file leaf-file-name="MyMovilityRPCCommTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="docComment;class#PropertyParameter#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Property_Callers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-              <folding>
-                <element signature="docComment;class#Property_Callers#0" expanded="false" />
-                <element signature="method#getPropertyValues#0;class#Property_Callers#0" expanded="false" />
-                <element signature="docComment;method#getPropertyValues#1;class#Property_Callers#0" expanded="false" />
-                <element signature="method#getPropertyValues#1;class#Property_Callers#0" expanded="false" />
-                <element signature="docComment;class#GetPropertyValues#0;class#Property_Callers#0" expanded="false" />
-                <element signature="class#GetPropertyValues#0;class#Property_Callers#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product_Callers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+              <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="false" />
-                <element signature="docComment;class#Product_Callers#0" expanded="false" />
-                <element signature="class#GetProducts#0;class#Product_Callers#0" expanded="false" />
-                <element signature="method#GetProducts#0;class#GetProducts#0;class#Product_Callers#0" expanded="false" />
+                <element signature="docComment;class#MyMovilityRPCCommTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Stresstesting.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java">
+      <file leaf-file-name="MyMovilityRPCClientTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
+              <caret line="91" column="41" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="62" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="docComment;class#Stresstesting#0" expanded="false" />
-                <element signature="method#stressTestingGetProducts#0;class#Stresstesting#0" expanded="false" />
-                <element signature="class#652:1707" expanded="false" />
-                <element signature="method#call#0;class#652:1707" expanded="false" />
-                <element signature="e#1253#1284#0" expanded="false" />
-                <element signature="e#1823#1849#0" expanded="false" />
-                <element signature="e#3120#3169#0" expanded="false" />
-                <element signature="e#3434#3538#0" expanded="false" />
+                <element signature="docComment;class#MyMovilityRPCClientTest#0" expanded="true" />
+                <element signature="method#setUp#0;class#MyMovilityRPCClientTest#0" expanded="true" />
+                <element signature="method#test_Planes#0;class#MyMovilityRPCClientTest#0" expanded="true" />
+                <element signature="method#test_GetPropertyRPC_Dependencies#0;class#MyMovilityRPCClientTest#0" expanded="true" />
+                <element signature="method#test_GetProducts#0;class#MyMovilityRPCClientTest#0" expanded="true" />
+                <element signature="e#10274#10301#0" expanded="true" />
+                <element signature="method#test_GetProduct#0;class#MyMovilityRPCClientTest#0" expanded="true" />
+                <element signature="method#test_ServicesFactoryProccesor#0;class#MyMovilityRPCClientTest#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -202,21 +151,24 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/AppTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCServerRunnerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java" />
         <option value="$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/parameter/VoidParameter.class" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterPersister.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/TimerHelper.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
+        <option value="$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/exception/ServiceBaseException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_MyMovilityRPCCommRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_InvocarRemoto.java" />
       </list>
     </option>
   </component>
@@ -258,6 +210,38 @@
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="MobilityRPC_Users" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="source" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="MobilityRPC_Users" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
           <option name="myItemId" value="Lifecycle" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
@@ -268,10 +252,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="1942" />
+    <option name="height" value="1046" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -297,8 +281,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,276 +298,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobilityRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobilityRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mobilityRPC" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="processor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="persister" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="persister" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="memory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="params" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="caller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beans" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -657,6 +371,9 @@
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AntRunConfigurationType" factoryName="Ant build" debug-port="25000" max-memory="256" logging-level="0">
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -947,7 +664,14 @@
       <workItem from="1454428378732" duration="1225000" />
       <workItem from="1454452042181" duration="3908000" />
       <workItem from="1454513652238" duration="8221000" />
-      <workItem from="1454530557733" duration="2051000" />
+      <workItem from="1454530557733" duration="3940000" />
+      <workItem from="1454599518466" duration="13748000" />
+      <workItem from="1454717332325" duration="12757000" />
+      <workItem from="1454863526401" duration="3929000" />
+      <workItem from="1454914114265" duration="902000" />
+      <workItem from="1454941811326" duration="1303000" />
+      <workItem from="1455051424959" duration="7444000" />
+      <workItem from="1455068473114" duration="687000" />
     </task>
     <task id="LOCAL-00001" summary="nnn">
       <created>1453685565282</created>
@@ -995,34 +719,34 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99330000" />
+    <option name="totallyTimeSpent" value="141989000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-11" y="-11" width="1942" height="1046" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.696934" sideWeight="0.5064447" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26746166" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5459906" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33812407" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33736762" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22087745" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1182" height="544" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58361775" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21965629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" x="92" y="92" width="1182" height="544" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.58191127" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46245733" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5221843" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22354949" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1056,25 +780,25 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java</url>
-          <line>115</line>
+          <line>215</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java</url>
-          <line>117</line>
+          <line>217</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java</url>
-          <line>74</line>
+          <line>78</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java</url>
-          <line>23</line>
+          <line>26</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -1086,7 +810,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java</url>
-          <line>109</line>
+          <line>195</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -1123,17 +847,41 @@
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
-        <line-breakpoint suspend="NONE" type="java-line">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java</url>
-          <line>101</line>
+          <line>81</line>
           <properties />
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java</url>
+          <line>157</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="27" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1142,159 +890,18 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/server/processor/Example_Processors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="89" selection-start-line="0" selection-start-column="73" selection-end-line="0" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCServerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCServerRunnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-          <folding>
-            <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#Product_Callers#0" expanded="false" />
-            <element signature="class#GetProducts#0;class#Product_Callers#0" expanded="false" />
-            <element signature="method#GetProducts#0;class#GetProducts#0;class#Product_Callers#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/server/processor/Example_Processors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCServerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCServerRunnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="e#1399#1546#0" expanded="false" />
             <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#goals#0;n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1345,13 +952,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.17418033">
           <caret line="6" column="26" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1408,13 +1008,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/factory/ProcessorRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4117647">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/mobilityrpc/mobility-rpc/1.1.0/mobility-rpc-1.1.0-sources.jar!/com/googlecode/mobilityrpc/session/impl/MobilitySessionImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1436,13 +1029,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/TimerHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/src.zip!/java/util/concurrent/TimeUnit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1457,13 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/factory/ServicesFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="33" selection-start-line="69" selection-start-column="33" selection-end-line="69" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/jre/lib/rt.jar!/sun/reflect/DelegatingConstructorAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68619245">
@@ -1471,36 +1050,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30483273">
-          <caret line="120" column="73" selection-start-line="120" selection-start-column="73" selection-end-line="120" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34386617">
-          <caret line="101" column="41" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
           <folding>
-            <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
-            <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="method#executeCalling#1;class#CallerOfProcess#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/TimerHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1508,101 +1085,225 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="23" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#Stresstesting#0" expanded="false" />
-            <element signature="method#stressTestingGetProducts#0;class#Stresstesting#0" expanded="false" />
-            <element signature="class#652:1707" expanded="false" />
-            <element signature="method#call#0;class#652:1707" expanded="false" />
-            <element signature="e#1253#1284#0" expanded="false" />
-            <element signature="e#1823#1849#0" expanded="false" />
-            <element signature="e#3120#3169#0" expanded="false" />
-            <element signature="e#3434#3538#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="docComment;class#PropertyParameter#0" expanded="false" />
-          </folding>
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PropertyValuesRPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#Product_Callers#0" expanded="false" />
-            <element signature="class#GetProducts#0;class#Product_Callers#0" expanded="false" />
-            <element signature="method#GetProducts#0;class#GetProducts#0;class#Product_Callers#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="7" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-          <folding>
-            <element signature="docComment;class#Property_Callers#0" expanded="false" />
-            <element signature="method#getPropertyValues#0;class#Property_Callers#0" expanded="false" />
-            <element signature="docComment;method#getPropertyValues#1;class#Property_Callers#0" expanded="false" />
-            <element signature="method#getPropertyValues#1;class#Property_Callers#0" expanded="false" />
-            <element signature="docComment;class#GetPropertyValues#0;class#Property_Callers#0" expanded="false" />
-            <element signature="class#GetPropertyValues#0;class#Property_Callers#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-          <folding>
-            <element signature="docComment;class#ProductParameter#0" expanded="true" />
-          </folding>
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-          <folding />
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCCommRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="68" selection-start-line="53" selection-start-column="68" selection-end-line="53" selection-end-column="68" />
-          <folding />
+          <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCComm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/factory/ServicesFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/factory/ProcessorRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="146" selection-start-line="34" selection-start-column="146" selection-end-line="34" selection-end-column="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/factory/CallerRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="16" selection-start-line="40" selection-start-column="16" selection-end-line="40" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/parameter/ProcessParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12116992">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/processor/CallProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="124" selection-start-line="33" selection-start-column="109" selection-end-line="33" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/result/ProcessResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1615599">
+          <caret line="18" column="3" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/impl/processor/ServicesFactory_Proccesors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/impl/caller/ServicesFactory_Callers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/exception/ServiceBaseException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12682216">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45454547">
+          <caret line="43" column="34" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
           <folding>
-            <element signature="class#Impl#0;class#ServiceFactoryRegisterPersister#0" expanded="true" />
-            <element signature="method#getInstance#0;class#Impl#0;class#ServiceFactoryRegisterPersister#0" expanded="true" />
+            <element signature="method#getPlanesFinanciamiento#0;class#Product_Callers#0" expanded="true" />
+            <element signature="method#getPlanes#0;class#Product_Callers#0" expanded="true" />
+            <element signature="class#GetPlanes#0;class#Product_Callers#0" expanded="true" />
+            <element signature="method#GetPlanes#0;class#GetPlanes#0;class#Product_Callers#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6969697">
+          <caret line="70" column="15" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="15" />
+          <folding>
+            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="e#1399#1546#0" expanded="false" />
+            <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#goals#0;n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="44" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#MyMovilityRPCCommTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84386617">
-          <caret line="42" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="47" />
           <folding>
-            <element signature="method#getProcessorRegisters#0;class#ServiceFactoryRegisterMemPersister#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#ServiceFactoryRegisterMemPersister#0" expanded="false" />
+            <element signature="method#getProcessorRegisters#0;class#ServiceFactoryRegisterMemPersister#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding>
+            <element signature="docComment;class#ServiceFactoryRegisterPersister#0" expanded="true" />
+            <element signature="class#Impl#0;class#ServiceFactoryRegisterPersister#0" expanded="true" />
+            <element signature="method#getInstance#0;class#Impl#0;class#ServiceFactoryRegisterPersister#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="91" column="41" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="62" />
+          <folding>
+            <element signature="docComment;class#MyMovilityRPCClientTest#0" expanded="true" />
+            <element signature="method#setUp#0;class#MyMovilityRPCClientTest#0" expanded="true" />
+            <element signature="method#test_Planes#0;class#MyMovilityRPCClientTest#0" expanded="true" />
+            <element signature="method#test_GetPropertyRPC_Dependencies#0;class#MyMovilityRPCClientTest#0" expanded="true" />
+            <element signature="method#test_GetProducts#0;class#MyMovilityRPCClientTest#0" expanded="true" />
+            <element signature="e#10274#10301#0" expanded="true" />
+            <element signature="method#test_GetProduct#0;class#MyMovilityRPCClientTest#0" expanded="true" />
+            <element signature="method#test_ServicesFactoryProccesor#0;class#MyMovilityRPCClientTest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_InvocarRemoto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="68" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_MyMovilityRPCCommRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33248082">
+          <caret line="16" column="71" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Example_MyMovilityRPCCommRunner#0" expanded="true" />
+            <element signature="method#getMapClients#0;class#Example_MyMovilityRPCCommRunner#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1664,6 +1365,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

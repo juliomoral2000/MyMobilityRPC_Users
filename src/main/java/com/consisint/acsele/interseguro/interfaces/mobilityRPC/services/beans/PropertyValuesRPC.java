@@ -7,15 +7,26 @@ package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans;
 public class PropertyValuesRPC {
     long propertyId;
     String propertyName;
-    TRDataRPC[] filas;
-
-    public PropertyValuesRPC(long propertyId, String propertyName, TRDataRPC[] filas) {
+    TRDataRPC[] trsArr;    // Lista de Informacion Basica de transformadorFila de la Propiedad
+    String parentName;      // Nombre de la Propiedad Padre o Superlativa
+    String[] childs;        // Lista de Nombre de las propiedades Hijo o Dependientes
+    /**
+     *
+     * @param propertyId Id de la propiedad
+     * @param propertyName  Nombre de la Propiedad
+     * @param trsArr    Array de <code>TRDataRPC</code>
+     * @param parentName Nombre propiedad Padre
+     * @param childs    Lista de Propiedades Hijos
+     */
+    public PropertyValuesRPC(long propertyId, String propertyName, TRDataRPC[] trsArr, String parentName, String[] childs) {
         this.propertyId = propertyId;
         this.propertyName = propertyName;
-        this.filas = filas;
+        this.trsArr = trsArr;
+        this.parentName = parentName;
+        this.childs = childs;
     }
-
-    public long getPropertyId() {
+	
+	public long getPropertyId() {
         return propertyId;
     }
 
@@ -23,7 +34,15 @@ public class PropertyValuesRPC {
         return propertyName;
     }
 
-    public TRDataRPC[] getFilas() {
-        return filas;
+    public TRDataRPC[] getTrsArr() {
+        return trsArr;
+    }
+
+    public String[] getChilds() {
+        return childs;
+    }
+
+    public String getParentName() {
+        return parentName;
     }
 }
