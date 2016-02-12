@@ -1,8 +1,6 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.example;
 
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.PlanRPC;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.ProductRPC;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.PropertyValuesRPC;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.*;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Product_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Property_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ProductParameter;
@@ -26,6 +24,10 @@ public class Example_InvocarRemoto {
                 System.out.println("[Producto] "+rpc.getName());
                 List<PlanRPC> list = Product_Callers.getPlanes(SystemName.ACSELE, productParameter);
                 System.out.println("[Planes.size] "+list.size());
+                List<CoberturaRPC> list_ccv = Product_Callers.getCoberturas(SystemName.ACSELE, productParameter);
+                System.out.println("[Coberturas.size] " + list_ccv.size());
+                List<VigenciaRPC> list_pc = Product_Callers.getPeriodosCoberturas(SystemName.ACSELE, productParameter);
+                System.out.println("[Vigencias.size] "+list_pc.size());
             }
             /*******************************************************************/
             PropertyParameter parameter = new PropertyParameter(0, "CodDepartamento", false); // Sin obtener info de Dependencias

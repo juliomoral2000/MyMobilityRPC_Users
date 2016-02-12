@@ -9,6 +9,7 @@ import java.util.Map;
  */
 public class PlanRPC {
     long id;
+    long idProducto;
     String name;
     Map<String, DynamicDataRPC> dataDynamic = new Hashtable<String, DynamicDataRPC>(); // propiedadNombre, <nombre, input, value>
     //List<InsureObjectTypeRPC> plans = new ArrayList<InsureObjectTypeRPC>();
@@ -16,9 +17,26 @@ public class PlanRPC {
     //List<ClausulaRPC> plans = new ArrayList<ClausulaRPC>();
     public static final transient String[] PROPERTIESTOTAKE = {/*"Ramo", "SubRamo", "RamoSBS", "EdadLimiteIngreso", "EdadMinima"*/};
 
-    public PlanRPC(long id, String name, Map<String, DynamicDataRPC> dataDynamic) {
+    public PlanRPC(long id, long idProducto, String name, Map<String, DynamicDataRPC> dataDynamic) {
         this.id = id;
+        this.idProducto = idProducto;
         this.name = name;
         this.dataDynamic = dataDynamic;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public long getIdProducto() {
+        return idProducto;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Map<String, DynamicDataRPC> getDataDynamic() {
+        return dataDynamic;
     }
 }

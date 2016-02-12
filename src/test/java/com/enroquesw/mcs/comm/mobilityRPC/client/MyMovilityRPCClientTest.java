@@ -79,7 +79,7 @@ public class MyMovilityRPCClientTest {
         //test_GetProducts();
         //test_boomerang();
         Stopwatch stopwatch = Stopwatch.createStarted();
-        //test_StressTestingGetProducts();
+        test_StressTestingGetProducts();
         //test_GetProducts();
         //int i = 1;
         /*************************************************************************/
@@ -98,7 +98,7 @@ public class MyMovilityRPCClientTest {
 
         /*************************************************************************/
         stopwatch.stop(); // optional
-        test_GetProducts();
+        //test_GetProducts();
         stopwatch.elapsed(TimeUnit.MILLISECONDS);
         System.out.println("[testMain] Total time; " + stopwatch);
         log.log(Level.INFO, "Parate Aqui");
@@ -132,6 +132,20 @@ public class MyMovilityRPCClientTest {
         }
 
     }
+    private void test_Coberturas(ProductRPC product) {
+        try {
+            ProductParameter productParameter = new ProductParameter(product.getId());
+            Stopwatch stopwatch = Stopwatch.createStarted();
+            List<CoberturaRPC> list_ccv = Product_Callers.getCoberturas(SystemName.ACSELE, productParameter);
+            stopwatch.stop(); // optional
+            stopwatch.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[test_Coberturas]; Total time; " + stopwatch);
+            System.out.println("[test_Coberturas] list_ccv.size: "+list_ccv.size());
+        } catch (ServiceBaseException e) {
+            Log.debug("ver ", e);
+        }
+    }
+
 
     private void test_GetPropertyRPC_Dependencies(String propertyName, boolean fetchDependence, boolean fetchDependenceChilds, String level, int numeroTest) {
         try {
@@ -186,8 +200,10 @@ public class MyMovilityRPCClientTest {
             for (ProductRPC product : products) {
                 //test_GetProduct(product);
                 //test_PlanesFinanciamiento(product);
-                test_Planes(product);
-                System.out.println("[test_GetProducts] "+product.getName());
+                System.out.println("[test_GetProducts] " + product.getName());
+                //test_Planes(product);
+                //test_Coberturas(product);
+                test_PeriodosCoberturas(product);
             }
             stopwatch.stop(); // optional
             stopwatch.elapsed(TimeUnit.MILLISECONDS);
@@ -196,6 +212,17 @@ public class MyMovilityRPCClientTest {
             Log.debug("ver ", e);
         }
     }
+
+    private void test_PeriodosCoberturas(ProductRPC product) {
+        ProductParameter productParameter = new ProductParameter(product.getId());
+        Stopwatch stopwatch = Stopwatch.createStarted();
+        List<VigenciaRPC> list = Product_Callers.getPeriodosCoberturas(SystemName.ACSELE, productParameter);
+        stopwatch.stop(); // optional
+        stopwatch.elapsed(TimeUnit.MILLISECONDS);
+        System.out.println("[test_Planes]; Total time; " + stopwatch);
+        System.out.println("[test_Planes] "+list.size());
+    }
+
 
     private void test_GetProduct(ProductRPC product) {
         try {

@@ -6,10 +6,10 @@ package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans;
  */
 public class PlanFinanciamientoRPC {
     long id;
+    long idProducto;
     String desc;
     int period; // periodo
     private String unitPeriodo; //unidad del Periodo
-    long idProducto;
     //Map<String, DynamicDataRPC> dataDynamic = new Hashtable<String, DynamicDataRPC>(); // propiedadNombre, <nombre, input, value>
 
     public PlanFinanciamientoRPC(long id, String desc, int period, String unitPeriodo, long idProducto/*, Map<String, DynamicDataRPC> dataDynamic*/) {
