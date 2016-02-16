@@ -1,7 +1,8 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans;
 
 /**
- * Created by Julio on 02/02/2016.
+ * La clase <code>DynamicDataRPC</code> representa el wrapper del valor de una instancia de una propiedad de algun DCO
+ * de Acsele para los servicios del MobilityRPC.
  */
 public class DynamicDataRPC {
     String propertyName;

@@ -43,6 +43,8 @@ public class ServiceFactoryRegisterMemPersister implements ServiceFactoryRegiste
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getPlanes", "Product_Processors", ProductParameter.class, List.class, Product_Callers.GetPlanes.class));
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getCoberturas", "Product_Processors", ProductParameter.class, List.class, Product_Callers.GetCoberturas.class));
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getPeriodosCoberturas", "Product_Processors", ProductParameter.class, List.class, Product_Callers.GetPeriodosCoberturas.class));
+        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getTarifas", "Product_Processors", ProductParameter.class, List.class, Product_Callers.GetTarifas.class));
+
 
 
 

@@ -86,4 +86,10 @@ public class Product_Callers <P extends ProcessParameter>{
             super(parameter);
         }
     }
+
+    public static class GetTarifas extends CallerOfProcess<GetTarifas, ProductParameter, List<TarifaRPC>>{
+        public GetTarifas(ProductParameter parameter) throws Exception {
+            super(parameter);
+        }
+    }
 }
