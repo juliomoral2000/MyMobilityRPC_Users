@@ -7,7 +7,7 @@ import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.P
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.PropertyParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.ServiceFactoryRegisterPersister;
 import com.enroquesw.mcs.comm.mobilityRPC.MyMovilityRPCComm;
-import com.enroquesw.mcs.comm.mobilityRPC.MyMovilityRPCCommTest;
+import com.enroquesw.mcs.comm.mobilityRPC.SetUpBase;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.enroquesw.mcs.comm.mobilityRPC.server.MyMovilityRPCCommRunner;
 import com.enroquesw.mcs.comm.mobilityRPC.services.exception.ServiceBaseException;
@@ -22,9 +22,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Hashtable;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -34,25 +32,17 @@ import java.util.logging.Logger;
  *
  * @author Julio Morales
  */
-public class MyMovilityRPCClientTest {
-    private transient static final Logger log = Logger.getLogger(MyMovilityRPCClientTest.class.getName());
+public class MyMovilityRPCClientTest extends SetUpBase {
     private transient MobilitySession session;
     private transient ConnectionId remoteEndpointId;
-    private transient String hostIp;
-    private transient Integer hostPort;
-    private transient Map<String, ConnectionId> mapClients = new Hashtable<String, ConnectionId>();
-    private transient boolean isDebugEnabled;
-    private SystemName serverSystemName;
+
 
     @Before
     public void setUp() throws Exception {
-        mapClients = MyMovilityRPCCommTest.getMapClients();
-        hostIp = "127.0.0.1";   // LocalIp
-        hostPort = 5749;        //LocalPort
-        isDebugEnabled = true;
-        serverSystemName = SystemName.COTIZADOR;
+        super.setUp();
         /******************************************************/
-        System.setProperty(ServiceFactoryRegisterPersister.PROP_CLASS_NAME,"com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.memory.ServiceFactoryRegisterMemPersister_2"); // Con este ejemplo podria extender a la interfaz e implementar la forma de extraer los registros - esta propiedad la utiliza el ServiceFactoryRegisterPersister para identificar la instancia de la clase que se desea cargar.
+        /** Test de setear la implementacion personalizada del ServiceFactoryRegister :
+        System.setProperty(ServiceFactoryRegisterPersister.PROP_CLASS_NAME,"com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.memory.ServiceFactoryRegisterMemPersister_2"); // Con este ejemplo podria extender a la interfaz e implementar la forma de extraer los registros - esta propiedad la utiliza el ServiceFactoryRegisterPersister para identificar la instancia de la clase que se desea cargar. */
         /******************************************************/
         ServiceFactoryRegisterPersister instance = ServiceFactoryRegisterPersister.Impl.getInstance();
         List<ProcessorRegister> processorRegisters = instance.getProcessorRegisters();
@@ -69,16 +59,16 @@ public class MyMovilityRPCClientTest {
 
     @After
     public void tearDown() throws Exception {
-        if(MyMovilityRPCComm.isServerRunning()) MyMovilityRPCComm.destroy();
-
+        super.tearDown();
     }
 
-    @Test
+    //@Test
     public void testMain() throws Exception {
         //test_ServicesFactoryProccesor();
         //test_GetProducts();
         //test_boomerang();
         Stopwatch stopwatch = Stopwatch.createStarted();
+        //MyMovilityRPCComm.checkEndpoint(new ConnectionId("130.30.11.82", EmbeddedMobilityServer.DEFAULT_PORT));
         test_StressTestingGetProducts();
         //test_GetProducts();
         //int i = 1;
@@ -101,7 +91,7 @@ public class MyMovilityRPCClientTest {
         //test_GetProducts();
         stopwatch.elapsed(TimeUnit.MILLISECONDS);
         System.out.println("[testMain] Total time; " + stopwatch);
-        log.log(Level.INFO, "Parate Aqui");
+        //log.log(Level.INFO, "Parate Aqui");
     }
 
     private void test_Planes(ProductRPC product) {
@@ -112,7 +102,7 @@ public class MyMovilityRPCClientTest {
             stopwatch.stop(); // optional
             stopwatch.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("[test_Planes]; Total time; " + stopwatch);
-            System.out.println("[test_Planes] "+list.size());
+            //System.out.println("[test_Planes] "+list.size());
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
         }
@@ -195,19 +185,23 @@ public class MyMovilityRPCClientTest {
 
     private void test_GetProducts() throws Exception {
         try {
+            Stopwatch t = Stopwatch.createStarted();
             List<ProductRPC> products = Product_Callers.getProducts(SystemName.ACSELE);
-            Stopwatch stopwatch = Stopwatch.createStarted();
+            t.stop(); // optional
+            t.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[test_GetProducts]; Total time; " + t);
+            t.reset(); t.start();
             for (ProductRPC product : products) {
                 //test_GetProduct(product);
                 //test_PlanesFinanciamiento(product);
                 System.out.println("[test_GetProducts] " + product.getName());
-                //test_Planes(product);
+                test_Planes(product);
                 //test_Coberturas(product);
-                test_PeriodosCoberturas(product);
+                //test_PeriodosCoberturas(product);
             }
-            stopwatch.stop(); // optional
-            stopwatch.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("[test_GetProducts]; Total time; " + stopwatch);
+            t.stop(); // optional
+            //t.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[test_GetProducts]; Total time; " + t);
         }catch (Exception e){
             Log.debug("ver ", e);
         }

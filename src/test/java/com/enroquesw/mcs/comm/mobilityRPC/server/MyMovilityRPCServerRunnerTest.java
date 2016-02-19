@@ -1,6 +1,7 @@
 package com.enroquesw.mcs.comm.mobilityRPC.server;
 
 import com.enroquesw.mcs.comm.mobilityRPC.MyMovilityRPCCommTest;
+import com.enroquesw.mcs.comm.mobilityRPC.SetUpBase;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.googlecode.mobilityrpc.network.ConnectionId;
 import org.junit.Before;
@@ -12,30 +13,18 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * Created by Julio on 18/01/2016.
+ * <code>MyMovilityRPCServerRunnerTest</code> prueba de la entidad <code>MyMovilityRPCServerRunner</code>
  */
-public class MyMovilityRPCServerRunnerTest {
-    private final Logger log = Logger.getLogger(getClass().getName());
-    private String hostIp;
-    private Integer hostPort;
-    private Map<String, ConnectionId> mapClients = new Hashtable<String, ConnectionId>();
-    private boolean isDebugEnabled;
-    private SystemName serverSystemName;
-
+public class MyMovilityRPCServerRunnerTest extends SetUpBase {
     @Before
     public void setUp() throws Exception {
-        /****************************************************/
-        hostIp = "127.0.0.1";
-        hostPort = 5749;
-        mapClients = MyMovilityRPCCommTest.getMapClients();
-        isDebugEnabled = true;
-        serverSystemName = SystemName.COTIZADOR;
-        /****************************************************/
+        super.setUp();
     }
 
     @Test
     public void testMain() throws Exception {
         try {
+            log.log(Level.INFO, "MyMovilityRPCServerRunnerTest");
             /*MyMovilityRPCCommRunner running = MyMovilityRPCCommRunner.startMyMovilityRPCCommRunner(hostIp, hostPort, mapClients, isDebugEnabled, serverSystemName);
             running.start();
             log.log(Level.INFO,"[MyMovilityRPCCommRunner] Inicio el contexto de MyMovilityRPCComm ");

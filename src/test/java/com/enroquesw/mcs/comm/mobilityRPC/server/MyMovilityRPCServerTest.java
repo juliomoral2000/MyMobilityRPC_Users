@@ -1,11 +1,31 @@
 package com.enroquesw.mcs.comm.mobilityRPC.server;
 
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.ServiceFactoryRegisterPersister;
+import com.enroquesw.mcs.comm.mobilityRPC.MyMovilityRPCComm;
+import com.enroquesw.mcs.comm.mobilityRPC.SetUpBase;
+import com.enroquesw.mcs.comm.mobilityRPC.client.MyMovilityRPCClient;
+import com.enroquesw.mcs.comm.mobilityRPC.services.factory.CallerRegister;
+import com.enroquesw.mcs.comm.mobilityRPC.services.factory.ProcessorRegister;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 /**
- * Created by Julio on 11/01/2016.
+ * <code>MyMovilityRPCServerTest</code> prueba de la entidad <code>MyMovilityRPCServer</code>
  */
-public class MyMovilityRPCServerTest {
+public class MyMovilityRPCServerTest extends SetUpBase {
+    @Before
+    public void setUp() throws Exception {
+        super.setUp();
+    }
+
+    @After
+    public void tearDown() throws Exception {
+        super.tearDown();
+    }
+
     @Test
     public void testInit() throws Exception {
         /*Thread t = Thread.currentThread();

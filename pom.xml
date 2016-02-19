@@ -32,18 +32,19 @@
       <version>4.1</version>
       <scope>test</scope>
     </dependency>
-    <dependency>
+    <!--<dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>19.0</version>
       <scope>system</scope>
       <systemPath>${basedir}/lib/guava-19.0.jar</systemPath>
-    </dependency>
-    <!-- <dependency>
+    </dependency>-->
+     <dependency>
       <groupId>com.google.guava</groupId>
       <artifactId>guava</artifactId>
       <version>19.0</version>
-    </dependency>-->
+      <scope>provided</scope>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -70,5 +71,14 @@
         </executions>
       </plugin>
     </plugins>
+    <resources>
+      <resource>
+        <directory>src/main/java</directory>
+        <includes>
+          <include>**/Example_InvocarRemoto.java</include>
+          <include>**/Example_MyMovilityRPCCommRunner.java</include>
+        </includes>
+      </resource>
+    </resources>
   </build>
 </project>
