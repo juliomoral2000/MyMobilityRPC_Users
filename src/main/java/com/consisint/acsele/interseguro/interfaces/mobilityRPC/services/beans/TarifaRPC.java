@@ -38,4 +38,16 @@ public class TarifaRPC {
     public List<RenglonTarifaRPC> getRenglonList() {
         return renglonList;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("TarifaRPC{").append("idProducto=").append( idProducto).append(", idPlanVida=").append( idPlanVida).append(", idCobertura=").append( idCobertura);
+        if(!renglonList.isEmpty()){
+            out.append(", renglonList:\n{");
+            for (RenglonTarifaRPC j : renglonList) out.append(j.toString()).append("\n");
+            out.append("}\n");
+        }
+        out.append('}').toString();
+        return out.toString();
+    }
 }

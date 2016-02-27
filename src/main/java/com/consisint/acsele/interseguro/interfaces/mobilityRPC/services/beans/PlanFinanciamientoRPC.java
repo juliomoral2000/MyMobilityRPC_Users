@@ -44,4 +44,9 @@ public class PlanFinanciamientoRPC {
     /*public Map<String, DynamicDataRPC> getDataDynamic() {
         return dataDynamic;
     }*/
+
+    @Override
+    public String toString() {
+        return new StringBuilder("PlanFinanciamientoRPC{").append("id=").append( id).append(", idProducto=").append( idProducto).append(", desc='").append( desc).append( '\'').append(", period=").append( period).append(", unitPeriodo='").append( unitPeriodo).append( '\'').append('}').toString();
+    }
 }

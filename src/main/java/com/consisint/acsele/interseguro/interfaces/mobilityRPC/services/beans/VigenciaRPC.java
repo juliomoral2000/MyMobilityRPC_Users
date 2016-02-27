@@ -26,4 +26,9 @@ public class VigenciaRPC {
     public double getValor() {
         return valor;
     }
+
+    @Override
+    public String toString() {
+        return new StringBuilder("VigenciaRPC{").append("idProducto=").append( idProducto).append(", nombre='").append( nombre).append( '\'').append(", valor=").append( valor).append('}').toString();
+    }
 }

@@ -45,4 +45,22 @@ public class PropertyValuesRPC {
     public String getParentName() {
         return parentName;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("PropertyValuesRPC{").append("propertyId=").append( propertyId).append(", propertyName='").append( propertyName).append('\'');
+        if(trsArr !=null && trsArr.length > 0){
+            out.append(", trsArr:\n{");
+            for (TRDataRPC j : trsArr) out.append(j.toString()).append("\n");
+            out.append("}\n");
+        }
+        if(parentName!=null && parentName.length()>0) out.append(", parentName='").append(parentName).append( '\'');
+        if(childs !=null && childs.length > 0){
+            out.append(", childs:\n{");
+            for (String i : childs) out.append(i).append(",");
+            out.append("}\n");
+        }
+        out.append('}').toString();
+        return out.toString();
+    }
 }

@@ -66,26 +66,14 @@ public class Stresstesting {
                 @Override
                 public void run() {
                     try {
-                        //String name = Thread.currentThread().getName();
-                        //Stopwatch stopwatch = Stopwatch.createStarted();
-                        //long ini = System.currentTimeMillis();
                         List<ProductRPC> products = Product_Callers.getProducts(SystemName.ACSELE);
-                        //System.out.println(Thread.currentThread().getName()+"; fin;"+System.currentTimeMillis()+"; ini;"+ini);
-                        //stopwatch.stop(); // optional
-                        //long millis = stopwatch.elapsed(TimeUnit.MILLISECONDS);
-                        //System.out.println(name + " time: " + stopwatch);
-                        //return products;
                     }catch (Exception e){
                         System.out.println("ver "+ e.getMessage());
-                        //return new ArrayList<ProductRPC>();
                     }
                 }
             }
-
             Thread[] threads = new Thread[numThread];
-
             Stopwatch stopwatch = Stopwatch.createStarted();
-            //ExecutorService executorService = Executors.newFixedThreadPool(numThread);
             for (int i = 0; i < numThread; i++) {
                 StressTask stressTask = new StressTask();
                 threads[i] = stressTask;
@@ -97,14 +85,8 @@ public class Stresstesting {
             stopwatch.stop(); // optional
             long millis = stopwatch.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("Numero Prueba; "+testNro+"; Total time; " + stopwatch);
-            //System.out.println("Finalizado. El resultado final fue tama#o lista : " + list.size());
-            /*for (Future<List<ProductRPC>> future : list) {
-                System.out.println(future.get().size());
-            }*/
         } catch (InterruptedException e1) {
             e1.printStackTrace();
-        }/* catch (ExecutionException e) {
-            e.printStackTrace();
-        }*/
+        }
     }
 }

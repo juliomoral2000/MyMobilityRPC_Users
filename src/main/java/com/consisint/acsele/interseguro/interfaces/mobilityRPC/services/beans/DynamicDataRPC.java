@@ -26,4 +26,9 @@ public class DynamicDataRPC {
     public double getValue() {
         return value;
     }
+
+    @Override
+    public String toString() {
+        return new StringBuilder("DynamicDataRPC{").append("propertyName='").append(propertyName).append('\'').append(", input='").append( input).append( '\'').append(", value=").append( value).append('}').toString();
+    }
 }

@@ -44,6 +44,15 @@ public class Product_Callers <P extends ProcessParameter>{
         return ServicesBaseExecutor.executeCalling(GetPeriodosCoberturas.class, parameter, remoteSystemName);
     }
 
+    public static List<TarifaRPC> getTarifas(SystemName remoteSystemName, ProductParameter parameter) {
+        try {
+            List<TarifaRPC> tarifaRPCs = ServicesBaseExecutor.executeCalling(GetTarifas.class, parameter, remoteSystemName);
+            return tarifaRPCs;
+        } catch (ServiceBaseException e) {
+            throw e;
+        }
+    }
+
     /**
      * La clase <code>GetProducts</code> es Caller del metodo getProducts del servidor o Maquina Remota
      */

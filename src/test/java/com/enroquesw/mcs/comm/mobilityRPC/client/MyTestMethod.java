@@ -5,63 +5,37 @@ import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.c
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Property_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ProductParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.PropertyParameter;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.ServiceFactoryRegisterPersister;
-import com.enroquesw.mcs.comm.mobilityRPC.MyMovilityRPCComm;
-import com.enroquesw.mcs.comm.mobilityRPC.SetUpBase;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
-import com.enroquesw.mcs.comm.mobilityRPC.server.MyMovilityRPCCommRunner;
 import com.enroquesw.mcs.comm.mobilityRPC.services.exception.ServiceBaseException;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.CallerRegister;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.ProcessorRegister;
 import com.enroquesw.mcs.comm.mobilityRPC.services.impl.caller.ServicesFactory_Callers;
+import com.enroquesw.mcs.comm.mobilityRPC.util.testRunner.interfaces.TestRunnerJC;
 import com.esotericsoftware.minlog.Log;
 import com.google.common.base.Stopwatch;
-import com.googlecode.mobilityrpc.network.ConnectionId;
-import com.googlecode.mobilityrpc.session.MobilitySession;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
- * Pruebas Unitarias de invocaciones a una Maquina Remoto o Servidor Remoto.
- *
- * @author Julio Morales
+ * Created by Julio on 24/02/2016.
  */
-public class MyMovilityRPCClientTest extends SetUpBase {
-    private transient MobilitySession session;
-    private transient ConnectionId remoteEndpointId;
-
-
-    @Before
-    public void setUp() throws Exception {
-        super.setUp();
-        super.setServiceFactoryRegister();
-        MyMovilityRPCCommRunner.startMyMovilityRPCCommRunner(hostIp, hostPort, mapClients, isDebugEnabled, serverSystemName, processorRegisters, callerRegisters);
-        while(!MyMovilityRPCComm.isServerRunning()) MyMovilityRPCComm.sleep(1); // Esperamos x que inicie el servidor
-        remoteEndpointId = MyMovilityRPCClient.getEndPointByRemoteName("Acsel-e");
-        /****************************************************/
-        /****************************************************/
-        session = MyMovilityRPCClient.controller.newSession();
-        /****************************************************/
+public class MyTestMethod extends TestRunnerJC{
+    @Override
+    public void run() {
+        try {
+            if(!Log.DEBUG) Log.DEBUG = true;
+            testMain();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-    @After
-    public void tearDown() throws Exception {
-        super.tearDown();
-    }
-
-    @Test
     public void testMain() throws Exception {
         //test_ServicesFactoryProccesor();
         //test_GetProducts();
         //test_boomerang();
         Stopwatch stopwatch = Stopwatch.createStarted();
-        //MyMovilityRPCComm.checkEndpoint(new ConnectionId("130.30.11.82", EmbeddedMobilityServer.DEFAULT_PORT));
         //test_StressTestingGetProducts();
         test_GetProducts();
         //int i = 1;
@@ -93,8 +67,8 @@ public class MyMovilityRPCClientTest extends SetUpBase {
             List<PlanRPC> list = Product_Callers.getPlanes(SystemName.ACSELE, productParameter);
             stopwatch.stop(); // optional
             stopwatch.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("[test_Planes]; Total time; " + stopwatch);
-            //System.out.println("[test_Planes] "+list.size());
+            System.out.println("[MyTestMethod.test_Planes]; Total time; " + stopwatch);
+            for (PlanRPC planRPC : list) System.out.println(planRPC.toString());
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
         }
@@ -158,14 +132,6 @@ public class MyMovilityRPCClientTest extends SetUpBase {
 
     }
 
-    /** private void test_boomerang() {
-        long ini = System.currentTimeMillis();
-        BoomerangObject boomerangObject = QuickTask.execute(remoteEndpointId, new BoomerangObject());
-        System.out.println(Thread.currentThread().getName() + "; fin;" + System.currentTimeMillis() + "; ini;" + ini);
-        System.out.println(boomerangObject.getSomeData());
-        System.out.println(boomerangObject.getSomeOtherData());
-    }*/
-
     private void test_StressTestingGetProducts() {
         int numThread = 1;   // llamadas concurrentes
         //Stresstesting.stressTestingGetProducts(numThread);
@@ -186,8 +152,9 @@ public class MyMovilityRPCClientTest extends SetUpBase {
             for (ProductRPC product : products) {
                 //test_GetProduct(product);
                 //test_PlanesFinanciamiento(product);
+                //test_Planes(product);
+                test_Tarifas(product);
                 System.out.println("[test_GetProducts] " + product.getName());
-                test_Planes(product);
                 //test_Coberturas(product);
                 //test_PeriodosCoberturas(product);
             }
@@ -196,6 +163,18 @@ public class MyMovilityRPCClientTest extends SetUpBase {
             System.out.println("[test_GetProducts]; Total time; " + t);
         }catch (Exception e){
             Log.debug("ver ", e);
+        }
+    }
+
+    private void test_Tarifas(ProductRPC product) {
+        ProductParameter productParameter = new ProductParameter(product.getId());
+        Stopwatch stopwatch = Stopwatch.createStarted();
+        List<TarifaRPC> list = Product_Callers.getTarifas(SystemName.ACSELE, productParameter);
+        stopwatch.stop(); // optional
+        stopwatch.elapsed(TimeUnit.MILLISECONDS);
+        System.out.println("[test_Planes]; Total time; " + stopwatch);
+        for (TarifaRPC t : list) {
+            System.out.println(t.toString());
         }
     }
 
@@ -230,25 +209,4 @@ public class MyMovilityRPCClientTest extends SetUpBase {
         List<ProcessorRegister> lis_t = ServicesFactory_Callers.fetchProcessorRegistersFromServer(null);
         Log.debug("" + lis_t.size());
     }
-
-
-    /*public class BoomerangObject implements Callable<BoomerangObject> {
-
-        private Properties someData;
-        private InetAddress someOtherData;
-
-        public BoomerangObject call() throws Exception {
-            someData = System.getProperties();
-            someOtherData = InetAddress.getLocalHost();
-            return this;
-        }
-
-        public Properties getSomeData() {
-            return someData;
-        }
-
-        public InetAddress getSomeOtherData() {
-            return someOtherData;
-        }
-    }*/
 }

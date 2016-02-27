@@ -54,4 +54,12 @@ public class CoberturaRPC {
     /*public Map<String, DynamicDataRPC> getDataDynamic() {
         return dataDynamic;
     }*/
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("CoberturaRPC{").append("id=").append( id).append(", idProduct=").append( idProduct).append(", idPlan=").append( idPlan).append(", name='").append( name).append( '\'').append(", isMandatory=").append( isMandatory).append(", isLeading=").append( isLeading).append(", dataDynamic:\n{");
+        for (Map.Entry<String, DynamicDataRPC> i: dataDynamic.entrySet()) out.append(i.getValue().toString());
+        out.append("}\n}");
+        return out.toString();
+    }
 }

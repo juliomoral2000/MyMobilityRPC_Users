@@ -32,4 +32,16 @@ public class TRDataRPC {
     public TRDataRPC[] getTrsArrParent() {
         return trsArrParent;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("TRDataRPC{").append("input='").append( input).append( '\'').append(", value=").append( value).append(", display='").append( display).append( '\'');
+        if(trsArrParent !=null && trsArrParent.length > 0){
+            out.append(", trsArrParent:\n{");
+            for (TRDataRPC j : trsArrParent) out.append(j.toString()).append("\n");
+            out.append("}\n");
+        }
+        out.append("}");
+        return out.toString();
+    }
 }

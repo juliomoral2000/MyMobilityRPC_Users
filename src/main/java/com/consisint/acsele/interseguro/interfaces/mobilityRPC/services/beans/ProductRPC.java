@@ -44,4 +44,12 @@ public class ProductRPC {
     public Map<String, DynamicDataRPC> getDataDynamic() {
         return dataDynamic;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("ProductRPC{").append("id=").append( id).append(", name='").append( name).append( '\'').append(", dataDynamic:\n{");
+        for (Map.Entry<String, DynamicDataRPC> i: dataDynamic.entrySet()) out.append(i.getValue().toString());
+        out.append("}\n}");
+        return out.toString();
+    }
 }

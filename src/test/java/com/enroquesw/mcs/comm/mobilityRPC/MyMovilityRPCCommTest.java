@@ -1,6 +1,7 @@
 package com.enroquesw.mcs.comm.mobilityRPC;
 
 import com.enroquesw.mcs.comm.mobilityRPC.server.MyMovilityRPCCommRunner;
+import com.enroquesw.mcs.comm.mobilityRPC.util.testRunner.MyTestRunner;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,6 +17,7 @@ public class MyMovilityRPCCommTest extends SetUpBase {
     @Before
     public void setUp() throws Exception {
         super.setUp();
+        super.setServiceFactoryRegister();
     }
 
     @After
@@ -25,11 +27,14 @@ public class MyMovilityRPCCommTest extends SetUpBase {
 
     @Test
     public void testMain() throws Exception {
-        /*Thread t = Thread.currentThread();
-        MyMovilityRPCCommRunner thread = MyMovilityRPCCommRunner.startMyMovilityRPCCommRunner(hostIp, hostPort, mapClients, isDebugEnabled, serverSystemName);
+        Thread t = Thread.currentThread();
+        /*MyMovilityRPCCommRunner thread = MyMovilityRPCCommRunner.startMyMovilityRPCCommRunner(hostIp, hostPort, mapClients, isDebugEnabled, serverSystemName);*/
+        MyMovilityRPCCommRunner thread = MyMovilityRPCCommRunner.startMyMovilityRPCCommRunner(hostIp, hostPort, mapClients, isDebugEnabled, serverSystemName, processorRegisters, callerRegisters);
         log.log(Level.INFO, "Espero por la finalizacion del Hilo "+thread.getName());
+        MyTestRunner myTestRunner = new MyTestRunner();
+        myTestRunner.start();
         thread.join();
-        System.out.println("[" + t.getName() + "] All threads have finished.");*/
+        System.out.println("[" + t.getName() + "] All threads have finished.");
     }
 
 

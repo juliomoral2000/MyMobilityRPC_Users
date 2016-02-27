@@ -27,4 +27,12 @@ public class DynamicDCORPC {
     public DynamicDataRPC pullDynamicDataRCP(String propertyName) {
         return mapDynamicData.get(propertyName);
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("DynamicDCORPC{").append("id=").append( id).append(", mapDynamicData:\n{");
+        for (Map.Entry<String, DynamicDataRPC> i: mapDynamicData.entrySet()) out.append(i.getValue().toString());
+        out.append("}\n}");
+        return out.toString();
+    }
 }
