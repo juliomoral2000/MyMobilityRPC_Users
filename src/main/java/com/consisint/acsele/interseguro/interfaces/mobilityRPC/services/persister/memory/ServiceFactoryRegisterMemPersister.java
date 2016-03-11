@@ -1,11 +1,12 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.memory;
 
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.ExigenciasMedicaRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.ProductRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.PropertyValuesRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Product_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Property_Callers;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ProductParameter;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.PropertyParameter;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Quotation_Callers;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.*;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.ServiceFactoryRegisterPersister;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.CallerRegister;
@@ -43,7 +44,13 @@ public class ServiceFactoryRegisterMemPersister implements ServiceFactoryRegiste
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getPlanes", "Product_Processors", ProductParameter.class, List.class, Product_Callers.GetPlanes.class));
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getCoberturas", "Product_Processors", ProductParameter.class, List.class, Product_Callers.GetCoberturas.class));
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getPeriodosCoberturas", "Product_Processors", ProductParameter.class, List.class, Product_Callers.GetPeriodosCoberturas.class));
-        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getTarifas", "Product_Processors", ProductParameter.class, List.class, Product_Callers.GetTarifas.class));
+        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getTarifas", "Product_Processors", TarifaParameter.class, List.class, Product_Callers.GetTarifas.class));
+        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getEdadActuarial", "Quotation_Processors", ActuarialAgeParameter.class, Integer.class, Quotation_Callers.GetEdadActuarial.class));    //  10/03/2016
+        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getExigenciasMedicas", "Product_Processors", ExigenciasMedicaParameter.class, ExigenciasMedicaRPC.class, Product_Callers.GetExigenciasMedicas.class));    //  10/03/2016
+
+
+
+
 
 
 

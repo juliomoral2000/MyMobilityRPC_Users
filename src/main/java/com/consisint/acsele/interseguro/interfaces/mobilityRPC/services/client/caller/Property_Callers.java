@@ -9,7 +9,7 @@ import com.enroquesw.mcs.comm.mobilityRPC.services.exception.ServiceBaseExceptio
 import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
 
 /**
- * Created by Julio on 03/02/2016.
+ * La clase <code>Property_Callers</code> es el contenedor de callers asociados a los servicios de las propiedades de Acsele.
  */
 public class Property_Callers<P extends ProcessParameter> {
     /**

@@ -1,7 +1,9 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller;
 
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.*;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ExigenciasMedicaParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ProductParameter;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.TarifaParameter;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.enroquesw.mcs.comm.mobilityRPC.services.ServicesBaseExecutor;
 import com.enroquesw.mcs.comm.mobilityRPC.services.callable.CallerOfProcess;
@@ -12,7 +14,7 @@ import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.VoidParameter;
 import java.util.List;
 
 /**
- * Created by Julio on 24/01/2016.
+ * La clase <code>Product_Callers</code> es el contenedor de callers asociados a los servicios del producto.
  */
 public class Product_Callers <P extends ProcessParameter>{
     /**
@@ -44,10 +46,19 @@ public class Product_Callers <P extends ProcessParameter>{
         return ServicesBaseExecutor.executeCalling(GetPeriodosCoberturas.class, parameter, remoteSystemName);
     }
 
-    public static List<TarifaRPC> getTarifas(SystemName remoteSystemName, ProductParameter parameter) {
+    public static List<TarifaRPC> getTarifas(SystemName remoteSystemName, TarifaParameter parameter) {
         try {
             List<TarifaRPC> tarifaRPCs = ServicesBaseExecutor.executeCalling(GetTarifas.class, parameter, remoteSystemName);
             return tarifaRPCs;
+        } catch (ServiceBaseException e) {
+            throw e;
+        }
+    }
+
+    public static ExigenciasMedicaRPC getExigenciasMedicas (SystemName remoteSystemName, ExigenciasMedicaParameter parameter) {
+        try {
+            ExigenciasMedicaRPC exigenciaMedicaRPC = ServicesBaseExecutor.executeCalling(GetExigenciasMedicas.class, parameter, remoteSystemName);
+            return exigenciaMedicaRPC;
         } catch (ServiceBaseException e) {
             throw e;
         }
@@ -90,15 +101,31 @@ public class Product_Callers <P extends ProcessParameter>{
         public GetCoberturas(ProductParameter parameter) throws Exception { super(parameter); }
     }
 
+    /**
+     * La clase <code>GetPeriodosCoberturas</code> es Caller del metodo getPeriodosCoberturas del servidor o Maquina Remota
+     */
     public static class GetPeriodosCoberturas extends CallerOfProcess<GetPeriodosCoberturas, ProductParameter, List<VigenciaRPC>>{
         public GetPeriodosCoberturas(ProductParameter parameter) throws Exception {
             super(parameter);
         }
     }
 
-    public static class GetTarifas extends CallerOfProcess<GetTarifas, ProductParameter, List<TarifaRPC>>{
-        public GetTarifas(ProductParameter parameter) throws Exception {
+    /**
+     * La clase <code>GetTarifas</code> es Caller del metodo getTarifas del servidor o Maquina Remota
+     */
+    public static class GetTarifas extends CallerOfProcess<GetTarifas, TarifaParameter, List<TarifaRPC>>{
+        public GetTarifas(TarifaParameter parameter) throws Exception {
             super(parameter);
         }
     }
+
+    /**
+     * La clase <code>GetExigenciasMedicas</code> es Caller del metodo getExigenciasMedicas del servidor o Maquina Remota
+     */
+    public static class GetExigenciasMedicas extends CallerOfProcess<GetExigenciasMedicas, ExigenciasMedicaParameter, ExigenciasMedicaRPC>{
+        public GetExigenciasMedicas(ExigenciasMedicaParameter parameter) throws Exception {
+            super(parameter);
+        }
+    }
+
 }

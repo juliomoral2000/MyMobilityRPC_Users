@@ -22,6 +22,7 @@
     <orderEntry type="library" name="Maven: com.googlecode.mobilityrpc:mobility-rpc-all:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.sun.istack:annotation:1.6" level="project" />
     <orderEntry type="library" name="Maven: com.googlecode.mobilityrpc:mobility-rpc:sources:1.1.0" level="project" />
+    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.1" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.1" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.guava:guava:19.0" level="project" />
   </component>

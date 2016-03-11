@@ -1,5 +1,6 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans;
 
+import java.util.Arrays;
 import java.util.Hashtable;
 import java.util.Map;
 
@@ -48,7 +49,8 @@ public class ProductRPC {
     @Override
     public String toString() {
         StringBuilder out = new StringBuilder("ProductRPC{").append("id=").append( id).append(", name='").append( name).append( '\'').append(", dataDynamic:\n{");
-        for (Map.Entry<String, DynamicDataRPC> i: dataDynamic.entrySet()) out.append(i.getValue().toString());
+        String s = Arrays.toString(dataDynamic.values().toArray()).replaceAll("[\\[\\]]", "");
+        out.append(s);
         out.append("}\n}");
         return out.toString();
     }
