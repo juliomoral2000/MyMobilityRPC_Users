@@ -38,16 +38,17 @@ public class MyTestMethod extends TestRunnerJC{
         //test_GetProducts();
         //test_boomerang();
         Stopwatch stopwatch = Stopwatch.createStarted();
+        //test_ServicesFactoryProccesor();
 
-        //test_EdadActuarial();
         //test_StressTestingGetProducts();
-        test_GetProducts();
+        //test_GetProducts();
         //int i = 1;
         /*************************************************************************/
         /*test_GetPropertyRPC_Dependencies("CodDepartamento", false, false, "Parent", i++);
         test_GetPropertyRPC_Dependencies("CodDepartamento", true, false, "Parent", i++);
         test_GetPropertyRPC_Dependencies("CodDepartamento", true, true, "Parent", i++);*/
         /*************************************************************************/
+
         /*test_GetPropertyRPC_Dependencies("CodProvincia", false, false, "Parent", i++);
         test_GetPropertyRPC_Dependencies("CodProvincia", true, false, "Parent", i++);
         test_GetPropertyRPC_Dependencies("CodProvincia", true, true, "Parent", i++);*/
@@ -56,12 +57,33 @@ public class MyTestMethod extends TestRunnerJC{
         test_GetPropertyRPC_Dependencies("CodDistrito", true, false, "Parent", i++);
         test_GetPropertyRPC_Dependencies("CodDistrito", true, true, "Parent", i++);*/
         /*************************************************************************/
-
+        //test_EdadActuarial();
+        /*************************************************************************/
+        /*************************************************************************/
+        test_CumulusTercero();
         /*************************************************************************/
         stopwatch.stop(); // optional
         stopwatch.elapsed(TimeUnit.MILLISECONDS);
         System.out.println("[testMain] Total time; " + stopwatch);
         //log.log(Level.INFO, "Parate Aqui");
+    }
+
+    private void test_CumulusTercero() {
+        try {
+            Stopwatch t = Stopwatch.createStarted();
+            long idTercero = 0;
+            long idProducto = 0;
+            long idMoneda=0;
+
+            CumulusTerceroRPC ctRPC = Quotation_Callers.getCumulusTercero(SystemName.ACSELE, new CumulusTerceroParameter(idTercero, idProducto, idMoneda));
+            t.stop(); // optional
+            t.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[test_CumulusTercero]; " + ctRPC.toString());
+            System.out.println("[test_CumulusTercero]; Total time; " + t);
+            t.reset(); t.start();
+        }catch (Exception e){
+            Log.debug("ver ", e);
+        }
     }
 
     private void test_EdadActuarial() {
@@ -170,17 +192,18 @@ public class MyTestMethod extends TestRunnerJC{
             System.out.println("[test_GetProducts]; Total time; " + t);
             t.reset(); t.start();
             for (ProductRPC product : products) {
-                //test_GetProduct(product);
-                //test_PlanesFinanciamiento(product);
-                //test_Planes(product);
+                test_GetProduct(product);
+                test_PlanesFinanciamiento(product);
+                test_Planes(product);
+                test_Coberturas(product);
+                test_PeriodosCoberturas(product);
+                test_Tarifas(product);
                 test_ExigenciasMedicas(product);
-                //if(product.getId()==49183) test_Tarifas(product);
+                //if(product.getId()==49183)
                 //System.out.println("[test_GetProducts] " + product.getName());
-                //test_Coberturas(product);
-                //test_PeriodosCoberturas(product);
             }
             t.stop(); // optional
-            //t.elapsed(TimeUnit.MILLISECONDS);
+            t.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("[test_GetProducts]; Total time; " + t);
         }catch (Exception e){
             Log.debug("ver ", e);
@@ -241,9 +264,12 @@ public class MyTestMethod extends TestRunnerJC{
     }
 
     private void test_ServicesFactoryProccesor() throws Exception {
-        List<CallerRegister> list = ServicesFactory_Callers.fetchCallerRegistersFromServer(null);
-        Log.debug("" + list.size());
-        List<ProcessorRegister> lis_t = ServicesFactory_Callers.fetchProcessorRegistersFromServer(null);
-        Log.debug("" + lis_t.size());
+        for (CallerRegister register : ServicesFactory_Callers.fetchCallerRegistersFromServer(SystemName.ACSELE)) {
+            Log.debug("******** CallerRegister :    ****************\n".concat(register.toString()));
+        }
+        for (ProcessorRegister register : ServicesFactory_Callers.fetchProcessorRegistersFromServer(SystemName.ACSELE)) {
+            Log.debug("******** ProcessorRegister : ****************\n".concat(register.toString()));
+        }
     }
+
 }

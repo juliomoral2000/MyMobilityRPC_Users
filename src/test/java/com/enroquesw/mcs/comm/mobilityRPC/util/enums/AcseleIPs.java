@@ -4,7 +4,7 @@ package com.enroquesw.mcs.comm.mobilityRPC.util.enums;
  * <code>AcseleIPs</code> enumera las ips opcionales segun el contexto donde se ejecute las pruebas
  */
 public enum AcseleIPs {
-    LOCAL("127.0.0.1"), DESA("130.30.11.82");
+    LOCAL("127.0.0.1"), DESA("130.30.11.9");
     String ip;
 
     AcseleIPs(String ip) {

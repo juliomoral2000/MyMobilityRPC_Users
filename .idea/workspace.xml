@@ -2,21 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="e8234e39-a108-4592-90c0-d33145302e2a" name="Default" comment="El otro Proyecto" />
-    <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Servicios : Tarifas sin Terminar. Respaldo el Disco esta lento. Adicional se agrego en el pom la opcion de agregar al jar los fuentes de dos clases de pruebas. Agregue la dependencia al Guava como debe ser :D. Agrega la clase base de seteo de las ip en las pruebas y una super clase para las pruebas.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ExigenciasMedicaParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ExigenciasMedicaRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/RenglonExigenciasMedicaRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java" />
+    <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Servicios : Listos los servicios de : Tarifas, Exigencias medicas y calcular Edad Actuarial. Respaldo el Disco esta lento. Adicional se agrego en el pom dependencia con Appache common para el manejo de las clase FastArrayList y FastHashMap.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CumulusTerceroRPC.java" />
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\.idea\libraries\Maven__com_googlecode_mobilityrpc_mobility_rpc_all_1_1_02.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" afterPath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_mobilityrpc_mobility_rpc_all_1_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_mobilityrpc_mobility_rpc_all_1_1_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobilityRPC_Users.iml" afterPath="$PROJECT_DIR$/MobilityRPC_Users.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" afterPath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,89 +38,127 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyTestRunner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunner.java">
+      <file leaf-file-name="Quotation_Callers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyTestMethod.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13592233">
-              <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-              <folding>
-                <element signature="method#run#0;class#MyTestMethod#0" expanded="true" />
-                <element signature="method#testMain#0;class#MyTestMethod#0" expanded="true" />
-                <element signature="e#1695#1718#0" expanded="true" />
-                <element signature="method#test_EdadActuarial#0;class#MyTestMethod#0" expanded="true" />
-                <element signature="e#3422#3426#0" expanded="true" />
-                <element signature="e#3428#3429#0" expanded="true" />
-                <element signature="e#3431#3433#0" expanded="true" />
-                <element signature="e#3907#3913#0" expanded="true" />
-                <element signature="e#4576#4582#0" expanded="true" />
-                <element signature="e#5285#5291#0" expanded="true" />
-                <element signature="e#5966#5972#0" expanded="true" />
-                <element signature="e#6233#6234#0" expanded="true" />
-                <element signature="e#7696#7701#0" expanded="true" />
-                <element signature="e#7703#7710#0" expanded="true" />
-                <element signature="e#7822#7828#0" expanded="true" />
-                <element signature="e#7888#7894#0" expanded="true" />
-                <element signature="method#test_GetProducts#0;class#MyTestMethod#0" expanded="true" />
-                <element signature="e#8672#8699#0" expanded="true" />
-                <element signature="e#8859#8910#0" expanded="true" />
-                <element signature="e#9308#9314#0" expanded="true" />
-                <element signature="e#9472#9476#0" expanded="true" />
-                <element signature="e#9496#9497#0" expanded="true" />
-                <element signature="method#test_Tarifas#0;class#MyTestMethod#0" expanded="true" />
-                <element signature="e#10295#10299#0" expanded="true" />
-                <element signature="e#10319#10320#0" expanded="true" />
-                <element signature="e#10402#10405#0" expanded="true" />
-                <element signature="e#10407#10408#0" expanded="true" />
-                <element signature="e#12157#12163#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CallerOfProcess.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-              <folding>
-                <element signature="method#getInstance#0;class#CallerOfProcess#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductRPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
-              <folding>
-                <element signature="e#1645#1655#0" expanded="true" />
-                <element signature="e#1657#1659#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyMovilityRPCCommTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="false" />
-                <element signature="method#setUp#0;class#MyMovilityRPCCommTest#0" expanded="false" />
-                <element signature="method#tearDown#0;class#MyMovilityRPCCommTest#0" expanded="false" />
+                <element signature="docComment;class#Quotation_Callers#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyTestMethod.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <folding>
+                <element signature="method#testMain#0;class#MyTestMethod#0" expanded="true" />
+                <element signature="e#1694#1728#0" expanded="true" />
+                <element signature="e#9935#9963#0" expanded="true" />
+                <element signature="method#test_ServicesFactoryProccesor#0;class#MyTestMethod#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5409091">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+              <folding>
+                <element signature="n#properties#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#goals#0;n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+                <element signature="n#includes#0;n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AcseleIPs.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+              <folding>
+                <element signature="docComment;class#AcseleIPs#0" expanded="false" />
+                <element signature="e#274#275#0" expanded="false" />
+                <element signature="e#302#303#0" expanded="false" />
+                <element signature="e#331#332#0" expanded="false" />
+                <element signature="e#356#357#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceFactoryRegisterPersister.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="62" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="docComment;class#ServiceFactoryRegisterPersister#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceFactoryRegisterMemPersister.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="50" column="132" selection-start-line="50" selection-start-column="132" selection-end-line="50" selection-end-column="132" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="docComment;class#ServiceFactoryRegisterMemPersister#0" expanded="false" />
+                <element signature="method#getProcessorRegisters#0;class#ServiceFactoryRegisterMemPersister#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExigenciasMedicaParameter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ExigenciasMedicaParameter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="docComment;class#ExigenciasMedicaParameter#0" expanded="false" />
+                <element signature="e#877#878#0" expanded="false" />
+                <element signature="e#921#922#0" expanded="false" />
+                <element signature="method#ExigenciasMedicaParameter#1;class#ExigenciasMedicaParameter#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CumulusTerceroParameter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+              <folding>
+                <element signature="docComment;class#CumulusTerceroParameter#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -135,17 +168,34 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <caret line="68" column="7" selection-start-line="66" selection-start-column="4" selection-end-line="68" selection-end-column="7" />
               <folding>
-                <element signature="docComment;class#Product_Callers#0" expanded="true" />
-                <element signature="method#getTarifas#0;class#Product_Callers#0" expanded="true" />
-                <element signature="docComment;class#GetProducts#0;class#Product_Callers#0" expanded="true" />
-                <element signature="docComment;class#GetPeriodosCoberturas#0;class#Product_Callers#0" expanded="true" />
-                <element signature="docComment;class#GetTarifas#0;class#Product_Callers#0" expanded="true" />
-                <element signature="class#GetTarifas#0;class#Product_Callers#0" expanded="true" />
-                <element signature="docComment;class#GetExigenciasMedicas#0;class#Product_Callers#0" expanded="true" />
-                <element signature="class#GetExigenciasMedicas#0;class#Product_Callers#0" expanded="true" />
-                <element signature="method#GetExigenciasMedicas#0;class#GetExigenciasMedicas#0;class#Product_Callers#0" expanded="true" />
+                <element signature="imports" expanded="false" />
+                <element signature="method#getProduct#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#getPlanesFinanciamiento#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#getPlanes#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#getCoberturas#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#getPeriodosCoberturas#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#getTarifas#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#getExigenciasMedicas#0;class#Product_Callers#0" expanded="false" />
+                <element signature="docComment;class#GetProducts#0;class#Product_Callers#0" expanded="false" />
+                <element signature="class#GetProducts#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#GetProducts#0;class#GetProducts#0;class#Product_Callers#0" expanded="false" />
+                <element signature="docComment;class#GetProduct#0;class#Product_Callers#0" expanded="false" />
+                <element signature="class#GetProduct#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#GetProduct#0;class#GetProduct#0;class#Product_Callers#0" expanded="false" />
+                <element signature="docComment;class#GetPlanesFinanciamiento#0;class#Product_Callers#0" expanded="false" />
+                <element signature="class#GetPlanesFinanciamiento#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#GetPlanesFinanciamiento#0;class#GetPlanesFinanciamiento#0;class#Product_Callers#0" expanded="false" />
+                <element signature="docComment;class#GetPlanes#0;class#Product_Callers#0" expanded="false" />
+                <element signature="class#GetPlanes#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#GetPlanes#0;class#GetPlanes#0;class#Product_Callers#0" expanded="false" />
+                <element signature="docComment;class#GetCoberturas#0;class#Product_Callers#0" expanded="false" />
+                <element signature="class#GetCoberturas#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#GetCoberturas#0;class#GetCoberturas#0;class#Product_Callers#0" expanded="false" />
+                <element signature="class#GetPeriodosCoberturas#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#GetPeriodosCoberturas#0;class#GetPeriodosCoberturas#0;class#Product_Callers#0" expanded="false" />
+                <element signature="method#GetTarifas#0;class#GetTarifas#0;class#Product_Callers#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -155,8 +205,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/VigenciaRPC.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="17" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="17" />
+              <caret line="32" column="5" selection-start-line="29" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
               <folding>
+                <element signature="docComment;class#VigenciaRPC#0" expanded="false" />
                 <element signature="method#VigenciaRPC#0;class#VigenciaRPC#0" expanded="false" />
                 <element signature="e#556#557#0" expanded="false" />
                 <element signature="e#589#590#0" expanded="false" />
@@ -169,195 +220,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExigenciasMedicaRPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ExigenciasMedicaRPC.java">
+      <file leaf-file-name="CumulusTerceroRPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CumulusTerceroRPC.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+              <caret line="35" column="235" selection-start-line="35" selection-start-column="235" selection-end-line="35" selection-end-column="235" />
               <folding>
-                <element signature="method#ExigenciasMedicaRPC#0;class#ExigenciasMedicaRPC#0" expanded="false" />
-                <element signature="e#752#753#0" expanded="false" />
-                <element signature="e#785#786#0" expanded="false" />
-                <element signature="e#849#850#0" expanded="false" />
-                <element signature="e#883#884#0" expanded="false" />
+                <element signature="docComment;class#CumulusTerceroRPC#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RenglonExigenciasMedicaRPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/RenglonExigenciasMedicaRPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="docComment;class#RenglonExigenciasMedicaRPC#0" expanded="false" />
-                <element signature="method#RenglonExigenciasMedicaRPC#0;class#RenglonExigenciasMedicaRPC#0" expanded="false" />
-                <element signature="e#1189#1190#0" expanded="false" />
-                <element signature="e#1214#1215#0" expanded="false" />
-                <element signature="e#1247#1248#0" expanded="false" />
-                <element signature="e#1276#1277#0" expanded="false" />
-                <element signature="e#1310#1311#0" expanded="false" />
-                <element signature="e#1340#1341#0" expanded="false" />
-                <element signature="e#1371#1372#0" expanded="false" />
-                <element signature="e#1401#1402#0" expanded="false" />
-                <element signature="e#1432#1433#0" expanded="false" />
-                <element signature="e#1462#1463#0" expanded="false" />
-                <element signature="e#1499#1500#0" expanded="false" />
-                <element signature="e#1532#1533#0" expanded="false" />
-                <element signature="e#1569#1570#0" expanded="false" />
-                <element signature="e#1602#1603#0" expanded="false" />
-                <element signature="e#1635#1636#0" expanded="false" />
-                <element signature="e#1666#1667#0" expanded="false" />
-                <element signature="e#1699#1700#0" expanded="false" />
-                <element signature="e#1728#1729#0" expanded="false" />
-                <element signature="e#1762#1763#0" expanded="false" />
-                <element signature="e#1794#1795#0" expanded="false" />
-                <element signature="e#1823#1824#0" expanded="false" />
-                <element signature="e#1850#1851#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DynamicDCORPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/DynamicDCORPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="docComment;class#DynamicDCORPC#0" expanded="false" />
-                <element signature="method#DynamicDCORPC#0;class#DynamicDCORPC#0" expanded="false" />
-                <element signature="e#656#657#0" expanded="false" />
-                <element signature="e#681#682#0" expanded="false" />
-                <element signature="e#743#744#0" expanded="false" />
-                <element signature="e#780#781#0" expanded="false" />
-                <element signature="e#849#850#0" expanded="false" />
-                <element signature="e#904#905#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DynamicDataRPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/DynamicDataRPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="docComment;class#DynamicDataRPC#0" expanded="false" />
-                <element signature="method#DynamicDataRPC#0;class#DynamicDataRPC#0" expanded="false" />
-                <element signature="e#567#568#0" expanded="false" />
-                <element signature="e#602#603#0" expanded="false" />
-                <element signature="e#634#635#0" expanded="false" />
-                <element signature="e#662#663#0" expanded="false" />
-                <element signature="e#694#695#0" expanded="false" />
-                <element signature="e#722#723#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TarifaRPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/TarifaRPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="5" selection-start-line="41" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="method#TarifaRPC#0;class#TarifaRPC#0" expanded="false" />
-                <element signature="e#1099#1100#0" expanded="false" />
-                <element signature="e#1132#1133#0" expanded="false" />
-                <element signature="e#1167#1168#0" expanded="false" />
-                <element signature="e#1200#1201#0" expanded="false" />
-                <element signature="e#1236#1237#0" expanded="false" />
-                <element signature="e#1270#1271#0" expanded="false" />
-                <element signature="e#1324#1325#0" expanded="false" />
-                <element signature="e#1358#1359#0" expanded="false" />
-                <element signature="method#toString#0;class#TarifaRPC#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RenglonTarifaRPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/RenglonTarifaRPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Property_Callers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="124" selection-start-line="11" selection-start-column="124" selection-end-line="11" selection-end-column="124" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="docComment;method#getPropertyValues#0;class#Property_Callers#0" expanded="false" />
-                <element signature="method#getPropertyValues#0;class#Property_Callers#0" expanded="false" />
-                <element signature="docComment;class#GetPropertyValues#0;class#Property_Callers#0" expanded="false" />
-                <element signature="class#GetPropertyValues#0;class#Property_Callers#0" expanded="false" />
-                <element signature="method#GetPropertyValues#0;class#GetPropertyValues#0;class#Property_Callers#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActuarialAgeParameter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#ActuarialAgeParameter#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TarifaParameter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="84" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="84" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="docComment;method#TarifaParameter#0;class#TarifaParameter#0" expanded="false" />
-                <element signature="method#TarifaParameter#1;class#TarifaParameter#0" expanded="false" />
-                <element signature="method#TarifaParameter#2;class#TarifaParameter#0" expanded="false" />
-                <element signature="e#2300#2301#0" expanded="false" />
-                <element signature="e#2344#2345#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductParameter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="docComment;class#ProductParameter#0" expanded="false" />
-                <element signature="e#412#413#0" expanded="false" />
-                <element signature="e#456#457#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Quotation_Callers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -396,7 +266,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/server/processor/ExampleProcessors.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/server/processor/Example_Processors.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_InvocarRemoto.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCServerRunnerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCServerTest.java" />
         <option value="$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java" />
@@ -418,14 +287,17 @@
         <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ExigenciasMedicaRPC.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/RenglonExigenciasMedicaRPC.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CumulusTerceroRPC.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" />
       </list>
     </option>
   </component>
@@ -510,7 +382,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -521,71 +393,7 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: commons-collections:commons-collections:3.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commons-collections-3.1.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="collections" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Maven: commons-collections:commons-collections:3.1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commons-collections-3.1.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MobilityRPC_Users" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
@@ -923,7 +731,7 @@
       <option name="MAIN_CLASS_NAME" value="com.enroquesw.mcs.comm.mobilityRPC.MyMovilityRPCCommTest" />
       <option name="METHOD_NAME" value="testMain" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea -Dacsele.ip=&quot;LOCAL&quot;" />
+      <option name="VM_PARAMETERS" value="-ea -Dacsele.ip=&quot;DESA&quot;" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
@@ -1009,7 +817,10 @@
       <workItem from="1457317332556" duration="972000" />
       <workItem from="1457361978956" duration="239000" />
       <workItem from="1457621006227" duration="14876000" />
-      <workItem from="1457666119103" duration="6016000" />
+      <workItem from="1457666119103" duration="6446000" />
+      <workItem from="1457920056507" duration="3314000" />
+      <workItem from="1457971929312" duration="11865000" />
+      <workItem from="1458054575440" duration="4608000" />
     </task>
     <task id="LOCAL-00001" summary="nnn">
       <created>1453685565282</created>
@@ -1083,15 +894,21 @@
       <option name="project" value="LOCAL" />
       <updated>1455866771877</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Servicios : Listos los servicios de : Tarifas, Exigencias medicas y calcular Edad Actuarial. Respaldo el Disco esta lento. Adicional se agrego en el pom dependencia con Appache common para el manejo de las clase FastArrayList y FastHashMap.">
+      <created>1457673672500</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1457673672500</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="295035000" />
+    <option name="totallyTimeSpent" value="315252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1103,19 +920,19 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52047783" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5784983" sideWeight="0.50537056" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54266214" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.221843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.54266214" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34493193" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21785174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5784983" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5767918" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" x="92" y="92" width="1182" height="544" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.221843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1145,7 +962,8 @@
     <MESSAGE value="Servicios : Plan, Plan de Financiamiento, Coberturas, Vigencia" />
     <MESSAGE value="Servicios : Tarifas sin Terminar. Respaldo el Disco esta lento" />
     <MESSAGE value="Servicios : Tarifas sin Terminar. Respaldo el Disco esta lento. Adicional se agrego en el pom la opcion de agregar al jar los fuentes de dos clases de pruebas. Agregue la dependencia al Guava como debe ser :D. Agrega la clase base de seteo de las ip en las pruebas y una super clase para las pruebas." />
-    <option name="LAST_COMMIT_MESSAGE" value="Servicios : Tarifas sin Terminar. Respaldo el Disco esta lento. Adicional se agrego en el pom la opcion de agregar al jar los fuentes de dos clases de pruebas. Agregue la dependencia al Guava como debe ser :D. Agrega la clase base de seteo de las ip en las pruebas y una super clase para las pruebas." />
+    <MESSAGE value="Servicios : Listos los servicios de : Tarifas, Exigencias medicas y calcular Edad Actuarial. Respaldo el Disco esta lento. Adicional se agrego en el pom dependencia con Appache common para el manejo de las clase FastArrayList y FastHashMap." />
+    <option name="LAST_COMMIT_MESSAGE" value="Servicios : Listos los servicios de : Tarifas, Exigencias medicas y calcular Edad Actuarial. Respaldo el Disco esta lento. Adicional se agrego en el pom dependencia con Appache common para el manejo de las clase FastArrayList y FastHashMap." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1317,26 +1135,20 @@
           <properties />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="NONE" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>205</line>
+          <line>228</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <dependency id="0" />
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>62</line>
+          <line>66</line>
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java</url>
           <line>50</line>
           <log-expression disabled="true" expression="&quot;idProducto: &quot;+parameter.idProducto" language="JAVA" custom="" />
@@ -1362,9 +1174,9 @@
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>212</line>
+          <line>235</line>
           <properties />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
@@ -1374,33 +1186,33 @@
           <properties />
           <option name="timeStamp" value="62" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>203</line>
+          <line>226</line>
           <properties />
           <option name="timeStamp" value="63" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>207</line>
+          <line>230</line>
           <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>71</line>
+          <line>93</line>
           <properties />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java</url>
           <line>16</line>
           <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>74</line>
+          <line>96</line>
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
@@ -1411,10 +1223,10 @@
           <properties />
           <option name="timeStamp" value="68" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <condition expression="!exigRPC.getRenglonList().isEmpty()" language="JAVA" custom="" />
+        <line-breakpoint suspend="NONE" type="java-line">
+          <condition disabled="true" expression="!exigRPC.getRenglonList().isEmpty()" language="JAVA" custom="" />
           <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>199</line>
+          <line>222</line>
           <properties />
           <option name="timeStamp" value="69" />
         </line-breakpoint>
@@ -1424,11 +1236,29 @@
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunner.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
+          <line>191</line>
+          <properties />
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
+          <line>206</line>
+          <properties />
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="73" />
+      <option name="time" value="76" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1437,48 +1267,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="31" selection-start-line="112" selection-start-column="31" selection-end-line="112" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/jre/lib/rt.jar!/com/sun/istack/internal/Nullable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/impl/caller/ServicesFactory_Callers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="78" selection-start-line="53" selection-start-column="78" selection-end-line="53" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PlanFinanciamientoRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="257" selection-start-line="49" selection-start-column="257" selection-end-line="49" selection-end-column="257" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PlanRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PropertyValuesRPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1565,31 +1353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="class#Impl#0;class#ServiceFactoryRegisterPersister#0" expanded="false" />
-            <element signature="method#getInstance#0;class#Impl#0;class#ServiceFactoryRegisterPersister#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/mobilityrpc/mobility-rpc-all/1.1.0/mobility-rpc-all-1.1.0.jar!/com/googlecode/mobilityrpc/session/impl/MobilitySessionImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.59016395">
@@ -1622,20 +1385,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.2725528">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/SetUpBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/interfaces/TestRunnerJC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14697406">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1673,21 +1422,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="84" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="false" />
+            <element signature="docComment;class#TarifaParameter#0" expanded="false" />
             <element signature="docComment;method#TarifaParameter#0;class#TarifaParameter#0" expanded="false" />
+            <element signature="method#TarifaParameter#0;class#TarifaParameter#0" expanded="false" />
             <element signature="method#TarifaParameter#1;class#TarifaParameter#0" expanded="false" />
             <element signature="method#TarifaParameter#2;class#TarifaParameter#0" expanded="false" />
             <element signature="e#2300#2301#0" expanded="false" />
@@ -1703,51 +1446,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#setUp#0;class#MyMovilityRPCCommTest#0" expanded="false" />
-            <element signature="method#tearDown#0;class#MyMovilityRPCCommTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/VigenciaRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="17" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="method#VigenciaRPC#0;class#VigenciaRPC#0" expanded="false" />
-            <element signature="e#556#557#0" expanded="false" />
-            <element signature="e#589#590#0" expanded="false" />
-            <element signature="e#622#623#0" expanded="false" />
-            <element signature="e#651#652#0" expanded="false" />
-            <element signature="e#683#684#0" expanded="false" />
-            <element signature="e#711#712#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/TarifaRPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="51" column="5" selection-start-line="41" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#TarifaRPC#0;class#TarifaRPC#0" expanded="false" />
-            <element signature="e#1099#1100#0" expanded="false" />
-            <element signature="e#1132#1133#0" expanded="false" />
-            <element signature="e#1167#1168#0" expanded="false" />
-            <element signature="e#1200#1201#0" expanded="false" />
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1270#1271#0" expanded="false" />
-            <element signature="e#1324#1325#0" expanded="false" />
-            <element signature="e#1358#1359#0" expanded="false" />
-            <element signature="method#toString#0;class#TarifaRPC#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1755,34 +1457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="docComment;class#DynamicDataRPC#0" expanded="false" />
-            <element signature="method#DynamicDataRPC#0;class#DynamicDataRPC#0" expanded="false" />
-            <element signature="e#567#568#0" expanded="false" />
-            <element signature="e#602#603#0" expanded="false" />
-            <element signature="e#634#635#0" expanded="false" />
-            <element signature="e#662#663#0" expanded="false" />
-            <element signature="e#694#695#0" expanded="false" />
-            <element signature="e#722#723#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/DynamicDCORPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#DynamicDCORPC#0" expanded="false" />
-            <element signature="method#DynamicDCORPC#0;class#DynamicDCORPC#0" expanded="false" />
-            <element signature="e#656#657#0" expanded="false" />
-            <element signature="e#681#682#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#780#781#0" expanded="false" />
-            <element signature="e#849#850#0" expanded="false" />
-            <element signature="e#904#905#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1790,7 +1464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1798,32 +1471,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="docComment;class#RenglonExigenciasMedicaRPC#0" expanded="false" />
-            <element signature="method#RenglonExigenciasMedicaRPC#0;class#RenglonExigenciasMedicaRPC#0" expanded="false" />
-            <element signature="e#1189#1190#0" expanded="false" />
-            <element signature="e#1214#1215#0" expanded="false" />
-            <element signature="e#1247#1248#0" expanded="false" />
-            <element signature="e#1276#1277#0" expanded="false" />
-            <element signature="e#1310#1311#0" expanded="false" />
-            <element signature="e#1340#1341#0" expanded="false" />
-            <element signature="e#1371#1372#0" expanded="false" />
-            <element signature="e#1401#1402#0" expanded="false" />
-            <element signature="e#1432#1433#0" expanded="false" />
-            <element signature="e#1462#1463#0" expanded="false" />
-            <element signature="e#1499#1500#0" expanded="false" />
-            <element signature="e#1532#1533#0" expanded="false" />
-            <element signature="e#1569#1570#0" expanded="false" />
-            <element signature="e#1602#1603#0" expanded="false" />
-            <element signature="e#1635#1636#0" expanded="false" />
-            <element signature="e#1666#1667#0" expanded="false" />
-            <element signature="e#1699#1700#0" expanded="false" />
-            <element signature="e#1728#1729#0" expanded="false" />
-            <element signature="e#1762#1763#0" expanded="false" />
-            <element signature="e#1794#1795#0" expanded="false" />
-            <element signature="e#1823#1824#0" expanded="false" />
-            <element signature="e#1850#1851#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1831,40 +1478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding>
-            <element signature="method#ExigenciasMedicaRPC#0;class#ExigenciasMedicaRPC#0" expanded="false" />
-            <element signature="e#752#753#0" expanded="false" />
-            <element signature="e#785#786#0" expanded="false" />
-            <element signature="e#849#850#0" expanded="false" />
-            <element signature="e#883#884#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#ActuarialAgeParameter#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75609756">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-          <folding>
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1872,7 +1485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.2592592">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1881,52 +1493,91 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="30" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
           <folding>
-            <element signature="e#1645#1655#0" expanded="true" />
-            <element signature="e#1657#1659#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#ProductRPC#0" expanded="false" />
+            <element signature="method#ProductRPC#0;class#ProductRPC#0" expanded="false" />
+            <element signature="e#961#962#0" expanded="false" />
+            <element signature="e#986#987#0" expanded="false" />
+            <element signature="e#1020#1021#0" expanded="false" />
+            <element signature="e#1048#1049#0" expanded="false" />
+            <element signature="e#1079#1080#0" expanded="false" />
+            <element signature="e#1106#1107#0" expanded="false" />
+            <element signature="e#1146#1147#0" expanded="false" />
+            <element signature="e#1178#1179#0" expanded="false" />
+            <element signature="e#1322#1323#0" expanded="false" />
+            <element signature="e#1356#1357#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/interfaces/TestRunnerJC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.371951">
-          <caret line="48" column="219" selection-start-line="48" selection-start-column="219" selection-end-line="48" selection-end-column="219" />
-          <folding>
-            <element signature="e#2230#2243#0" expanded="true" />
-            <element signature="e#2245#2265#0" expanded="true" />
-            <element signature="e#3796#3814#0" expanded="true" />
-            <element signature="e#3816#3838#0" expanded="true" />
-            <element signature="e#4023#4045#0" expanded="true" />
-            <element signature="e#4047#4067#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/DynamicDCORPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.33203125">
           <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
           <folding>
-            <element signature="method#getInstance#0;class#CallerOfProcess#0" expanded="true" />
+            <element signature="method#getInstance#0;class#CallerOfProcess#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <caret line="99" column="167" selection-start-line="99" selection-start-column="167" selection-end-line="99" selection-end-column="167" />
           <folding>
-            <element signature="docComment;class#Product_Callers#0" expanded="true" />
-            <element signature="method#getTarifas#0;class#Product_Callers#0" expanded="true" />
-            <element signature="docComment;class#GetProducts#0;class#Product_Callers#0" expanded="true" />
-            <element signature="docComment;class#GetPeriodosCoberturas#0;class#Product_Callers#0" expanded="true" />
-            <element signature="docComment;class#GetTarifas#0;class#Product_Callers#0" expanded="true" />
-            <element signature="class#GetTarifas#0;class#Product_Callers#0" expanded="true" />
-            <element signature="docComment;class#GetExigenciasMedicas#0;class#Product_Callers#0" expanded="true" />
-            <element signature="class#GetExigenciasMedicas#0;class#Product_Callers#0" expanded="true" />
-            <element signature="method#GetExigenciasMedicas#0;class#GetExigenciasMedicas#0;class#Product_Callers#0" expanded="true" />
+            <element signature="method#executeCalling#0;class#ServicesBaseExecutor#0" expanded="false" />
+            <element signature="method#executeCalling#1;class#ServicesBaseExecutor#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/impl/caller/ServicesFactory_Callers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/SetUpBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="49" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/factory/CallerRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="85" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/factory/ProcessorRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1938,39 +1589,185 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#ActuarialAgeParameter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#ServiceFactoryRegisterPersister#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ExigenciasMedicaParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#ExigenciasMedicaParameter#0" expanded="false" />
+            <element signature="e#877#878#0" expanded="false" />
+            <element signature="e#921#922#0" expanded="false" />
+            <element signature="method#ExigenciasMedicaParameter#1;class#ExigenciasMedicaParameter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="7" selection-start-line="66" selection-start-column="4" selection-end-line="68" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#getProduct#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#getPlanesFinanciamiento#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#getPlanes#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#getCoberturas#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#getPeriodosCoberturas#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#getTarifas#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#getExigenciasMedicas#0;class#Product_Callers#0" expanded="false" />
+            <element signature="docComment;class#GetProducts#0;class#Product_Callers#0" expanded="false" />
+            <element signature="class#GetProducts#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#GetProducts#0;class#GetProducts#0;class#Product_Callers#0" expanded="false" />
+            <element signature="docComment;class#GetProduct#0;class#Product_Callers#0" expanded="false" />
+            <element signature="class#GetProduct#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#GetProduct#0;class#GetProduct#0;class#Product_Callers#0" expanded="false" />
+            <element signature="docComment;class#GetPlanesFinanciamiento#0;class#Product_Callers#0" expanded="false" />
+            <element signature="class#GetPlanesFinanciamiento#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#GetPlanesFinanciamiento#0;class#GetPlanesFinanciamiento#0;class#Product_Callers#0" expanded="false" />
+            <element signature="docComment;class#GetPlanes#0;class#Product_Callers#0" expanded="false" />
+            <element signature="class#GetPlanes#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#GetPlanes#0;class#GetPlanes#0;class#Product_Callers#0" expanded="false" />
+            <element signature="docComment;class#GetCoberturas#0;class#Product_Callers#0" expanded="false" />
+            <element signature="class#GetCoberturas#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#GetCoberturas#0;class#GetCoberturas#0;class#Product_Callers#0" expanded="false" />
+            <element signature="class#GetPeriodosCoberturas#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#GetPeriodosCoberturas#0;class#GetPeriodosCoberturas#0;class#Product_Callers#0" expanded="false" />
+            <element signature="method#GetTarifas#0;class#GetTarifas#0;class#Product_Callers#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="132" selection-start-line="50" selection-start-column="132" selection-end-line="50" selection-end-column="132" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#ServiceFactoryRegisterMemPersister#0" expanded="false" />
+            <element signature="method#getProcessorRegisters#0;class#ServiceFactoryRegisterMemPersister#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+          <folding>
+            <element signature="docComment;class#AcseleIPs#0" expanded="false" />
+            <element signature="e#274#275#0" expanded="false" />
+            <element signature="e#302#303#0" expanded="false" />
+            <element signature="e#331#332#0" expanded="false" />
+            <element signature="e#356#357#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/VigenciaRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="5" selection-start-line="29" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="docComment;class#VigenciaRPC#0" expanded="false" />
+            <element signature="method#VigenciaRPC#0;class#VigenciaRPC#0" expanded="false" />
+            <element signature="e#556#557#0" expanded="false" />
+            <element signature="e#589#590#0" expanded="false" />
+            <element signature="e#622#623#0" expanded="false" />
+            <element signature="e#651#652#0" expanded="false" />
+            <element signature="e#683#684#0" expanded="false" />
+            <element signature="e#711#712#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CumulusTerceroRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="235" selection-start-line="35" selection-start-column="235" selection-end-line="35" selection-end-column="235" />
+          <folding>
+            <element signature="docComment;class#CumulusTerceroRPC#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="docComment;class#CumulusTerceroParameter#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#Quotation_Callers#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13592233">
-          <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
           <folding>
-            <element signature="method#run#0;class#MyTestMethod#0" expanded="true" />
             <element signature="method#testMain#0;class#MyTestMethod#0" expanded="true" />
-            <element signature="e#1695#1718#0" expanded="true" />
-            <element signature="method#test_EdadActuarial#0;class#MyTestMethod#0" expanded="true" />
-            <element signature="e#3422#3426#0" expanded="true" />
-            <element signature="e#3428#3429#0" expanded="true" />
-            <element signature="e#3431#3433#0" expanded="true" />
-            <element signature="e#3907#3913#0" expanded="true" />
-            <element signature="e#4576#4582#0" expanded="true" />
-            <element signature="e#5285#5291#0" expanded="true" />
-            <element signature="e#5966#5972#0" expanded="true" />
-            <element signature="e#6233#6234#0" expanded="true" />
-            <element signature="e#7696#7701#0" expanded="true" />
-            <element signature="e#7703#7710#0" expanded="true" />
-            <element signature="e#7822#7828#0" expanded="true" />
-            <element signature="e#7888#7894#0" expanded="true" />
-            <element signature="method#test_GetProducts#0;class#MyTestMethod#0" expanded="true" />
-            <element signature="e#8672#8699#0" expanded="true" />
-            <element signature="e#8859#8910#0" expanded="true" />
-            <element signature="e#9308#9314#0" expanded="true" />
-            <element signature="e#9472#9476#0" expanded="true" />
-            <element signature="e#9496#9497#0" expanded="true" />
-            <element signature="method#test_Tarifas#0;class#MyTestMethod#0" expanded="true" />
-            <element signature="e#10295#10299#0" expanded="true" />
-            <element signature="e#10319#10320#0" expanded="true" />
-            <element signature="e#10402#10405#0" expanded="true" />
-            <element signature="e#10407#10408#0" expanded="true" />
-            <element signature="e#12157#12163#0" expanded="true" />
+            <element signature="e#1694#1728#0" expanded="true" />
+            <element signature="e#9935#9963#0" expanded="true" />
+            <element signature="method#test_ServicesFactoryProccesor#0;class#MyTestMethod#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5409091">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="n#properties#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#goals#0;n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#includes#0;n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -2040,11 +1837,11 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.objenesis:objenesis:1.2</last-edited>
+          <last-edited>Maven: com.googlecode.mobilityrpc:mobility-rpc:all:1.1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.4373149" />
               </list>
             </option>
           </splitter-proportions>

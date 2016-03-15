@@ -1,5 +1,6 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.memory;
 
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.CumulusTerceroRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.ExigenciasMedicaRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.ProductRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.PropertyValuesRPC;
@@ -47,6 +48,8 @@ public class ServiceFactoryRegisterMemPersister implements ServiceFactoryRegiste
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getTarifas", "Product_Processors", TarifaParameter.class, List.class, Product_Callers.GetTarifas.class));
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getEdadActuarial", "Quotation_Processors", ActuarialAgeParameter.class, Integer.class, Quotation_Callers.GetEdadActuarial.class));    //  10/03/2016
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getExigenciasMedicas", "Product_Processors", ExigenciasMedicaParameter.class, ExigenciasMedicaRPC.class, Product_Callers.GetExigenciasMedicas.class));    //  10/03/2016
+        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getCumulusTercero", "Quotation_Processors", CumulusTerceroParameter.class, CumulusTerceroRPC.class, Quotation_Callers.GetCumulusTercero.class)); //14/03/2016
+
 
 
 

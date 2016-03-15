@@ -19,7 +19,6 @@
     <orderEntry type="library" name="Maven: org.objenesis:objenesis:1.2" level="project" />
     <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:2.4.1" level="project" />
     <orderEntry type="library" name="Maven: com.enroquesw.mcs.comm.mobilityRPC:MyMobilityRPC:1.0" level="project" />
-    <orderEntry type="library" name="Maven: com.googlecode.mobilityrpc:mobility-rpc-all:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: com.sun.istack:annotation:1.6" level="project" />
     <orderEntry type="library" name="Maven: com.googlecode.mobilityrpc:mobility-rpc:sources:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.1" level="project" />
