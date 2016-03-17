@@ -3,16 +3,13 @@ package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params;
 import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
 
 /**
- * Created by Julio on 14/03/2016.
+ * La clase <code>CumulusTerceroParameter</code> representa el Parametro de entrada Para el obtener el cumulus del Tercero segun funciones de Acsele.
+ * idTercero          Id del Tercero. (Requerido).
  */
 public class CumulusTerceroParameter implements ProcessParameter {
     public long idTercero;
-    public long idProducto;
-    public long idMoneda;
 
-    public CumulusTerceroParameter(long idTercero, long idProducto, long idMoneda) {
+    public CumulusTerceroParameter(long idTercero) {
         this.idTercero = idTercero;
-        this.idProducto = idProducto;
-        this.idMoneda = idMoneda;
     }
 }

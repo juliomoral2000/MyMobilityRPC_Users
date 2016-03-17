@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by Julio on 24/02/2016.
+ * Mi Metodo de Prueba
  */
 public class MyTestMethod extends TestRunnerJC{
     @Override
@@ -70,17 +70,20 @@ public class MyTestMethod extends TestRunnerJC{
 
     private void test_CumulusTercero() {
         try {
+            long[] lista = new long[]{5811041,5802969,5803002,5803007,5803025,5803034,5802966,5802970,5802985,5802988,5802992,5802994,5803001,5803003,5803005,5803016,5803023,5802964,5802981,5803017,5803027,5803039,5803040,5803041,5803043,5197426,5871655,5839325,5867610,5843375,5855698,5871651,5855696,5855694,5871657,5855484,5843371,5871652,5883762,5827203,5843367,5871650,5843364,5839324,5871843,5839323,5843373,5847404,5855685,5859524,5855687,5843361,5843377,5867614,5855683,5855684,5823364,5843379,5871656};
             Stopwatch t = Stopwatch.createStarted();
-            long idTercero = 0;
-            long idProducto = 0;
-            long idMoneda=0;
-
-            CumulusTerceroRPC ctRPC = Quotation_Callers.getCumulusTercero(SystemName.ACSELE, new CumulusTerceroParameter(idTercero, idProducto, idMoneda));
-            t.stop(); // optional
-            t.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("[test_CumulusTercero]; " + ctRPC.toString());
-            System.out.println("[test_CumulusTercero]; Total time; " + t);
-            t.reset(); t.start();
+            //long idTercero = 0; /*long idProducto = 0; long idMoneda=0;*/
+            for (long idTercero : lista) {
+                CumulusTerceroRPC ctRPC = Quotation_Callers.getCumulusTercero(SystemName.ACSELE, new CumulusTerceroParameter(idTercero));
+                t.stop(); // optional
+                t.elapsed(TimeUnit.MILLISECONDS);
+                System.out.println("***************************************");
+                System.out.println("[test_CumulusTercero]; " + ctRPC.toString());
+                System.out.println("[test_CumulusTercero]; Total time; " + t);
+                System.out.println("***************************************");
+                t.reset(); t.start();
+            }
+            System.out.println("Termine ....");
         }catch (Exception e){
             Log.debug("ver ", e);
         }
@@ -90,7 +93,7 @@ public class MyTestMethod extends TestRunnerJC{
         try {
             Stopwatch t = Stopwatch.createStarted();
             Calendar birthDate = Calendar.getInstance();
-            birthDate.set(1974, 5, 23);
+            birthDate.set(1974, Calendar.MAY, 23);
             int edad = Quotation_Callers.getEdadActuarial(SystemName.ACSELE, new ActuarialAgeParameter(Calendar.getInstance().getTime(), birthDate.getTime()));
             t.stop(); // optional
             t.elapsed(TimeUnit.MILLISECONDS);
