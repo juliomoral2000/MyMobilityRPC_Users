@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list id="e8234e39-a108-4592-90c0-d33145302e2a" name="Default" comment="El otro Proyecto" />
-    <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Servicios : Listos los servicios de : Cumulus del Tercero(Llamado al metodo del core correcto). Respaldo el Disco esta lento. Adicional se modifico en el pom dependencia con  el movilityAll para el manejo de las clase FastArrayList y FastHashMap.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CumulusTerceroRPC.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CumulusTerceroRPC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" afterPath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" />
+    <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Servicios : Se modifico el pom para Referenciar al jar del movility-all.">
+      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\.idea\libraries\Maven__com_sun_istack_annotation_1_6.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobilityRPC_Users.iml" afterPath="$PROJECT_DIR$/MobilityRPC_Users.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyTestMethod.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyTestMethod.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6181818">
+            <state vertical-scroll-proportion="0.0">
               <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
               <folding>
                 <element signature="docComment;class#MyTestMethod#0" expanded="true" />
@@ -71,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+            <state vertical-scroll-proportion="1.4040405">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
               <folding>
                 <element signature="n#properties#0;n#project#0;n#!!top" expanded="true" />
                 <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
@@ -246,7 +246,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ExigenciasMedicaRPC.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/RenglonExigenciasMedicaRPC.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" />
@@ -255,6 +254,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CumulusTerceroRPC.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -325,7 +325,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
+    <option name="width" value="1378" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -779,7 +779,8 @@
       <workItem from="1457971929312" duration="11865000" />
       <workItem from="1458054575440" duration="5879000" />
       <workItem from="1458159288985" duration="7041000" />
-      <workItem from="1458195992152" duration="1223000" />
+      <workItem from="1458195992152" duration="1832000" />
+      <workItem from="1458345140469" duration="209000" />
     </task>
     <task id="LOCAL-00001" summary="nnn">
       <created>1453685565282</created>
@@ -865,14 +866,20 @@
       <option name="project" value="LOCAL" />
       <updated>1458080023868</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Servicios : Listos los servicios de : Cumulus del Tercero(Llamado al metodo del core correcto). Respaldo el Disco esta lento. Adicional se modifico en el pom dependencia con  el movilityAll para el manejo de las clase FastArrayList y FastHashMap.">
+      <created>1458197263825</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1458197263825</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324787000" />
+    <option name="totallyTimeSpent" value="325605000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -882,22 +889,22 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2473525" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52047783" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5784983" sideWeight="0.50537056" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.54266214" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.221843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5409556" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34493193" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3444613" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21785174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5767918" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" x="92" y="92" width="1182" height="544" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5767918" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52047783" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.221843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1246,6 +1253,21 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CumulusTerceroRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding>
+            <element signature="docComment;class#CumulusTerceroRPC#0" expanded="true" />
+            <element signature="method#CumulusTerceroRPC#0;class#CumulusTerceroRPC#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PropertyValuesRPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1329,13 +1351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/mobilityrpc/mobility-rpc-all/1.1.0/mobility-rpc-all-1.1.0.jar!/com/googlecode/mobilityrpc/session/impl/MobilitySessionImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59016395">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1607,31 +1622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="n#properties#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#goals#0;n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#includes#0;n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1685,7 +1675,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6181818">
+        <state vertical-scroll-proportion="0.0">
           <caret line="95" column="44" selection-start-line="95" selection-start-column="44" selection-end-line="95" selection-end-column="44" />
           <folding>
             <element signature="docComment;class#MyTestMethod#0" expanded="true" />
@@ -1696,6 +1686,31 @@
             <element signature="e#5139#5141#0" expanded="true" />
             <element signature="e#10692#10720#0" expanded="true" />
             <element signature="method#test_ServicesFactoryProccesor#0;class#MyTestMethod#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4040405">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="n#properties#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#goals#0;n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#includes#0;n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1769,7 +1784,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.4373149" />
+                <option value="0.2" />
               </list>
             </option>
           </splitter-proportions>
