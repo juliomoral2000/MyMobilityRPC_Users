@@ -60,7 +60,9 @@ public class MyTestMethod extends TestRunnerJC{
         //test_EdadActuarial();
         /*************************************************************************/
         /*************************************************************************/
-        test_CumulusTercero();
+        //test_CumulusTercero();
+        /*************************************************************************/
+        test_GetPropertyRPC_Dependencies("SexoAseg", false, false, "Parent", 0);
         /*************************************************************************/
         stopwatch.stop(); // optional
         stopwatch.elapsed(TimeUnit.MILLISECONDS);
