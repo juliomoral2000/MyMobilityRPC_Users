@@ -13,6 +13,11 @@ public class ActuarialAgeParameter implements ProcessParameter {
     public long fechaCotiza;
     public long fechaNacimiento;
 
+    /**
+     * Constructor
+     * @param fechaCotiza       Fecha de la Cotizacion. (Requerido).
+     * @param fechaNacimiento   Fecha de Nacimiento de la Persona. (Requerido)
+     */
     public ActuarialAgeParameter(Date fechaCotiza, Date fechaNacimiento) {
         this.fechaCotiza = fechaCotiza.getTime();
         this.fechaNacimiento = fechaNacimiento.getTime();

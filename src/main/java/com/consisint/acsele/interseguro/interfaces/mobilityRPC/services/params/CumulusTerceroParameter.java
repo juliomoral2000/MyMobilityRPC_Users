@@ -9,6 +9,10 @@ import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
 public class CumulusTerceroParameter implements ProcessParameter {
     public long idTercero;
 
+    /**
+     * Constructor
+     * @param idTercero Id del Tercero. (Requerido).
+     */
     public CumulusTerceroParameter(long idTercero) {
         this.idTercero = idTercero;
     }

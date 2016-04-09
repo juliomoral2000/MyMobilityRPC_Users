@@ -43,7 +43,9 @@ public class MyMovilityRPCClientTest extends SetUpBase {
         super.setServiceFactoryRegister();
         MyMovilityRPCCommRunner.startMyMovilityRPCCommRunner(hostIp, hostPort, mapClients, isDebugEnabled, serverSystemName, processorRegisters, callerRegisters);
         while(!MyMovilityRPCComm.isServerRunning()) MyMovilityRPCComm.sleep(1); // Esperamos x que inicie el servidor
+        super.setExternalProcessor();
         remoteEndpointId = MyMovilityRPCClient.getEndPointByRemoteName("Acsel-e");
+
         /****************************************************/
         /****************************************************/
         session = MyMovilityRPCClient.controller.newSession();

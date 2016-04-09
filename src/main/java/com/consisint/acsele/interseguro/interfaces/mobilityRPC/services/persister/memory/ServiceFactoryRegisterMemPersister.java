@@ -1,14 +1,12 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.memory;
 
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.CumulusTerceroRPC;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.ExigenciasMedicaRPC;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.ProductRPC;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.PropertyValuesRPC;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.*;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Product_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Property_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Quotation_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.*;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.ServiceFactoryRegisterPersister;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.server.processor.EventNotification_Processors;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.CallerRegister;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.ProcessorRegister;
@@ -24,13 +22,12 @@ public class ServiceFactoryRegisterMemPersister implements ServiceFactoryRegiste
     @Override
     public List<ProcessorRegister> getProcessorRegisters() {
         List<ProcessorRegister> list = new ArrayList<ProcessorRegister>();
-        /*list.add(new ProcessorRegister(
-                SystemName.getById(Integer.parseInt(o.getProperty("SYSNM_ID_CALLER"))),
-                SystemName.getById(Integer.parseInt(o.getProperty("SYSNM_ID_PROCESSOR"))),
-                o.getProperty("METHOD_NAME"),
-                Class.forName(o.getProperty("PROCESSOR_CLASS")),
-                Class.forName(o.getProperty("PARAMETER_CLASS")),
-                Class.forName(o.getProperty("RESULT_CLASS"))
+        try {
+            list.add(new ProcessorRegister( SystemName.ACSELE,SystemName.COTIZADOR, "processEventNotification", EventNotification_Processors.class, EventNotificationQuotationParameter.class, EventNotificationResponseRPC.class)); // 07/04/2016
+        } catch (Exception e) {
+            list = null;
+        }
+        /*list.add(new ProcessorRegister( SystemName.getById(Integer.parseInt(o.getProperty("SYSNM_ID_CALLER"))), SystemName.getById(Integer.parseInt(o.getProperty("SYSNM_ID_PROCESSOR"))), o.getProperty("METHOD_NAME"), Class.forName(o.getProperty("PROCESSOR_CLASS")), Class.forName(o.getProperty("PARAMETER_CLASS")), Class.forName(o.getProperty("RESULT_CLASS"))
         ));*/
         return list;
     }
@@ -49,19 +46,6 @@ public class ServiceFactoryRegisterMemPersister implements ServiceFactoryRegiste
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getEdadActuarial", "Quotation_Processors", ActuarialAgeParameter.class, Integer.class, Quotation_Callers.GetEdadActuarial.class));    //  10/03/2016
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getExigenciasMedicas", "Product_Processors", ExigenciasMedicaParameter.class, ExigenciasMedicaRPC.class, Product_Callers.GetExigenciasMedicas.class));    //  10/03/2016
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getCumulusTercero", "Quotation_Processors", CumulusTerceroParameter.class, CumulusTerceroRPC.class, Quotation_Callers.GetCumulusTercero.class)); //14/03/2016
-
-
-
-
-
-
-
-
-
-
-
         return list;
-
-
     }
 }

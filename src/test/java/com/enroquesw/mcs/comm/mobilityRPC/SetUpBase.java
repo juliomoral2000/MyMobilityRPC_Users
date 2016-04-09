@@ -1,10 +1,13 @@
 package com.enroquesw.mcs.comm.mobilityRPC;
 
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.example.externo.TestProcessorExterno;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.ServiceFactoryRegisterPersister;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.server.processor.EventNotification_Processors;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.enroquesw.mcs.comm.mobilityRPC.server.MyMovilityRPCCommRunner;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.CallerRegister;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.ProcessorRegister;
+import com.enroquesw.mcs.comm.mobilityRPC.services.factory.ServicesFactory;
 import com.enroquesw.mcs.comm.mobilityRPC.util.enums.AcseleIPs;
 import com.googlecode.mobilityrpc.network.ConnectionId;
 import com.googlecode.mobilityrpc.quickstart.EmbeddedMobilityServer;
@@ -59,5 +62,13 @@ public class SetUpBase {
         /****************************************************/
         /*MyMovilityRPCCommRunner.startMyMovilityRPCCommRunner(hostIp, hostPort, mapClients, isDebugEnabled, serverSystemName, processorRegisters, callerRegisters);*/
 
+    }
+
+    /**
+     * FIXME_JULIO: esto como ejemplo para los chicos del Cotizador
+     */
+    public static void setExternalProcessor() {
+        List<ProcessorRegister> list = ServicesFactory.getProcessorRegister(SystemName.ACSELE, EventNotification_Processors.class, "processEventNotification");
+        if(!list.isEmpty()) list.get(0).setExternalCallProcessor(new TestProcessorExterno());
     }
 }

@@ -41,7 +41,7 @@ public class MyTestMethod extends TestRunnerJC{
         //test_ServicesFactoryProccesor();
 
         //test_StressTestingGetProducts();
-        //test_GetProducts();
+        test_GetProducts();
         //int i = 1;
         /*************************************************************************/
         /*test_GetPropertyRPC_Dependencies("CodDepartamento", false, false, "Parent", i++);
@@ -62,7 +62,7 @@ public class MyTestMethod extends TestRunnerJC{
         /*************************************************************************/
         //test_CumulusTercero();
         /*************************************************************************/
-        test_GetPropertyRPC_Dependencies("SexoAseg", false, false, "Parent", 0);
+        //test_GetPropertyRPC_Dependencies("SexoAseg", false, false, "Parent", 0);
         /*************************************************************************/
         stopwatch.stop(); // optional
         stopwatch.elapsed(TimeUnit.MILLISECONDS);
@@ -197,13 +197,13 @@ public class MyTestMethod extends TestRunnerJC{
             System.out.println("[test_GetProducts]; Total time; " + t);
             t.reset(); t.start();
             for (ProductRPC product : products) {
-                test_GetProduct(product);
+                /*test_GetProduct(product);
                 test_PlanesFinanciamiento(product);
                 test_Planes(product);
                 test_Coberturas(product);
-                test_PeriodosCoberturas(product);
+                test_PeriodosCoberturas(product);*/
                 test_Tarifas(product);
-                test_ExigenciasMedicas(product);
+                /*test_ExigenciasMedicas(product);*/
                 //if(product.getId()==49183)
                 //System.out.println("[test_GetProducts] " + product.getName());
             }

@@ -6,8 +6,12 @@ import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
  * La clase <code>ProductParameter</code> representa el Parametro de entrada Para los Servicios de Producto
  */
 public class ProductParameter implements ProcessParameter {
-    public long idProducto;
+    public long idProducto; //Id del Producto
 
+    /**
+     * Constructor
+     * @param idProducto Id del Producto
+     */
     public ProductParameter(long idProducto) {
         this.idProducto = idProducto;
     }

@@ -12,12 +12,21 @@ public class CoberturaRPC {
     long idProduct; // Id de Producto asociado a esta cobertura
     long idPlan;    // Id de Plan asociado a esta cobertura
     String name;    // Nombre de la Cobertura
-    boolean isMandatory;    // Es mandatorio
-    boolean isLeading;      // Es principal
+    boolean isMandatory;    // Es mandatorio?
+    boolean isLeading;      // Es principal?
     Map<String, DynamicDataRPC> dataDynamic = new Hashtable<String, DynamicDataRPC>(); // propiedadNombre, <nombre, input, value>
-    //public static final transient String[] PROPERTIESTOTAKE = {/*"Ramo", "SubRamo", "RamoSBS", "EdadLimiteIngreso", "EdadMinima"*/};
+    //public static final transient String[] PROPERTIESTOTAKE = {/*"Ramo", "SubRamo", "RamoSBS", "EdadLimiteIngreso", "EdadMinima"*/};  TODO: posible uso futuro
 
-    public CoberturaRPC(long id, long idProduct, long idPlan, String name, boolean isMandatory, boolean isLeading/*, Map<String, DynamicDataRPC> dataDynamic*/) {
+    /**
+     *
+     * @param id                Id de Cobertura Configurada
+     * @param idProduct         Id de Producto asociado a esta cobertura
+     * @param idPlan            Id de Plan asociado a esta cobertura
+     * @param name              Nombre de la Cobertura
+     * @param isMandatory       Es mandatorio?
+     * @param isLeading         Es principal?
+     */
+    public CoberturaRPC(long id, long idProduct, long idPlan, String name, boolean isMandatory, boolean isLeading) {
         this.id = id;
         this.idProduct = idProduct;
         this.idPlan = idPlan;
@@ -50,10 +59,6 @@ public class CoberturaRPC {
     public boolean isLeading() {
         return isLeading;
     }
-
-    /*public Map<String, DynamicDataRPC> getDataDynamic() {
-        return dataDynamic;
-    }*/
 
     @Override
     public String toString() {

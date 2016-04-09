@@ -2,10 +2,13 @@ package com.enroquesw.mcs.comm.mobilityRPC;
 
 import com.enroquesw.mcs.comm.mobilityRPC.server.MyMovilityRPCCommRunner;
 import com.enroquesw.mcs.comm.mobilityRPC.util.testRunner.MyTestRunner;
+import com.google.common.base.Joiner;
+import com.google.common.collect.Collections2;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Collections;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -30,6 +33,15 @@ public class MyMovilityRPCCommTest extends SetUpBase {
         Thread t = Thread.currentThread();
         /*MyMovilityRPCCommRunner thread = MyMovilityRPCCommRunner.startMyMovilityRPCCommRunner(hostIp, hostPort, mapClients, isDebugEnabled, serverSystemName);*/
         MyMovilityRPCCommRunner thread = MyMovilityRPCCommRunner.startMyMovilityRPCCommRunner(hostIp, hostPort, mapClients, isDebugEnabled, serverSystemName, processorRegisters, callerRegisters);
+        while(!MyMovilityRPCCommRunner.isRun){
+            MyMovilityRPCComm.sleep(1);
+            if(MyMovilityRPCCommRunner.isFail){
+                Joiner joiner = Joiner.on("; ").skipNulls();
+                String join = joiner.join(MyMovilityRPCCommRunner.errors.values());
+                throw new Exception(join);
+            }
+        }
+        SetUpBase.setExternalProcessor();
         log.log(Level.INFO, "Espero por la finalizacion del Hilo "+thread.getName());
         MyTestRunner myTestRunner = new MyTestRunner();
         myTestRunner.start();

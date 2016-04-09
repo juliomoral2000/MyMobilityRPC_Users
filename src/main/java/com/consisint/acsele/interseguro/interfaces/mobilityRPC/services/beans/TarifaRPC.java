@@ -1,7 +1,6 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
