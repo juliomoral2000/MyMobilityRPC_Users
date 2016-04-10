@@ -16,14 +16,36 @@ import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
  */
 public class Quotation_Callers <P extends ProcessParameter> {
 /**************************** METODOS A SER INVOCADOS DESDE EL CLIENTE ************************************************/
+
+    /**
+     * Metodo para obtener la edad actuarial a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return Integer
+     * @throws ServiceBaseException
+     */
     public static Integer getEdadActuarial(SystemName remoteSystemName, ActuarialAgeParameter parameter) throws ServiceBaseException {
         return ServicesBaseExecutor.executeCalling(GetEdadActuarial.class, parameter, remoteSystemName);
     }
 
+    /**
+     * Metodo para obtener el cumulus del tercero a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return CumulusTerceroRPC
+     * @throws ServiceBaseException
+     */
     public static CumulusTerceroRPC getCumulusTercero(SystemName remoteSystemName, CumulusTerceroParameter parameter) throws ServiceBaseException {
         return ServicesBaseExecutor.executeCalling(GetCumulusTercero.class, parameter, remoteSystemName);
     }
 
+    /**
+     * Metodo para obtener el calculo de la cotizacion a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return CotizacionRPC
+     * @throws ServiceBaseException
+     */
     public static CotizacionRPC calcularCotizacion(SystemName remoteSystemName, CotizacionParameter parameter) throws ServiceBaseException {
         return ServicesBaseExecutor.executeCalling(CalcularCotizacion.class, parameter, remoteSystemName);
     }

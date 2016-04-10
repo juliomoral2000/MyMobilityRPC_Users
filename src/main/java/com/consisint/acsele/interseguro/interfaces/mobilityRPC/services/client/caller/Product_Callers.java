@@ -20,50 +20,85 @@ public class Product_Callers <P extends ProcessParameter>{
 /**************************** METODOS A SER INVOCADOS DESDE EL CLIENTE ************************************************/
 
     /**
-     * Retorna la lista de Productos
-     * @param remoteSystemName
-     * @return
-     * @throws Exception
+     * Metodo para obtener la lista de Productos de Vida a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @return  List<ProductRPC>
+     * @throws ServiceBaseException
      */
     public static List<ProductRPC> getProducts(SystemName remoteSystemName) throws ServiceBaseException {
         return ServicesBaseExecutor.executeCalling(GetProducts.class, new VoidParameter(), remoteSystemName);
     }
+
+    /**
+     * Metodo para obtener el Producto de Vida a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return ProductRPC
+     * @throws ServiceBaseException
+     */
     public static ProductRPC getProduct(SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
         return ServicesBaseExecutor.executeCalling(GetProduct.class, parameter, remoteSystemName);
     }
 
+    /**
+     * Metodo para obtener la lista de Planes de Financiamiento [PERIODO DE PAGO en el cotizador] a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return List<PlanFinanciamientoRPC>
+     * @throws ServiceBaseException
+     */
     public static List<PlanFinanciamientoRPC> getPlanesFinanciamiento(SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
         return ServicesBaseExecutor.executeCalling(GetPlanesFinanciamiento.class, parameter, remoteSystemName);
     }
 
+    /**
+     *  Metodo para obtener la lista de Planes del Producto [SIN REFERENCIA en el cotizador] a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return List<PlanRPC>
+     */
     public static List<PlanRPC> getPlanes(SystemName remoteSystemName, ProductParameter parameter) {
         return ServicesBaseExecutor.executeCalling(GetPlanes.class, parameter, remoteSystemName);
     }
 
+    /**
+     *  Metodo para obtener la lista de Coberturas Configuradas del Producto [Coberturas en el cotizador] a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return List<CoberturaRPC>
+     */
     public static List<CoberturaRPC> getCoberturas(SystemName remoteSystemName, ProductParameter parameter) {
         return ServicesBaseExecutor.executeCalling(GetCoberturas.class, parameter, remoteSystemName);
     }
 
+    /**
+     *  Metodo para obtener la lista de Vigencias Producto [PERIODO DE COBERTURA en el cotizador] a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return List<VigenciaRPC>
+     */
     public static List<VigenciaRPC> getPeriodosCoberturas(SystemName remoteSystemName, ProductParameter parameter) {
         return ServicesBaseExecutor.executeCalling(GetPeriodosCoberturas.class, parameter, remoteSystemName);
     }
 
+    /**
+     *  Metodo para obtener la lista de Tarifas [Tarifas en el cotizador(contiene: PLAN o OPCION de PRODUCTO, PERIODO DE PAGO PRIMA)] a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return List<TarifaRPC>
+     */
     public static List<TarifaRPC> getTarifas(SystemName remoteSystemName, TarifaParameter parameter) {
-        try {
-            List<TarifaRPC> tarifaRPCs = ServicesBaseExecutor.executeCalling(GetTarifas.class, parameter, remoteSystemName);
-            return tarifaRPCs;
-        } catch (ServiceBaseException e) {
-            throw e;
-        }
+        return ServicesBaseExecutor.executeCalling(GetTarifas.class, parameter, remoteSystemName);
     }
 
+    /**
+     *  Metodo para obtener la lista de Requesitos de Asegurabilidad del Producto [EXIGENCIAS MEDICAS en el cotizador] a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return ExigenciasMedicaRPC
+     */
     public static ExigenciasMedicaRPC getExigenciasMedicas (SystemName remoteSystemName, ExigenciasMedicaParameter parameter) {
-        try {
-            ExigenciasMedicaRPC exigenciaMedicaRPC = ServicesBaseExecutor.executeCalling(GetExigenciasMedicas.class, parameter, remoteSystemName);
-            return exigenciaMedicaRPC;
-        } catch (ServiceBaseException e) {
-            throw e;
-        }
+        return ServicesBaseExecutor.executeCalling(GetExigenciasMedicas.class, parameter, remoteSystemName);
     }
 
 /****************************** DECLARACION DE CLASES CallerOfProcess *************************************************/

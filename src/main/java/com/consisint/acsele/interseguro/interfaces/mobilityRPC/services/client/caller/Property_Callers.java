@@ -14,11 +14,11 @@ import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
 public class Property_Callers<P extends ProcessParameter> {
 /**************************** METODOS A SER INVOCADOS DESDE EL CLIENTE ************************************************/
     /**
-     * Retorna la propiedad con su lista de Valores
+     * Metodo para obtener la propiedad de Acsele con su lista de Valores
      *
-     * @param remoteSystemName
-     * @param parameter
-     * @return
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return PropertyValuesRPC
      * @throws ServiceBaseException
      */
     public static PropertyValuesRPC getPropertyValues(SystemName remoteSystemName, PropertyParameter parameter) throws ServiceBaseException {
@@ -28,7 +28,7 @@ public class Property_Callers<P extends ProcessParameter> {
 /****************************** DECLARACION DE CLASES CallerOfProcess *************************************************/
 
     /**
-     *
+     *  La clase <code>GetPropertyValues</code> es Caller del metodo getPropertyValues del servidor o Maquina Remota
      */
     public static class GetPropertyValues extends CallerOfProcess<GetPropertyValues, PropertyParameter, PropertyValuesRPC> {
         public GetPropertyValues(PropertyParameter parameter) throws Exception {
