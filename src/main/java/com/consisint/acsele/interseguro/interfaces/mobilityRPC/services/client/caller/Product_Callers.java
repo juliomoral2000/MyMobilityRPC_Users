@@ -17,6 +17,8 @@ import java.util.List;
  * La clase <code>Product_Callers</code> es el contenedor de callers asociados a los servicios del producto.
  */
 public class Product_Callers <P extends ProcessParameter>{
+/**************************** METODOS A SER INVOCADOS DESDE EL CLIENTE ************************************************/
+
     /**
      * Retorna la lista de Productos
      * @param remoteSystemName
@@ -63,6 +65,8 @@ public class Product_Callers <P extends ProcessParameter>{
             throw e;
         }
     }
+
+/****************************** DECLARACION DE CLASES CallerOfProcess *************************************************/
 
     /**
      * La clase <code>GetProducts</code> es Caller del metodo getProducts del servidor o Maquina Remota

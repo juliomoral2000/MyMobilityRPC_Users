@@ -66,4 +66,15 @@ public class TarifaParameter implements ProcessParameter {
     public TarifaParameter(long idProducto) {
         this.idProducto = idProducto;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("TarifaParameter{")
+                .append("idProducto=").append(String.valueOf(idProducto))
+                .append(", idPlanVida=").append(String.valueOf(idPlanVida))
+                .append(", idCobertura=").append(String.valueOf(idCobertura))
+                .append(", fecha=").append( new Date(fecha).toString())
+                .append("}\n");
+        return out.toString();
+    }
 }

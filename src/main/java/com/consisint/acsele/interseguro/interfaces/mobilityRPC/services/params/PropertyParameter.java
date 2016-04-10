@@ -21,4 +21,14 @@ public class PropertyParameter implements ProcessParameter {
         this.propertyName = propertyName;
         this.fetchDepends = fetchDepends;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("PropertyParameter{")
+                .append("propertyId=").append(String.valueOf(propertyId))
+                .append(",propertyName=").append(propertyName)
+                .append(",fetchDepends=").append(String.valueOf(fetchDepends))
+                .append("}");
+        return out.toString();
+    }
 }

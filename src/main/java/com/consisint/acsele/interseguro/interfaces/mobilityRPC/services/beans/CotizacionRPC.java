@@ -1,6 +1,7 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -134,4 +135,40 @@ public class CotizacionRPC {
     public void setValidaciones(List<ValidacionRPC> validaciones) {
         this.validaciones = validaciones;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("CotizacionRPC{")
+                .append("idProducto=").append(String.valueOf(idProducto))
+                .append(", idPlanVida=").append(String.valueOf(idPlanVida))
+                .append(", idTipoDescuento=").append(String.valueOf(idTipoDescuento))
+                .append(", idPeriodoCobertura=").append(String.valueOf(idPeriodoCobertura))
+                .append(", periodoDePago=").append(periodoDePago)
+                .append(", idPeriodoPagoPrima=").append(String.valueOf(idPeriodoPagoPrima))
+                .append(", idPeriodoPagoBeneficio=").append(String.valueOf(idPeriodoPagoBeneficio))
+                .append(", idGrupoFamiliar=").append(String.valueOf(idGrupoFamiliar))
+                .append(", fechaCotizacion=").append(new Date(fechaCotizacion).toString())
+                .append(", isIGV=").append(String.valueOf(isIGV))
+                .append(", montoPrimaBruta=").append(String.valueOf(montoPrimaBruta))
+                .append(", montoPrimaVoluntaria=").append(String.valueOf(montoPrimaVoluntaria))
+                .append(", montoPrimaPrograma=").append(String.valueOf(montoPrimaPrograma))
+                .append(", montoPrimaFP=").append(String.valueOf(montoPrimaFP))
+                .append(", derechoEmision=").append(String.valueOf(derechoEmision))
+                .append(", igv=").append(String.valueOf(igv))
+                .append(", montoTotalPrimaFP=").append(String.valueOf(montoTotalPrimaFP))
+                ;
+        if(!iosCot.isEmpty()){
+            out.append(", iosCotList:\n{");
+            for (ObjetoAsegCotizaRPC j : iosCot) out.append(j.toString()).append("\n");
+            out.append("}\n");
+        }
+        if(!validaciones.isEmpty()){
+            out.append(", validacionesList:\n{");
+            for (ValidacionRPC z : validaciones) out.append(z.toString()).append("\n");
+            out.append("}\n");
+        }
+        out.append("}");
+        return out.toString();
+    }
+
 }

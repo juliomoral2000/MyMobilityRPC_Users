@@ -79,12 +79,12 @@ public class AseguradoRPC {
     @Override
     public String toString() {
         StringBuilder out = new StringBuilder("AseguradoRPC{").append("idTercero=").append(String.valueOf(idTercero))
-                .append(",fechaNacimiento=").append(String.valueOf(new Date(fechaNacimiento)))
-                .append(",idSexo=").append(String.valueOf(idSexo))
-                .append(",idFumador=").append(String.valueOf(idFumador))
-                .append(",idProfesion=").append(String.valueOf(idProfesion))
-                .append(",idClaseAccPers=").append(String.valueOf(idClaseAccPers))
-                .append(",idTipoAsegurado=").append(String.valueOf(idTipoAsegurado))
+                .append(", fechaNacimiento=").append(String.valueOf(new Date(fechaNacimiento)))
+                .append(", idSexo=").append(String.valueOf(idSexo))
+                .append(", idFumador=").append(String.valueOf(idFumador))
+                .append(", idProfesion=").append(String.valueOf(idProfesion))
+                .append(", idClaseAccPers=").append(String.valueOf(idClaseAccPers))
+                .append(", idTipoAsegurado=").append(String.valueOf(idTipoAsegurado))
                 ;
         out.append("}");
         return out.toString();

@@ -12,6 +12,7 @@ import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
  * La clase <code>Property_Callers</code> es el contenedor de callers asociados a los servicios de las propiedades de Acsele.
  */
 public class Property_Callers<P extends ProcessParameter> {
+/**************************** METODOS A SER INVOCADOS DESDE EL CLIENTE ************************************************/
     /**
      * Retorna la propiedad con su lista de Valores
      *
@@ -24,6 +25,7 @@ public class Property_Callers<P extends ProcessParameter> {
         return ServicesBaseExecutor.executeCalling(GetPropertyValues.class, parameter, remoteSystemName);
     }
 
+/****************************** DECLARACION DE CLASES CallerOfProcess *************************************************/
 
     /**
      *

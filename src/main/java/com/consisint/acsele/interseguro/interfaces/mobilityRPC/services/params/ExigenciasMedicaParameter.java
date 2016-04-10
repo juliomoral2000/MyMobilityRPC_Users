@@ -31,4 +31,10 @@ public class ExigenciasMedicaParameter implements ProcessParameter {
         this.idProducto = idProducto;
         this.fecha = fecha.getTime();
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("ExigenciasMedicaParameter{").append("idProducto=").append( String.valueOf(idProducto)).append(", fecha=").append( new Date(fecha).toString()).append("}\n");
+        return out.toString();
+    }
 }

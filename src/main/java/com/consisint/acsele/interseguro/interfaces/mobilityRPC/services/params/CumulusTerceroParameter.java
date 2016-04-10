@@ -16,4 +16,10 @@ public class CumulusTerceroParameter implements ProcessParameter {
     public CumulusTerceroParameter(long idTercero) {
         this.idTercero = idTercero;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("CumulusTerceroParameter{").append("idTercero=").append(String.valueOf(idTercero)).append("}");
+        return out.toString();
+    }
 }

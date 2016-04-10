@@ -46,6 +46,7 @@ public class ServiceFactoryRegisterMemPersister implements ServiceFactoryRegiste
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getEdadActuarial", "Quotation_Processors", ActuarialAgeParameter.class, Integer.class, Quotation_Callers.GetEdadActuarial.class));    //  10/03/2016
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getExigenciasMedicas", "Product_Processors", ExigenciasMedicaParameter.class, ExigenciasMedicaRPC.class, Product_Callers.GetExigenciasMedicas.class));    //  10/03/2016
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getCumulusTercero", "Quotation_Processors", CumulusTerceroParameter.class, CumulusTerceroRPC.class, Quotation_Callers.GetCumulusTercero.class)); //14/03/2016
+        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "calcularCotizacion", "Quotation_Processors", CotizacionParameter.class, CotizacionRPC.class, Quotation_Callers.CalcularCotizacion.class)); // 08/04/2016
         return list;
     }
 }

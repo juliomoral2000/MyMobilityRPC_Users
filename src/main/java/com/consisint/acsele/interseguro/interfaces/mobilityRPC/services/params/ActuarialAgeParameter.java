@@ -22,4 +22,11 @@ public class ActuarialAgeParameter implements ProcessParameter {
         this.fechaCotiza = fechaCotiza.getTime();
         this.fechaNacimiento = fechaNacimiento.getTime();
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("ActuarialAgeParameter{").append("fechaCotiza=").append( new Date(fechaCotiza).toString()).append(", fechaNacimiento=").append( new Date(fechaNacimiento).toString()).append("}\n");
+        return out.toString();
+    }
+
 }

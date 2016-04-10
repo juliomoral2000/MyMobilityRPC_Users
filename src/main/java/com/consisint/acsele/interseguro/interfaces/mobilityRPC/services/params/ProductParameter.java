@@ -15,4 +15,10 @@ public class ProductParameter implements ProcessParameter {
     public ProductParameter(long idProducto) {
         this.idProducto = idProducto;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder out = new StringBuilder("ProductParameter{").append("idProducto=").append(String.valueOf(idProducto)).append("}");
+        return out.toString();
+    }
 }
