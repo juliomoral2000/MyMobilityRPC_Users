@@ -9,8 +9,8 @@ import java.util.Date;
 public class AseguradoRPC {
     long idTercero;         // Id del Tercero [si en dado caso lo poseen]
     long fechaNacimiento;   // Fecha de Nacimiento [IO.fechaNacimientoCOT]
-    double idSexo;          // Id o valor de Sexo [IO.SexoCOT]
-    double idFumador;       // Id o valor de Fumador [IO.CondicionFumador]
+    double idSexo = -1;          // Id o valor de Sexo [IO.SexoCOT]  - Puede ser 0 en su valor
+    double idFumador = -1;  // Id o valor de Fumador [IO.CondicionFumador] - Puede ser 0 en su valor
     double idProfesion;     // Id o valor de Profesion [IO.ProfesionActividadCOT]
     double idClaseAccPers;  // Id o valor de Clase [IO.ClaseAccPersCOT]    -- TODO: usos en UR.ClaseAccPers y en varias TDs.ClaseAccPers
     double idTipoAsegurado; // Id o valor de Tipo de Asegurado [IO.TipoAseguradoAccCOT]       -- TODO: usos en IO.TipoAseguradoAcc y en varias TDs.TipoAseguradoAcc [TITULAR, CONYUGUE, ETC]
@@ -34,7 +34,7 @@ public class AseguradoRPC {
     }
 
     /**
-     *
+     * Constructor
      * @param idTercero         Id del Tercero
      * @param fechaNacimiento   Fecha de Nacimiento
      * @param idSexo            Id o valor de Sexo

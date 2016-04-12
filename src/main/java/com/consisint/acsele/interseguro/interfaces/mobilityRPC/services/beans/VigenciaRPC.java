@@ -5,10 +5,16 @@ package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans;
  * de Acsele para los servicios del MobilityRPC. (para Interseguro es el PERIODO COBERTURA)
  */
 public class VigenciaRPC {
-    long idProducto;
-    String nombre;
-    double valor;
+    long idProducto;    // Id del Producto
+    String nombre;      // Input de la Vigencia
+    double valor;       // Valor de la Vigencia
 
+    /**
+     * Constructor
+     * @param idProducto    Id del Producto
+     * @param nombre        Nombre [Input] de la Vigencia
+     * @param valor         Valor de la Vigencia
+     */
     public VigenciaRPC(long idProducto, String nombre, double valor) {
         this.idProducto = idProducto;
         this.nombre = nombre;
@@ -29,6 +35,6 @@ public class VigenciaRPC {
 
     @Override
     public String toString() {
-        return new StringBuilder("VigenciaRPC{").append("idProducto=").append( idProducto).append(", nombre='").append( nombre).append( '\'').append(", valor=").append( valor).append('}').toString();
+        return "VigenciaRPC{" + "idProducto=" + idProducto + ", nombre='" + nombre + '\'' + ", valor=" + valor + '}';
     }
 }

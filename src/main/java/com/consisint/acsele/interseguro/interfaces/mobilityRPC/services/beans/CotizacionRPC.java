@@ -10,48 +10,57 @@ import java.util.List;
  */
 public class CotizacionRPC {
     long idProducto;                // Id de Producto [AgregatedPoliza.productId]
-    double idPlanVida;              // Id de PlanVida [Poliza.PlanVida] --> [TarifaRPC.idPlanVida]
+    long idUnidadRiesgoType;        // Id de Unidad de Riesgo Configurada
+    long idPlan;                    // Id del Plan Acsele (este agrupa los Objetos Asegurados en Acsele) - por ahora solo existe uno x producto
+    double idPlanVida;              // Id de PlanVida                       -- [Poliza.PlanVida] --> [TarifaRPC.idPlanVida]
     double idTipoDescuento;         // Id o valor Tipo de Descuento [VERIFICAR ESTO -- Pol.TipoDescuento] -- Campo "TipoDescuento" solo usada en una tabla "TDDescuentoVida" no esta en ninguna configuracion de Polizas ????? XQ????
-    double idPeriodoCobertura;      // Id o valor Periodo de Cobertura      -- [AgregatedPolicy.validity] o lo mismo [Product.validity] -->  [VigenciaRPC.valor]
-    String periodoDePago;           // Nombre o Entrada del Periodo de Pago -- [ConfiguratedFinancialPlan.desc]  -->  [PlanFinanciamientoRPC.desc]
-    double idPeriodoPagoPrima;      // Id o valor periodo Pago Prima        -- [UR.periodoPagoPrima] --> [TarifaRPC.map<"periodoPagoPrimaTD">]
-    double idPeriodoPagoBeneficio;  // Id o valor periodo Pago Beneficio    -- [Poliza.NumeroAnualidades] --> [PropertyValuesRPC.get("NumeroAnualidades")]
-    double idGrupoFamiliar;         // Id o valor Grupo Familiar            -- [Poliza.GrupoFamiliar] -->  [PropertyValuesRPC.get("GrupoFamiliar")]
+    double idPeriodoCobertura;      // Id o valor Periodo de Cobertura      -- [AgregatedPolicy.validity] o lo mismo [STPT_PRODUCTVALIDITY.PVT_VALIDITY] -->  [VigenciaRPC.valor]
+    long idPeriodoDePago;           // Id del Periodo de Pago               -- [ConfiguratedFinancialPlan.CONFIGURATEDFINANCIALPLANID]  -->  [PlanFinanciamientoRPC.id]
+    long idMoneda;                  // Id de la Moneda de ese Cotizacion    -- [STPS_FINANCIALPLANCURRENCY.CCY_ID]  -->  [Monedas que correspondan con PlanFinanciamientoRPC.idMonedas]
+    double idPeriodoPagoPrima;      // Id o valor periodo Pago Prima        -- [UR.periodoPagoPrima]        --> [TarifaRPC.map<"periodoPagoPrimaTD">]
+    double idPeriodoPagoBeneficio;  // Id o valor periodo Pago Beneficio    -- [Poliza.NumeroAnualidades]   --> [PropertyValuesRPC.get("NumeroAnualidades")]
+    double idGrupoFamiliar;         // Id o valor Grupo Familiar            -- [Poliza.GrupoFamiliar]       -->  [PropertyValuesRPC.get("GrupoFamiliar")]
     long fechaCotizacion = 0;       // Fecha Cotizacion                     -- [Poliza.FechaInicial]
     boolean isIGV = false;          // Este flag indica si el CONTRATANTE es Natural o Juridico
     /*** Totalizaciones o Respuestas Calculadas  */
-    double montoPrimaBruta;         //  Monto Prima Bruta                       -- [?????]
-    double montoPrimaVoluntaria;    //  Monto Prima Voluntaria                  -- [?????]
-    double montoPrimaPrograma;      //  Monto Prima Programada                  -- [?????]
-    double montoPrimaFP;            //  Monto Prima por Forma de Pago           -- [Segun Rosa : ThirdPartyMovement.concepto = 'PrimaNeta']
-    double derechoEmision;          //  Derecho de Emision                      -- [?????]
-    double igv;                     //  Monto IGV                               -- [Segun Rosa : ThirdPartyMovement.concepto = 'IGV']
-    double montoTotalPrimaFP;       //  Monto Total Prima por Forma de Pago     -- [Segun Rosa : ThirdPartyMovement.concepto = 'PrimaTotal']
+    double montoPrimaBruta;         //  Monto Prima Bruta                       -- [cov.COVPorcPartCoaCed]
+    double montoPrimaVoluntaria;    //  Monto Prima Voluntaria                  -- [?????] Segunda Fase
+    double montoPrimaPrograma;      //  Monto Prima Programada                  -- [cov.COVPorcPartCoaCed] Por Ahora (No hay productos Flex - cov.COVPorcPartCoaCed+"CampoPrimaVoluntariaRegular")
+    double montoPrimaFP;            //  Monto Prima por Forma de Pago           -- [cov.COVPrimaNeta]
+    double derechoEmision;          //  Derecho de Emision                      -- [COVMontoDE]
+    double igv;                     //  Monto IGV                               -- [COVMontoIGV]
+    double montoTotalPrimaFP;       //  Monto Total Prima por Forma de Pago     -- [COVPrima]
 
-    List<ObjetoAsegCotizaRPC> iosCot = new ArrayList();     // Lista de Objetos Asegurado (Info de Asegurados e Coberturas)
+    List<ObjetoAsegCotizaRPC> iosCot = new ArrayList<ObjetoAsegCotizaRPC>();     // Lista de Objetos Asegurado (Info de Asegurados e Coberturas)
     List<ValidacionRPC> validaciones = new ArrayList<ValidacionRPC>();  // Salida de Lista de Errores en las validaciones realizadas al calcular la poliza
 
 
     /**
      * Constructor
-     * @param idProducto
-     * @param idPlanVida
-     * @param idTipoDescuento
-     * @param idPeriodoCobertura
-     * @param periodoDePago
-     * @param idPeriodoPagoPrima
-     * @param idPeriodoPagoBeneficio
-     * @param idGrupoFamiliar
-     * @param fechaCotizacion
-     * @param isIGV
-     * @param iosCot
+     * @param idProducto                Id de Producto
+     * @param idPlan                    Id del Plan Acsele (este agrupa los Objetos Asegurados en Acsele)
+     * @param idUnidadRiesgoType        Id de Unidad de Riesgo Configurada
+     * @param idPlanVida                Id de PlanVida
+     * @param idTipoDescuento           Id o valor Tipo de Descuento
+     * @param idPeriodoCobertura        Id o valor Periodo de Cobertura
+     * @param idPeriodoDePago           Id del Periodo de Pago
+	 * @param idMoneda                  Id de la Moneda
+     * @param idPeriodoPagoPrima        Id o valor periodo Pago Prima
+     * @param idPeriodoPagoBeneficio    Id o valor periodo Pago Beneficio
+     * @param idGrupoFamiliar           Id o valor Grupo Familiar
+     * @param fechaCotizacion           Fecha Cotizacion o Fecha inicial de la Poliza
+     * @param isIGV                     Este flag indica si el CONTRATANTE es Natural o Juridico
+     * @param iosCot                    Lista de Objetos Asegurado (Info de Asegurados e Coberturas)
      */
-    public CotizacionRPC(long idProducto, double idPlanVida, double idTipoDescuento, double idPeriodoCobertura, String periodoDePago, double idPeriodoPagoPrima, double idPeriodoPagoBeneficio, double idGrupoFamiliar, long fechaCotizacion, boolean isIGV, List<ObjetoAsegCotizaRPC> iosCot) {
+    public CotizacionRPC(long idProducto, long idUnidadRiesgoType, long idPlan, double idPlanVida, double idTipoDescuento, double idPeriodoCobertura, long idPeriodoDePago, long idMoneda, double idPeriodoPagoPrima, double idPeriodoPagoBeneficio, double idGrupoFamiliar, long fechaCotizacion, boolean isIGV, List<ObjetoAsegCotizaRPC> iosCot) {
         this.idProducto = idProducto;
+        this.idPlan = idPlan;
+        this.idUnidadRiesgoType = idUnidadRiesgoType;
         this.idPlanVida = idPlanVida;
         this.idTipoDescuento = idTipoDescuento;
         this.idPeriodoCobertura = idPeriodoCobertura;
-        this.periodoDePago = periodoDePago;
+        this.idPeriodoDePago = idPeriodoDePago;
+        this.idMoneda = idMoneda;
         this.idPeriodoPagoPrima = idPeriodoPagoPrima;
         this.idPeriodoPagoBeneficio = idPeriodoPagoBeneficio;
         this.idGrupoFamiliar = idGrupoFamiliar;
@@ -62,6 +71,14 @@ public class CotizacionRPC {
 
     public long getIdProducto() {
         return idProducto;
+    }
+
+    public long getIdUnidadRiesgoType() {
+        return idUnidadRiesgoType;
+    }
+
+    public long getIdPlan() {
+        return idPlan;
     }
 
     public double getIdPlanVida() {
@@ -76,8 +93,12 @@ public class CotizacionRPC {
         return idPeriodoCobertura;
     }
 
-    public String getPeriodoDePago() {
-        return periodoDePago;
+    public long getIdPeriodoDePago() {
+        return idPeriodoDePago;
+    }
+
+    public long getIdMoneda() {
+        return idMoneda;
     }
 
     public double getIdPeriodoPagoPrima() {
@@ -128,6 +149,10 @@ public class CotizacionRPC {
         return montoTotalPrimaFP;
     }
 
+    public List<ObjetoAsegCotizaRPC> getIosCot() {
+        return iosCot;
+    }
+
     public List<ValidacionRPC> getValidaciones() {
         return validaciones;
     }
@@ -140,10 +165,13 @@ public class CotizacionRPC {
     public String toString() {
         StringBuilder out = new StringBuilder("CotizacionRPC{")
                 .append("idProducto=").append(String.valueOf(idProducto))
+                .append(", idUnidadRiesgoType=").append(String.valueOf(idUnidadRiesgoType))
+                .append(", idPlan=").append(String.valueOf(idPlan))
                 .append(", idPlanVida=").append(String.valueOf(idPlanVida))
                 .append(", idTipoDescuento=").append(String.valueOf(idTipoDescuento))
                 .append(", idPeriodoCobertura=").append(String.valueOf(idPeriodoCobertura))
-                .append(", periodoDePago=").append(periodoDePago)
+                .append(", idPeriodoDePago=").append(String.valueOf(idPeriodoDePago))
+                .append(", idMoneda=").append(String.valueOf(idMoneda))
                 .append(", idPeriodoPagoPrima=").append(String.valueOf(idPeriodoPagoPrima))
                 .append(", idPeriodoPagoBeneficio=").append(String.valueOf(idPeriodoPagoBeneficio))
                 .append(", idGrupoFamiliar=").append(String.valueOf(idGrupoFamiliar))

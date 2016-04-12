@@ -4,15 +4,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Julio on 01/04/2016.
+ * La clase <code>ObjetoAsegCotizaRPC</code> representa el wrapper de los datos del Objeto Asegurado [los asegurados] de la Cotizacion (Acsele)
+ * extraido del Cotizador el cual sera utilizado por los servicios de Cotizacion.
+ *
  */
 public class ObjetoAsegCotizaRPC {
-    int numOA;                      // Numero de Objeto Asegurado
-    AseguradoRPC aseg = null;       // El Asegurado
-    List<CoberturaCotizaRPC> covsCot = new ArrayList(); //Lista de Coberturas
+    int numOA;                          // Numero de Objeto Asegurado
+    long idInsuranceObjectType;         // Id de AgregInsObjectType si se llegara a requerir
+    AseguradoRPC aseg = null;           // El Asegurado
+    List<CoberturaCotizaRPC> covsCot = new ArrayList<CoberturaCotizaRPC>(); //Lista de Coberturas
 
-    public ObjetoAsegCotizaRPC(int numOA, AseguradoRPC aseg, List<CoberturaCotizaRPC> covsCot) {
+    /**
+     *
+     * @param numOA                     Numero/Posicion de registro del Objeto Asegurado
+     * @param idInsuranceObjectType     Id de AgregInsObjectType si se llegara a requerir
+     * @param aseg                      El Asegurado
+     * @param covsCot                   Las Coberturas
+     */
+    public ObjetoAsegCotizaRPC(int numOA, long idInsuranceObjectType, AseguradoRPC aseg, List<CoberturaCotizaRPC> covsCot) {
         this.numOA = numOA;
+        this.idInsuranceObjectType = idInsuranceObjectType;
         this.aseg = aseg;
         this.covsCot = covsCot;
     }
@@ -23,6 +34,14 @@ public class ObjetoAsegCotizaRPC {
 
     public AseguradoRPC getAseg() {
         return aseg;
+    }
+
+    public int getNumOA() {
+        return numOA;
+    }
+
+    public long getIdInsuranceObjectType() {
+        return idInsuranceObjectType;
     }
 
     @Override

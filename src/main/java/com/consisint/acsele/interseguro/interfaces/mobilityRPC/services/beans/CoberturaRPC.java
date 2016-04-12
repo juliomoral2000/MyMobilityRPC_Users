@@ -8,17 +8,19 @@ import java.util.Map;
  * de Acsele para los servicios del MobilityRPC.
  */
 public class CoberturaRPC {
-    long id;        // Id de Cobertura Configurada
-    long idProduct; // Id de Producto asociado a esta cobertura
-    long idPlan;    // Id de Plan asociado a esta cobertura
-    String name;    // Nombre de la Cobertura
-    boolean isMandatory;    // Es mandatorio?
-    boolean isLeading;      // Es principal?
+    long id;                            // Id de Cobertura Configurada
+    long idProduct;                     // Id de Producto asociado a esta cobertura
+    long idUnidadRiesgoType;            // Id de Unidad de Riesgo Configurada asociado a esta cobertura
+    long idPlan;                        // Id de Plan asociado a esta cobertura
+    long idInsuranceObjectType;         // Id de Objeto Asegurado Configurado asociado a esta cobertura
+    String name;                        // Nombre de la Cobertura
+    boolean isMandatory;                // Es mandatorio?
+    boolean isLeading;                  // Es principal?
     Map<String, DynamicDataRPC> dataDynamic = new Hashtable<String, DynamicDataRPC>(); // propiedadNombre, <nombre, input, value>
     //public static final transient String[] PROPERTIESTOTAKE = {/*"Ramo", "SubRamo", "RamoSBS", "EdadLimiteIngreso", "EdadMinima"*/};  TODO: posible uso futuro
 
     /**
-     *
+     * Constructor
      * @param id                Id de Cobertura Configurada
      * @param idProduct         Id de Producto asociado a esta cobertura
      * @param idPlan            Id de Plan asociado a esta cobertura
@@ -26,10 +28,12 @@ public class CoberturaRPC {
      * @param isMandatory       Es mandatorio?
      * @param isLeading         Es principal?
      */
-    public CoberturaRPC(long id, long idProduct, long idPlan, String name, boolean isMandatory, boolean isLeading) {
+    public CoberturaRPC(long id, long idProduct, long idUnidadRiesgoType, long idPlan, long idInsuranceObjectType, String name, boolean isMandatory, boolean isLeading) {
         this.id = id;
         this.idProduct = idProduct;
+        this.idUnidadRiesgoType = idUnidadRiesgoType;
         this.idPlan = idPlan;
+        this.idInsuranceObjectType = idInsuranceObjectType;
         this.name = name;
         this.isMandatory = isMandatory;
         this.isLeading = isLeading;
@@ -44,8 +48,16 @@ public class CoberturaRPC {
         return idProduct;
     }
 
+    public long getIdUnidadRiesgoType() {
+        return idUnidadRiesgoType;
+    }
+
     public long getIdPlan() {
         return idPlan;
+    }
+
+    public long getIdInsuranceObjectType() {
+        return idInsuranceObjectType;
     }
 
     public String getName() {
@@ -62,7 +74,7 @@ public class CoberturaRPC {
 
     @Override
     public String toString() {
-        StringBuilder out = new StringBuilder("CoberturaRPC{").append("id=").append( id).append(", idProduct=").append( idProduct).append(", idPlan=").append( idPlan).append(", name='").append( name).append( '\'').append(", isMandatory=").append( isMandatory).append(", isLeading=").append( isLeading).append(", dataDynamic:\n{");
+        StringBuilder out = new StringBuilder("CoberturaRPC{").append("id=").append(id).append(", idProduct=").append(idProduct).append(", idUnidadRiesgoType=").append(idUnidadRiesgoType).append(", idPlan=").append(idPlan).append(", idInsuranceObjectType=").append(idInsuranceObjectType).append(", name='").append(name).append( '\'').append(", isMandatory=").append(isMandatory).append(", isLeading=").append(isLeading).append(", dataDynamic:\n{");
         for (Map.Entry<String, DynamicDataRPC> i: dataDynamic.entrySet()) out.append(i.getValue().toString());
         out.append("}\n}");
         return out.toString();
