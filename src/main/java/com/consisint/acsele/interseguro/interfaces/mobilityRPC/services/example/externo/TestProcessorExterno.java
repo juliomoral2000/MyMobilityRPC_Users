@@ -3,11 +3,16 @@ package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.example
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.EventNotificationResponseRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.EventNotificationQuotationParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.server.processor.EventNotification_Processors;
+import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.enroquesw.mcs.comm.mobilityRPC.services.exception.ServiceBaseException;
+import com.enroquesw.mcs.comm.mobilityRPC.services.factory.ProcessorRegister;
+import com.enroquesw.mcs.comm.mobilityRPC.services.factory.ServicesFactory;
 import com.enroquesw.mcs.comm.mobilityRPC.services.processor.ExternalCallProcessor;
 
+import java.util.List;
+
 /**
- * Created by Julio on 07/04/2016.
+ * La clase <code>TestProcessorExterno</code> es una clase de Pruebas
  */
 public class TestProcessorExterno implements ExternalCallProcessor<EventNotification_Processors, EventNotificationQuotationParameter, EventNotificationResponseRPC>{
 
@@ -17,4 +22,12 @@ public class TestProcessorExterno implements ExternalCallProcessor<EventNotifica
         return new EventNotificationResponseRPC(true);
     }
 
+    /**
+     * Este metodo Invocarlo luego de Iniciado el Servidor
+     */
+    @SuppressWarnings("unchecked")
+    public static void setExternalProcessor() {
+        List<ProcessorRegister> list = ServicesFactory.getProcessorRegister(SystemName.ACSELE, EventNotification_Processors.class, "processEventNotification");
+        if(!list.isEmpty()) list.get(0).setExternalCallProcessor(new TestProcessorExterno());
+    }
 }

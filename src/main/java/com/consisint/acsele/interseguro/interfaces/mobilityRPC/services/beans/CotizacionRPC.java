@@ -161,6 +161,90 @@ public class CotizacionRPC {
         this.validaciones = validaciones;
     }
 
+    public void setIdProducto(long idProducto) {
+        this.idProducto = idProducto;
+    }
+
+    public void setIdUnidadRiesgoType(long idUnidadRiesgoType) {
+        this.idUnidadRiesgoType = idUnidadRiesgoType;
+    }
+
+    public void setIdPlan(long idPlan) {
+        this.idPlan = idPlan;
+    }
+
+    public void setIdPlanVida(double idPlanVida) {
+        this.idPlanVida = idPlanVida;
+    }
+
+    public void setIdTipoDescuento(double idTipoDescuento) {
+        this.idTipoDescuento = idTipoDescuento;
+    }
+
+    public void setIdPeriodoCobertura(double idPeriodoCobertura) {
+        this.idPeriodoCobertura = idPeriodoCobertura;
+    }
+
+    public void setIdPeriodoDePago(long idPeriodoDePago) {
+        this.idPeriodoDePago = idPeriodoDePago;
+    }
+
+    public void setIdMoneda(long idMoneda) {
+        this.idMoneda = idMoneda;
+    }
+
+    public void setIdPeriodoPagoPrima(double idPeriodoPagoPrima) {
+        this.idPeriodoPagoPrima = idPeriodoPagoPrima;
+    }
+
+    public void setIdPeriodoPagoBeneficio(double idPeriodoPagoBeneficio) {
+        this.idPeriodoPagoBeneficio = idPeriodoPagoBeneficio;
+    }
+
+    public void setIdGrupoFamiliar(double idGrupoFamiliar) {
+        this.idGrupoFamiliar = idGrupoFamiliar;
+    }
+
+    public void setFechaCotizacion(long fechaCotizacion) {
+        this.fechaCotizacion = fechaCotizacion;
+    }
+
+    public void setIsIGV(boolean isIGV) {
+        this.isIGV = isIGV;
+    }
+
+    public void setMontoPrimaBruta(double montoPrimaBruta) {
+        this.montoPrimaBruta = montoPrimaBruta;
+    }
+
+    public void setMontoPrimaVoluntaria(double montoPrimaVoluntaria) {
+        this.montoPrimaVoluntaria = montoPrimaVoluntaria;
+    }
+
+    public void setMontoPrimaPrograma(double montoPrimaPrograma) {
+        this.montoPrimaPrograma = montoPrimaPrograma;
+    }
+
+    public void setMontoPrimaFP(double montoPrimaFP) {
+        this.montoPrimaFP = montoPrimaFP;
+    }
+
+    public void setDerechoEmision(double derechoEmision) {
+        this.derechoEmision = derechoEmision;
+    }
+
+    public void setIgv(double igv) {
+        this.igv = igv;
+    }
+
+    public void setMontoTotalPrimaFP(double montoTotalPrimaFP) {
+        this.montoTotalPrimaFP = montoTotalPrimaFP;
+    }
+
+    public void setIosCot(List<ObjetoAsegCotizaRPC> iosCot) {
+        this.iosCot = iosCot;
+    }
+
     @Override
     public String toString() {
         StringBuilder out = new StringBuilder("CotizacionRPC{")

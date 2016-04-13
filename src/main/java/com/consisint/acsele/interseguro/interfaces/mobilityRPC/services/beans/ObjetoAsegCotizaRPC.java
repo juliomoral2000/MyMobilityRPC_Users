@@ -46,8 +46,11 @@ public class ObjetoAsegCotizaRPC {
 
     @Override
     public String toString() {
-        StringBuilder out = new StringBuilder("ObjetoAsegCotizaRPC{").append("numOA=").append(String.valueOf(numOA))
-                .append(", aseg=").append(aseg.toString()).append(", covsCot:\n{");
+        StringBuilder out = new StringBuilder("ObjetoAsegCotizaRPC{")
+                .append("numOA=").append(String.valueOf(numOA))
+                .append("idInsuranceObjectType=").append(String.valueOf(idInsuranceObjectType))
+                .append(", aseg=\n{ ").append(aseg.toString())
+                .append("},\ncovsCot:\n{");
         for (CoberturaCotizaRPC o : covsCot) {
             out.append(o.toString()).append("\n");
         }

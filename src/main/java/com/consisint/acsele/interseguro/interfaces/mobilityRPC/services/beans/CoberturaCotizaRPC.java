@@ -59,6 +59,14 @@ public class CoberturaCotizaRPC {
         return montoPrima;
     }
 
+    public void setMontoCapitalAsegurado(double montoCapitalAsegurado) {
+        this.montoCapitalAsegurado = montoCapitalAsegurado;
+    }
+
+    public void setMontoPrima(double montoPrima) {
+        this.montoPrima = montoPrima;
+    }
+
     @Override
     public String toString() {
         StringBuilder out = new StringBuilder("CoberturaCotizaRPC{").append("idCobertura=").append(String.valueOf(idCobertura))
