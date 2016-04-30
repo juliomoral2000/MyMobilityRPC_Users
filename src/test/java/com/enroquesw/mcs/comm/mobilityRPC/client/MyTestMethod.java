@@ -42,19 +42,19 @@ public class MyTestMethod extends TestRunnerJC{
         Stopwatch stopwatch = Stopwatch.createStarted();
         /*************************************************************************/
         long idProducto = 49183;                // Educacion Garantizada
-        double idGrupoFamiliar = 1;             // Id o valor Grupo Familiar            -- Propiedad "GrupoFamiliar"  [1,2,3,4] [Titular; Titular y Cónyuge; Titular, Cónyuge e Hijo(s); Titular e Hijo(s)]
+        double idGrupoFamiliar = 0;             // Id o valor Grupo Familiar            -- Propiedad "GrupoFamiliar"  [1,2,3,4] [Titular; Titular y Cónyuge; Titular, Cónyuge e Hijo(s); Titular e Hijo(s)]
         test_CalcularCotizacion(true, idProducto, idGrupoFamiliar);
         /*************************************************************************/
         //test_ServicesFactoryProccesor();
 
         //test_StressTestingGetProducts();
-        //test_GetProducts();
+        //test_GetProducts(false);
         //int i = 1;
-        /*************************************************************************/
-        /*test_GetPropertyRPC_Dependencies("CodDepartamento", false, false, "Parent", i++);
+        /*************************************************************************
+        test_GetPropertyRPC_Dependencies("CodDepartamento", false, false, "Parent", i++);
         test_GetPropertyRPC_Dependencies("CodDepartamento", true, false, "Parent", i++);
-        test_GetPropertyRPC_Dependencies("CodDepartamento", true, true, "Parent", i++);*/
-        /*************************************************************************/
+        test_GetPropertyRPC_Dependencies("CodDepartamento", true, true, "Parent", i++);
+        *************************************************************************/
 
         /*test_GetPropertyRPC_Dependencies("CodProvincia", false, false, "Parent", i++);
         test_GetPropertyRPC_Dependencies("CodProvincia", true, false, "Parent", i++);
@@ -74,6 +74,7 @@ public class MyTestMethod extends TestRunnerJC{
         stopwatch.stop(); // optional
         stopwatch.elapsed(TimeUnit.MILLISECONDS);
         System.out.println("[testMain] Total time; " + stopwatch);
+        System.out.println("Termine ............................... ");
         //log.log(Level.INFO, "Parate Aqui");
     }
 
@@ -137,14 +138,15 @@ public class MyTestMethod extends TestRunnerJC{
         }
     }
 
-    private void test_Planes(ProductRPC product) {
+    private void test_Planes(ProductRPC product, boolean isShowObjectResult) {
         try {
             Stopwatch stopwatch = Stopwatch.createStarted();
             List<PlanRPC> list = getPlanRPC(product.getId());
             stopwatch.stop(); // optional
             stopwatch.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("[MyTestMethod.test_Planes]; Total time; " + stopwatch);
-            for (PlanRPC planRPC : list) System.out.println(planRPC.toString());
+            System.out.println("[MyTestMethod.test_Planes]; list.size; " + list.size());
+            if(isShowObjectResult) for (PlanRPC planRPC : list) System.out.println("[MyTestMethod.test_Planes];"+planRPC.toString());
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
         }
@@ -156,7 +158,7 @@ public class MyTestMethod extends TestRunnerJC{
         return Product_Callers.getPlanes(SystemName.ACSELE, productParameter);
     }
 
-    private void test_PlanesFinanciamiento(ProductRPC product) {
+    private void test_PlanesFinanciamiento(ProductRPC product, boolean isShowObjectResult) {
         try {
             Stopwatch stopwatch = Stopwatch.createStarted();
             List<PlanFinanciamientoRPC> list = getPlanesFinanciamiento(product.getId());
@@ -164,13 +166,18 @@ public class MyTestMethod extends TestRunnerJC{
             stopwatch.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("[test_PlanesFinanciamiento]; Total time; " + stopwatch);
             System.out.println("[test_PlanesFinanciamiento] " + list.size());
+            if (isShowObjectResult) {
+                for (PlanFinanciamientoRPC o : list) {
+                    System.out.println("[test_PlanesFinanciamiento] " + o.toString());
+                }
+            }
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
         }
 
     }
 
-    private void test_Coberturas(ProductRPC product) {
+    private void test_Coberturas(ProductRPC product, boolean isShowObjectResult) {
         try {
             Stopwatch stopwatch = Stopwatch.createStarted();
             List<CoberturaRPC> list_ccv = getListaCoberturas(product.getId());
@@ -178,6 +185,11 @@ public class MyTestMethod extends TestRunnerJC{
             stopwatch.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("[test_Coberturas]; Total time; " + stopwatch);
             System.out.println("[test_Coberturas] list_ccv.size: "+list_ccv.size());
+            if (isShowObjectResult) {
+                for (CoberturaRPC o : list_ccv) {
+                    System.out.println("[test_Coberturas] : " + o.toString());
+                }
+            }
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
         }
@@ -226,7 +238,7 @@ public class MyTestMethod extends TestRunnerJC{
 
     }
 
-    private void test_GetProducts() throws Exception {
+    private void test_GetProducts(boolean isShowObjectResult) throws Exception {
         try {
             Stopwatch t = Stopwatch.createStarted();
             List<ProductRPC> products = Product_Callers.getProducts(SystemName.ACSELE);
@@ -235,13 +247,13 @@ public class MyTestMethod extends TestRunnerJC{
             System.out.println("[test_GetProducts]; Total time; " + t);
             t.reset(); t.start();
             for (ProductRPC product : products) {
-                /*test_GetProduct(product);
-                test_PlanesFinanciamiento(product);
-                test_Planes(product);
-                test_Coberturas(product);
-                test_PeriodosCoberturas(product);*/
-                test_Tarifas(product);
-                /*test_ExigenciasMedicas(product);*/
+                test_GetProduct(product, isShowObjectResult);
+                test_PlanesFinanciamiento(product, isShowObjectResult);
+                test_Planes(product, isShowObjectResult);
+                test_Coberturas(product, isShowObjectResult);
+                test_PeriodosCoberturas(product, isShowObjectResult);
+                test_Tarifas(product, isShowObjectResult);
+                test_ExigenciasMedicas(product, isShowObjectResult);
                 //if(product.getId()==49183)
                 //System.out.println("[test_GetProducts] " + product.getName());
             }
@@ -250,10 +262,11 @@ public class MyTestMethod extends TestRunnerJC{
             System.out.println("[test_GetProducts]; Total time; " + t);
         }catch (Exception e){
             Log.debug("ver ", e);
+            System.out.println("[test_GetProducts] Error "+e.getMessage());
         }
     }
 
-    private void test_ExigenciasMedicas(ProductRPC product) {
+    private void test_ExigenciasMedicas(ProductRPC product, boolean isShowObjectResult) {
         Calendar instance = Calendar.getInstance();
         instance.set(1990, Calendar.JANUARY, 1);
         ExigenciasMedicaParameter exiParameter = new ExigenciasMedicaParameter(product.getId(), instance.getTime());
@@ -262,36 +275,45 @@ public class MyTestMethod extends TestRunnerJC{
         stopwatch.stop(); // optional
         stopwatch.elapsed(TimeUnit.MILLISECONDS);
         System.out.println("[test_ExigenciasMedicas]; Total time; " + stopwatch);
-        System.out.println("idProducto: "+product.getId()+"; Producto:"+product.getName()+"; Exigencias size: "+exigRPC.getRenglonList().size());
-        System.out.println("Exigencia: " + exigRPC.toString());
+        System.out.println("[test_ExigenciasMedicas]; exigRPC.getRenglonList().size(); " + exigRPC.getRenglonList().size());
+        //System.out.println("idProducto: "+product.getId()+"; Producto:"+product.getName()+"; Exigencias size: "+exigRPC.getRenglonList().size());
+        if(isShowObjectResult) System.out.println("[test_ExigenciasMedicas]; " + exigRPC.toString());
     }
 
-    private void test_Tarifas(ProductRPC product) {
+    private void test_Tarifas(ProductRPC product, boolean isShowObjectResult) {
         Calendar instance = Calendar.getInstance();
         instance.set(1995, Calendar.JANUARY, 1);
-        TarifaParameter tarifaParameter = new TarifaParameter(product.getId(), 717, 0, instance.getTime());
+        TarifaParameter tarifaParameter = new TarifaParameter(product.getId());
         Stopwatch stopwatch = Stopwatch.createStarted();
         List<TarifaRPC> list = Product_Callers.getTarifas(SystemName.ACSELE, tarifaParameter);
         stopwatch.stop(); // optional
         stopwatch.elapsed(TimeUnit.MILLISECONDS);
-        System.out.println("[test_Planes]; Total time; " + stopwatch);
-        System.out.println("idProducto: "+product.getId()+"; Producto:"+product.getName()+"; Tarifas size: "+list.size());
-        for (TarifaRPC t : list) {
-            System.out.println("RenglonesTarifa size: "+t.getRenglonList().size());
+        System.out.println("[test_Tarifas]; Total time; " + stopwatch);
+        System.out.println("[test_Tarifas];idProducto: "+product.getId()+"; Producto:"+product.getName()+"; Tarifas size: "+list.size());
+        if (isShowObjectResult) {
+            for (TarifaRPC t : list) {
+                System.out.println("[test_Planes]; " + t.toString());
+                //System.out.println("RenglonesTarifa size: "+t.getRenglonList().size());
+            }
         }
     }
 
-    private void test_PeriodosCoberturas(ProductRPC product) {
+    private void test_PeriodosCoberturas(ProductRPC product, boolean isShowObjectResult) {
         ProductParameter productParameter = new ProductParameter(product.getId());
         Stopwatch stopwatch = Stopwatch.createStarted();
         List<VigenciaRPC> list = Product_Callers.getPeriodosCoberturas(SystemName.ACSELE, productParameter);
         stopwatch.stop(); // optional
         stopwatch.elapsed(TimeUnit.MILLISECONDS);
-        System.out.println("[test_Planes]; Total time; " + stopwatch);
-        System.out.println("[test_Planes] "+list.size());
+        System.out.println("[test_PeriodosCoberturas]; Total time; " + stopwatch);
+        System.out.println("[test_PeriodosCoberturas] "+list.size());
+        if (isShowObjectResult) {
+            for (VigenciaRPC o : list) {
+                System.out.println("[test_Planes] :" + o.toString());
+            }
+        }
     }
 
-    private void test_GetProduct(ProductRPC product) {
+    private void test_GetProduct(ProductRPC product, boolean isShowObjectResult) {
         try {
             ProductParameter productParameter = new ProductParameter(product.getId());
             Stopwatch stopwatch = Stopwatch.createStarted();
@@ -299,18 +321,22 @@ public class MyTestMethod extends TestRunnerJC{
             stopwatch.stop(); // optional
             stopwatch.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("[test_GetProduct]; Total time; " + stopwatch);
-            System.out.println("[test_GetProduct] "+rpc.getName());
+            if(isShowObjectResult) System.out.println("[test_GetProduct] "+rpc.toString());
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
         }
     }
 
     private void test_ServicesFactoryProccesor() throws Exception {
-        for (CallerRegister register : ServicesFactory_Callers.fetchCallerRegistersFromServer(SystemName.ACSELE)) {
-            Log.debug("******** CallerRegister :    ****************\n".concat(register.toString()));
-        }
-        for (ProcessorRegister register : ServicesFactory_Callers.fetchProcessorRegistersFromServer(SystemName.ACSELE)) {
-            Log.debug("******** ProcessorRegister : ****************\n".concat(register.toString()));
+        try {
+            for (CallerRegister register : ServicesFactory_Callers.fetchCallerRegistersFromServer(SystemName.ACSELE)) {
+                Log.debug("******** CallerRegister :    ****************\n".concat(register.toString()));
+            }
+            for (ProcessorRegister register : ServicesFactory_Callers.fetchProcessorRegistersFromServer(SystemName.ACSELE)) {
+                Log.debug("******** ProcessorRegister : ****************\n".concat(register.toString()));
+            }
+        } catch (Exception e) {
+            System.out.println("Error : "+e.getMessage());
         }
     }
 

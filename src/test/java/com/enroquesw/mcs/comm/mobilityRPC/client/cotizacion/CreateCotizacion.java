@@ -38,6 +38,7 @@ public class CreateCotizacion {
     private List<ObjetoAsegCotizaRPC> createListaObjetoAsegCotizaRPC(boolean isDirecta, long idProducto, int idGrupoFamiliar, List<CoberturaRPC> list_ccv) {
         //idGrupoFamiliar --> [1,2,3,4] [Titular; Titular y Cónyuge; Titular, Cónyuge e Hijo(s); Titular e Hijo(s)]
         int numeroAsegurados = 0;
+        if(idGrupoFamiliar == 0) numeroAsegurados = 1; // Titular
         if(idGrupoFamiliar == 1) numeroAsegurados = 1; // Titular
         if(idGrupoFamiliar == 2) numeroAsegurados = 2; // Titular y Cónyuge
         if(idGrupoFamiliar == 3) numeroAsegurados = 3; // Titular, Cónyuge e Hijo(s)
@@ -56,7 +57,7 @@ public class CreateCotizacion {
     private List<CoberturaCotizaRPC> createListaCoberturas(boolean isDirecta, List<CoberturaRPC> listCov) {
         List<CoberturaCotizaRPC> list = new ArrayList<CoberturaCotizaRPC>();
         for (CoberturaRPC o : listCov) {
-            if(o.isMandatory()) list.add(new CoberturaCotizaRPC(o.getId(), o.isMandatory(), o.isLeading(),isDirecta? 10000.0 : 0, isDirecta? 0 : 2));
+            if(o.isMandatory()) list.add(new CoberturaCotizaRPC(o.getId(), o.isMandatory(), o.isLeading(), isDirecta? 10000.0 : 0, isDirecta? 0 : 2));
         }
         return list;
     }
@@ -76,18 +77,18 @@ public class CreateCotizacion {
                 idFumador = 10;          // Id o valor de Fumador -- propiedad "CondicionFumador" [0, 10] [No Fuma, Si Fuma]
                 idProfesion = 2;         // Id o valor de Profesion -- propiedad "ProfesionActividad" [1 al 112]
                 idClaseAccPers = 1;      // Id o valor de Clase -- propiedad "ClaseAccPers" [1, 2, 3] [Clase I, Clase II, Clase III]
-                idTipoAsegurado = 1; // Id o valor de Tipo de Asegurado -- propiedad "TipoAseguradoAcc" [1, 2, 3] [TITULAR, CONYUGE, HIJO]
+                idTipoAsegurado = idGrupoFamiliar == 0? 0 : 1; // Id o valor de Tipo de Asegurado -- propiedad "TipoAseguradoAcc" [1, 2, 3] [TITULAR, CONYUGE, HIJO]
                 break;
             case 2: // Cónyuge o Hijo
-                if(idGrupoFamiliar == 2){   //Cónyuge
+                if(idGrupoFamiliar == 2 || idGrupoFamiliar == 0){   //Cónyuge
                     fechaNacimiento = DateUtil.getTime(1950, 12, 1);
                     idSexo = 1;              // Id o valor de Sexo -- propiedad "SexoAseg" [0,1,2] [Desconocido, Femenino, Masculino]
                     idProfesion = 4;         // Id o valor de Profesion -- propiedad "ProfesionActividad" [1 al 112]
-                    idTipoAsegurado = 2; // Id o valor de Tipo de Asegurado -- propiedad "TipoAseguradoAcc" [1, 2, 3] [TITULAR, CONYUGE, HIJO]
+                    idTipoAsegurado = idGrupoFamiliar == 0? 0 : 2; // Id o valor de Tipo de Asegurado -- propiedad "TipoAseguradoAcc" [1, 2, 3] [TITULAR, CONYUGE, HIJO]
                 } else {    //Hijo
                     fechaNacimiento = DateUtil.getTime(1980, 6, 1);
                     idSexo = 2;              // Id o valor de Sexo -- propiedad "SexoAseg" [0,1,2] [Desconocido, Femenino, Masculino]
-                    idProfesion = 44;         // Id o valor de Profesion -- propiedad "ProfesionActividad" [1 al 112]
+                    idProfesion = 44;          // Id o valor de Profesion -- propiedad "ProfesionActividad" [1 al 112]
                     idTipoAsegurado = 3; // Id o valor de Tipo de Asegurado -- propiedad "TipoAseguradoAcc" [1, 2, 3] [TITULAR, CONYUGE, HIJO]
                 }
                 idFumador = 0;          // Id o valor de Fumador -- propiedad "CondicionFumador" [0, 10] [No Fuma, Si Fuma]
@@ -97,7 +98,7 @@ public class CreateCotizacion {
                 fechaNacimiento = DateUtil.getTime(1980, 6, 1);
                 idSexo = 2;              // Id o valor de Sexo -- propiedad "SexoAseg" [0,1,2] [Desconocido, Femenino, Masculino]
                 idProfesion = 44;         // Id o valor de Profesion -- propiedad "ProfesionActividad" [1 al 112]
-                idTipoAsegurado = 3; // Id o valor de Tipo de Asegurado -- propiedad "TipoAseguradoAcc" [1, 2, 3] [TITULAR, CONYUGE, HIJO]
+                idTipoAsegurado = idGrupoFamiliar == 0? 0 : 3; // Id o valor de Tipo de Asegurado -- propiedad "TipoAseguradoAcc" [1, 2, 3] [TITULAR, CONYUGE, HIJO]
                 idFumador = 0;          // Id o valor de Fumador -- propiedad "CondicionFumador" [0, 10] [No Fuma, Si Fuma]
                 idClaseAccPers = 1;      // Id o valor de Clase -- propiedad "ClaseAccPers" [1, 2, 3] [Clase I, Clase II, Clase III]
                 break;
