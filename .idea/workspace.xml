@@ -3,8 +3,13 @@
   <component name="ChangeListManager">
     <list id="e8234e39-a108-4592-90c0-d33145302e2a" name="Default" comment="El otro Proyecto" />
     <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Servicios : Creadas las Estructuras para el servicio de Cotizacion. Actualizacion de la documentacion del API, en el codigo de ejemplos.Falta Probar la Cotizacion Inversa y que esten Ok la configuracion de los Productos en el ambiente. Se modificaron las estructuras de PlanFinanciamientoRPC (Monedas) , CoberturaRPC (URId y OAId)">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" afterPath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" afterPath="$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EdadProductoRPC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/RenglonEdadProductoRPC.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ValorGarantizadoRenglonRPC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ExigenciasMedicaParameter.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ExigenciasMedicaParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java" afterPath="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,255 +35,7 @@
     <favorites_list name="MobilityRPC_Users" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="MyMovilityRPCCommTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="docComment;class#MyMovilityRPCCommTest#0" expanded="false" />
-                <element signature="method#setUp#0;class#MyMovilityRPCCommTest#0" expanded="false" />
-                <element signature="method#tearDown#0;class#MyMovilityRPCCommTest#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyTestRunner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyTestMethod.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateCotizacion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="112" selection-start-line="15" selection-start-column="97" selection-end-line="15" selection-end-column="112" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="docComment;class#CreateCotizacion#0" expanded="false" />
-                <element signature="method#createParameter#0;class#CreateCotizacion#0" expanded="false" />
-                <element signature="method#createCotizacion#0;class#CreateCotizacion#0" expanded="false" />
-                <element signature="method#createListaObjetoAsegCotizaRPC#0;class#CreateCotizacion#0" expanded="false" />
-                <element signature="method#createObjetoAsegCotizaRPC#0;class#CreateCotizacion#0" expanded="false" />
-                <element signature="method#createListaCoberturas#0;class#CreateCotizacion#0" expanded="false" />
-                <element signature="method#createAsegurado#0;class#CreateCotizacion#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CotizacionRPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="docComment;class#CotizacionRPC#0" expanded="false" />
-                <element signature="docComment;field#montoPrimaBruta#0;class#CotizacionRPC#0" expanded="false" />
-                <element signature="docComment;method#CotizacionRPC#0;class#CotizacionRPC#0" expanded="false" />
-                <element signature="method#CotizacionRPC#0;class#CotizacionRPC#0" expanded="false" />
-                <element signature="e#5430#5431#0" expanded="false" />
-                <element signature="e#5463#5464#0" expanded="false" />
-                <element signature="e#5506#5507#0" expanded="false" />
-                <element signature="e#5547#5548#0" expanded="false" />
-                <element signature="e#5578#5579#0" expanded="false" />
-                <element signature="e#5607#5608#0" expanded="false" />
-                <element signature="e#5644#5645#0" expanded="false" />
-                <element signature="e#5677#5678#0" expanded="false" />
-                <element signature="e#5719#5720#0" expanded="false" />
-                <element signature="e#5757#5758#0" expanded="false" />
-                <element signature="e#5802#5803#0" expanded="false" />
-                <element signature="e#5843#5844#0" expanded="false" />
-                <element signature="e#5883#5884#0" expanded="false" />
-                <element signature="e#5921#5922#0" expanded="false" />
-                <element signature="e#5954#5955#0" expanded="false" />
-                <element signature="e#5985#5986#0" expanded="false" />
-                <element signature="e#6030#6031#0" expanded="false" />
-                <element signature="e#6071#6072#0" expanded="false" />
-                <element signature="e#6120#6121#0" expanded="false" />
-                <element signature="e#6165#6166#0" expanded="false" />
-                <element signature="e#6207#6208#0" expanded="false" />
-                <element signature="e#6245#6246#0" expanded="false" />
-                <element signature="e#6285#6286#0" expanded="false" />
-                <element signature="e#6323#6324#0" expanded="false" />
-                <element signature="e#6353#6354#0" expanded="false" />
-                <element signature="e#6381#6382#0" expanded="false" />
-                <element signature="e#6423#6424#0" expanded="false" />
-                <element signature="e#6461#6462#0" expanded="false" />
-                <element signature="e#6508#6509#0" expanded="false" />
-                <element signature="e#6551#6552#0" expanded="false" />
-                <element signature="e#6596#6597#0" expanded="false" />
-                <element signature="e#6637#6638#0" expanded="false" />
-                <element signature="e#6676#6677#0" expanded="false" />
-                <element signature="e#6711#6712#0" expanded="false" />
-                <element signature="e#6752#6753#0" expanded="false" />
-                <element signature="e#6789#6790#0" expanded="false" />
-                <element signature="e#6819#6820#0" expanded="false" />
-                <element signature="e#6845#6846#0" expanded="false" />
-                <element signature="e#6889#6890#0" expanded="false" />
-                <element signature="e#6929#6930#0" expanded="false" />
-                <element signature="e#6981#6982#0" expanded="false" />
-                <element signature="e#7010#7011#0" expanded="false" />
-                <element signature="e#7062#7063#0" expanded="false" />
-                <element signature="e#7097#7098#0" expanded="false" />
-                <element signature="e#7166#7167#0" expanded="false" />
-                <element signature="e#7214#7215#0" expanded="false" />
-                <element signature="e#7264#7265#0" expanded="false" />
-                <element signature="e#7308#7309#0" expanded="false" />
-                <element signature="e#7374#7375#0" expanded="false" />
-                <element signature="e#7434#7435#0" expanded="false" />
-                <element signature="e#7476#7477#0" expanded="false" />
-                <element signature="e#7512#7513#0" expanded="false" />
-                <element signature="e#7564#7565#0" expanded="false" />
-                <element signature="e#7608#7609#0" expanded="false" />
-                <element signature="e#7670#7671#0" expanded="false" />
-                <element signature="e#7724#7725#0" expanded="false" />
-                <element signature="e#7792#7793#0" expanded="false" />
-                <element signature="e#7852#7853#0" expanded="false" />
-                <element signature="e#7912#7913#0" expanded="false" />
-                <element signature="e#7966#7967#0" expanded="false" />
-                <element signature="e#8012#8013#0" expanded="false" />
-                <element signature="e#8052#8053#0" expanded="false" />
-                <element signature="e#8120#8121#0" expanded="false" />
-                <element signature="e#8180#8181#0" expanded="false" />
-                <element signature="method#setIdPeriodoPagoBeneficio#0;class#CotizacionRPC#0" expanded="false" />
-                <element signature="e#8386#8387#0" expanded="false" />
-                <element signature="e#8440#8441#0" expanded="false" />
-                <element signature="e#8500#8501#0" expanded="false" />
-                <element signature="e#8554#8555#0" expanded="false" />
-                <element signature="e#8597#8598#0" expanded="false" />
-                <element signature="e#8631#8632#0" expanded="false" />
-                <element signature="e#8693#8694#0" expanded="false" />
-                <element signature="e#8747#8748#0" expanded="false" />
-                <element signature="method#setMontoPrimaVoluntaria#0;class#CotizacionRPC#0" expanded="false" />
-                <element signature="e#8951#8952#0" expanded="false" />
-                <element signature="e#9011#9012#0" expanded="false" />
-                <element signature="e#9067#9068#0" expanded="false" />
-                <element signature="e#9115#9116#0" expanded="false" />
-                <element signature="e#9175#9176#0" expanded="false" />
-                <element signature="e#9227#9228#0" expanded="false" />
-                <element signature="e#9265#9266#0" expanded="false" />
-                <element signature="e#9295#9296#0" expanded="false" />
-                <element signature="e#9361#9362#0" expanded="false" />
-                <element signature="e#9419#9420#0" expanded="false" />
-                <element signature="e#9482#9483#0" expanded="false" />
-                <element signature="e#9518#9519#0" expanded="false" />
-                <element signature="method#toString#0;class#CotizacionRPC#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AseguradoRPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/AseguradoRPC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-              <folding>
-                <element signature="docComment;class#AseguradoRPC#0" expanded="false" />
-                <element signature="docComment;method#AseguradoRPC#0;class#AseguradoRPC#0" expanded="false" />
-                <element signature="method#AseguradoRPC#0;class#AseguradoRPC#0" expanded="false" />
-                <element signature="docComment;method#AseguradoRPC#1;class#AseguradoRPC#0" expanded="false" />
-                <element signature="method#AseguradoRPC#1;class#AseguradoRPC#0" expanded="false" />
-                <element signature="e#2576#2577#0" expanded="false" />
-                <element signature="e#2608#2609#0" expanded="false" />
-                <element signature="e#2648#2649#0" expanded="false" />
-                <element signature="e#2686#2687#0" expanded="false" />
-                <element signature="e#2719#2720#0" expanded="false" />
-                <element signature="e#2748#2749#0" expanded="false" />
-                <element signature="e#2784#2785#0" expanded="false" />
-                <element signature="e#2816#2817#0" expanded="false" />
-                <element signature="e#2854#2855#0" expanded="false" />
-                <element signature="e#2888#2889#0" expanded="false" />
-                <element signature="e#2929#2930#0" expanded="false" />
-                <element signature="e#2966#2967#0" expanded="false" />
-                <element signature="e#3008#3009#0" expanded="false" />
-                <element signature="e#3046#3047#0" expanded="false" />
-                <element signature="method#toString#0;class#AseguradoRPC#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CallerOfProcess.java" pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.2897196">
-              <caret line="125" column="43" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="43" />
-              <folding>
-                <element signature="e#6378#6387#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EventNotification_Processors.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/server/processor/EventNotification_Processors.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestProcessorExterno.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/externo/TestProcessorExterno.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SetUpBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/SetUpBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AcseleIPs.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="28" />
-              <folding>
-                <element signature="docComment;class#AcseleIPs#0" expanded="false" />
-                <element signature="e#274#275#0" expanded="false" />
-                <element signature="e#302#303#0" expanded="false" />
-                <element signature="e#331#332#0" expanded="false" />
-                <element signature="e#356#357#0" expanded="false" />
-                <element signature="method#getByName#0;class#AcseleIPs#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -439,7 +196,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -450,7 +207,45 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
@@ -920,6 +715,8 @@
       <workItem from="1460650476857" duration="10115000" />
       <workItem from="1461182880799" duration="600000" />
       <workItem from="1461882068582" duration="3756000" />
+      <workItem from="1462376950363" duration="588000" />
+      <workItem from="1462604960066" duration="35000" />
     </task>
     <task id="LOCAL-00001" summary="nnn">
       <created>1453685565282</created>
@@ -1069,7 +866,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="459517000" />
+    <option name="totallyTimeSpent" value="460140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1082,7 +879,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1091,24 +888,24 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2473525" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="519" y="70" width="327" height="587" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.552901" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5784983" sideWeight="0.50537056" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5324232" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62969285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5315162" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35854766" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21785174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57337886" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21785174" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" x="92" y="92" width="1182" height="544" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55119455" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.552901" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62969285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57337886" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1835,22 +1632,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.12099644">
           <caret line="6" column="28" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="28" />
-          <folding>
-            <element signature="docComment;class#AcseleIPs#0" expanded="false" />
-            <element signature="e#274#275#0" expanded="false" />
-            <element signature="e#302#303#0" expanded="false" />
-            <element signature="e#331#332#0" expanded="false" />
-            <element signature="e#356#357#0" expanded="false" />
-            <element signature="method#getByName#0;class#AcseleIPs#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/SetUpBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.7259787">
           <caret line="69" column="38" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="38" />
           <folding />
         </state>
@@ -1860,12 +1650,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#MyMovilityRPCCommTest#0" expanded="false" />
-            <element signature="method#setUp#0;class#MyMovilityRPCCommTest#0" expanded="false" />
-            <element signature="method#tearDown#0;class#MyMovilityRPCCommTest#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1873,129 +1658,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding>
-            <element signature="docComment;class#AseguradoRPC#0" expanded="false" />
-            <element signature="docComment;method#AseguradoRPC#0;class#AseguradoRPC#0" expanded="false" />
-            <element signature="method#AseguradoRPC#0;class#AseguradoRPC#0" expanded="false" />
-            <element signature="docComment;method#AseguradoRPC#1;class#AseguradoRPC#0" expanded="false" />
-            <element signature="method#AseguradoRPC#1;class#AseguradoRPC#0" expanded="false" />
-            <element signature="e#2576#2577#0" expanded="false" />
-            <element signature="e#2608#2609#0" expanded="false" />
-            <element signature="e#2648#2649#0" expanded="false" />
-            <element signature="e#2686#2687#0" expanded="false" />
-            <element signature="e#2719#2720#0" expanded="false" />
-            <element signature="e#2748#2749#0" expanded="false" />
-            <element signature="e#2784#2785#0" expanded="false" />
-            <element signature="e#2816#2817#0" expanded="false" />
-            <element signature="e#2854#2855#0" expanded="false" />
-            <element signature="e#2888#2889#0" expanded="false" />
-            <element signature="e#2929#2930#0" expanded="false" />
-            <element signature="e#2966#2967#0" expanded="false" />
-            <element signature="e#3008#3009#0" expanded="false" />
-            <element signature="e#3046#3047#0" expanded="false" />
-            <element signature="method#toString#0;class#AseguradoRPC#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#CotizacionRPC#0" expanded="false" />
-            <element signature="docComment;field#montoPrimaBruta#0;class#CotizacionRPC#0" expanded="false" />
-            <element signature="docComment;method#CotizacionRPC#0;class#CotizacionRPC#0" expanded="false" />
-            <element signature="method#CotizacionRPC#0;class#CotizacionRPC#0" expanded="false" />
-            <element signature="e#5430#5431#0" expanded="false" />
-            <element signature="e#5463#5464#0" expanded="false" />
-            <element signature="e#5506#5507#0" expanded="false" />
-            <element signature="e#5547#5548#0" expanded="false" />
-            <element signature="e#5578#5579#0" expanded="false" />
-            <element signature="e#5607#5608#0" expanded="false" />
-            <element signature="e#5644#5645#0" expanded="false" />
-            <element signature="e#5677#5678#0" expanded="false" />
-            <element signature="e#5719#5720#0" expanded="false" />
-            <element signature="e#5757#5758#0" expanded="false" />
-            <element signature="e#5802#5803#0" expanded="false" />
-            <element signature="e#5843#5844#0" expanded="false" />
-            <element signature="e#5883#5884#0" expanded="false" />
-            <element signature="e#5921#5922#0" expanded="false" />
-            <element signature="e#5954#5955#0" expanded="false" />
-            <element signature="e#5985#5986#0" expanded="false" />
-            <element signature="e#6030#6031#0" expanded="false" />
-            <element signature="e#6071#6072#0" expanded="false" />
-            <element signature="e#6120#6121#0" expanded="false" />
-            <element signature="e#6165#6166#0" expanded="false" />
-            <element signature="e#6207#6208#0" expanded="false" />
-            <element signature="e#6245#6246#0" expanded="false" />
-            <element signature="e#6285#6286#0" expanded="false" />
-            <element signature="e#6323#6324#0" expanded="false" />
-            <element signature="e#6353#6354#0" expanded="false" />
-            <element signature="e#6381#6382#0" expanded="false" />
-            <element signature="e#6423#6424#0" expanded="false" />
-            <element signature="e#6461#6462#0" expanded="false" />
-            <element signature="e#6508#6509#0" expanded="false" />
-            <element signature="e#6551#6552#0" expanded="false" />
-            <element signature="e#6596#6597#0" expanded="false" />
-            <element signature="e#6637#6638#0" expanded="false" />
-            <element signature="e#6676#6677#0" expanded="false" />
-            <element signature="e#6711#6712#0" expanded="false" />
-            <element signature="e#6752#6753#0" expanded="false" />
-            <element signature="e#6789#6790#0" expanded="false" />
-            <element signature="e#6819#6820#0" expanded="false" />
-            <element signature="e#6845#6846#0" expanded="false" />
-            <element signature="e#6889#6890#0" expanded="false" />
-            <element signature="e#6929#6930#0" expanded="false" />
-            <element signature="e#6981#6982#0" expanded="false" />
-            <element signature="e#7010#7011#0" expanded="false" />
-            <element signature="e#7062#7063#0" expanded="false" />
-            <element signature="e#7097#7098#0" expanded="false" />
-            <element signature="e#7166#7167#0" expanded="false" />
-            <element signature="e#7214#7215#0" expanded="false" />
-            <element signature="e#7264#7265#0" expanded="false" />
-            <element signature="e#7308#7309#0" expanded="false" />
-            <element signature="e#7374#7375#0" expanded="false" />
-            <element signature="e#7434#7435#0" expanded="false" />
-            <element signature="e#7476#7477#0" expanded="false" />
-            <element signature="e#7512#7513#0" expanded="false" />
-            <element signature="e#7564#7565#0" expanded="false" />
-            <element signature="e#7608#7609#0" expanded="false" />
-            <element signature="e#7670#7671#0" expanded="false" />
-            <element signature="e#7724#7725#0" expanded="false" />
-            <element signature="e#7792#7793#0" expanded="false" />
-            <element signature="e#7852#7853#0" expanded="false" />
-            <element signature="e#7912#7913#0" expanded="false" />
-            <element signature="e#7966#7967#0" expanded="false" />
-            <element signature="e#8012#8013#0" expanded="false" />
-            <element signature="e#8052#8053#0" expanded="false" />
-            <element signature="e#8120#8121#0" expanded="false" />
-            <element signature="e#8180#8181#0" expanded="false" />
-            <element signature="method#setIdPeriodoPagoBeneficio#0;class#CotizacionRPC#0" expanded="false" />
-            <element signature="e#8386#8387#0" expanded="false" />
-            <element signature="e#8440#8441#0" expanded="false" />
-            <element signature="e#8500#8501#0" expanded="false" />
-            <element signature="e#8554#8555#0" expanded="false" />
-            <element signature="e#8597#8598#0" expanded="false" />
-            <element signature="e#8631#8632#0" expanded="false" />
-            <element signature="e#8693#8694#0" expanded="false" />
-            <element signature="e#8747#8748#0" expanded="false" />
-            <element signature="method#setMontoPrimaVoluntaria#0;class#CotizacionRPC#0" expanded="false" />
-            <element signature="e#8951#8952#0" expanded="false" />
-            <element signature="e#9011#9012#0" expanded="false" />
-            <element signature="e#9067#9068#0" expanded="false" />
-            <element signature="e#9115#9116#0" expanded="false" />
-            <element signature="e#9175#9176#0" expanded="false" />
-            <element signature="e#9227#9228#0" expanded="false" />
-            <element signature="e#9265#9266#0" expanded="false" />
-            <element signature="e#9295#9296#0" expanded="false" />
-            <element signature="e#9361#9362#0" expanded="false" />
-            <element signature="e#9419#9420#0" expanded="false" />
-            <element signature="e#9482#9483#0" expanded="false" />
-            <element signature="e#9518#9519#0" expanded="false" />
-            <element signature="method#toString#0;class#CotizacionRPC#0" expanded="false" />
-          </folding>
+          <caret line="55" column="11" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2003,16 +1674,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="112" selection-start-line="15" selection-start-column="97" selection-end-line="15" selection-end-column="112" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#CreateCotizacion#0" expanded="false" />
-            <element signature="method#createParameter#0;class#CreateCotizacion#0" expanded="false" />
-            <element signature="method#createCotizacion#0;class#CreateCotizacion#0" expanded="false" />
-            <element signature="method#createListaObjetoAsegCotizaRPC#0;class#CreateCotizacion#0" expanded="false" />
-            <element signature="method#createObjetoAsegCotizaRPC#0;class#CreateCotizacion#0" expanded="false" />
-            <element signature="method#createListaCoberturas#0;class#CreateCotizacion#0" expanded="false" />
-            <element signature="method#createAsegurado#0;class#CreateCotizacion#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2026,7 +1688,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/externo/TestProcessorExterno.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.3024911">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
@@ -2050,7 +1712,7 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.2897196">
+        <state vertical-scroll-proportion="0.2188612">
           <caret line="125" column="43" selection-start-line="125" selection-start-column="43" selection-end-line="125" selection-end-column="43" />
           <folding>
             <element signature="e#6378#6387#0" expanded="true" />

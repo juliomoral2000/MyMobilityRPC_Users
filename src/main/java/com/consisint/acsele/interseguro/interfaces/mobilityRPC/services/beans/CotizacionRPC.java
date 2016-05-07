@@ -33,6 +33,7 @@ public class CotizacionRPC {
 
     List<ObjetoAsegCotizaRPC> iosCot = new ArrayList<ObjetoAsegCotizaRPC>();     // Lista de Objetos Asegurado (Info de Asegurados e Coberturas)
     List<ValidacionRPC> validaciones = new ArrayList<ValidacionRPC>();  // Salida de Lista de Errores en las validaciones realizadas al calcular la poliza
+    List<ValorGarantizadoRenglonRPC> vgs = new ArrayList<ValorGarantizadoRenglonRPC>();  // Tabla de proyeccion de Valores Garantizados
 
 
     /**
@@ -245,6 +246,10 @@ public class CotizacionRPC {
         this.iosCot = iosCot;
     }
 
+    public void setVgs(List<ValorGarantizadoRenglonRPC> vgs) {
+        this.vgs = vgs;
+    }
+
     @Override
     public String toString() {
         StringBuilder out = new StringBuilder("CotizacionRPC{")
@@ -277,6 +282,11 @@ public class CotizacionRPC {
         if(!validaciones.isEmpty()){
             out.append(", validacionesList:\n{");
             for (ValidacionRPC z : validaciones) out.append(z.toString()).append("\n");
+            out.append("}\n");
+        }
+        if(!vgs.isEmpty()){
+            out.append(", vgList:\n{");
+            for (ValorGarantizadoRenglonRPC z : vgs) out.append(z.toString()).append("\n");
             out.append("}\n");
         }
         out.append("}");

@@ -13,7 +13,7 @@ public class ProductRPC {
     String name;
     Map<String, DynamicDataRPC> dataDynamic = new Hashtable<String, DynamicDataRPC>(); // propiedadNombre, <nombre, input, value>
     /*List<PlanFinanciamientoRPC> plans = new ArrayList<PlanFinanciamientoRPC>();*/
-    public static final transient String[] PROPERTIESTOTAKE = {"Ramo", "SubRamo", "RamoSBS", "EdadLimiteIngreso", "EdadMinima"};
+    public static final transient String[] PROPERTIESTOTAKE = {"Ramo", "SubRamo", "RamoSBS", "EdadLimiteIngreso", "EdadMinima", "IndCapital"};
 
     public ProductRPC(long id, String name, Map<String, DynamicDataRPC> dataDynamic/*, List<PlanFinanciamientoRPC> plans*/) {
         this.id = id;
@@ -37,10 +37,6 @@ public class ProductRPC {
     public void setName(String name) {
         this.name = name;
     }
-
-    /*public List<PlanFinanciamientoRPC> getPlans() {
-        return plans;
-    }*/
 
     public Map<String, DynamicDataRPC> getDataDynamic() {
         return dataDynamic;
