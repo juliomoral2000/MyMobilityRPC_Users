@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MobilityRPC_Users.iml" filepath="$PROJECT_DIR$/MobilityRPC_Users.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cotizador/cotizador.iml" filepath="$PROJECT_DIR$/cotizador/cotizador.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sapn/sapn.iml" filepath="$PROJECT_DIR$/sapn/sapn.iml" />
     </modules>
   </component>
 </project>

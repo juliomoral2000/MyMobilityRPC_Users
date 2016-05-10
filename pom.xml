@@ -3,11 +3,16 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.consisint.acsele.interseguro.interfaces.mobilityRPC.services</groupId>
-  <artifactId>MobilityRPC_Users</artifactId>
+  <artifactId>MobilityRPC_Users_Root</artifactId>
   <version>1.0</version>
-  <packaging>jar</packaging>
+  <modules>
+    <!--<module>base</module>-->
+    <module>cotizador</module>
+    <module>sapn</module>
+  </modules>
+  <packaging>pom</packaging>
 
-  <name>MobilityRPC_Users</name>
+  <name>MobilityRPC_Users_Root</name>
   <!--<url>http://maven.apache.org</url>-->
 
   <properties>
@@ -88,15 +93,5 @@
         </executions>
       </plugin>
     </plugins>
-    <resources>
-      <resource>
-        <directory>src/main/java</directory>
-        <includes>
-          <include>**/Example_InvocarRemoto.java</include>
-          <include>**/Example_MyMovilityRPCCommRunner.java</include>
-          <include>**/TestProcessorExterno.java</include>
-        </includes>
-      </resource>
-    </resources>
   </build>
 </project>

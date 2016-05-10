@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>MobilityRPC_Users_Root</artifactId>
+        <groupId>com.consisint.acsele.interseguro.interfaces.mobilityRPC.services</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+
+    <!-- project coordinates -->
+    <artifactId>MobilityRPC_Users</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+
+    <!-- project dependencies -->
+    <!--<dependencies>
+        <dependency>
+            <groupId>com.consisint.acsele.interseguro.interfaces.mobilityRPC.services</groupId>
+            <artifactId>MobilityRPC_Users</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>-->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/Example_InvocarRemoto.java</include>
+                    <include>**/Example_MyMovilityRPCCommRunner.java</include>
+                    <include>**/TestProcessorExterno.java</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
+</project>
+        <!--<sourceDirectory>.</sourceDirectory>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.1</version>
+                        <configuration>
+                            <includes>
+                                <include>src/main/java/**/*.java</include>
+                                <include>src/main2/java/**/*.java</include>
+                            </includes>
+                        </configuration>
+                    </plugin>
+                </plugins>-->
+        <!--</build>
+        <build>-->
