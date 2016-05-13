@@ -38,10 +38,40 @@ public class MyTestMethod extends TestRunnerJC{
         //test_GetProducts();
         //test_boomerang();
         Stopwatch stopwatch = Stopwatch.createStarted();
+
+
+        /****************************************************************************/
+        test_GetListCotizacionRPC(49183);
+        /****************************************************************************/
+        final ProductRPC p = ServicesResultsObjectCache.getProduct(49183);
+        //double idGrupoFamiliar = 0;             // Id o valor Grupo Familiar            -- Propiedad "GrupoFamiliar"  [0, 1, 2, 3, 4] [NINGUNO, Titular; Titular y Cónyuge; Titular, Cónyuge e Hijo(s); Titular e Hijo(s)]
         /*************************************************************************/
-        long idProducto = 49183;                // Educacion Garantizada
-        double idGrupoFamiliar = 0;             // Id o valor Grupo Familiar            -- Propiedad "GrupoFamiliar"  [1,2,3,4] [Titular; Titular y Cónyuge; Titular, Cónyuge e Hijo(s); Titular e Hijo(s)]
-        test_CalcularCotizacion(true, idProducto, idGrupoFamiliar);
+        // Caso 1.0: Directa , [EducacionGarantizada] - Exitoso
+        //test_CalcularCotizacion(true, p.getId(), idGrupoFamiliar);
+
+        // Caso 1.1: Directa , [EducacionGarantizada] - Errores
+        // Caso 3.0: Inversa , [EducacionGarantizada] - Exitoso
+        // Caso 3.1: Inversa , [EducacionGarantizada] - Errores
+
+        // Caso 2.0.0: Directa , [Vida Protegida] (Titular) - Exitoso
+        // Caso 2.0.1: Directa , [Vida Protegida] (Titular/Conyuge) - Exitoso
+        // Caso 2.0.2: Directa , [Vida Protegida] (Titular/Hijo) - Exitoso
+        // Caso 2.0.3: Directa , [Vida Protegida] (Titular/Conyuge/Hijo) - Exitoso
+        // Caso 2.1.0: Directa , [Vida Protegida] (Titular) - Errores
+        // Caso 2.1.1: Directa , [Vida Protegida] (Titular/Conyuge) - Errores
+        // Caso 2.1.2: Directa , [Vida Protegida] (Titular/Hijo) - Errores
+        // Caso 2.1.3: Directa , [Vida Protegida] (Titular/Conyuge/Hijo) - Errores
+        // Caso 4.0.0: Inversa , [Vida Protegida] (Titular) - Exitoso
+        // Caso 4.0.1: Inversa , [Vida Protegida] (Titular/Conyuge) - Exitoso
+        // Caso 4.0.2: Inversa , [Vida Protegida] (Titular/Hijo) - Exitoso
+        // Caso 4.0.3: Inversa , [Vida Protegida] (Titular/Conyuge/Hijo) - Exitoso
+        // Caso 4.1.0: Inversa , [Vida Protegida] (Titular) - Errores
+        // Caso 4.1.1: Inversa , [Vida Protegida] (Titular/Conyuge) - Errores
+        // Caso 4.1.2: Inversa , [Vida Protegida] (Titular/Hijo) - Errores
+        // Caso 4.1.3: Inversa , [Vida Protegida] (Titular/Conyuge/Hijo) - Errores
+
+
+
         /*************************************************************************/
         //test_ServicesFactoryProccesor();
 
@@ -76,126 +106,21 @@ public class MyTestMethod extends TestRunnerJC{
         //log.log(Level.INFO, "Parate Aqui");
     }
 
-    public static List<PlanFinanciamientoRPC> getPlanesFinanciamiento(long idProducto) {
-        ProductParameter productParameter = new ProductParameter(idProducto);
-        return Product_Callers.getPlanesFinanciamiento(SystemName.ACSELE, productParameter);
-    }
-
-    private void test_CalcularCotizacion(boolean isDirecta, long idProducto, double idGrupoFamiliar) {
+    private void test_GetListCotizacionRPC(long idProducto) {
         try {
-            CotizacionParameter parameter = CreateCotizacion.createParameter(isDirecta, idProducto, idGrupoFamiliar);
-            System.out.println("[test_CalcularCotizacion]; parametro de entrada:\n" + parameter.toString());
             Stopwatch t = Stopwatch.createStarted();
-            CotizacionRPC cotizacionRPC = Quotation_Callers.calcularCotizacion(SystemName.ACSELE, parameter);
+            List<CotizacionRPC> cRPCs = Quotation_Callers.getCotizaciones(SystemName.ACSELE, new ProductParameter(idProducto));
             t.stop(); // optional
             t.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("***************************************");
-            System.out.println("[test_CalcularCotizacion]; Calculo "+(isDirecta?"Directo":"Inverso")+" respuesta :\n" + cotizacionRPC.toString());
-            System.out.println("[test_CalcularCotizacion]; Total time; " + t);
-            System.out.println("***************************************");
-            System.out.println("Termine ....");
-        }catch (Exception e){
-            Log.debug("ver ", e);
-        }
-    }
-
-    private void test_CumulusTercero() {
-        try {
-            long[] lista = new long[]{5811041,5802969,5803002,5803007,5803025,5803034,5802966,5802970,5802985,5802988,5802992,5802994,5803001,5803003,5803005,5803016,5803023,5802964,5802981,5803017,5803027,5803039,5803040,5803041,5803043,5197426,5871655,5839325,5867610,5843375,5855698,5871651,5855696,5855694,5871657,5855484,5843371,5871652,5883762,5827203,5843367,5871650,5843364,5839324,5871843,5839323,5843373,5847404,5855685,5859524,5855687,5843361,5843377,5867614,5855683,5855684,5823364,5843379,5871656};
-            Stopwatch t = Stopwatch.createStarted();
-            //long idTercero = 0; /*long idProducto = 0; long idMoneda=0;*/
-            for (long idTercero : lista) {
-                CumulusTerceroRPC ctRPC = Quotation_Callers.getCumulusTercero(SystemName.ACSELE, new CumulusTerceroParameter(idTercero));
-                t.stop(); // optional
-                t.elapsed(TimeUnit.MILLISECONDS);
-                System.out.println("***************************************");
-                System.out.println("[test_CumulusTercero]; " + ctRPC.toString());
-                System.out.println("[test_CumulusTercero]; Total time; " + t);
-                System.out.println("***************************************");
-                t.reset(); t.start();
-            }
-            System.out.println("Termine ....");
-        }catch (Exception e){
-            Log.debug("ver ", e);
-        }
-    }
-
-    private void test_EdadActuarial() {
-        try {
-            Stopwatch t = Stopwatch.createStarted();
-            Calendar birthDate = Calendar.getInstance();
-            birthDate.set(1974, Calendar.MAY, 23);
-            int edad = Quotation_Callers.getEdadActuarial(SystemName.ACSELE, new ActuarialAgeParameter(Calendar.getInstance().getTime(), birthDate.getTime()));
-            t.stop(); // optional
-            t.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("[test_EdadActuarial]; edad; " + edad);
-            System.out.println("[test_EdadActuarial]; Total time; " + t);
+            System.out.println("[test_GetListCotizacionRPC]; Total time; " + t);
             t.reset(); t.start();
+            for (CotizacionRPC cRPC : cRPCs) {
+                System.out.println(cRPC.toString());
+            }
         }catch (Exception e){
             Log.debug("ver ", e);
+            System.out.println("[test_GetListCotizacionRPC] Error " + e.getMessage());
         }
-    }
-
-    private void test_Planes(ProductRPC product, boolean isShowObjectResult) {
-        try {
-            Stopwatch stopwatch = Stopwatch.createStarted();
-            List<PlanRPC> list = getPlanRPC(product.getId());
-            stopwatch.stop(); // optional
-            stopwatch.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("[MyTestMethod.test_Planes]; Total time; " + stopwatch);
-            System.out.println("[MyTestMethod.test_Planes]; list.size; " + list.size());
-            if(isShowObjectResult) for (PlanRPC planRPC : list) System.out.println("[MyTestMethod.test_Planes];"+planRPC.toString());
-        } catch (ServiceBaseException e) {
-            Log.debug("ver ", e);
-        }
-
-    }
-
-    public static List<PlanRPC> getPlanRPC(long idProducto) {
-        ProductParameter productParameter = new ProductParameter(idProducto);
-        return Product_Callers.getPlanes(SystemName.ACSELE, productParameter);
-    }
-
-    private void test_PlanesFinanciamiento(ProductRPC product, boolean isShowObjectResult) {
-        try {
-            Stopwatch stopwatch = Stopwatch.createStarted();
-            List<PlanFinanciamientoRPC> list = getPlanesFinanciamiento(product.getId());
-            stopwatch.stop(); // optional
-            stopwatch.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("[test_PlanesFinanciamiento]; Total time; " + stopwatch);
-            System.out.println("[test_PlanesFinanciamiento] " + list.size());
-            if (isShowObjectResult) {
-                for (PlanFinanciamientoRPC o : list) {
-                    System.out.println("[test_PlanesFinanciamiento] " + o.toString());
-                }
-            }
-        } catch (ServiceBaseException e) {
-            Log.debug("ver ", e);
-        }
-
-    }
-
-    private void test_Coberturas(ProductRPC product, boolean isShowObjectResult) {
-        try {
-            Stopwatch stopwatch = Stopwatch.createStarted();
-            List<CoberturaRPC> list_ccv = getListaCoberturas(product.getId());
-            stopwatch.stop(); // optional
-            stopwatch.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("[test_Coberturas]; Total time; " + stopwatch);
-            System.out.println("[test_Coberturas] list_ccv.size: "+list_ccv.size());
-            if (isShowObjectResult) {
-                for (CoberturaRPC o : list_ccv) {
-                    System.out.println("[test_Coberturas] : " + o.toString());
-                }
-            }
-        } catch (ServiceBaseException e) {
-            Log.debug("ver ", e);
-        }
-    }
-
-    public static List<CoberturaRPC> getListaCoberturas(long idProducto) {
-        ProductParameter productParameter = new ProductParameter(idProducto);
-        return Product_Callers.getCoberturas(SystemName.ACSELE, productParameter);
     }
 
     private void test_GetPropertyRPC_Dependencies(String propertyName, boolean fetchDependence, boolean fetchDependenceChilds, String level, int numeroTest) {
@@ -260,7 +185,132 @@ public class MyTestMethod extends TestRunnerJC{
             System.out.println("[test_GetProducts]; Total time; " + t);
         }catch (Exception e){
             Log.debug("ver ", e);
-            System.out.println("[test_GetProducts] Error "+e.getMessage());
+            System.out.println("[test_GetProducts] Error " + e.getMessage());
+        }
+    }
+
+    private void test_GetProduct(ProductRPC product, boolean isShowObjectResult) {
+        try {
+            Stopwatch stopwatch = Stopwatch.createStarted();
+            ProductRPC rpc = ServicesResultsObjectCache.getProduct(product.getId());
+            stopwatch.stop(); // optional
+            stopwatch.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[test_GetProduct]; Total time; " + stopwatch);
+            if(isShowObjectResult) System.out.println("[test_GetProduct] "+rpc.toString());
+        } catch (ServiceBaseException e) {
+            Log.debug("ver ", e);
+        }
+    }
+
+    private void test_Planes(ProductRPC product, boolean isShowObjectResult) {
+        try {
+            Stopwatch stopwatch = Stopwatch.createStarted();
+            List<PlanRPC> list = ServicesResultsObjectCache.getPlanRPC(product.getId());
+            stopwatch.stop(); // optional
+            stopwatch.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[MyTestMethod.test_Planes]; Total time; " + stopwatch);
+            System.out.println("[MyTestMethod.test_Planes]; list.size; " + list.size());
+            if(isShowObjectResult) for (PlanRPC planRPC : list) System.out.println("[MyTestMethod.test_Planes];"+planRPC.toString());
+        } catch (ServiceBaseException e) {
+            Log.debug("ver ", e);
+        }
+
+    }
+
+    public static List<PlanFinanciamientoRPC> getPlanesFinanciamiento(long idProducto) {
+        ProductParameter productParameter = new ProductParameter(idProducto);
+        return Product_Callers.getPlanesFinanciamiento(SystemName.ACSELE, productParameter);
+    }
+
+    private void test_PlanesFinanciamiento(ProductRPC product, boolean isShowObjectResult) {
+        try {
+            Stopwatch stopwatch = Stopwatch.createStarted();
+            List<PlanFinanciamientoRPC> list = getPlanesFinanciamiento(product.getId());
+            stopwatch.stop(); // optional
+            stopwatch.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[test_PlanesFinanciamiento]; Total time; " + stopwatch);
+            System.out.println("[test_PlanesFinanciamiento] " + list.size());
+            if (isShowObjectResult) {
+                for (PlanFinanciamientoRPC o : list) {
+                    System.out.println("[test_PlanesFinanciamiento] " + o.toString());
+                }
+            }
+        } catch (ServiceBaseException e) {
+            Log.debug("ver ", e);
+        }
+
+    }
+
+    private void test_Coberturas(ProductRPC product, boolean isShowObjectResult) {
+        try {
+            Stopwatch stopwatch = Stopwatch.createStarted();
+            List<CoberturaRPC> list_ccv = ServicesResultsObjectCache.getListaCoberturas(product.getId());
+            stopwatch.stop(); // optional
+            stopwatch.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[test_Coberturas]; Total time; " + stopwatch);
+            System.out.println("[test_Coberturas] list_ccv.size: " + list_ccv.size());
+            if (isShowObjectResult) {
+                for (CoberturaRPC o : list_ccv) {
+                    System.out.println("[test_Coberturas] : " + o.toString());
+                }
+            }
+        } catch (ServiceBaseException e) {
+            Log.debug("ver ", e);
+        }
+    }
+
+    private void test_CalcularCotizacion(boolean isDirecta, long idProducto, double idGrupoFamiliar) {
+        try {
+            CotizacionParameter parameter = CreateCotizacion.createParameter(isDirecta, idProducto, idGrupoFamiliar);
+            System.out.println("[test_CalcularCotizacion]; parametro de entrada:\n" + parameter.toString());
+            Stopwatch t = Stopwatch.createStarted();
+            CotizacionRPC cotizacionRPC = Quotation_Callers.calcularCotizacion(SystemName.ACSELE, parameter);
+            t.stop(); // optional
+            t.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("***************************************");
+            System.out.println("[test_CalcularCotizacion]; Calculo "+(isDirecta?"Directo":"Inverso")+" respuesta :\n" + cotizacionRPC.toString());
+            System.out.println("[test_CalcularCotizacion]; Total time; " + t);
+            System.out.println("***************************************");
+            System.out.println("Termine ....");
+        }catch (Exception e){
+            Log.debug("ver ", e);
+        }
+    }
+
+    private void test_CumulusTercero() {
+        try {
+            long[] lista = new long[]{5811041,5802969,5803002,5803007,5803025,5803034,5802966,5802970,5802985,5802988,5802992,5802994,5803001,5803003,5803005,5803016,5803023,5802964,5802981,5803017,5803027,5803039,5803040,5803041,5803043,5197426,5871655,5839325,5867610,5843375,5855698,5871651,5855696,5855694,5871657,5855484,5843371,5871652,5883762,5827203,5843367,5871650,5843364,5839324,5871843,5839323,5843373,5847404,5855685,5859524,5855687,5843361,5843377,5867614,5855683,5855684,5823364,5843379,5871656};
+            Stopwatch t = Stopwatch.createStarted();
+            //long idTercero = 0; /*long idProducto = 0; long idMoneda=0;*/
+            for (long idTercero : lista) {
+                CumulusTerceroRPC ctRPC = Quotation_Callers.getCumulusTercero(SystemName.ACSELE, new CumulusTerceroParameter(idTercero));
+                t.stop(); // optional
+                t.elapsed(TimeUnit.MILLISECONDS);
+                System.out.println("***************************************");
+                System.out.println("[test_CumulusTercero]; " + ctRPC.toString());
+                System.out.println("[test_CumulusTercero]; Total time; " + t);
+                System.out.println("***************************************");
+                t.reset(); t.start();
+            }
+            System.out.println("Termine ....");
+        }catch (Exception e){
+            Log.debug("ver ", e);
+        }
+    }
+
+    private void test_EdadActuarial() {
+        try {
+            Stopwatch t = Stopwatch.createStarted();
+            Calendar birthDate = Calendar.getInstance();
+            birthDate.set(1974, Calendar.MAY, 23);
+            int edad = Quotation_Callers.getEdadActuarial(SystemName.ACSELE, new ActuarialAgeParameter(Calendar.getInstance().getTime(), birthDate.getTime()));
+            t.stop(); // optional
+            t.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[test_EdadActuarial]; edad; " + edad);
+            System.out.println("[test_EdadActuarial]; Total time; " + t);
+            t.reset(); t.start();
+        }catch (Exception e){
+            Log.debug("ver ", e);
         }
     }
 
@@ -311,19 +361,6 @@ public class MyTestMethod extends TestRunnerJC{
         }
     }
 
-    private void test_GetProduct(ProductRPC product, boolean isShowObjectResult) {
-        try {
-            ProductParameter productParameter = new ProductParameter(product.getId());
-            Stopwatch stopwatch = Stopwatch.createStarted();
-            ProductRPC rpc = Product_Callers.getProduct(SystemName.ACSELE, productParameter);
-            stopwatch.stop(); // optional
-            stopwatch.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("[test_GetProduct]; Total time; " + stopwatch);
-            if(isShowObjectResult) System.out.println("[test_GetProduct] "+rpc.toString());
-        } catch (ServiceBaseException e) {
-            Log.debug("ver ", e);
-        }
-    }
 
     private void test_ServicesFactoryProccesor() throws Exception {
         try {
@@ -334,7 +371,7 @@ public class MyTestMethod extends TestRunnerJC{
                 Log.debug("******** ProcessorRegister : ****************\n".concat(register.toString()));
             }
         } catch (Exception e) {
-            System.out.println("Error : "+e.getMessage());
+            System.out.println("Error : " + e.getMessage());
         }
     }
 

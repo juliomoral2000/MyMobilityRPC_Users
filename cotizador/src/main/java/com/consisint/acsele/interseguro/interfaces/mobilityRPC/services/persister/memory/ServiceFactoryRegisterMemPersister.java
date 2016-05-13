@@ -1,10 +1,10 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.memory;
 
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.*;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.*;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Product_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Property_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Quotation_Callers;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.*;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.persister.ServiceFactoryRegisterPersister;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.server.processor.EventNotification_Processors;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
@@ -48,7 +48,7 @@ public class ServiceFactoryRegisterMemPersister implements ServiceFactoryRegiste
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getCumulusTercero", "Quotation_Processors", CumulusTerceroParameter.class, CumulusTerceroRPC.class, Quotation_Callers.GetCumulusTercero.class)); //14/03/2016
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "calcularCotizacion", "Quotation_Processors", CotizacionParameter.class, CotizacionRPC.class, Quotation_Callers.CalcularCotizacion.class)); // 08/04/2016
         list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getEdadProducto", "Product_Processors", ProductParameter.class, EdadProductoRPC.class, Product_Callers.GetEdadProducto.class));   // 09/05/2016
-
+        list.add(new CallerRegister(SystemName.COTIZADOR, SystemName.ACSELE, "getCotizaciones", "Quotation_Processors", ProductParameter.class, List.class, Quotation_Callers.GetCotizaciones.class));
         return list;
     }
 }

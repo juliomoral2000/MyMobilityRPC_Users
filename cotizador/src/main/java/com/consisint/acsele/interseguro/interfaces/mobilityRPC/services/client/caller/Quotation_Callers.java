@@ -5,11 +5,14 @@ import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.Cu
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ActuarialAgeParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.CotizacionParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.CumulusTerceroParameter;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ProductParameter;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.enroquesw.mcs.comm.mobilityRPC.services.ServicesBaseExecutor;
 import com.enroquesw.mcs.comm.mobilityRPC.services.callable.CallerOfProcess;
 import com.enroquesw.mcs.comm.mobilityRPC.services.exception.ServiceBaseException;
 import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
+
+import java.util.List;
 
 /**
  * La clase <code>Quotation_Callers</code> es el contenedor de callers asociados a los servicios de cotizacion.
@@ -50,6 +53,18 @@ public class Quotation_Callers <P extends ProcessParameter> {
         return ServicesBaseExecutor.executeCalling(CalcularCotizacion.class, parameter, remoteSystemName);
     }
 
+    /**
+     * Metodo utilitario para cargar una lista de Cotizaciones desde el core por producto
+     * a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return List < CotizacionRPC >
+     * @throws ServiceBaseException
+     */
+    public static List<CotizacionRPC> getCotizaciones(SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetCotizaciones.class, parameter, remoteSystemName);
+    }
+
 /****************************** DECLARACION DE CLASES CallerOfProcess *************************************************/
 
     /**
@@ -73,4 +88,7 @@ public class Quotation_Callers <P extends ProcessParameter> {
         public CalcularCotizacion(CotizacionParameter parameter) throws Exception { super(parameter); }
     }
 
+    public static class GetCotizaciones extends CallerOfProcess<GetCotizaciones, ProductParameter, List<CotizacionRPC>> {
+        public GetCotizaciones(ProductParameter parameter) throws Exception { super(parameter); }
+    }
 }

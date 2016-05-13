@@ -3,6 +3,7 @@ package com.enroquesw.mcs.comm.mobilityRPC.client.cotizacion;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.*;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.CotizacionParameter;
 import com.enroquesw.mcs.comm.mobilityRPC.client.MyTestMethod;
+import com.enroquesw.mcs.comm.mobilityRPC.client.ServicesResultsObjectCache;
 import com.enroquesw.mcs.comm.mobilityRPC.util.DateUtil;
 
 import java.util.ArrayList;
@@ -22,14 +23,17 @@ public class CreateCotizacion {
     }
 
     private CotizacionRPC createCotizacion(long idProducto, boolean isDirecta, double idGrupoFamiliar, long idPeriodoDePago, long idMoneda, boolean isLegal ) {
-        long idPlan = MyTestMethod.getPlanRPC(idProducto).get(0).getId();              // Id de PlanVida       -- Tabla PLAN [PLANID]
-        double idPlanVida = 602.0;              // Id de PlanVida       -- Tabla Tarifas [PLANVIDAVALUE]
+        long idPlan = ServicesResultsObjectCache.getPlanRPC(idProducto).get(0).getId();      // Id de PlanVida       -- Tabla PLAN [PLANID]
+        double idPlanVida = ServicesResultsObjectCache.getPlanVida(idProducto).get(0).getValue();              // Id de PlanVida       -- Tabla Tarifas [PLANVIDAVALUE]
         double idTipoDescuento = 0;             // Id o valor Tipo de Descuento [VERIFICAR ESTO -- Pol.TipoDescuento] -- Campo "TipoDescuento" solo usada en una tabla "TDDescuentoVida" no esta en ninguna configuracion de Polizas ????? XQ????
+        // ServicesResultsObjectCache.getPeriodoCobertura(idProducto)
         double idPeriodoCobertura = 6;          // Id o valor Periodo de Cobertura      -- Tabla STPT_PRODUCTVALIDITY [PVT_VALIDITY]
+        // ServicesResultsObjectCache.getPeriodoPagoPrima(idProducto)
         double idPeriodoPagoPrima = 14.0;       // Id o valor periodo Pago Prima        -- Tabla Tarifas [PERIODOPAGOPRIMATDVALUE]
+        // ServicesResultsObjectCache.getPeriodoPagoBeneficio(idProducto)
         double idPeriodoPagoBeneficio = 1.0;    // Id o valor periodo Pago Beneficio    -- Propiedad "NumeroAnualidades" [Poliza.NumeroAnualidades] --> [PropertyValuesRPC.get("NumeroAnualidades")]
         long fechaCotizacion = DateUtil.getTime(2016, 1, 1); // Fecha Cotizacion                     -- [Poliza.FechaInicial]
-        List<CoberturaRPC> list_ccv = MyTestMethod.getListaCoberturas(idProducto);
+        List<CoberturaRPC> list_ccv = ServicesResultsObjectCache.getListaCoberturas(idProducto);
         List<ObjetoAsegCotizaRPC> iosCot = createListaObjetoAsegCotizaRPC(isDirecta, idProducto, (int) idGrupoFamiliar, list_ccv);     // Lista de Objetos Asegurado (Info de Asegurados e Coberturas)
         return new CotizacionRPC(idProducto, list_ccv.get(0).getIdUnidadRiesgoType(), idPlan,  idPlanVida,  idTipoDescuento,  idPeriodoCobertura,  idPeriodoDePago, idMoneda,  idPeriodoPagoPrima,  idPeriodoPagoBeneficio,  idGrupoFamiliar,  fechaCotizacion,  isLegal,  iosCot);
         //return cotizacionRPC;
@@ -57,7 +61,7 @@ public class CreateCotizacion {
     private List<CoberturaCotizaRPC> createListaCoberturas(boolean isDirecta, List<CoberturaRPC> listCov) {
         List<CoberturaCotizaRPC> list = new ArrayList<CoberturaCotizaRPC>();
         for (CoberturaRPC o : listCov) {
-            if(o.isMandatory()) list.add(new CoberturaCotizaRPC(o.getId(), o.isMandatory(), o.isLeading(), isDirecta? 10000.0 : 0, isDirecta? 0 : 2));
+            if(o.isMandatory()) list.add(new CoberturaCotizaRPC(o.getId(), o.isMandatory(), o.isLeading(), isDirecta? 10000.0 : 0));
         }
         return list;
     }

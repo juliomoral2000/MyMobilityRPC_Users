@@ -25,7 +25,8 @@ public class EventNotificacionRPC implements ProcessParameter {
     long fechaEvento;
     String comunicacion;
     String correoEP;
-    String correoOC;
+    String comunicacionEndoso;
+    String correoEE;
     String codAgenteVI;
     String codAgenteVM;
     String tipoDocumento;
@@ -38,7 +39,7 @@ public class EventNotificacionRPC implements ProcessParameter {
     String nombreLaboratorio;
     String origenPoliza;
 
-    public EventNotificacionRPC(long idProducto, String nombreProducto, long idPoliza, String numPoliza, long idOperacion, String numPropuesta, String numCotizacion, String numOportunidad, String numEndoso, String estadoPoliza, String evento, String motivoEvento, long fechaEvento, String comunicacion, String correoEP, String correoOC, String codAgenteVI, String codAgenteVM, String tipoDocumento, String numDocumento, String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String codigoLaboratorio, String nombreLaboratorio, String origenPoliza) {
+    public EventNotificacionRPC(long idProducto, String nombreProducto, long idPoliza, String numPoliza, long idOperacion, String numPropuesta, String numCotizacion, String numOportunidad, String numEndoso, String estadoPoliza, String evento, String motivoEvento, long fechaEvento, String comunicacion, String correoEP, String comunicacionEndoso, String correoEE, String codAgenteVI, String codAgenteVM, String tipoDocumento, String numDocumento, String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String codigoLaboratorio, String nombreLaboratorio, String origenPoliza) {
         this.idProducto = idProducto;
         this.nombreProducto = nombreProducto;
         this.idPoliza = idPoliza;
@@ -54,7 +55,8 @@ public class EventNotificacionRPC implements ProcessParameter {
         this.fechaEvento = fechaEvento;
         this.comunicacion = comunicacion;
         this.correoEP = correoEP;
-        this.correoOC = correoOC;
+        this.comunicacionEndoso = comunicacionEndoso;
+        this.correoEE = correoEE;
         this.codAgenteVI = codAgenteVI;
         this.codAgenteVM = codAgenteVM;
         this.tipoDocumento = tipoDocumento;
@@ -98,7 +100,7 @@ public class EventNotificacionRPC implements ProcessParameter {
 
     public String getCorreoEP() { return correoEP; }
 
-    public String getCorreoOC() { return correoOC; }
+    public String getCorreoEE() { return correoEE; }
 
     public String getCodAgenteVI() { return codAgenteVI; }
 
@@ -122,6 +124,8 @@ public class EventNotificacionRPC implements ProcessParameter {
 
     public String getOrigenPoliza() { return origenPoliza; }
 
+    public String getComunicacionEndoso() { return comunicacionEndoso; }
+
     @Override
     public String toString() {
         return "EventNotificacionRPC{" +
@@ -140,7 +144,7 @@ public class EventNotificacionRPC implements ProcessParameter {
                 ", fechaEvento=" + fechaEvento +
                 ", comunicacion='" + comunicacion + '\'' +
                 ", correoEP='" + correoEP + '\'' +
-                ", correoOC='" + correoOC + '\'' +
+                ", correoEE='" + correoEE + '\'' +
                 ", codAgenteVI='" + codAgenteVI + '\'' +
                 ", codAgenteVM='" + codAgenteVM + '\'' +
                 ", tipoDocumento='" + tipoDocumento + '\'' +

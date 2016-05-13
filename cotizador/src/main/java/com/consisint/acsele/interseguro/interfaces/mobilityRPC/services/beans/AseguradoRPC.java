@@ -11,8 +11,8 @@ public class AseguradoRPC {
     long fechaNacimiento;   // Fecha de Nacimiento [IO.fechaNacimientoCOT]
     double idSexo = -1;          // Id o valor de Sexo [IO.SexoCOT]  - Puede ser 0 en su valor
     double idFumador = -1;  // Id o valor de Fumador [IO.CondicionFumador] - Puede ser 0 en su valor
-    double idProfesion;     // Id o valor de Profesion [IO.ProfesionActividadCOT]
-    double idClaseAccPers;  // Id o valor de Clase [IO.ClaseAccPersCOT]    -- TODO: usos en UR.ClaseAccPers y en varias TDs.ClaseAccPers
+    double idProfesion;     // Id o valor de Profesion [POL.ProfesionActividad] -- Cambios de Chang
+    double idClaseAccPers;  // Id o valor de Clase [POL.ClaseAccPers]    -- Cambios de Chang
     double idTipoAsegurado; // Id o valor de Tipo de Asegurado [IO.TipoAseguradoAccCOT]       -- TODO: usos en IO.TipoAseguradoAcc y en varias TDs.TipoAseguradoAcc [TITULAR, CONYUGUE, ETC]
 
     /**

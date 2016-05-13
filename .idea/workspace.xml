@@ -3,143 +3,15 @@
   <component name="ChangeListManager">
     <list id="e8234e39-a108-4592-90c0-d33145302e2a" name="Default" comment="El otro Proyecto" />
     <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Servicios : Creadas las Estructuras para el servicio de Cotizacion - Valores Garantizados. &#10;Modificacion del Projecto para manejar dos mudulos, se creo los servicios de SAPN de Notificaciones, el servicio de cotizador de Edades x producto. Actualizacion de la documentacion del API, en el codigo de ejemplos.Falta Probar la Cotizacion Inversa y que esten Ok la configuracion de los Productos en el ambiente. Se modificaron las estructuras de CotizacionRPC.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/AseguradoRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaCotizaRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CotizacionParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CumulusTerceroRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/DateUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/DateUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/DynamicDCORPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/DynamicDataRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EdadProductoRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/EventNotificationQuotationParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificationResponseRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificationResponseRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/server/processor/EventNotification_Processors.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/server/processor/EventNotification_Processors.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_InvocarRemoto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_InvocarRemotoBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_MyMovilityRPCCommRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_MyMovilityRPCCommRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_MyMovilityRPCCommRunnerBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ExigenciasMedicaParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ExigenciasMedicaRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_consisint_acsele_interseguro_interfaces_mobilityRPC_services_MobilityRPC_Users_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCServerRunnerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCServerTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ObjetoAsegCotizaRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PlanFinanciamientoRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PlanRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PropertyValuesRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/RenglonEdadProductoRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/RenglonExigenciasMedicaRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/RenglonTarifaRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/ServiceFactoryRegisterPersister.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/SetUpBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/SetUpBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/TRDataRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/TarifaRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/externo/TestProcessorExterno.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/externo/TestProcessorExterno.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/externo/TestProcessorExternoBase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/interfaces/TestRunnerJC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/interfaces/TestRunnerJC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/TimerHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/TimerHelper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ValidacionRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ValorGarantizadoRenglonRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/VigenciaRPC.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/base.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/cotizador.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/base/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sapn/sapn.iml" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\AseguradoRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\CoberturaCotizaRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\CoberturaRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\CotizacionRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\CumulusTerceroRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\DynamicDCORPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\DynamicDataRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\EdadProductoRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\EventNotificationResponseRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\ExigenciasMedicaRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\ObjetoAsegCotizaRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\PlanFinanciamientoRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\PlanRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\ProductRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\PropertyValuesRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\RenglonEdadProductoRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\RenglonExigenciasMedicaRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\RenglonTarifaRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\TRDataRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\TarifaRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\ValidacionRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\ValorGarantizadoRenglonRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\beans\VigenciaRPC.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\client\caller\Product_Callers.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\client\caller\Property_Callers.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\client\caller\Quotation_Callers.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\example\Example_InvocarRemoto.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\example\Example_MyMovilityRPCCommRunner.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\example\externo\TestProcessorExterno.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\params\ActuarialAgeParameter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\params\CotizacionParameter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\params\CumulusTerceroParameter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\params\EventNotificationQuotationParameter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\params\ExigenciasMedicaParameter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\params\ProductParameter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\params\PropertyParameter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\params\TarifaParameter.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\persister\ServiceFactoryRegisterPersister.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\persister\memory\ServiceFactoryRegisterMemPersister.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\main\java\com\consisint\acsele\interseguro\interfaces\mobilityRPC\services\server\processor\EventNotification_Processors.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\MyMovilityRPCCommTest.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\SetUpBase.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\client\MyMovilityRPCClientTest.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\client\MyTestMethod.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\client\Stresstesting.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\client\cotizacion\CreateCotizacion.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\server\MyMovilityRPCServerRunnerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\server\MyMovilityRPCServerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\util\DateUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\util\TimerHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\util\enums\AcseleIPs.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\util\testRunner\MyTestRunner.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\util\testRunner\interfaces\TestRunnerJC.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/AseguradoRPC.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/AseguradoRPC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaCotizaRPC.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaCotizaRPC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java" afterPath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -169,30 +41,138 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ServiceFactoryRegisterMemPersister.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
+      <file leaf-file-name="MyTestMethod.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+            <state vertical-scroll-proportion="0.5852156">
+              <caret line="111" column="64" selection-start-line="111" selection-start-column="64" selection-end-line="111" selection-end-column="64" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1204#1230#0" expanded="true" />
-                <element signature="method#getCallerRegisters#0;class#ServiceFactoryRegisterMemPersister#0" expanded="true" />
-                <element signature="e#1561#1577#0" expanded="true" />
+                <element signature="method#testMain#0;class#MyTestMethod#0" expanded="true" />
+                <element signature="e#2335#2390#0" expanded="true" />
+                <element signature="e#6613#6619#0" expanded="true" />
+                <element signature="e#6966#6967#0" expanded="true" />
+                <element signature="e#8429#8434#0" expanded="true" />
+                <element signature="e#8436#8443#0" expanded="true" />
+                <element signature="e#8555#8561#0" expanded="true" />
+                <element signature="e#8621#8627#0" expanded="true" />
+                <element signature="method#test_GetProducts#0;class#MyTestMethod#0" expanded="true" />
+                <element signature="e#10211#10217#0" expanded="true" />
+                <element signature="e#10893#10899#0" expanded="true" />
+                <element signature="e#11637#11643#0" expanded="true" />
+                <element signature="e#12731#12737#0" expanded="true" />
+                <element signature="e#13551#13557#0" expanded="true" />
+                <element signature="e#14643#14649#0" expanded="true" />
+                <element signature="e#16108#16114#0" expanded="true" />
+                <element signature="e#16327#16331#0" expanded="true" />
+                <element signature="e#16347#16349#0" expanded="true" />
+                <element signature="e#16823#16829#0" expanded="true" />
+                <element signature="e#17015#17019#0" expanded="true" />
+                <element signature="e#17039#17040#0" expanded="true" />
+                <element signature="e#18031#18035#0" expanded="true" />
+                <element signature="e#18055#18056#0" expanded="true" />
+                <element signature="method#test_PeriodosCoberturas#0;class#MyTestMethod#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventNotification_Processors.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/server/processor/EventNotification_Processors.java">
+      <file leaf-file-name="AseguradoRPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/AseguradoRPC.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoberturaCotizaRPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaCotizaRPC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CotizacionRPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Quotation_Callers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+              <folding>
+                <element signature="method#getEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;method#calcularCotizacion#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;method#getCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#getCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#GetEdadActuarial#0;class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="class#GetCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#GetCotizaciones#0;class#GetCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceFactoryRegisterMemPersister.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="50" column="128" selection-start-line="50" selection-start-column="128" selection-end-line="50" selection-end-column="128" />
+              <folding>
+                <element signature="e#2372#2385#0" expanded="true" />
+                <element signature="e#2387#2407#0" expanded="true" />
+                <element signature="e#5101#5118#0" expanded="true" />
+                <element signature="e#5120#5142#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductParameter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServicesResultsObjectCache.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#EventNotification_Processors#0" expanded="true" />
-                <element signature="e#1328#1354#0" expanded="true" />
+                <element signature="e#1222#1240#0" expanded="true" />
+                <element signature="e#1331#1352#0" expanded="true" />
+                <element signature="method#getProduct#0;class#ServicesResultsObjectCache#0" expanded="true" />
+                <element signature="e#1697#1703#0" expanded="true" />
+                <element signature="method#getPlanRPC#0;class#ServicesResultsObjectCache#0" expanded="true" />
+                <element signature="e#2072#2078#0" expanded="true" />
+                <element signature="e#2240#2251#0" expanded="true" />
+                <element signature="e#2391#2392#0" expanded="true" />
+                <element signature="e#2394#2404#0" expanded="true" />
+                <element signature="e#2406#2410#0" expanded="true" />
+                <element signature="e#2670#2850#0" expanded="true" />
+                <element signature="e#2849#2850#0" expanded="true" />
+                <element signature="e#2900#3345#0" expanded="true" />
+                <element signature="e#3344#3345#0" expanded="true" />
+                <element signature="e#3503#3509#0" expanded="true" />
+                <element signature="method#getListaCoberturas#0;class#ServicesResultsObjectCache#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -202,40 +182,72 @@
         <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="101" selection-start-line="16" selection-start-column="101" selection-end-line="16" selection-end-column="101" />
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
-                <element signature="method#getProducts#0;class#Product_Callers#0" expanded="true" />
-                <element signature="method#getEdadProducto#0;class#Product_Callers#0" expanded="true" />
-                <element signature="class#GetProducts#0;class#Product_Callers#0" expanded="true" />
-                <element signature="method#GetProducts#0;class#GetProducts#0;class#Product_Callers#0" expanded="true" />
-                <element signature="docComment;class#GetExigenciasMedicas#0;class#Product_Callers#0" expanded="true" />
-                <element signature="class#GetEdadProducto#0;class#Product_Callers#0" expanded="true" />
-                <element signature="method#GetEdadProducto#0;class#GetEdadProducto#0;class#Product_Callers#0" expanded="true" />
+                <element signature="docComment;class#Product_Callers#0" expanded="true" />
+                <element signature="method#getPlanes#0;class#Product_Callers#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestProcessorExterno.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/externo/TestProcessorExterno.java">
+      <file leaf-file-name="PropertyValuesRPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PropertyValuesRPC.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <caret line="36" column="20" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="20" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#processCall#0;class#TestProcessorExterno#0" expanded="true" />
-                <element signature="method#setExternalProcessor#0;class#TestProcessorExterno#0" expanded="true" />
+                <element signature="e#1308#1309#0" expanded="true" />
+                <element signature="e#1337#1338#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EventNotificationResponseRPC.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificationResponseRPC.java">
+      <file leaf-file-name="TRDataRPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/TRDataRPC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37280703">
-              <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateCotizacion.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+              <folding>
+                <element signature="method#createParameter#0;class#CreateCotizacion#0" expanded="true" />
+                <element signature="method#createCotizacion#0;class#CreateCotizacion#0" expanded="true" />
+                <element signature="method#createListaObjetoAsegCotizaRPC#0;class#CreateCotizacion#0" expanded="true" />
+                <element signature="method#createListaCoberturas#0;class#CreateCotizacion#0" expanded="true" />
+                <element signature="method#createAsegurado#0;class#CreateCotizacion#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventNotificacionRPC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CotizacionParameter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CotizacionParameter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+              <folding>
+                <element signature="method#CotizacionParameter#0;class#CotizacionParameter#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -262,8 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/EventNotificationQuotationParameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" />
@@ -294,8 +304,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java" />
         <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" />
         <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/interfaces/TestRunnerJC.java" />
         <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/SetUpBase.java" />
         <option value="$PROJECT_DIR$/cotizador/pom.xml" />
@@ -310,9 +318,13 @@
         <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" />
         <option value="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" />
         <option value="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
         <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" />
         <option value="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" />
       </list>
     </option>
   </component>
@@ -401,7 +413,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -420,10 +431,247 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cotizador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cotizador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobilityRPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cotizador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mobilityRPC" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cotizador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cotizador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="processor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cotizador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="persister" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cotizador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="persister" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="memory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cotizador" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -929,6 +1177,7 @@
       <workItem from="1462604960066" duration="6268000" />
       <workItem from="1462806313131" duration="7000000" />
       <workItem from="1462825801286" duration="8351000" />
+      <workItem from="1463074031428" duration="11945000" />
     </task>
     <task id="LOCAL-00001" summary="nnn">
       <created>1453685565282</created>
@@ -1078,7 +1327,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="481724000" />
+    <option name="totallyTimeSpent" value="493669000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1091,47 +1340,47 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" x="92" y="92" width="1182" height="544" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55025554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24734446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="519" y="70" width="327" height="587" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.552901" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5784983" sideWeight="0.50537056" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.52901024" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.528109" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35811836" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24506828" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5699659" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" x="92" y="92" width="1182" height="544" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5689949" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.55119455" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62969285" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" x="92" y="92" width="1182" height="544" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2473525" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="519" y="70" width="327" height="587" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5784983" sideWeight="0.50537056" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5315162" sideWeight="0.4935553" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39183056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57240206" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57240206" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1358,14 +1607,14 @@
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>283</line>
+          <line>333</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <dependency id="0" />
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>73</line>
+          <line>103</line>
           <properties />
           <option name="timeStamp" value="54" />
         </line-breakpoint>
@@ -1384,19 +1633,19 @@
         </line-breakpoint>
         <line-breakpoint log-message="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>281</line>
+          <line>331</line>
           <properties />
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>285</line>
+          <line>335</line>
           <properties />
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>127</line>
+          <line>305</line>
           <properties />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
@@ -1408,7 +1657,7 @@
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>130</line>
+          <line>308</line>
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
@@ -1422,7 +1671,7 @@
         <line-breakpoint suspend="NONE" type="java-line">
           <condition disabled="true" expression="!exigRPC.getRenglonList().isEmpty()" language="JAVA" custom="" />
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>277</line>
+          <line>327</line>
           <properties />
           <option name="timeStamp" value="69" />
         </line-breakpoint>
@@ -1432,21 +1681,9 @@
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
-        <line-breakpoint suspend="NONE" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>202</line>
-          <properties />
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint suspend="NONE" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>205</line>
-          <properties />
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>69</line>
+          <line>99</line>
           <properties />
           <option name="timeStamp" value="80" />
         </line-breakpoint>
@@ -1506,13 +1743,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>45</line>
+          <line>75</line>
           <properties />
           <option name="timeStamp" value="120" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
-          <line>43</line>
+          <line>73</line>
           <properties />
           <option name="timeStamp" value="121" />
         </line-breakpoint>
@@ -1553,11 +1790,17 @@
           <properties />
           <option name="timeStamp" value="132" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="133" />
+      <option name="time" value="134" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1566,74 +1809,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/interfaces/TestRunnerJC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/TimerHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20731707">
-          <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/DateUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/TimerHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/AseguradoRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaCotizaRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaRPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1700,13 +1879,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PropertyValuesRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/RenglonEdadProductoRPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1742,13 +1914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/TRDataRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.120567374">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/TarifaRPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19058296">
@@ -1781,10 +1946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
-          <folding>
-            <element signature="method#setUp#0;class#MyMovilityRPCCommTest#0" expanded="false" />
-            <element signature="method#tearDown#0;class#MyMovilityRPCCommTest#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1821,11 +1982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="71" selection-start-line="23" selection-start-column="8" selection-end-line="29" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#MyTestMethod#0" expanded="true" />
-            <element signature="method#run#0;class#MyTestMethod#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1833,12 +1989,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="22" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="e#1296#1318#0" expanded="false" />
-            <element signature="method#setUp#0;class#SetUpBase#0" expanded="false" />
-            <element signature="method#getMapClients#0;class#SetUpBase#0" expanded="false" />
-            <element signature="method#setServiceFactoryRegister#0;class#SetUpBase#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1872,9 +2022,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.72727275">
           <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding>
-            <element signature="n#parent#0;n#project#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1882,16 +2029,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#Example_MyMovilityRPCCommRunner#0" expanded="false" />
-            <element signature="method#main#0;class#Example_MyMovilityRPCCommRunner#0" expanded="false" />
-            <element signature="docComment;method#getMapClients#0;class#Example_MyMovilityRPCCommRunner#0" expanded="false" />
-            <element signature="method#getMapClients#0;class#Example_MyMovilityRPCCommRunner#0" expanded="false" />
-            <element signature="e#4448#4470#0" expanded="false" />
-            <element signature="docComment;method#setExternalProcessor#0;class#Example_MyMovilityRPCCommRunner#0" expanded="false" />
-            <element signature="method#setExternalProcessor#0;class#Example_MyMovilityRPCCommRunner#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1899,91 +2036,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-          <folding>
-            <element signature="docComment;class#ServiceFactoryRegisterPersister#0" expanded="false" />
-            <element signature="class#Impl#0;class#ServiceFactoryRegisterPersister#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#EventNotificacionRPC#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getIdProducto#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getNombreProducto#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getIdPoliza#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getNumPoliza#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getIdOperacion#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getNumPropuesta#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getNumCotizacion#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getNumOportunidad#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getNumEndoso#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getEstadoPoliza#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getEvento#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getMotivoEvento#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getFechaEvento#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getComunicacion#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getCorreoEP#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getCorreoOC#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getCodAgenteVI#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getCodAgenteVM#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getTipoDocumento#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getNumDocumento#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getPrimerNombre#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getSegundoNombre#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getPrimerApellido#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getSegundoApellido#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getCodigoLaboratorio#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getNombreLaboratorio#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#getOrigenPoliza#0;class#EventNotificacionRPC#0" expanded="false" />
-            <element signature="method#toString#0;class#EventNotificacionRPC#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="175" selection-start-line="49" selection-start-column="175" selection-end-line="49" selection-end-column="175" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#ServiceFactoryRegisterMemPersister#0" expanded="false" />
-            <element signature="method#getProcessorRegisters#0;class#ServiceFactoryRegisterMemPersister#0" expanded="false" />
-            <element signature="e#1406#1425#0" expanded="false" />
-            <element signature="e#1527#1553#0" expanded="false" />
-            <element signature="e#2275#2291#0" expanded="false" />
-            <element signature="e#2372#2385#0" expanded="false" />
-            <element signature="e#2387#2407#0" expanded="false" />
-            <element signature="e#2372#2385#0" expanded="false" />
-            <element signature="e#2387#2407#0" expanded="false" />
-            <element signature="e#2556#2568#0" expanded="false" />
-            <element signature="e#2570#2590#0" expanded="false" />
-            <element signature="e#2747#2766#0" expanded="false" />
-            <element signature="e#2768#2789#0" expanded="false" />
-            <element signature="e#2962#2987#0" expanded="false" />
-            <element signature="e#2989#3009#0" expanded="false" />
-            <element signature="e#3173#3184#0" expanded="false" />
-            <element signature="e#3186#3206#0" expanded="false" />
-            <element signature="e#3356#3371#0" expanded="false" />
-            <element signature="e#3373#3393#0" expanded="false" />
-            <element signature="e#3547#3570#0" expanded="false" />
-            <element signature="e#3572#3592#0" expanded="false" />
-            <element signature="e#3754#3766#0" expanded="false" />
-            <element signature="e#3768#3788#0" expanded="false" />
-            <element signature="e#3938#3956#0" expanded="false" />
-            <element signature="e#3958#3980#0" expanded="false" />
-            <element signature="e#4165#4187#0" expanded="false" />
-            <element signature="e#4189#4209#0" expanded="false" />
-            <element signature="e#4412#4431#0" expanded="false" />
-            <element signature="e#4433#4455#0" expanded="false" />
-            <element signature="e#4648#4668#0" expanded="false" />
-            <element signature="e#4670#4692#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1992,25 +2044,25 @@
         <state vertical-scroll-proportion="0.2843866">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="n#properties#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#goals#0;n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#executions#0;n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#execution#0;n#executions#0;n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#goals#0;n#execution#0;n#executions#0;n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#properties#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#2;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#3;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#4;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#configuration#0;n#plugin#0;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#goals#0;n#execution#0;n#executions#0;n#plugin#1;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#executions#0;n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#execution#0;n#executions#0;n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#goals#0;n#execution#0;n#executions#0;n#plugin#2;n#plugins#0;n#build#0;n#project#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2020,12 +2072,12 @@
         <state vertical-scroll-proportion="1.6363636">
           <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
           <folding>
-            <element signature="n#project#0;n#!!top" expanded="true" />
-            <element signature="n#parent#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
-            <element signature="n#includes#0;n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="true" />
+            <element signature="n#project#0;n#!!top" expanded="false" />
+            <element signature="n#parent#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#resources#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#includes#0;n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2035,10 +2087,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1204#1230#0" expanded="true" />
-            <element signature="method#getCallerRegisters#0;class#ServiceFactoryRegisterMemPersister#0" expanded="true" />
-            <element signature="e#1561#1577#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="method#getCallerRegisters#0;class#ServiceFactoryRegisterMemPersister#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2048,25 +2098,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#EventNotification_Processors#0" expanded="true" />
-            <element signature="e#1328#1354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="101" selection-start-line="16" selection-start-column="101" selection-end-line="16" selection-end-column="101" />
-          <folding>
-            <element signature="method#getProducts#0;class#Product_Callers#0" expanded="true" />
-            <element signature="method#getEdadProducto#0;class#Product_Callers#0" expanded="true" />
-            <element signature="class#GetProducts#0;class#Product_Callers#0" expanded="true" />
-            <element signature="method#GetProducts#0;class#GetProducts#0;class#Product_Callers#0" expanded="true" />
-            <element signature="docComment;class#GetExigenciasMedicas#0;class#Product_Callers#0" expanded="true" />
-            <element signature="class#GetEdadProducto#0;class#Product_Callers#0" expanded="true" />
-            <element signature="method#GetEdadProducto#0;class#GetEdadProducto#0;class#Product_Callers#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#EventNotification_Processors#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2076,9 +2109,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#processCall#0;class#TestProcessorExterno#0" expanded="true" />
-            <element signature="method#setExternalProcessor#0;class#TestProcessorExterno#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="method#processCall#0;class#TestProcessorExterno#0" expanded="false" />
+            <element signature="method#setExternalProcessor#0;class#TestProcessorExterno#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2088,6 +2121,189 @@
         <state vertical-scroll-proportion="0.37280703">
           <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CotizacionParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <folding>
+            <element signature="method#CotizacionParameter#0;class#CotizacionParameter#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/PropertyValuesRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <element signature="e#1308#1309#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/TRDataRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="docComment;class#Product_Callers#0" expanded="true" />
+            <element signature="method#getPlanes#0;class#Product_Callers#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/AseguradoRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaCotizaRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+          <folding>
+            <element signature="method#createParameter#0;class#CreateCotizacion#0" expanded="true" />
+            <element signature="method#createCotizacion#0;class#CreateCotizacion#0" expanded="true" />
+            <element signature="method#createListaObjetoAsegCotizaRPC#0;class#CreateCotizacion#0" expanded="true" />
+            <element signature="method#createListaCoberturas#0;class#CreateCotizacion#0" expanded="true" />
+            <element signature="method#createAsegurado#0;class#CreateCotizacion#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="90" column="33" selection-start-line="90" selection-start-column="33" selection-end-line="90" selection-end-column="33" />
+          <folding>
+            <element signature="method#getEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;method#calcularCotizacion#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;method#getCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#getCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#GetEdadActuarial#0;class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="class#GetCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#GetCotizaciones#0;class#GetCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="128" selection-start-line="50" selection-start-column="128" selection-end-line="50" selection-end-column="128" />
+          <folding>
+            <element signature="e#2372#2385#0" expanded="true" />
+            <element signature="e#2387#2407#0" expanded="true" />
+            <element signature="e#5101#5118#0" expanded="true" />
+            <element signature="e#5120#5142#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1222#1240#0" expanded="true" />
+            <element signature="e#1331#1352#0" expanded="true" />
+            <element signature="method#getProduct#0;class#ServicesResultsObjectCache#0" expanded="true" />
+            <element signature="e#1697#1703#0" expanded="true" />
+            <element signature="method#getPlanRPC#0;class#ServicesResultsObjectCache#0" expanded="true" />
+            <element signature="e#2072#2078#0" expanded="true" />
+            <element signature="e#2240#2251#0" expanded="true" />
+            <element signature="e#2391#2392#0" expanded="true" />
+            <element signature="e#2394#2404#0" expanded="true" />
+            <element signature="e#2406#2410#0" expanded="true" />
+            <element signature="e#2670#2850#0" expanded="true" />
+            <element signature="e#2849#2850#0" expanded="true" />
+            <element signature="e#2900#3345#0" expanded="true" />
+            <element signature="e#3344#3345#0" expanded="true" />
+            <element signature="e#3503#3509#0" expanded="true" />
+            <element signature="method#getListaCoberturas#0;class#ServicesResultsObjectCache#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5852156">
+          <caret line="111" column="64" selection-start-line="111" selection-start-column="64" selection-end-line="111" selection-end-column="64" />
+          <folding>
+            <element signature="method#testMain#0;class#MyTestMethod#0" expanded="true" />
+            <element signature="e#2335#2390#0" expanded="true" />
+            <element signature="e#6613#6619#0" expanded="true" />
+            <element signature="e#6966#6967#0" expanded="true" />
+            <element signature="e#8429#8434#0" expanded="true" />
+            <element signature="e#8436#8443#0" expanded="true" />
+            <element signature="e#8555#8561#0" expanded="true" />
+            <element signature="e#8621#8627#0" expanded="true" />
+            <element signature="method#test_GetProducts#0;class#MyTestMethod#0" expanded="true" />
+            <element signature="e#10211#10217#0" expanded="true" />
+            <element signature="e#10893#10899#0" expanded="true" />
+            <element signature="e#11637#11643#0" expanded="true" />
+            <element signature="e#12731#12737#0" expanded="true" />
+            <element signature="e#13551#13557#0" expanded="true" />
+            <element signature="e#14643#14649#0" expanded="true" />
+            <element signature="e#16108#16114#0" expanded="true" />
+            <element signature="e#16327#16331#0" expanded="true" />
+            <element signature="e#16347#16349#0" expanded="true" />
+            <element signature="e#16823#16829#0" expanded="true" />
+            <element signature="e#17015#17019#0" expanded="true" />
+            <element signature="e#17039#17040#0" expanded="true" />
+            <element signature="e#18031#18035#0" expanded="true" />
+            <element signature="e#18055#18056#0" expanded="true" />
+            <element signature="method#test_PeriodosCoberturas#0;class#MyTestMethod#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
