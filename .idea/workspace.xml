@@ -7,17 +7,7 @@
   <component name="ChangeListManager">
     <list id="e8234e39-a108-4592-90c0-d33145302e2a" name="Default" comment="El otro Proyecto" />
     <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Servicios : Creadas las Estructuras para el servicio de Cotizacion - Valores Garantizados. &#10;Modificacion del Projecto para manejar dos mudulos, se creo los servicios de SAPN de Notificaciones, el servicio de cotizador de Edades x producto. Actualizacion de la documentacion del API, en el codigo de ejemplos.Falta Probar la Cotizacion Inversa y que esten Ok la configuracion de los Productos en el ambiente. Se modificaron las estructuras de CotizacionRPC.&#10;Respaldo">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" afterPath="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/RenglonEdadProductoRPC.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/RenglonEdadProductoRPC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/interfaces/TestRunnerJC.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/interfaces/TestRunnerJC.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\cotizador\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\client\MyTestMethod.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java" />
-      <change type="MOVED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\cotizador\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\util\testRunner\MyTestRunner.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java" />
-      <change type="MOVED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\sapn\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\client\MyTestMethod.java" afterPath="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodSAPN.java" />
-      <change type="MOVED" beforePath="D:\Acsele\versiones\MobilityRPC_Users\sapn\src\test\java\com\enroquesw\mcs\comm\mobilityRPC\util\testRunner\MyTestRunner.java" afterPath="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerSAPN.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1033,7 +1023,7 @@
       <workItem from="1463756332013" duration="2539000" />
       <workItem from="1463765633106" duration="17413000" />
       <workItem from="1463964593769" duration="741000" />
-      <workItem from="1463979095443" duration="973000" />
+      <workItem from="1463979095443" duration="1244000" />
     </task>
     <task id="LOCAL-00001" summary="nnn">
       <created>1453685565282</created>
@@ -1185,11 +1175,17 @@
       <option name="project" value="LOCAL" />
       <updated>1463105681960</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Servicios : Creadas las Estructuras para el servicio de Cotizacion - Valores Garantizados. &#10;Modificacion del Projecto para manejar dos mudulos, se creo los servicios de SAPN de Notificaciones, el servicio de cotizador de Edades x producto. Actualizacion de la documentacion del API, en el codigo de ejemplos.Falta Probar la Cotizacion Inversa y que esten Ok la configuracion de los Productos en el ambiente. Se modificaron las estructuras de CotizacionRPC.&#10;Respaldo">
+      <created>1463984247951</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1463984247951</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="577922000" />
+    <option name="totallyTimeSpent" value="578193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1215,6 +1211,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.443686" sideWeight="0.506183" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.52411574" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.629393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36191198" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1225,7 +1222,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5479233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.629393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
