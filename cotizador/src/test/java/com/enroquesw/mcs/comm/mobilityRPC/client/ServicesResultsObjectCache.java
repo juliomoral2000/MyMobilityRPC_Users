@@ -52,7 +52,10 @@ public class ServicesResultsObjectCache {
             final List<TRDataRPC> trDatas = new FastArrayList(Arrays.asList(planVida.getTrsArr()));
             ((FastArrayList)trDatas).setFast(true);
             List<TRDataRPC> result = new FastArrayList();
-            final Predicate predicateParent = new Predicate() {
+            for (TRDataRPC trData : trDatas) {
+                for (TRDataRPC trDataParent : trData.getTrsArrParent()) if(trDataParent.getValue()== idProducto) collect.add(trData);
+            }
+            /*final Predicate predicateParent = new Predicate() {
                 @Override public boolean evaluate(Object o) {
                     return ((TRDataRPC) o).getValue() == idProducto;
                 }
@@ -65,7 +68,7 @@ public class ServicesResultsObjectCache {
                     return padre;
                 }
             };
-            collect = (List<TRDataRPC>) CollectionUtils.collect(trDatas, transformerHijo);
+            collect = (List<TRDataRPC>) CollectionUtils.collect(trDatas, transformerHijo);*/
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
         }
@@ -77,4 +80,13 @@ public class ServicesResultsObjectCache {
         return Product_Callers.getCoberturas(SystemName.ACSELE, productParameter);
     }
 
+    public static List<VigenciaRPC> getPeriodosCoberturas(long idProducto) {
+        ProductParameter productParameter = new ProductParameter(idProducto);
+        return Product_Callers.getPeriodosCoberturas(SystemName.ACSELE, productParameter);
+    }
+
+    public static EdadProductoRPC getEdadProducto(long idProducto) {
+        ProductParameter productParameter = new ProductParameter(idProducto);
+        return Product_Callers.getEdadProducto(SystemName.ACSELE, productParameter);
+    }
 }

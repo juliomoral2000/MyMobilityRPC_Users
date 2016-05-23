@@ -1,6 +1,6 @@
 package com.enroquesw.mcs.comm.mobilityRPC;
 
-import com.enroquesw.mcs.comm.mobilityRPC.util.testRunner.MyTestRunner;
+import com.enroquesw.mcs.comm.mobilityRPC.util.testRunner.MyTestRunnerCOT;
 import com.enroquesw.mcs.comm.mobilityRPC.server.MyMovilityRPCCommRunner;
 import com.google.common.base.Joiner;
 import org.junit.After;
@@ -39,8 +39,8 @@ public class MyMovilityRPCCommTest extends SetUpBase {
             }
         }
         setExternalProcessor();
-        log.log(Level.INFO, "Espero por la finalizacion del Hilo "+thread.getName());
-        MyTestRunner myTestRunner = new MyTestRunner();
+        log.log(Level.INFO, "[MyMovilityRPCCommTest_COT] Espero por la finalizacion del Hilo "+thread.getName());
+        MyTestRunnerCOT myTestRunner = new MyTestRunnerCOT();
         myTestRunner.start();
         thread.join();
         System.out.println("[" + t.getName() + "] All threads have finished.");

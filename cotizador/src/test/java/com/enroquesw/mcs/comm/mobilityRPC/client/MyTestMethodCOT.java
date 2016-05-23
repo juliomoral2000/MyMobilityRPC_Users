@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Mi Metodo de Prueba
  */
-public class MyTestMethod extends TestRunnerJC{
+public class MyTestMethodCOT extends TestRunnerJC{
     @Override
     public void run() {
         try {
@@ -30,6 +30,7 @@ public class MyTestMethod extends TestRunnerJC{
             testMain();
         } catch (Exception e) {
             e.printStackTrace();
+            this.interrupt();
         }
     }
 
@@ -39,11 +40,12 @@ public class MyTestMethod extends TestRunnerJC{
         //test_boomerang();
         Stopwatch stopwatch = Stopwatch.createStarted();
 
-
+        test_CalcularCotizacion(true,49183, 0 );
+        //test_GetEdadProducto(49183);
         /****************************************************************************/
-        test_GetListCotizacionRPC(49183);
+        //test_GetListCotizacionRPC(49183);
         /****************************************************************************/
-        final ProductRPC p = ServicesResultsObjectCache.getProduct(49183);
+        //final ProductRPC p = ServicesResultsObjectCache.getProduct(49183);
         //double idGrupoFamiliar = 0;             // Id o valor Grupo Familiar            -- Propiedad "GrupoFamiliar"  [0, 1, 2, 3, 4] [NINGUNO, Titular; Titular y Cónyuge; Titular, Cónyuge e Hijo(s); Titular e Hijo(s)]
         /*************************************************************************/
         // Caso 1.0: Directa , [EducacionGarantizada] - Exitoso
@@ -104,6 +106,19 @@ public class MyTestMethod extends TestRunnerJC{
         System.out.println("[testMain] Total time; " + stopwatch);
         System.out.println("Termine ............................... ");
         //log.log(Level.INFO, "Parate Aqui");
+    }
+
+    private void test_GetEdadProducto(long idProducto) {
+        try {
+            Stopwatch stopwatch = Stopwatch.createStarted();
+            EdadProductoRPC rpc = ServicesResultsObjectCache.getEdadProducto(idProducto);
+            stopwatch.stop(); // optional
+            stopwatch.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[test_GetEdadProducto]; Total time; " + stopwatch);
+            System.out.println("[test_GetEdadProducto] "+rpc.toString());
+        } catch (ServiceBaseException e) {
+            Log.debug("ver ", e);
+        }
     }
 
     private void test_GetListCotizacionRPC(long idProducto) {
@@ -208,9 +223,9 @@ public class MyTestMethod extends TestRunnerJC{
             List<PlanRPC> list = ServicesResultsObjectCache.getPlanRPC(product.getId());
             stopwatch.stop(); // optional
             stopwatch.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("[MyTestMethod.test_Planes]; Total time; " + stopwatch);
-            System.out.println("[MyTestMethod.test_Planes]; list.size; " + list.size());
-            if(isShowObjectResult) for (PlanRPC planRPC : list) System.out.println("[MyTestMethod.test_Planes];"+planRPC.toString());
+            System.out.println("[MyTestMethodCOT.test_Planes]; Total time; " + stopwatch);
+            System.out.println("[MyTestMethodCOT.test_Planes]; list.size; " + list.size());
+            if(isShowObjectResult) for (PlanRPC planRPC : list) System.out.println("[MyTestMethodCOT.test_Planes];"+planRPC.toString());
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
         }

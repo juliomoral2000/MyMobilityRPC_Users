@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Mi Metodo de Prueba
  */
-public class MyTestMethod extends TestRunnerJC{
+public class MyTestMethodSAPN extends TestRunnerJC{
     @Override
     public void run() {
         try {

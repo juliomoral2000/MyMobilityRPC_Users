@@ -2,7 +2,7 @@ package com.enroquesw.mcs.comm.mobilityRPC.client.cotizacion;
 
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.*;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.CotizacionParameter;
-import com.enroquesw.mcs.comm.mobilityRPC.client.MyTestMethod;
+import com.enroquesw.mcs.comm.mobilityRPC.client.MyTestMethodCOT;
 import com.enroquesw.mcs.comm.mobilityRPC.client.ServicesResultsObjectCache;
 import com.enroquesw.mcs.comm.mobilityRPC.util.DateUtil;
 
@@ -16,7 +16,7 @@ public class CreateCotizacion {
 
     public static CotizacionParameter createParameter(boolean isDirecta, long idProducto, double idGrupoFamiliar) {
         CreateCotizacion createCotizacion = new CreateCotizacion();
-        PlanFinanciamientoRPC planF = MyTestMethod.getPlanesFinanciamiento(idProducto).get(0);
+        PlanFinanciamientoRPC planF = MyTestMethodCOT.getPlanesFinanciamiento(idProducto).get(0);
         long idPeriodoDePago =  planF.getId();              // valor del Periodo de Pago            -- tabla CONFIGURATEDFINANCIALPLAN [PERIOD]
         long idMoneda = planF.getIdMonedas().get(0);        // Id de la Moneda de ese Cotizacion    -- [STPS_FINANCIALPLANCURRENCY.CCY_ID]  -->  [Monedas que correspondan con PlanFinanciamientoRPC.idMonedas]
         return new CotizacionParameter(createCotizacion.createCotizacion(idProducto, isDirecta, idGrupoFamiliar, idPeriodoDePago, idMoneda, false), !isDirecta);
@@ -24,15 +24,15 @@ public class CreateCotizacion {
 
     private CotizacionRPC createCotizacion(long idProducto, boolean isDirecta, double idGrupoFamiliar, long idPeriodoDePago, long idMoneda, boolean isLegal ) {
         long idPlan = ServicesResultsObjectCache.getPlanRPC(idProducto).get(0).getId();      // Id de PlanVida       -- Tabla PLAN [PLANID]
-        double idPlanVida = ServicesResultsObjectCache.getPlanVida(idProducto).get(0).getValue();              // Id de PlanVida       -- Tabla Tarifas [PLANVIDAVALUE]
+        double idPlanVida = ServicesResultsObjectCache.getPlanVida(idProducto).get(1).getValue();              // Id de PlanVida       -- Tabla Tarifas [PLANVIDAVALUE]
         double idTipoDescuento = 0;             // Id o valor Tipo de Descuento [VERIFICAR ESTO -- Pol.TipoDescuento] -- Campo "TipoDescuento" solo usada en una tabla "TDDescuentoVida" no esta en ninguna configuracion de Polizas ????? XQ????
         // ServicesResultsObjectCache.getPeriodoCobertura(idProducto)
-        double idPeriodoCobertura = 6;          // Id o valor Periodo de Cobertura      -- Tabla STPT_PRODUCTVALIDITY [PVT_VALIDITY]
+        double idPeriodoCobertura = 5*12;//ServicesResultsObjectCache.getPeriodosCoberturas(idProducto).get(0).getValor();          // Id o valor Periodo de Cobertura   ESTA expresado en meses   -- Tabla STPT_PRODUCTVALIDITY [PVT_VALIDITY]
         // ServicesResultsObjectCache.getPeriodoPagoPrima(idProducto)
-        double idPeriodoPagoPrima = 14.0;       // Id o valor periodo Pago Prima        -- Tabla Tarifas [PERIODOPAGOPRIMATDVALUE]
+        double idPeriodoPagoPrima = Double.parseDouble(String.format("%.2g%n", idPeriodoCobertura/12));       // Id o valor periodo Pago Prima [Esta expresada en a#os] asignacion a VigenciaEG       -- Tabla Tarifas [PERIODOPAGOPRIMATDVALUE]
         // ServicesResultsObjectCache.getPeriodoPagoBeneficio(idProducto)
         double idPeriodoPagoBeneficio = 1.0;    // Id o valor periodo Pago Beneficio    -- Propiedad "NumeroAnualidades" [Poliza.NumeroAnualidades] --> [PropertyValuesRPC.get("NumeroAnualidades")]
-        long fechaCotizacion = DateUtil.getTime(2016, 1, 1); // Fecha Cotizacion                     -- [Poliza.FechaInicial]
+        long fechaCotizacion = DateUtil.getTime(2016, 5, 1); // Fecha Cotizacion                     -- [Poliza.FechaInicial]
         List<CoberturaRPC> list_ccv = ServicesResultsObjectCache.getListaCoberturas(idProducto);
         List<ObjetoAsegCotizaRPC> iosCot = createListaObjetoAsegCotizaRPC(isDirecta, idProducto, (int) idGrupoFamiliar, list_ccv);     // Lista de Objetos Asegurado (Info de Asegurados e Coberturas)
         return new CotizacionRPC(idProducto, list_ccv.get(0).getIdUnidadRiesgoType(), idPlan,  idPlanVida,  idTipoDescuento,  idPeriodoCobertura,  idPeriodoDePago, idMoneda,  idPeriodoPagoPrima,  idPeriodoPagoBeneficio,  idGrupoFamiliar,  fechaCotizacion,  isLegal,  iosCot);
@@ -76,7 +76,7 @@ public class CreateCotizacion {
         double idTipoAsegurado = 0; // Id o valor de Tipo de Asegurado -- propiedad "TipoAseguradoAcc" [1, 2, 3] [TITULAR, CONYUGE, HIJO]
         switch (numeroAsegurado){
             case 1: //Titular
-                fechaNacimiento = DateUtil.getTime(1950, 5, 1);
+                fechaNacimiento = DateUtil.getTime(1970, 5, 1);
                 idSexo = 2;              // Id o valor de Sexo -- propiedad "SexoAseg" [0,1,2] [Desconocido, Femenino, Masculino]
                 idFumador = 10;          // Id o valor de Fumador -- propiedad "CondicionFumador" [0, 10] [No Fuma, Si Fuma]
                 idProfesion = 2;         // Id o valor de Profesion -- propiedad "ProfesionActividad" [1 al 112]

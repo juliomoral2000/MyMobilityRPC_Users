@@ -7,9 +7,9 @@ package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans;
 public class RenglonEdadProductoRPC {
     long id;                // Id del DCO
     long idCobetura;        // Id de la Cobertura Configurada
-    int edadMinIngreso;     // Edad Maxima de
-    int edadMaxIngreso;     // Edad Maxima de
-    int edadMaxPermanencia; // Edad Maxima de
+    int edadMinIngreso;     // Edad Minima de Ingreso
+    int edadMaxIngreso;     // Edad Maxima de ingreso
+    int edadMaxPermanencia; // Edad Maxima de Permanencia
     double idTipoAsegurado; // Id o valor de Tipo de Asegurado [TipoAseguradoAcc]       -- TODO: usos en IO.TipoAseguradoAcc y en varias TDs.TipoAseguradoAcc [NINGUNO/NOAPLICA, TITULAR, CONYUGUE, ETC]
     long date;              // Fecha del DCO
 
