@@ -11,10 +11,12 @@ import com.enroquesw.mcs.comm.mobilityRPC.services.exception.ServiceBaseExceptio
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.CallerRegister;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.ProcessorRegister;
 import com.enroquesw.mcs.comm.mobilityRPC.services.impl.caller.ServicesFactory_Callers;
+import com.enroquesw.mcs.comm.mobilityRPC.util.testRunner.MyTestRunnerCOT;
 import com.enroquesw.mcs.comm.mobilityRPC.util.testRunner.interfaces.TestRunnerJC;
 import com.esotericsoftware.minlog.Log;
 import com.google.common.base.Stopwatch;
 
+import java.io.IOException;
 import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -28,8 +30,10 @@ public class MyTestMethodCOT extends TestRunnerJC{
         try {
             if(!Log.DEBUG) Log.DEBUG = true;
             testMain();
+            MyTestRunnerCOT.finalTest.set(true);
         } catch (Exception e) {
             e.printStackTrace();
+            MyTestRunnerCOT.finalTest.set(true);
             this.interrupt();
         }
     }
@@ -39,14 +43,16 @@ public class MyTestMethodCOT extends TestRunnerJC{
         //test_GetProducts();
         //test_boomerang();
         Stopwatch stopwatch = Stopwatch.createStarted();
-
+        //test_Otra_Cosa();
         test_CalcularCotizacion(true,49183, 0 );
         //test_GetEdadProducto(49183);
         /****************************************************************************/
         //test_GetListCotizacionRPC(49183);
         /****************************************************************************/
-        //final ProductRPC p = ServicesResultsObjectCache.getProduct(49183);
-        //double idGrupoFamiliar = 0;             // Id o valor Grupo Familiar            -- Propiedad "GrupoFamiliar"  [0, 1, 2, 3, 4] [NINGUNO, Titular; Titular y Cónyuge; Titular, Cónyuge e Hijo(s); Titular e Hijo(s)]
+        final ProductRPC p = ServicesResultsObjectCache.getProduct(49183);
+        System.out.println(p.toString());
+
+        //double idGrupoFamiliar = 0;             // Id o valor Grupo Familiar            -- Propiedad "GrupoFamiliar"  [0, 1, 2, 3, 4] [NINGUNO, Titular; Titular y Cï¿½nyuge; Titular, Cï¿½nyuge e Hijo(s); Titular e Hijo(s)]
         /*************************************************************************/
         // Caso 1.0: Directa , [EducacionGarantizada] - Exitoso
         //test_CalcularCotizacion(true, p.getId(), idGrupoFamiliar);
@@ -106,6 +112,24 @@ public class MyTestMethodCOT extends TestRunnerJC{
         System.out.println("[testMain] Total time; " + stopwatch);
         System.out.println("Termine ............................... ");
         //log.log(Level.INFO, "Parate Aqui");
+    }
+
+    private void test_Otra_Cosa() throws IOException {
+        /*jcifs.Config.setProperty( "jcifs.netbios.wins", "126.26.1.10" ); // ip del server o
+        //jcifs.Config.setProperty( "jcifs.smb.client.username", "dinterseguro\\desa.core.vida" ); // Usuario
+        //jcifs.Config.setProperty( "jcifs.smb.client.password", "D3s@2016" ); // Password*//*
+
+
+        NtlmPasswordAuthentication auth = new NtlmPasswordAuthentication("DINTERSEGURO", "desa.core.vida", "D3s@2016");
+        final SmbFile smbFile = new SmbFile("smb://interseguro.com.pe\\\\;desa.core.vida:D3s@2016@Aplicaciones/Acsel-e Vida Desarrollo");
+        final boolean b1 = smbFile.canRead();
+        SmbFileInputStream in = new SmbFileInputStream(new SmbFile("smb://interseguro.com.pe/Aplicaciones/Acsel-e Vida Desarrollo/somefile.txt", auth));
+        byte[] b = new byte[8192];
+        int n;
+        while(( n = in.read( b )) > 0 ) {
+            System.out.write( b, 0, n );
+        }*/
+
     }
 
     private void test_GetEdadProducto(long idProducto) {
@@ -389,5 +413,7 @@ public class MyTestMethodCOT extends TestRunnerJC{
             System.out.println("Error : " + e.getMessage());
         }
     }
+
+
 
 }

@@ -8,6 +8,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * Created by Julio on 24/02/2016.
@@ -18,6 +19,7 @@ public class MyTestRunnerCOT extends Thread {
     static int poolSize = 1;    //define el numero de Hilos del Pool a procesar
     static ExecutorService service = Executors.newFixedThreadPool(poolSize);
     static List<Future<Thread>> futures = new ArrayList<Future<Thread>>();
+    public static AtomicBoolean finalTest = new AtomicBoolean(true);
 
     //static boolean isProcessChild
 
@@ -37,6 +39,7 @@ public class MyTestRunnerCOT extends Thread {
             String classToRun = "";// classToRun = DEF_CLASS;
             if(classToRun != null && classToRun.length() > 0){
                 try {
+                    finalTest.set(false);
                     Class callerClass = Class.forName(classToRun);
                     TestRunnerJC o = (TestRunnerJC) callerClass.newInstance();
                     o.start();
