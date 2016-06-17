@@ -3,6 +3,8 @@ package com.enroquesw.mcs.comm.mobilityRPC.client;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.*;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Product_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Property_Callers;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Quotation_Callers;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.CotizacionParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ProductParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.PropertyParameter;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
@@ -15,8 +17,11 @@ import org.apache.commons.collections.Transformer;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
+
+import static com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName.ACSELE;
 
 /**
  * Created by Julio on 12/05/2016.
@@ -76,7 +81,7 @@ public class ServicesResultsObjectCache {
     }
 
     public static List<CoberturaRPC> getListaCoberturas(long idProducto) {
-        ProductParameter productParameter = new ProductParameter(idProducto);
+        ProductParameter productParameter = new ProductParameter(idProducto, (new Date()));
         return Product_Callers.getCoberturas(SystemName.ACSELE, productParameter);
     }
 
@@ -88,5 +93,13 @@ public class ServicesResultsObjectCache {
     public static EdadProductoRPC getEdadProducto(long idProducto) {
         ProductParameter productParameter = new ProductParameter(idProducto);
         return Product_Callers.getEdadProducto(SystemName.ACSELE, productParameter);
+    }
+
+    public static CotizacionRPC calcularCotizacion(boolean isDirecta, long timeOut, CotizacionParameter parameter) {
+        return Quotation_Callers.calcularCotizacion(ACSELE, parameter);
+    }
+
+    public static CotizacionRPC calcularCotizacion(CotizacionParameter parameter) {
+        return Quotation_Callers.calcularCotizacion(ACSELE, parameter);
     }
 }

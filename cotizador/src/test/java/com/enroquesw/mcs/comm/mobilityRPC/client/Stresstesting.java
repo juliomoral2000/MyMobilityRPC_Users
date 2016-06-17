@@ -1,7 +1,10 @@
 package com.enroquesw.mcs.comm.mobilityRPC.client;
 
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.CotizacionRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.ProductRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Product_Callers;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.CotizacionParameter;
+import com.enroquesw.mcs.comm.mobilityRPC.client.cotizacion.CreateCotizacion;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.google.common.base.Stopwatch;
 
@@ -84,6 +87,50 @@ public class Stresstesting {
             stopwatch.stop(); // optional
             long millis = stopwatch.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("Numero Prueba; "+testNro+"; Total time; " + stopwatch);
+        } catch (InterruptedException e1) {
+            e1.printStackTrace();
+        }
+    }
+
+    public static void stressTestingCalcularCotizacion(int numThread, int testNro) {
+        System.out.println("[stressTestingCalcularCotizacion] Numero de Prueba: "+testNro);
+        try {
+            final CotizacionParameter parameter = CreateCotizacion.createParameterFromMap(true, MyTestMethodCOT.createMap());
+            //parameter.setTimeOutMax(timeOut); Default TimeOut
+            System.out.println("[test_CalcularCotizacion]; parametro de entrada:\n" + parameter.toString());
+            class StressTask implements Callable<CotizacionRPC> {
+                @Override
+                public CotizacionRPC call() {
+                    try {
+                        String name = Thread.currentThread().getName();
+                        System.out.println(name+"; ini;"+System.currentTimeMillis());
+                        CotizacionRPC cRPC = ServicesResultsObjectCache.calcularCotizacion(parameter);
+                        System.out.println(name+"; fin;"+System.currentTimeMillis());
+                        return cRPC;
+                    }catch (Exception e){
+                        System.out.println("ver "+ e.getMessage());
+                        return null;
+                    }
+                }
+            }
+            //Future<CotizacionRPC> result = null;
+            List<Future<CotizacionRPC>> list = new ArrayList<Future<CotizacionRPC>>();
+
+            Stopwatch stopwatch = Stopwatch.createStarted();
+            ExecutorService executorService = Executors.newFixedThreadPool(numThread);
+            for (int i = 0; i < numThread; i++) {
+                //result = executorService.submit(new StressTask());
+                list.add(executorService.submit(new StressTask()));
+            }
+            executorService.shutdown();
+            executorService.awaitTermination(Long.MAX_VALUE, TimeUnit.MILLISECONDS);
+            stopwatch.stop(); // optional
+            long millis = stopwatch.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[stressTestingCalcularCotizacion] Numero de Prueba: "+testNro+", Total time: " + stopwatch);
+            //System.out.println("Finalizado. El resultado final fue tama#o lista : " + list.size());
+            for (Future<CotizacionRPC> future : list) {
+                try { System.out.println("[stressTestingCalcularCotizacion] Respuesta :\n"+future.get().toString()); } catch (ExecutionException e) { e.printStackTrace(); }
+            }
         } catch (InterruptedException e1) {
             e1.printStackTrace();
         }

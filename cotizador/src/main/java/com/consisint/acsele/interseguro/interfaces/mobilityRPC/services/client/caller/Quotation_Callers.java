@@ -2,10 +2,8 @@ package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.
 
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.CotizacionRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.CumulusTerceroRPC;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ActuarialAgeParameter;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.CotizacionParameter;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.CumulusTerceroParameter;
-import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ProductParameter;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.TablaValorGarantizadoRPC;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.*;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.enroquesw.mcs.comm.mobilityRPC.services.ServicesBaseExecutor;
 import com.enroquesw.mcs.comm.mobilityRPC.services.callable.CallerOfProcess;
@@ -65,6 +63,17 @@ public class Quotation_Callers <P extends ProcessParameter> {
         return ServicesBaseExecutor.executeCalling(GetCotizaciones.class, parameter, remoteSystemName);
     }
 
+    /**
+     * Metodo para obtener el calculo de la Tabla de Valores Garantizados a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @return CotizacionRPC
+     * @throws ServiceBaseException
+     */
+    public static TablaValorGarantizadoRPC calcularTVG(SystemName remoteSystemName, TVGParameter parameter) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(CalcularTVG.class, parameter, remoteSystemName);
+    }
+
 /****************************** DECLARACION DE CLASES CallerOfProcess *************************************************/
 
     /**
@@ -91,4 +100,9 @@ public class Quotation_Callers <P extends ProcessParameter> {
     public static class GetCotizaciones extends CallerOfProcess<GetCotizaciones, ProductParameter, List<CotizacionRPC>> {
         public GetCotizaciones(ProductParameter parameter) throws Exception { super(parameter); }
     }
+
+    public static class CalcularTVG extends CallerOfProcess<CalcularTVG, TVGParameter, TablaValorGarantizadoRPC> {
+        public CalcularTVG(TVGParameter parameter) throws Exception { super(parameter); }
+    }
+
 }

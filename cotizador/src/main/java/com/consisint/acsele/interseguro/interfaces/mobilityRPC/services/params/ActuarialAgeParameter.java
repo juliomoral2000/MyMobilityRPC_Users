@@ -12,6 +12,7 @@ import java.util.Date;
 public class ActuarialAgeParameter implements ProcessParameter {
     public long fechaCotiza;
     public long fechaNacimiento;
+    private Long timeOutMax;
 
     /**
      * Constructor
@@ -29,4 +30,8 @@ public class ActuarialAgeParameter implements ProcessParameter {
         return out.toString();
     }
 
+    public void setTimeOutMax(Long timeOutMax) { this.timeOutMax = timeOutMax; }
+
+    @Override
+    public Long getTimeOutMax() { return timeOutMax; }
 }

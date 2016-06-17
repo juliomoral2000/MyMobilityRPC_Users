@@ -38,6 +38,7 @@ public class EventNotificacionRPC implements ProcessParameter {
     String codigoLaboratorio;
     String nombreLaboratorio;
     String origenPoliza;
+    private Long timeOutMax;
 
     public EventNotificacionRPC(long idProducto, String nombreProducto, long idPoliza, String numPoliza, long idOperacion, String numPropuesta, String numCotizacion, String numOportunidad, String numEndoso, String estadoPoliza, String evento, String motivoEvento, long fechaEvento, String comunicacion, String correoEP, String comunicacionEndoso, String correoEE, String codAgenteVI, String codAgenteVM, String tipoDocumento, String numDocumento, String primerNombre, String segundoNombre, String primerApellido, String segundoApellido, String codigoLaboratorio, String nombreLaboratorio, String origenPoliza) {
         this.idProducto = idProducto;
@@ -158,4 +159,9 @@ public class EventNotificacionRPC implements ProcessParameter {
                 ", origenPoliza='" + origenPoliza + '\'' +
                 '}';
     }
+
+    public void setTimeOutMax(Long timeOutMax) { this.timeOutMax = timeOutMax; }
+
+    @Override
+    public Long getTimeOutMax() { return timeOutMax; }
 }

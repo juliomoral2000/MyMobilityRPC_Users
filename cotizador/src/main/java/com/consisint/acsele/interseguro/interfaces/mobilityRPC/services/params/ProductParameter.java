@@ -10,6 +10,7 @@ import java.util.Date;
 public class ProductParameter implements ProcessParameter {
     public long idProducto;     //Id del Producto
     public long fecha;          // valor campo "Fecha" de la tabla Dinamica
+    private Long timeOutMax;
 
     /**
      * Constructor
@@ -34,4 +35,9 @@ public class ProductParameter implements ProcessParameter {
         StringBuilder out = new StringBuilder("ProductParameter{").append("idProducto=").append( String.valueOf(idProducto)).append(", fecha=").append( new Date(fecha).toString()).append("}\n");
         return out.toString();
     }
+
+    public void setTimeOutMax(Long timeOutMax) { this.timeOutMax = timeOutMax; }
+
+    @Override
+    public Long getTimeOutMax() { return timeOutMax; }
 }

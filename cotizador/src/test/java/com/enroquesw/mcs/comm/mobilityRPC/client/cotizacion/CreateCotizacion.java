@@ -8,11 +8,48 @@ import com.enroquesw.mcs.comm.mobilityRPC.util.DateUtil;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * La clase <code>CreateCotizacion</code> es una clase utilitaria de funciones de creacion de objetos de cotizacion
  */
 public class CreateCotizacion {
+
+    public static CotizacionParameter createParameterFromMap(boolean isDirecta, Map<String, String> mapa) {
+        CreateCotizacion createCotizacion = new CreateCotizacion();
+        long idProducto = Long.parseLong(mapa.get("idProducto"));
+        long idGrupoFamiliar = Long.parseLong(mapa.get("idGrupoFamiliar"));
+        long idPeriodoDePago =  Long.parseLong(mapa.get("idPeriodoDePago"));   // valor del Periodo de Pago
+        long idMoneda = Long.parseLong(mapa.get("idMoneda"));           // Id de la Moneda de ese Cotizacion
+        return new CotizacionParameter(createCotizacion.createCotizacionFromMap(idProducto, isDirecta, idGrupoFamiliar, idPeriodoDePago, idMoneda, false, mapa), !isDirecta);
+    }
+    private CotizacionRPC createCotizacionFromMap(long idProducto, boolean isDirecta, double idGrupoFamiliar, long idPeriodoDePago, long idMoneda, boolean isLegal, Map<String, String> mapa) {
+        long idPlan = Long.parseLong(mapa.get("idPlan"));             // Id de Plan
+        double idPlanVida = Double.parseDouble(mapa.get("idPlanVida"));   // Id de PlanVida
+        double idTipoDescuento = Double.parseDouble(mapa.get("idTipoDescuento"));             // Id o valor Tipo de Descuento
+        double idPeriodoCobertura = Double.parseDouble(mapa.get("idPeriodoCobertura")); // Id o valor Periodo de Cobertura   ESTA expresado en meses
+        double idPeriodoPagoPrima = Double.parseDouble(mapa.get("idPeriodoPagoPrima")); // Id o valor periodo Pago Prima [Esta expresada en a#os]
+        double idPeriodoPagoBeneficio = Double.parseDouble(mapa.get("idPeriodoPagoBeneficio"));    // Id o valor periodo Pago Beneficio
+        long fechaCotizacion = DateUtil.getTime(Integer.parseInt(mapa.get("ano")), Integer.parseInt(mapa.get("mes")), Integer.parseInt(mapa.get("dia"))); // Fecha Cotizacion                     -- [Poliza.FechaInicial]
+        List<CoberturaRPC> list_ccv = ServicesResultsObjectCache.getListaCoberturas(idProducto);
+        List<ObjetoAsegCotizaRPC> iosCot = createListaObjetoAsegCotizaRPCFromMap(isDirecta, idProducto, (int) idGrupoFamiliar, list_ccv, mapa);     // Lista de Objetos Asegurado (Info de Asegurados e Coberturas)
+        return new CotizacionRPC(idProducto, list_ccv.get(0).getIdUnidadRiesgoType(), idPlan,  idPlanVida,  idTipoDescuento,  idPeriodoCobertura,  idPeriodoDePago, idMoneda,  idPeriodoPagoPrima,  idPeriodoPagoBeneficio,  idGrupoFamiliar,  fechaCotizacion,  isLegal,  iosCot);
+        //return cotizacionRPC;
+    }
+    private List<ObjetoAsegCotizaRPC> createListaObjetoAsegCotizaRPCFromMap(boolean isDirecta, long idProducto, int idGrupoFamiliar, List<CoberturaRPC> list_ccv, Map<String, String> mapa) {
+        //idGrupoFamiliar --> [1,2,3,4] [Titular; Titular y Cónyuge; Titular, Cónyuge e Hijo(s); Titular e Hijo(s)]
+        int numeroAsegurados = 0;
+        if(idGrupoFamiliar == 0) numeroAsegurados = 1; // Titular
+        if(idGrupoFamiliar == 1) numeroAsegurados = 1; // Titular
+        if(idGrupoFamiliar == 2) numeroAsegurados = 2; // Titular y Cónyuge
+        if(idGrupoFamiliar == 3) numeroAsegurados = 3; // Titular, Cónyuge e Hijo(s)
+        if(idGrupoFamiliar == 4) numeroAsegurados = 2; // Titular e Hijo(s)
+        List<ObjetoAsegCotizaRPC> iosCot = new ArrayList<ObjetoAsegCotizaRPC>(numeroAsegurados);
+        for(int i = 0; i < numeroAsegurados; ++i){
+            iosCot.add(createObjetoAsegCotizaRPC(isDirecta, idProducto, idGrupoFamiliar, i+1, list_ccv));
+        }
+        return iosCot;
+    }
 
     public static CotizacionParameter createParameter(boolean isDirecta, long idProducto, double idGrupoFamiliar) {
         CreateCotizacion createCotizacion = new CreateCotizacion();

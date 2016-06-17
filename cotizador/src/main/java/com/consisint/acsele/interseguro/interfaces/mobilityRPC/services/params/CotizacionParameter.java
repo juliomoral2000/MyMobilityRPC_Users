@@ -9,6 +9,7 @@ import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
 public class CotizacionParameter implements ProcessParameter {
     public CotizacionRPC cotizacionRPC;     // Objeto Cotizacion [contiene la data capturada por el Sistema Cotizador]
     public boolean isInverso = false;       // El calculo de la Catizacion es Inverso? true: Inverso [CotInverso] ; false: Directo [CotDirecto]. POL.TipoActivacion [PropManual, PropRapida, PropCanc, PropDesis, CotDirecto, CotInverso]
+    private Long timeOutMax;
 
     /**
      * Constructor
@@ -25,4 +26,9 @@ public class CotizacionParameter implements ProcessParameter {
         StringBuilder out = new StringBuilder("CotizacionParameter{").append("cotizacionRPC={").append(cotizacionRPC.toString()).append("}\n, isInverso=").append(String.valueOf(isInverso)).append("}");
         return out.toString();
     }
+
+    public void setTimeOutMax(Long timeOutMax) { this.timeOutMax = timeOutMax; }
+
+    @Override
+    public Long getTimeOutMax() { return timeOutMax; }
 }

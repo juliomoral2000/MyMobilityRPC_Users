@@ -22,6 +22,7 @@ public class TarifaParameter implements ProcessParameter {
     public long idPlanVida;     // Id del PlanVida de la tabla de Tarifas
     public long idCobertura;    // Id del Cobertura de la tabla de Tarifas
     public long fecha;          // valor campo "Fecha" de la tabla de Tarifas
+    private Long timeOutMax;
 
     /**
      * Constructor de TarifaParameter, los campos filtros:
@@ -77,4 +78,9 @@ public class TarifaParameter implements ProcessParameter {
                 .append("}\n");
         return out.toString();
     }
+
+    public void setTimeOutMax(Long timeOutMax) { this.timeOutMax = timeOutMax; }
+
+    @Override
+    public Long getTimeOutMax() { return timeOutMax; }
 }

@@ -1,7 +1,8 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans;
 
 /**
- * Created by Julio on 04/05/2016.
+ * La clase <code>ValorGarantizadoRenglonRPC</code> representa el wrapper de los registros de la Tabla de Valores Garantizados de un Cotizacion de Vida dada
+ * de Acsele para los servicios del MobilityRPC.
  */
 public class ValorGarantizadoRenglonRPC {
     public int finAnoVig;          //  Fin A#o vigencia de la Poliza (Altura poliza)           - GVTD_YEAR              - GenerateGVTDetailPK.year

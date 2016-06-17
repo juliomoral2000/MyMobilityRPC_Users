@@ -57,7 +57,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @param parameter Parametro de entrada
      * @return List<PlanRPC>
      */
-    public static List<PlanRPC> getPlanes(SystemName remoteSystemName, ProductParameter parameter) {
+    public static List<PlanRPC> getPlanes(SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
         return ServicesBaseExecutor.executeCalling(GetPlanes.class, parameter, remoteSystemName);
     }
 
@@ -67,7 +67,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @param parameter Parametro de entrada
      * @return List<CoberturaRPC>
      */
-    public static List<CoberturaRPC> getCoberturas(SystemName remoteSystemName, ProductParameter parameter) {
+    public static List<CoberturaRPC> getCoberturas(SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
         return ServicesBaseExecutor.executeCalling(GetCoberturas.class, parameter, remoteSystemName);
     }
 
@@ -77,7 +77,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @param parameter Parametro de entrada
      * @return List<VigenciaRPC>
      */
-    public static List<VigenciaRPC> getPeriodosCoberturas(SystemName remoteSystemName, ProductParameter parameter) {
+    public static List<VigenciaRPC> getPeriodosCoberturas(SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
         return ServicesBaseExecutor.executeCalling(GetPeriodosCoberturas.class, parameter, remoteSystemName);
     }
 
@@ -87,7 +87,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @param parameter Parametro de entrada
      * @return List<TarifaRPC>
      */
-    public static List<TarifaRPC> getTarifas(SystemName remoteSystemName, TarifaParameter parameter) {
+    public static List<TarifaRPC> getTarifas(SystemName remoteSystemName, TarifaParameter parameter) throws ServiceBaseException {
         return ServicesBaseExecutor.executeCalling(GetTarifas.class, parameter, remoteSystemName);
     }
 
@@ -97,7 +97,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @param parameter Parametro de entrada
      * @return ExigenciasMedicaRPC
      */
-    public static ExigenciasMedicaRPC getExigenciasMedicas (SystemName remoteSystemName, ExigenciasMedicaParameter parameter) {
+    public static ExigenciasMedicaRPC getExigenciasMedicas (SystemName remoteSystemName, ExigenciasMedicaParameter parameter) throws ServiceBaseException {
         return ServicesBaseExecutor.executeCalling(GetExigenciasMedicas.class, parameter, remoteSystemName);
     }
 
@@ -107,7 +107,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @param parameter Parametro de entrada
      * @return ExigenciasMedicaRPC
      */
-    public static EdadProductoRPC getEdadProducto (SystemName remoteSystemName, ProductParameter parameter) {
+    public static EdadProductoRPC getEdadProducto (SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
         return ServicesBaseExecutor.executeCalling(GetEdadProducto.class, parameter, remoteSystemName);
     }
 

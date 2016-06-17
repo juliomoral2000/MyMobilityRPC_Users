@@ -19,6 +19,7 @@ public class EventNotificationQuotationParameter  implements ProcessParameter {
     public String primerApellido;        // Primer Apellido del Asegurado [Esto para no tener que crear un servicio de consulta de Tercero]
     public long   fechaNacimiento;       // Fecha Nacimiento del Asegurado [Esto para no tener que crear un servicio de consulta de Tercero]
     public double montoRecargo;          // monto del Recargo -- TODO: Segun lo conversado esto debe ser un campo a nivel de cobertura que contenga este valor[en desarrollo tengo entendido que el monto general del recargo esta a nivel de Objeto Asegurado por lo tanto es x asegurado y en escencia esto debera distribuirse a las coberturas que aplique el recargo].
+    protected Long timeOutMax;
 
     /**
      * Constructor
@@ -57,4 +58,9 @@ public class EventNotificationQuotationParameter  implements ProcessParameter {
                 .append(", montoRecargo=").append(String.valueOf(montoRecargo)).append("}");
         return out.toString();
     }
+
+    public void setTimeOutMax(Long timeOutMax) { this.timeOutMax = timeOutMax; }
+
+    @Override
+    public Long getTimeOutMax() { return timeOutMax; }
 }

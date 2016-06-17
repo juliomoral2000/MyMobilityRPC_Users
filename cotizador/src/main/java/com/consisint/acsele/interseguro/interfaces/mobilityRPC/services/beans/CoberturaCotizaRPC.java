@@ -8,10 +8,6 @@ public class CoberturaCotizaRPC {
     long idCobertura;               // Id de Cobertura                          [ConfiguratedCoverage.id]
     boolean isMandatory;            // Es Obligatoria/mandatorio
     boolean isLeading;              // Es Principal
-    /* Monto del Capital Asegurado
-     Como entrada dependiendo del IndCapital: Se agregó una unica propiedad a nivel de la UR llamado CapitalAsegurado, es la suma asegurada de la cobertura principal del producto. En el despliegue de las coberturas, se ingresará el capital asegurado a cada una de ellas. La propiedad a utilizar es COVBeneficioMaximo.
-     Como salida ?????[Cov.COVTasaBasicaI]O[COVSumaAsegurada]????? para el calculo inverso
-    */
     double montoCapitalAsegurado;   // Entrada : [UR.CapitalAsegurado]{Cov Principal} y [Cov.COVBeneficioMaximo]{Todas} Salida: ?????[COVSumaAsegurada] o [Cov.COVTasaBasicaI]?????
     double montoPrima;              // Salida del Monto de Prima                [Cov.COVPrima]
     double montoTarifa;             // Salida del Monto de la Tarifa Calculada  [Cov.COVMonComisIII]

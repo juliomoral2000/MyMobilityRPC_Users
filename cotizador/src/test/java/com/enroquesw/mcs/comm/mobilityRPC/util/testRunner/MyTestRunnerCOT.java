@@ -20,6 +20,7 @@ public class MyTestRunnerCOT extends Thread {
     static ExecutorService service = Executors.newFixedThreadPool(poolSize);
     static List<Future<Thread>> futures = new ArrayList<Future<Thread>>();
     public static AtomicBoolean finalTest = new AtomicBoolean(true);
+    public static final int PARALLEL_EXEC_NUM = 10;
 
     //static boolean isProcessChild
 

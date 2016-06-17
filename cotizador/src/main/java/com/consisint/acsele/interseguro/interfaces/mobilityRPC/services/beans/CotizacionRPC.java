@@ -6,9 +6,12 @@ import java.util.List;
 
 /**
  * La clase <code>CotizacionRPC</code> representa el wrapper de los datos de la Cotizacion
- * extraido del Cotizador el cual sera utilizado por los servicios de Cotizacion.
+ * extraido/retornados del/hacia Cotizador por los servicios de Cotizacion el Acsel-e.
+ *
  */
 public class CotizacionRPC {
+    long idPoliza;
+    long idOperation;
     long idProducto;                // Id de Producto [AgregatedPoliza.productId]
     long idUnidadRiesgoType;        // Id de Unidad de Riesgo Configurada
     long fechaCotizacion = 0;       // Fecha Cotizacion                     -- [Poliza.FechaInicial]
@@ -39,8 +42,6 @@ public class CotizacionRPC {
     double montoTotalPrimaFP;       //  Monto Total Prima por Forma de Pago     --  ojo antes--> [COVPrima]
     double tasaCostoEfectivoAnual;  //  Valor de la Tasa Costo Efectivo Anual (TCEA) -- [POL.TasaCostoEfectivoAnual]
     List<ValidacionRPC> validaciones = new ArrayList<ValidacionRPC>();                      // Salida de Lista de Errores en las validaciones realizadas al calcular la poliza
-    List<ValorGarantizadoRenglonRPC> vgs = new ArrayList<ValorGarantizadoRenglonRPC>();     // Salida de Tabla de proyeccion de Valores Garantizados
-
 
     /**
      * Constructor Para usar en la opcion calculo Directo
@@ -141,8 +142,6 @@ public class CotizacionRPC {
 
     public double getTasaCostoEfectivoAnual() { return tasaCostoEfectivoAnual; }
 
-    public List<ValorGarantizadoRenglonRPC> getVgs() { return vgs; }
-
     public List<ObjetoAsegCotizaRPC> getIosCot() { return iosCot; }
 
     public List<ValidacionRPC> getValidaciones() { return validaciones; }
@@ -193,12 +192,21 @@ public class CotizacionRPC {
 
     public void setIosCot(List<ObjetoAsegCotizaRPC> iosCot) { this.iosCot = iosCot; }
 
-    public void setVgs(List<ValorGarantizadoRenglonRPC> vgs) { this.vgs = vgs; }
+    /*public void setVgs(List<ValorGarantizadoRenglonRPC> vgs) { this.vgs = vgs; }*/
+
+    public long getIdPoliza() { return idPoliza; }
+
+    public void setIdPoliza(long idPoliza) { this.idPoliza = idPoliza; }
+
+    public long getIdOperation() { return idOperation; }
+
+    public void setIdOperation(long idOperation) { this.idOperation = idOperation; }
 
     @Override
     public String toString() {
-        StringBuilder out = new StringBuilder("CotizacionRPC{")
-                .append("idProducto=").append(String.valueOf(idProducto))
+        StringBuilder out = new StringBuilder("CotizacionRPC:{\n")
+                .append(" idPoliza=").append(String.valueOf(idPoliza))
+                .append(", idProducto=").append(String.valueOf(idProducto))
                 .append(", idUnidadRiesgoType=").append(String.valueOf(idUnidadRiesgoType))
                 .append(", idPlan=").append(String.valueOf(idPlan))
                 .append(", idPlanVida=").append(String.valueOf(idPlanVida))
@@ -221,19 +229,14 @@ public class CotizacionRPC {
                 .append(", tasaCostoEfectivoAnual=").append(String.valueOf(tasaCostoEfectivoAnual))
                 ;
         if(!iosCot.isEmpty()){
-            out.append(", iosCotList:\n{");
-            for (ObjetoAsegCotizaRPC j : iosCot) out.append(j.toString()).append("\n");
-            out.append("}\n");
+            out.append(",\niosCotList:{\n[");
+            for (ObjetoAsegCotizaRPC j : iosCot) out.append(j.toString()).append(",\n");
+            out.append("]}\n");
         }
         if(!validaciones.isEmpty()){
-            out.append(", validacionesList:\n{");
-            for (ValidacionRPC z : validaciones) out.append(z.toString()).append("\n");
-            out.append("}\n");
-        }
-        if(!vgs.isEmpty()){
-            out.append(", vgList:\n{");
-            for (ValorGarantizadoRenglonRPC z : vgs) out.append(z.toString()).append("\n");
-            out.append("}\n");
+            out.append(",\nvalidacionesList:{\n[");
+            for (ValidacionRPC z : validaciones) out.append(z.toString()).append(",\n");
+            out.append("]}\n");
         }
         out.append("}");
         return out.toString();

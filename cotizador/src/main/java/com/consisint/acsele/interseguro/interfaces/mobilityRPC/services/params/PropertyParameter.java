@@ -9,6 +9,7 @@ public class PropertyParameter implements ProcessParameter {
     public long propertyId;         // Id de Propiedad de Acsele
     public String propertyName;     // Nombre de la Propiedad de Acsele [Simbolo]
     public boolean fetchDepends;    // Se extraen las Dependencias? [relaciones Padre-Hijo]
+    private Long timeOutMax;
 
     /**
      * Constructor
@@ -31,4 +32,9 @@ public class PropertyParameter implements ProcessParameter {
                 .append("}");
         return out.toString();
     }
+
+    public void setTimeOutMax(Long timeOutMax) { this.timeOutMax = timeOutMax; }
+
+    @Override
+    public Long getTimeOutMax() { return timeOutMax; }
 }

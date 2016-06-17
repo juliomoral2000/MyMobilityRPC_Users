@@ -8,6 +8,7 @@ import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
  */
 public class CumulusTerceroParameter implements ProcessParameter {
     public long idTercero;
+    private Long timeOutMax;
 
     /**
      * Constructor
@@ -22,4 +23,9 @@ public class CumulusTerceroParameter implements ProcessParameter {
         StringBuilder out = new StringBuilder("CumulusTerceroParameter{").append("idTercero=").append(String.valueOf(idTercero)).append("}");
         return out.toString();
     }
+
+    public void setTimeOutMax(Long timeOutMax) { this.timeOutMax = timeOutMax; }
+
+    @Override
+    public Long getTimeOutMax() { return timeOutMax; }
 }
