@@ -6,28 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list id="e8234e39-a108-4592-90c0-d33145302e2a" name="Default" comment="El otro Proyecto" />
-    <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Servicios : Cambios a las estructuras, aplicacion del TimeOut, agregar el id de poliza y operacion a la cotizacion en la respuesta, creacion del servicio de calculo de la TVG.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TVGParameter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/TablaValorGarantizadoRPC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaCotizaRPC.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaCotizaRPC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CotizacionParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CotizacionParameter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java" afterPath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/EventNotificationQuotationParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/EventNotificationQuotationParameter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ValorGarantizadoRenglonRPC.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ValorGarantizadoRenglonRPC.java" />
+    <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Servicios : Cambios a las estructuras de los Parametros y bean de entrada salida, aplicacion del TimeOut, agregar el id de poliza y operacion a la cotizacion en la respuesta, creacion del servicio de calculo de la TVG.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -63,31 +42,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyTestRunnerCOT.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyTestRunnerCOT.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.113902844">
               <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding>
                 <element signature="docComment;class#MyTestRunnerCOT#0" expanded="true" />
                 <element signature="method#run#0;class#MyTestRunnerCOT#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServiceFactoryRegisterMemPersister.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.25">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#ServiceFactoryRegisterMemPersister#0" expanded="true" />
-                <element signature="e#1406#1425#0" expanded="true" />
-                <element signature="e#1527#1553#0" expanded="true" />
-                <element signature="method#getCallerRegisters#0;class#ServiceFactoryRegisterMemPersister#0" expanded="true" />
-                <element signature="e#2275#2291#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -273,30 +235,6 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="MobilityRPC_Users_Root" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="MobilityRPC_Users_Root" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
         </PATH_ELEMENT>
       </PATH>
     </treeState>
@@ -1039,7 +977,7 @@
       <workItem from="1465607314504" duration="688000" />
       <workItem from="1465860137052" duration="5011000" />
       <workItem from="1465917274203" duration="18994000" />
-      <workItem from="1465950037741" duration="46871000" />
+      <workItem from="1465950037741" duration="47385000" />
     </task>
     <task id="LOCAL-00001" summary="nnn">
       <created>1453685565282</created>
@@ -1197,11 +1135,17 @@
       <option name="project" value="LOCAL" />
       <updated>1463984247951</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Servicios : Cambios a las estructuras de los Parametros y bean de entrada salida, aplicacion del TimeOut, agregar el id de poliza y operacion a la cotizacion en la respuesta, creacion del servicio de calculo de la TVG.">
+      <created>1466184607294</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1466184607294</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="684381000" />
+    <option name="totallyTimeSpent" value="684895000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1228,7 +1172,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52411574" sideWeight="0.49381697" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.443686" sideWeight="0.506183" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.522508" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.522508" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62861735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1282,7 +1226,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="El otro Proyecto" />
     <MESSAGE value="Inicial" />
     <MESSAGE value="Ya todas las pruebas Basicas Probadas solo falta terminar de definir todos los servicios" />
     <MESSAGE value="Se realizaron las pruebas de Performance, la primera llamada es la que tarda (por la inicializacion del contexto local y la del remoto), pero las subsecuentes llamadas estan en el rango del 1 a 3 ms por llamada.&#10;Faltaria ya el desarrollo de las nuevas invocaciones a los nuevos servicios.&#10;Y adicional podria mover este proyecto de su ubicacion actual.&#10;Faltaria un detalle a definir por mi parte de generar un solo jar para todos los clientes o crear un jar para cliente." />
@@ -1307,7 +1250,8 @@
     <MESSAGE value="Servicios : Creadas las Estructuras para el servicio de Cotizacion - Valores Garantizados. &#10;Modificacion del Projecto para manejar dos mudulos, se creo los servicios de SAPN de Notificaciones, el servicio de cotizador de Edades x producto. Actualizacion de la documentacion del API, en el codigo de ejemplos.Falta Probar la Cotizacion Inversa y que esten Ok la configuracion de los Productos en el ambiente. Se modificaron las estructuras de CotizacionRPC." />
     <MESSAGE value="Servicios : Creadas las Estructuras para el servicio de Cotizacion - Valores Garantizados. &#10;Modificacion del Projecto para manejar dos mudulos, se creo los servicios de SAPN de Notificaciones, el servicio de cotizador de Edades x producto. Actualizacion de la documentacion del API, en el codigo de ejemplos.Falta Probar la Cotizacion Inversa y que esten Ok la configuracion de los Productos en el ambiente. Se modificaron las estructuras de CotizacionRPC.&#10;Respaldo" />
     <MESSAGE value="Servicios : Cambios a las estructuras, aplicacion del TimeOut, agregar el id de poliza y operacion a la cotizacion en la respuesta, creacion del servicio de calculo de la TVG." />
-    <option name="LAST_COMMIT_MESSAGE" value="Servicios : Cambios a las estructuras, aplicacion del TimeOut, agregar el id de poliza y operacion a la cotizacion en la respuesta, creacion del servicio de calculo de la TVG." />
+    <MESSAGE value="Servicios : Cambios a las estructuras de los Parametros y bean de entrada salida, aplicacion del TimeOut, agregar el id de poliza y operacion a la cotizacion en la respuesta, creacion del servicio de calculo de la TVG." />
+    <option name="LAST_COMMIT_MESSAGE" value="Servicios : Cambios a las estructuras de los Parametros y bean de entrada salida, aplicacion del TimeOut, agregar el id de poliza y operacion a la cotizacion en la respuesta, creacion del servicio de calculo de la TVG." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -2420,20 +2364,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#MyTestRunnerCOT#0" expanded="true" />
-            <element signature="method#run#0;class#MyTestRunnerCOT#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25">
+        <state vertical-scroll-proportion="0.113902844">
           <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2442,6 +2375,17 @@
             <element signature="e#1527#1553#0" expanded="true" />
             <element signature="method#getCallerRegisters#0;class#ServiceFactoryRegisterMemPersister#0" expanded="true" />
             <element signature="e#2275#2291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.113902844">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#MyTestRunnerCOT#0" expanded="true" />
+            <element signature="method#run#0;class#MyTestRunnerCOT#0" expanded="true" />
           </folding>
         </state>
       </provider>
