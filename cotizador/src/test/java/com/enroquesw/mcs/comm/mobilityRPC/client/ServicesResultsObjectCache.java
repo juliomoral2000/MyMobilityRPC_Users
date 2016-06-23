@@ -4,6 +4,7 @@ import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.*;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Product_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Property_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Quotation_Callers;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ActuarialAgeParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.CotizacionParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ProductParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.PropertyParameter;
@@ -32,7 +33,9 @@ public class ServicesResultsObjectCache {
 
     public static ProductRPC getProduct(long idProducto) {
         try {
-            if(!products.containsKey(idProducto)) products.put(idProducto, Product_Callers.getProduct(SystemName.ACSELE, new ProductParameter(idProducto)));
+            final ProductParameter productParameter = new ProductParameter(idProducto);
+            productParameter.setTimeOutMax((long) (60000*10));
+            if(!products.containsKey(idProducto)) products.put(idProducto, Product_Callers.getProduct(SystemName.ACSELE, productParameter ));
             return products.get(idProducto);
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
@@ -101,5 +104,9 @@ public class ServicesResultsObjectCache {
 
     public static CotizacionRPC calcularCotizacion(CotizacionParameter parameter) {
         return Quotation_Callers.calcularCotizacion(ACSELE, parameter);
+    }
+
+    public static Integer getEdadActuarial(ActuarialAgeParameter parameter) {
+        return Quotation_Callers.getEdadActuarial(ACSELE, parameter);
     }
 }

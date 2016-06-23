@@ -3,14 +3,20 @@ package com.enroquesw.mcs.comm.mobilityRPC.client;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.CotizacionRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.ProductRPC;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Product_Callers;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Quotation_Callers;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ActuarialAgeParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.CotizacionParameter;
 import com.enroquesw.mcs.comm.mobilityRPC.client.cotizacion.CreateCotizacion;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.google.common.base.Stopwatch;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
+import java.util.Random;
 import java.util.concurrent.*;
+
+import static com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName.ACSELE;
 
 /**
  * Created by Julio on 27/01/2016.
@@ -126,10 +132,57 @@ public class Stresstesting {
             executorService.awaitTermination(Long.MAX_VALUE, TimeUnit.MILLISECONDS);
             stopwatch.stop(); // optional
             long millis = stopwatch.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("[stressTestingCalcularCotizacion] Numero de Prueba: "+testNro+", Total time: " + stopwatch);
+            System.out.println("[stressTestingCalcularCotizacion] Numero de Prueba: " + testNro + ", Total time: " + stopwatch);
             //System.out.println("Finalizado. El resultado final fue tama#o lista : " + list.size());
             for (Future<CotizacionRPC> future : list) {
                 try { System.out.println("[stressTestingCalcularCotizacion] Respuesta :\n"+future.get().toString()); } catch (ExecutionException e) { e.printStackTrace(); }
+            }
+        } catch (InterruptedException e1) {
+            e1.printStackTrace();
+        }
+    }
+
+    public static void stressTestingGetEdadActuarial(int numThread, int testNro) {
+        System.out.println("[stressTestingGetEdadActuarial] Numero de Prueba: "+testNro);
+        try {
+
+            class StressTask implements Callable<Integer> {
+                @Override
+                public Integer call() {
+                    try {
+                        String name = Thread.currentThread().getName();
+                        final Random randomGenerator = new Random();
+                        int anInt = randomGenerator.nextInt(100);
+                        int anInt_2 = randomGenerator.nextInt(12);
+                        Calendar birthDate = Calendar.getInstance();
+                        birthDate.set(1900+anInt, anInt_2/*Calendar.JANUARY*/, 01);
+                        final ActuarialAgeParameter parameter = new ActuarialAgeParameter(Calendar.getInstance().getTime(), birthDate.getTime());
+                        System.out.println("[stressTestingGetEdadActuarial]; parametro de entrada:\n" + parameter.toString());
+
+                        System.out.println(name+"; ini;"+System.currentTimeMillis());
+                        Integer edad = ServicesResultsObjectCache.getEdadActuarial(parameter);
+                        System.out.println(name+"; fin;"+System.currentTimeMillis());
+                        return edad;
+                    }catch (Exception e){
+                        System.out.println("ver "+ e.getMessage());
+                        return null;
+                    }
+                }
+            }
+            List<Future<Integer>> list = new ArrayList<Future<Integer>>();
+
+            Stopwatch stopwatch = Stopwatch.createStarted();
+            ExecutorService executorService = Executors.newFixedThreadPool(numThread);
+            for (int i = 0; i < numThread; i++) {
+                list.add(executorService.submit(new StressTask()));
+            }
+            executorService.shutdown();
+            executorService.awaitTermination(Long.MAX_VALUE, TimeUnit.MILLISECONDS);
+            stopwatch.stop(); // optional
+            long millis = stopwatch.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[stressTestingGetEdadActuarial] Numero de Prueba: "+testNro+", Total time: " + stopwatch);
+            for (Future<Integer> future : list) {
+                try { System.out.println("[stressTestingGetEdadActuarial] Respuesta :\n"+future.get().toString()); } catch (ExecutionException e) { e.printStackTrace(); }
             }
         } catch (InterruptedException e1) {
             e1.printStackTrace();

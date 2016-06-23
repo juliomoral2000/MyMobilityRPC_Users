@@ -6,22 +6,17 @@ import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.c
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Quotation_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.*;
 import com.enroquesw.mcs.comm.mobilityRPC.client.cotizacion.CreateCotizacion;
-import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.enroquesw.mcs.comm.mobilityRPC.services.exception.ServiceBaseException;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.CallerRegister;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.ProcessorRegister;
 import com.enroquesw.mcs.comm.mobilityRPC.services.impl.caller.ServicesFactory_Callers;
-import com.enroquesw.mcs.comm.mobilityRPC.util.DateUtil;
 import com.enroquesw.mcs.comm.mobilityRPC.util.testRunner.MyTestRunnerCOT;
 import com.enroquesw.mcs.comm.mobilityRPC.util.testRunner.interfaces.TestRunnerJC;
 import com.esotericsoftware.minlog.Log;
 import com.google.common.base.Stopwatch;
 
 import java.io.IOException;
-import java.util.Calendar;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
@@ -51,7 +46,7 @@ public class MyTestMethodCOT extends TestRunnerJC{
         //test_boomerang();
         Stopwatch stopwatch = Stopwatch.createStarted();
         //test_Otra_Cosa();
-        test_StressTestingCalcularCotizacion();
+        //test_StressTestingCalcularCotizacion();
 
         /*final Long timeOut = new Long(60000 * 3);
         final CotizacionRPC cRPC = test_CalcularCotizacion(true, 49183, 0, timeOut);
@@ -112,7 +107,10 @@ public class MyTestMethodCOT extends TestRunnerJC{
         test_GetPropertyRPC_Dependencies("CodDistrito", true, false, "Parent", i++);
         test_GetPropertyRPC_Dependencies("CodDistrito", true, true, "Parent", i++);*/
         /*************************************************************************/
-        //test_EdadActuarial();
+        //for(int i = 100000; i > 0 ; --i){
+           test_EdadActuarial();
+        //}
+        //test_StressTestingGetEdadActuarial();
         /*************************************************************************/
         /*************************************************************************/
         //test_CumulusTercero();
@@ -392,10 +390,15 @@ public class MyTestMethodCOT extends TestRunnerJC{
 
     private void test_EdadActuarial() {
         try {
-            Stopwatch t = Stopwatch.createStarted();
+            final Random randomGenerator = new Random();
+            int anInt_ano = randomGenerator.nextInt(100);
+            int anInt_mes = randomGenerator.nextInt(12);
             Calendar birthDate = Calendar.getInstance();
-            birthDate.set(1974, Calendar.MAY, 23);
-            int edad = Quotation_Callers.getEdadActuarial(ACSELE, new ActuarialAgeParameter(Calendar.getInstance().getTime(), birthDate.getTime()));
+            birthDate.set(1900+anInt_ano, anInt_mes/*Calendar.JANUARY*/, 01);
+            final ActuarialAgeParameter parameter = new ActuarialAgeParameter(Calendar.getInstance().getTime(), birthDate.getTime());
+            System.out.println("[test_EdadActuarial]; parametro enviado; " + parameter);
+            Stopwatch t = Stopwatch.createStarted();
+            int edad = ServicesResultsObjectCache.getEdadActuarial(parameter);
             t.stop(); // optional
             t.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("[test_EdadActuarial]; edad; " + edad);
@@ -470,6 +473,13 @@ public class MyTestMethodCOT extends TestRunnerJC{
         int numThread = 10;   // llamadas concurrentes
         for(int i = 0; i < 1; i++ ) {
             Stresstesting.stressTestingCalcularCotizacion(numThread, i);
+        }
+    }
+    private void test_StressTestingGetEdadActuarial() {
+        int numThread = 50;   // llamadas concurrentes x prueba
+        int numeroPruebasConcurrentes = 1;  // Pruebas serializadas de Concurrentes
+        for(int i = 0; i < numeroPruebasConcurrentes; i++ ) {
+            Stresstesting.stressTestingGetEdadActuarial(numThread, i);
         }
     }
 }
