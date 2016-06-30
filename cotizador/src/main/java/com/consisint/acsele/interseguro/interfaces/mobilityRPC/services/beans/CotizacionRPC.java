@@ -10,8 +10,8 @@ import java.util.List;
  *
  */
 public class CotizacionRPC {
-    long idPoliza;
-    long idOperation;
+    long idPoliza;                  // Id de la Poliza
+    long idOperation;               // Id de la Ultima Operacion aplicada
     long idProducto;                // Id de Producto [AgregatedPoliza.productId]
     long idUnidadRiesgoType;        // Id de Unidad de Riesgo Configurada
     long fechaCotizacion = 0;       // Fecha Cotizacion                     -- [Poliza.FechaInicial]
@@ -41,6 +41,18 @@ public class CotizacionRPC {
      */
     double montoTotalPrimaFP;       //  Monto Total Prima por Forma de Pago     --  ojo antes--> [COVPrima]
     double tasaCostoEfectivoAnual;  //  Valor de la Tasa Costo Efectivo Anual (TCEA) -- [POL.TasaCostoEfectivoAnual]
+    long fechaaUno;                 //  Fecha de la primera anualidad
+    long fechaaDos;                 //  Fecha de la primera anualidad
+    long fechaaTres;                //  Fecha de la segunda anualidad
+    long fechaaCuatro;              //  Fecha de la tercera anualidad
+    long fechaaCinco;               //  Fecha de la cuarta  anualidad
+    long fechaaSeis;                //  Fecha de la sexta   anualidad
+    long fechaaSiete;               //  Fecha de la septima anualidad
+    long fechaaOcho;                //  Fecha de la octava  anualidad
+    long fechaaNueve;               //  Fecha de la novena  anualidad
+    long fechaaDiez;                //  Fecha de la decima  anualidad
+    double fondoUniversitario;      //  Monto del Fondo Universitario
+
     List<ValidacionRPC> validaciones = new ArrayList<ValidacionRPC>();                      // Salida de Lista de Errores en las validaciones realizadas al calcular la poliza
 
     /**
@@ -202,10 +214,55 @@ public class CotizacionRPC {
 
     public void setIdOperation(long idOperation) { this.idOperation = idOperation; }
 
+    public long getFechaaUno() { return fechaaUno; }
+
+    public void setFechaaUno(long fechaaUno) { this.fechaaUno = fechaaUno; }
+
+    public long getFechaaDos() { return fechaaDos; }
+
+    public void setFechaaDos(long fechaaDos) { this.fechaaDos = fechaaDos; }
+
+    public long getFechaaTres() { return fechaaTres; }
+
+    public void setFechaaTres(long fechaaTres) { this.fechaaTres = fechaaTres; }
+
+    public long getFechaaCuatro() { return fechaaCuatro; }
+
+    public void setFechaaCuatro(long fechaaCuatro) { this.fechaaCuatro = fechaaCuatro; }
+
+    public long getFechaaCinco() { return fechaaCinco; }
+
+    public void setFechaaCinco(long fechaaCinco) { this.fechaaCinco = fechaaCinco; }
+
+    public long getFechaaSeis() { return fechaaSeis; }
+
+    public void setFechaaSeis(long fechaaSeis) { this.fechaaSeis = fechaaSeis; }
+
+    public long getFechaaSiete() { return fechaaSiete; }
+
+    public void setFechaaSiete(long fechaaSiete) { this.fechaaSiete = fechaaSiete; }
+
+    public long getFechaaOcho() { return fechaaOcho; }
+
+    public void setFechaaOcho(long fechaaOcho) { this.fechaaOcho = fechaaOcho; }
+
+    public long getFechaaNueve() { return fechaaNueve; }
+
+    public void setFechaaNueve(long fechaaNueve) { this.fechaaNueve = fechaaNueve; }
+
+    public long getFechaaDiez() { return fechaaDiez; }
+
+    public void setFechaaDiez(long fechaaDiez) { this.fechaaDiez = fechaaDiez; }
+
+    public double getFondoUniversitario() { return fondoUniversitario; }
+
+    public void setFondoUniversitario(double fondoUniversitario) { this.fondoUniversitario = fondoUniversitario; }
+
     @Override
     public String toString() {
         StringBuilder out = new StringBuilder("CotizacionRPC:{\n")
                 .append(" idPoliza=").append(String.valueOf(idPoliza))
+                .append(", idOperation=").append(String.valueOf(idOperation))
                 .append(", idProducto=").append(String.valueOf(idProducto))
                 .append(", idUnidadRiesgoType=").append(String.valueOf(idUnidadRiesgoType))
                 .append(", idPlan=").append(String.valueOf(idPlan))
@@ -227,6 +284,17 @@ public class CotizacionRPC {
                 .append(", igv=").append(String.valueOf(igv))
                 .append(", montoTotalPrimaFP=").append(String.valueOf(montoTotalPrimaFP))
                 .append(", tasaCostoEfectivoAnual=").append(String.valueOf(tasaCostoEfectivoAnual))
+                .append(", fechaaUno=").append(fechaaUno > 0 ? new Date(fechaaUno).toString():"")
+                .append(", fechaaDos=").append( fechaaDos > 0 ? new Date(fechaaDos).toString():"")
+                .append(", fechaaTres=").append(fechaaTres  > 0 ? new Date(fechaaTres).toString():"")
+                .append(", fechaaCuatro=").append( fechaaCuatro > 0 ? new Date(fechaaCuatro).toString():"")
+                .append(", fechaaCinco=").append( fechaaCinco > 0 ? new Date(fechaaCinco).toString():"")
+                .append(", fechaaSeis=").append( fechaaSeis > 0 ? new Date(fechaaSeis).toString():"")
+                .append(", fechaaSiete=").append( fechaaSiete > 0 ? new Date(fechaaSiete).toString():"")
+                .append(", fechaaOcho=").append( fechaaOcho > 0 ? new Date(fechaaOcho).toString():"")
+                .append(", fechaaNueve=").append( fechaaNueve > 0 ? new Date(fechaaNueve).toString():"")
+                .append(", fechaaDiez=").append( fechaaDiez > 0 ? new Date(fechaaDiez).toString():"")
+                .append(", fondoUniversitario=").append(String.valueOf(fondoUniversitario))
                 ;
         if(!iosCot.isEmpty()){
             out.append(",\niosCotList:{\n[");

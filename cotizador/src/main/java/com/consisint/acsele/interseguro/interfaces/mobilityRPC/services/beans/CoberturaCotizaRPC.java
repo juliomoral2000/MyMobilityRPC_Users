@@ -6,14 +6,14 @@ package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans;
  */
 public class CoberturaCotizaRPC {
     long idCobertura;               // Id de Cobertura                          [ConfiguratedCoverage.id]
-    boolean isMandatory;            // Es Obligatoria/mandatorio
-    boolean isLeading;              // Es Principal
-    double montoCapitalAsegurado;   // Entrada : [UR.CapitalAsegurado]{Cov Principal} y [Cov.COVBeneficioMaximo]{Todas} Salida: ?????[COVSumaAsegurada] o [Cov.COVTasaBasicaI]?????
+    boolean isMandatory;            // Es Obligatoria/mandatorio?               [ConfiguratedCoverage.mandatory]
+    boolean isLeading;              // Es Principal?                            [ConfiguratedCoverage.template."COVTipoCobertura".value = 1]
+    double montoCapitalAsegurado;   // Entrada : [UR.CapitalAsegurado]{Cov Principal} y [Cov.COVBeneficioMaximo]{Todas} Salida: [COVSumaAsegurada]
     double montoPrima;              // Salida del Monto de Prima                [Cov.COVPrima]
     double montoTarifa;             // Salida del Monto de la Tarifa Calculada  [Cov.COVMonComisIII]
     double montoAjuste;             // Salida del Monto del Ajuste Calculada    [Cov.COVMonComisII]
     double montoDescuento;          // Salida del Monto del Descuento Calculada [Cov.COVMonComisIV]
-    double montoRecargo;            // FIXME_JULIO: Monto de Recargo si se llega a definir si realmente se envia al calcular Cotizacion
+    double montoRecargo;            // Salida del Monto del Recargo presente    [Cov.COVMonComisV]
 
     /**
      * Constructor caso Calculo Inverso [La prima se ingresa a nivel de CotizacionRPC]

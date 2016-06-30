@@ -47,14 +47,19 @@ public class MyTestMethodCOT extends TestRunnerJC{
         Stopwatch stopwatch = Stopwatch.createStarted();
         //test_Otra_Cosa();
         //test_StressTestingCalcularCotizacion();
-
-        /*final Long timeOut = new Long(60000 * 3);
+        /****************************************************************************/
+        final Long timeOut = new Long(60000 * 3);
+        /*long idProduct = 49183;
         final CotizacionRPC cRPC = test_CalcularCotizacion(true, 49183, 0, timeOut);
         test_CalcularTVG(cRPC, timeOut*2);  // probar despues null*/
-
         //test_GetEdadProducto(49183);
         /****************************************************************************/
-        //test_GetListCotizacionRPC(49183);
+        long idProducto = 81099;    // Temporal
+        final ProductParameter parameter = new ProductParameter(idProducto);
+        parameter.setTimeOutMax(13361826L);  // Lo voy a setear al id de la poliza para mis pruebas
+        final CotizacionRPC cotizacionRPC = test_GetListCotizacionRPC(parameter);
+
+        final CotizacionRPC cRPC = test_CalcularCotizacion(true, cotizacionRPC, timeOut);
         /****************************************************************************/
         /*final ProductRPC p = ServicesResultsObjectCache.getProduct(49183);
         System.out.println(p.toString());*/
@@ -108,7 +113,7 @@ public class MyTestMethodCOT extends TestRunnerJC{
         test_GetPropertyRPC_Dependencies("CodDistrito", true, true, "Parent", i++);*/
         /*************************************************************************/
         //for(int i = 100000; i > 0 ; --i){
-           test_EdadActuarial();
+           //test_EdadActuarial();
         //}
         //test_StressTestingGetEdadActuarial();
         /*************************************************************************/
@@ -155,21 +160,25 @@ public class MyTestMethodCOT extends TestRunnerJC{
         }
     }
 
-    private void test_GetListCotizacionRPC(long idProducto) {
+    private CotizacionRPC test_GetListCotizacionRPC(ProductParameter parameter) {
         try {
             Stopwatch t = Stopwatch.createStarted();
-            List<CotizacionRPC> cRPCs = Quotation_Callers.getCotizaciones(ACSELE, new ProductParameter(idProducto));
+            List<CotizacionRPC> cRPCs = ServicesResultsObjectCache.getListaCotizaciones(parameter);
             t.stop(); // optional
             t.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("[test_GetListCotizacionRPC]; Total time; " + t);
             t.reset(); t.start();
             for (CotizacionRPC cRPC : cRPCs) {
-                System.out.println(cRPC.toString());
+                System.out.println("[test_GetListCotizacionRPC] cotizacion Cargada Original: "+cRPC.toString());
+                CreateCotizacion.cleanOutFields(cRPC);
+
             }
+            return !cRPCs.isEmpty() ? cRPCs.get(0): null;
         }catch (Exception e){
             Log.debug("ver ", e);
             System.out.println("[test_GetListCotizacionRPC] Error " + e.getMessage());
         }
+        return null;
     }
 
     private void test_GetPropertyRPC_Dependencies(String propertyName, boolean fetchDependence, boolean fetchDependenceChilds, String level, int numeroTest) {
@@ -329,6 +338,26 @@ public class MyTestMethodCOT extends TestRunnerJC{
         }
     }
 
+    private CotizacionRPC test_CalcularCotizacion(boolean isDirecta, CotizacionRPC cotizacionRPCIn, long timeOut) {
+        try {
+            CotizacionParameter parameter = CreateCotizacion.createParameterFromCotizacion(isDirecta, cotizacionRPCIn, timeOut);
+            System.out.println("[test_CalcularCotizacion]; parametro de entrada:\n" + parameter.toString());
+            Stopwatch t = Stopwatch.createStarted();
+            CotizacionRPC cotizacionRPC = ServicesResultsObjectCache.calcularCotizacion(isDirecta, timeOut, parameter);
+            t.stop(); // optional
+            t.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("***************************************");
+            System.out.println("[test_CalcularCotizacion]; Calculo " + (isDirecta ? "Directo" : "Inverso") + " respuesta :\n" + cotizacionRPC.toString());
+            System.out.println("[test_CalcularCotizacion]; Total time; " + t);
+            System.out.println("***************************************");
+            System.out.println("[test_CalcularCotizacion]; Termine ....");
+            return cotizacionRPC;
+        }catch (Exception e){
+            Log.debug("ver ", e);
+            return null;
+        }
+    }
+
     private void test_CalcularTVG(CotizacionRPC cRPC, Long timeOut) {
         try {
             TVGParameter parameter = new TVGParameter(cRPC.getIdPoliza(), cRPC.getIdOperation(), timeOut);
@@ -348,6 +377,26 @@ public class MyTestMethodCOT extends TestRunnerJC{
     }
 
     public static Map<String, String> createMap() {
+        Map<String, String> mapa = new HashMap<String, String>();
+        /*long idProducto = */
+        mapa.put("idProducto", "49183");
+        mapa.put("idPlan", "48161");             // Id de Plan
+        mapa.put("idPlanVida", "602");   // Id de PlanVida
+        mapa.put("idTipoDescuento", "0");             // Id o valor Tipo de Descuento
+        mapa.put("idPeriodoCobertura", "168"); // Id o valor Periodo de Cobertura   ESTA expresado en meses
+        mapa.put("idPeriodoDePago", "47341");   // valor del Periodo de Pago
+        mapa.put("idMoneda", "2123");           // Id de la Moneda de ese Cotizacion
+        mapa.put("idPeriodoPagoPrima", "10"); // Id o valor periodo Pago Prima [Esta expresada en a#os]
+        mapa.put("idPeriodoPagoBeneficio", "1");    // Id o valor periodo Pago Beneficio
+        mapa.put("idGrupoFamiliar", "0");
+        mapa.put("ano","2016");
+        mapa.put("mes","6");
+        mapa.put("dia","13");
+        return mapa;
+
+    }
+
+    public static Map<String, String> createMapFromJSON(String filePath) {
         Map<String, String> mapa = new HashMap<String, String>();
         /*long idProducto = */
         mapa.put("idProducto", "49183");

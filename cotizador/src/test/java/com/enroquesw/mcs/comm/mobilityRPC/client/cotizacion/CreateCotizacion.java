@@ -15,6 +15,11 @@ import java.util.Map;
  */
 public class CreateCotizacion {
 
+    public static CotizacionParameter createParameterFromCotizacion(boolean isDirecta, CotizacionRPC cotizacionRPC, long timeOut) {
+        final CotizacionParameter cotizacionParameter = new CotizacionParameter(cotizacionRPC, !isDirecta);
+        cotizacionParameter.setTimeOutMax(timeOut);
+        return cotizacionParameter;
+    }
     public static CotizacionParameter createParameterFromMap(boolean isDirecta, Map<String, String> mapa) {
         CreateCotizacion createCotizacion = new CreateCotizacion();
         long idProducto = Long.parseLong(mapa.get("idProducto"));
@@ -145,6 +150,39 @@ public class CreateCotizacion {
                 break;
         }
         return new AseguradoRPC( fechaNacimiento,  idSexo,  idFumador,  idProfesion,  idClaseAccPers,  idTipoAsegurado);
+    }
+
+    public static void cleanOutFields(CotizacionRPC cRPC) {
+        cRPC.setMontoPrimaBruta(0.0);
+        cRPC.setMontoPrimaVoluntaria(0.0);
+        cRPC.setMontoPrimaPrograma(0.0);
+        cRPC.setMontoPrimaFP(0.0);
+        cRPC.setDerechoEmision(0.0);
+        cRPC.setIgv(0.0);
+        cRPC.setMontoTotalPrimaFP(0.0);
+        cRPC.setTasaCostoEfectivoAnual(0.0);
+
+        cRPC.setFechaaUno(0);                 //  Fecha de la primera anualidad
+        cRPC.setFechaaDos(0);                 //  Fecha de la primera anualidad
+        cRPC.setFechaaTres(0);                //  Fecha de la segunda anualidad
+        cRPC.setFechaaCuatro(0);              //  Fecha de la tercera anualidad
+        cRPC.setFechaaCinco(0);               //  Fecha de la cuarta  anualidad
+        cRPC.setFechaaSeis(0);                //  Fecha de la sexta   anualidad
+        cRPC.setFechaaSiete(0);               //  Fecha de la septima anualidad
+        cRPC.setFechaaOcho(0);                //  Fecha de la octava  anualidad
+        cRPC.setFechaaNueve(0);               //  Fecha de la novena  anualidad
+        cRPC.setFechaaDiez(0);                //  Fecha de la decima  anualidad
+        cRPC.setFondoUniversitario(0.0);      //  Monto del Fondo Universitario
+
+        for (ObjetoAsegCotizaRPC oi : cRPC.getIosCot()) {
+            for (CoberturaCotizaRPC cov : oi.getCovsCot()) {
+                cov.setMontoPrima(0.0);              // Salida del Monto de Prima                [Cov.COVPrima]
+                cov.setMontoTarifa(0.0);             // Salida del Monto de la Tarifa Calculada  [Cov.COVMonComisIII]
+                cov.setMontoAjuste(0.0);             // Salida del Monto del Ajuste Calculada    [Cov.COVMonComisII]
+                cov.setMontoDescuento(0.0);          // Salida del Monto del Descuento Calculada [Cov.COVMonComisIV]
+                cov.setMontoRecargo(0.0);            // Salida del Monto del Recargo presente    [Cov.COVMonComisV]
+            }
+        }
     }
 }
 /*double idGrupoFamiliar = 1;             // Id o valor Grupo Familiar            -- Propiedad "GrupoFamiliar"  [1,2,3,4] [Titular; Titular y Cónyuge; Titular, Cónyuge e Hijo(s); Titular e Hijo(s)]*/

@@ -109,4 +109,8 @@ public class ServicesResultsObjectCache {
     public static Integer getEdadActuarial(ActuarialAgeParameter parameter) {
         return Quotation_Callers.getEdadActuarial(ACSELE, parameter);
     }
+
+    public static List<CotizacionRPC> getListaCotizaciones(ProductParameter parameter) {
+        return Quotation_Callers.getCotizaciones(ACSELE, parameter);
+    }
 }
