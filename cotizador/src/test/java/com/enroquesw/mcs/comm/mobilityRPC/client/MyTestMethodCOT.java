@@ -342,7 +342,7 @@ public class MyTestMethodCOT extends TestRunnerJC{
             t.stop(); // optional
             t.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("***************************************");
-            System.out.println("[test_CalcularCotizacion]; Calculo " + (isDirecta ? "Directo" : "Inverso") + " respuesta :\n" + cotizacionRPC.toString());
+            System.out.println("[test_CalcularCotizacion]; Calculo " + (isDirecta ? (cotizacionRPC.getIdPoliza() != 0? "DIRECTO_RE_COTIZACION" : "Directo") : "Inverso") + " respuesta :\n" + cotizacionRPC.toString());
             System.out.println("[test_CalcularCotizacion]; Total time; " + t);
             System.out.println("***************************************");
             System.out.println("[test_CalcularCotizacion]; Termine ....");
@@ -532,7 +532,7 @@ public class MyTestMethodCOT extends TestRunnerJC{
     private void conjuntoPruebasCotizacion() {
         final Long timeOut = new Long(60000 * 3);
         long idProducto = 81099;    // Temporal
-        final ProductParameter parameter = new ProductParameter(idProducto);
+        ProductParameter parameter = new ProductParameter(idProducto);
         parameter.setTimeOutMax(13389493L);  // Lo voy a setear al id de la poliza Base para mis pruebas
         CotizacionRPC cotizacionRPC = test_GetListCotizacionRPC(parameter);
         CreateCotizacion.cleanOutFields(cotizacionRPC, false);  // Limpiamos la original
@@ -547,8 +547,17 @@ public class MyTestMethodCOT extends TestRunnerJC{
         CotizacionRPC cRPC_inverso = test_CalcularCotizacion(false, cRPC_directo, timeOut);
         final List<ObjetoAsegCotizaRPC> iosCot = cRPC_inverso.getIosCot();
         // Faltaria probar el recalculo OJOOOOOOOOO
-
-
+        // RECOTIZAR VERIFICAR ??????????? !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        parameter = new ProductParameter(idProducto);
+        parameter.setTimeOutMax(13389493L);  // Lo voy a setear al id de la poliza Base para mis pruebas
+        cotizacionRPC = test_GetListCotizacionRPC(parameter);
+        CreateCotizacion.cleanOutFields(cotizacionRPC, false);  // Limpiamos la original
+        cotizacionRPC.setIdPoliza(cRPC_inverso.getIdPoliza());
+        cotizacionRPC.setIdOperation(cRPC_inverso.getIdOperation());
+        cotizacionRPC.setMontoTotalPrimaFP(0.0);
+        CotizacionRPC cRPC_recotizado = test_CalcularCotizacion(true, cotizacionRPC, timeOut);
+        final List<ObjetoAsegCotizaRPC> iosCot_2 = cRPC_recotizado.getIosCot();
+        System.out.println(iosCot_2.toString());
     }
 
     private double redondearDosDecimales(double v) {
