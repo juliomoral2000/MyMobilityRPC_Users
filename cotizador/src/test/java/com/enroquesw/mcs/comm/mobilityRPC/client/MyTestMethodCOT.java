@@ -16,6 +16,8 @@ import com.esotericsoftware.minlog.Log;
 import com.google.common.base.Stopwatch;
 
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -48,18 +50,13 @@ public class MyTestMethodCOT extends TestRunnerJC{
         //test_Otra_Cosa();
         //test_StressTestingCalcularCotizacion();
         /****************************************************************************/
-        final Long timeOut = new Long(60000 * 3);
-        /*long idProduct = 49183;
-        final CotizacionRPC cRPC = test_CalcularCotizacion(true, 49183, 0, timeOut);
-        test_CalcularTVG(cRPC, timeOut*2);  // probar despues null*/
+        /*final Long timeOut = new Long(60000 * 3);
+        long idProduct = 49183;
+        final CotizacionRPC cRPC = test_CalcularCotizacion(true, 49183, 0, timeOut);*/
+        //test_CalcularTVG(cRPC, timeOut*2);  // probar despues null*/
         //test_GetEdadProducto(49183);
         /****************************************************************************/
-        long idProducto = 81099;    // Temporal
-        final ProductParameter parameter = new ProductParameter(idProducto);
-        parameter.setTimeOutMax(13361826L);  // Lo voy a setear al id de la poliza para mis pruebas
-        final CotizacionRPC cotizacionRPC = test_GetListCotizacionRPC(parameter);
-
-        final CotizacionRPC cRPC = test_CalcularCotizacion(true, cotizacionRPC, timeOut);
+        conjuntoPruebasCotizacion();
         /****************************************************************************/
         /*final ProductRPC p = ServicesResultsObjectCache.getProduct(49183);
         System.out.println(p.toString());*/
@@ -169,9 +166,7 @@ public class MyTestMethodCOT extends TestRunnerJC{
             System.out.println("[test_GetListCotizacionRPC]; Total time; " + t);
             t.reset(); t.start();
             for (CotizacionRPC cRPC : cRPCs) {
-                System.out.println("[test_GetListCotizacionRPC] cotizacion Cargada Original: "+cRPC.toString());
-                CreateCotizacion.cleanOutFields(cRPC);
-
+                System.out.println("[test_GetListCotizacionRPC] cotizacion Cargada Original: " + cRPC.toString());
             }
             return !cRPCs.isEmpty() ? cRPCs.get(0): null;
         }catch (Exception e){
@@ -380,6 +375,7 @@ public class MyTestMethodCOT extends TestRunnerJC{
         Map<String, String> mapa = new HashMap<String, String>();
         /*long idProducto = */
         mapa.put("idProducto", "49183");
+        mapa.put("idUnidadRiesgoType", "49838668");
         mapa.put("idPlan", "48161");             // Id de Plan
         mapa.put("idPlanVida", "602");   // Id de PlanVida
         mapa.put("idTipoDescuento", "0");             // Id o valor Tipo de Descuento
@@ -390,8 +386,8 @@ public class MyTestMethodCOT extends TestRunnerJC{
         mapa.put("idPeriodoPagoBeneficio", "1");    // Id o valor periodo Pago Beneficio
         mapa.put("idGrupoFamiliar", "0");
         mapa.put("ano","2016");
-        mapa.put("mes","6");
-        mapa.put("dia","13");
+        mapa.put("mes","7");
+        mapa.put("dia","01");
         return mapa;
 
     }
@@ -531,4 +527,34 @@ public class MyTestMethodCOT extends TestRunnerJC{
             Stresstesting.stressTestingGetEdadActuarial(numThread, i);
         }
     }
+
+
+    private void conjuntoPruebasCotizacion() {
+        final Long timeOut = new Long(60000 * 3);
+        long idProducto = 81099;    // Temporal
+        final ProductParameter parameter = new ProductParameter(idProducto);
+        parameter.setTimeOutMax(13389493L);  // Lo voy a setear al id de la poliza Base para mis pruebas
+        CotizacionRPC cotizacionRPC = test_GetListCotizacionRPC(parameter);
+        CreateCotizacion.cleanOutFields(cotizacionRPC, false);  // Limpiamos la original
+        // Realizamos el calculo directo
+        CotizacionRPC cRPC_directo = test_CalcularCotizacion(true, cotizacionRPC, timeOut);
+        double montoTotalPrimaFP_Inicial = cRPC_directo.getMontoTotalPrimaFP();    // sacamos la prima inicial de la poliza
+        double porcentajeCambio = -25; // porcentaje de cambio a la prima [ si positivo es el 100 + este, si es negativo se le resta ese porcentaje a la prima original ]
+        double nuevaprimaInv = redondearDosDecimales(porcentajeCambio >= 0 ? ((100+porcentajeCambio)*montoTotalPrimaFP_Inicial)/100 : (montoTotalPrimaFP_Inicial - ((-1*porcentajeCambio*montoTotalPrimaFP_Inicial)/100)));
+        CreateCotizacion.cleanOutFields(cRPC_directo, false); // Limpiamos las salidas
+        cRPC_directo.setMontoTotalPrimaFP(nuevaprimaInv);   // Seteamos la prima Inversa Deseada
+        // Realizamos el calculo inverso
+        CotizacionRPC cRPC_inverso = test_CalcularCotizacion(false, cRPC_directo, timeOut);
+        final List<ObjetoAsegCotizaRPC> iosCot = cRPC_inverso.getIosCot();
+        // Faltaria probar el recalculo OJOOOOOOOOO
+
+
+    }
+
+    private double redondearDosDecimales(double v) {
+        BigDecimal bd = new BigDecimal(v);
+        bd = bd.setScale(2, RoundingMode.HALF_UP);
+        return bd.doubleValue();
+    }
+
 }

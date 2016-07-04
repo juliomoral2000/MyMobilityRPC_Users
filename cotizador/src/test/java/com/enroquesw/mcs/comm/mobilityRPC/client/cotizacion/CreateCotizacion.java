@@ -29,6 +29,7 @@ public class CreateCotizacion {
         return new CotizacionParameter(createCotizacion.createCotizacionFromMap(idProducto, isDirecta, idGrupoFamiliar, idPeriodoDePago, idMoneda, false, mapa), !isDirecta);
     }
     private CotizacionRPC createCotizacionFromMap(long idProducto, boolean isDirecta, double idGrupoFamiliar, long idPeriodoDePago, long idMoneda, boolean isLegal, Map<String, String> mapa) {
+        long idUnidadRiesgoType = Long.parseLong(mapa.get("idUnidadRiesgoType"));             // Id de UR
         long idPlan = Long.parseLong(mapa.get("idPlan"));             // Id de Plan
         double idPlanVida = Double.parseDouble(mapa.get("idPlanVida"));   // Id de PlanVida
         double idTipoDescuento = Double.parseDouble(mapa.get("idTipoDescuento"));             // Id o valor Tipo de Descuento
@@ -152,7 +153,7 @@ public class CreateCotizacion {
         return new AseguradoRPC( fechaNacimiento,  idSexo,  idFumador,  idProfesion,  idClaseAccPers,  idTipoAsegurado);
     }
 
-    public static void cleanOutFields(CotizacionRPC cRPC) {
+    public static void cleanOutFields(CotizacionRPC cRPC, boolean isCleanAmount) {
         cRPC.setMontoPrimaBruta(0.0);
         cRPC.setMontoPrimaVoluntaria(0.0);
         cRPC.setMontoPrimaPrograma(0.0);
@@ -176,6 +177,7 @@ public class CreateCotizacion {
 
         for (ObjetoAsegCotizaRPC oi : cRPC.getIosCot()) {
             for (CoberturaCotizaRPC cov : oi.getCovsCot()) {
+                if(isCleanAmount) cov.setMontoCapitalAsegurado(0);
                 cov.setMontoPrima(0.0);              // Salida del Monto de Prima                [Cov.COVPrima]
                 cov.setMontoTarifa(0.0);             // Salida del Monto de la Tarifa Calculada  [Cov.COVMonComisIII]
                 cov.setMontoAjuste(0.0);             // Salida del Monto del Ajuste Calculada    [Cov.COVMonComisII]
