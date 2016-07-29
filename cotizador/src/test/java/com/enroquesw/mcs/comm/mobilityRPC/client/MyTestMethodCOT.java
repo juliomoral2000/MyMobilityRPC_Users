@@ -14,10 +14,16 @@ import com.enroquesw.mcs.comm.mobilityRPC.util.testRunner.MyTestRunnerCOT;
 import com.enroquesw.mcs.comm.mobilityRPC.util.testRunner.interfaces.TestRunnerJC;
 import com.esotericsoftware.minlog.Log;
 import com.google.common.base.Stopwatch;
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.nio.charset.Charset;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -47,51 +53,31 @@ public class MyTestMethodCOT extends TestRunnerJC{
         //test_GetProducts();
         //test_boomerang();
         Stopwatch stopwatch = Stopwatch.createStarted();
+        //test_Coberturas(ServicesResultsObjectCache.getProduct(77059L), true);
+        /*******   Prueba de Tarifas
+        for (ProductRPC productRPC : ServicesResultsObjectCache.getListaProductos()) {
+            test_Tarifas_By_Cov_PlanVida(productRPC, true);
+        }*/
         //test_Otra_Cosa();
         //test_StressTestingCalcularCotizacion();
         /****************************************************************************/
-        /*final Long timeOut = new Long(60000 * 3);
+        /* Calcular Cotizacion de Mapa de Datos OJO NO USAR DEPRECADO
+        final Long timeOut = new Long(60000 * 3);
         long idProduct = 49183;
-        final CotizacionRPC cRPC = test_CalcularCotizacion(true, 49183, 0, timeOut);*/
+        final CotizacionRPC cRPC = test_CalcularCotizacion(true, 49183, 0, timeOut); // desde mapa */
         //test_CalcularTVG(cRPC, timeOut*2);  // probar despues null*/
         //test_GetEdadProducto(49183);
         /****************************************************************************/
-        conjuntoPruebasCotizacion();
+        final ProductRPC p = ServicesResultsObjectCache.getProduct(49183);
+        conjuntoPruebasCotizacion(p);
         /****************************************************************************/
         /*final ProductRPC p = ServicesResultsObjectCache.getProduct(49183);
         System.out.println(p.toString());*/
 
         //double idGrupoFamiliar = 0;             // Id o valor Grupo Familiar            -- Propiedad "GrupoFamiliar"  [0, 1, 2, 3, 4] [NINGUNO, Titular; Titular y C�nyuge; Titular, C�nyuge e Hijo(s); Titular e Hijo(s)]
         /*************************************************************************/
-        // Caso 1.0: Directa , [EducacionGarantizada] - Exitoso
-        //test_CalcularCotizacion(true, p.getId(), idGrupoFamiliar);
-
-        // Caso 1.1: Directa , [EducacionGarantizada] - Errores
-        // Caso 3.0: Inversa , [EducacionGarantizada] - Exitoso
-        // Caso 3.1: Inversa , [EducacionGarantizada] - Errores
-
-        // Caso 2.0.0: Directa , [Vida Protegida] (Titular) - Exitoso
-        // Caso 2.0.1: Directa , [Vida Protegida] (Titular/Conyuge) - Exitoso
-        // Caso 2.0.2: Directa , [Vida Protegida] (Titular/Hijo) - Exitoso
-        // Caso 2.0.3: Directa , [Vida Protegida] (Titular/Conyuge/Hijo) - Exitoso
-        // Caso 2.1.0: Directa , [Vida Protegida] (Titular) - Errores
-        // Caso 2.1.1: Directa , [Vida Protegida] (Titular/Conyuge) - Errores
-        // Caso 2.1.2: Directa , [Vida Protegida] (Titular/Hijo) - Errores
-        // Caso 2.1.3: Directa , [Vida Protegida] (Titular/Conyuge/Hijo) - Errores
-        // Caso 4.0.0: Inversa , [Vida Protegida] (Titular) - Exitoso
-        // Caso 4.0.1: Inversa , [Vida Protegida] (Titular/Conyuge) - Exitoso
-        // Caso 4.0.2: Inversa , [Vida Protegida] (Titular/Hijo) - Exitoso
-        // Caso 4.0.3: Inversa , [Vida Protegida] (Titular/Conyuge/Hijo) - Exitoso
-        // Caso 4.1.0: Inversa , [Vida Protegida] (Titular) - Errores
-        // Caso 4.1.1: Inversa , [Vida Protegida] (Titular/Conyuge) - Errores
-        // Caso 4.1.2: Inversa , [Vida Protegida] (Titular/Hijo) - Errores
-        // Caso 4.1.3: Inversa , [Vida Protegida] (Titular/Conyuge/Hijo) - Errores
-
-
-
         /*************************************************************************/
         //test_ServicesFactoryProccesor();
-
         //test_StressTestingGetProducts();
         //test_GetProducts(false);
         //int i = 1;
@@ -151,7 +137,7 @@ public class MyTestMethodCOT extends TestRunnerJC{
             stopwatch.stop(); // optional
             stopwatch.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("[test_GetEdadProducto]; Total time; " + stopwatch);
-            System.out.println("[test_GetEdadProducto] "+rpc.toString());
+            System.out.println("[test_GetEdadProducto] " + rpc.toString());
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
         }
@@ -221,17 +207,19 @@ public class MyTestMethodCOT extends TestRunnerJC{
             t.stop(); // optional
             t.elapsed(TimeUnit.MILLISECONDS);
             System.out.println("[test_GetProducts]; Total time; " + t);
-            t.reset(); t.start();
+            t.reset(); t.start(); int i = 0;
             for (ProductRPC product : products) {
-                test_GetProduct(product, isShowObjectResult);
+                /*test_GetProduct(product, isShowObjectResult);
                 test_PlanesFinanciamiento(product, isShowObjectResult);
                 test_Planes(product, isShowObjectResult);
                 test_Coberturas(product, isShowObjectResult);
-                test_PeriodosCoberturas(product, isShowObjectResult);
-                test_Tarifas(product, isShowObjectResult);
-                test_ExigenciasMedicas(product, isShowObjectResult);
+                test_PeriodosCoberturas(product, isShowObjectResult);*/
+                //test_ExigenciasMedicas(product, isShowObjectResult);
                 //if(product.getId()==49183)
                 //System.out.println("[test_GetProducts] " + product.getName());
+                System.out.println((i++) + "\n" + new Gson().toJson(product));
+                //test_ExigenciasMedicas(product, isShowObjectResult);
+                test_Tarifas(product, isShowObjectResult);
             }
             t.stop(); // optional
             t.elapsed(TimeUnit.MILLISECONDS);
@@ -304,7 +292,7 @@ public class MyTestMethodCOT extends TestRunnerJC{
             System.out.println("[test_Coberturas] list_ccv.size: " + list_ccv.size());
             if (isShowObjectResult) {
                 for (CoberturaRPC o : list_ccv) {
-                    System.out.println("[test_Coberturas] : " + o.toString());
+                    System.out.println("[test_Coberturas] : \n" + new Gson().toJson(o));
                 }
             }
         } catch (ServiceBaseException e) {
@@ -465,24 +453,62 @@ public class MyTestMethodCOT extends TestRunnerJC{
         System.out.println("[test_ExigenciasMedicas]; Total time; " + stopwatch);
         System.out.println("[test_ExigenciasMedicas]; exigRPC.getRenglonList().size(); " + exigRPC.getRenglonList().size());
         //System.out.println("idProducto: "+product.getId()+"; Producto:"+product.getName()+"; Exigencias size: "+exigRPC.getRenglonList().size());
-        if(isShowObjectResult) System.out.println("[test_ExigenciasMedicas]; " + exigRPC.toString());
+        if(isShowObjectResult) System.out.println("[test_ExigenciasMedicas]; " + new Gson().toJson(exigRPC));
     }
 
     private void test_Tarifas(ProductRPC product, boolean isShowObjectResult) {
-        Calendar instance = Calendar.getInstance();
-        instance.set(1995, Calendar.JANUARY, 1);
-        TarifaParameter tarifaParameter = new TarifaParameter(product.getId());
-        Stopwatch stopwatch = Stopwatch.createStarted();
-        List<TarifaRPC> list = Product_Callers.getTarifas(ACSELE, tarifaParameter);
-        stopwatch.stop(); // optional
-        stopwatch.elapsed(TimeUnit.MILLISECONDS);
-        System.out.println("[test_Tarifas]; Total time; " + stopwatch);
-        System.out.println("[test_Tarifas];idProducto: "+product.getId()+"; Producto:"+product.getName()+"; Tarifas size: "+list.size());
-        if (isShowObjectResult) {
-            for (TarifaRPC t : list) {
-                System.out.println("[test_Planes]; " + t.toString());
-                //System.out.println("RenglonesTarifa size: "+t.getRenglonList().size());
+        //Calendar instance = Calendar.getInstance();
+        //instance.set(1995, Calendar.JANUARY, 1);
+        try {
+            TarifaParameter parameter = new TarifaParameter(product.getId());
+            parameter.setTimeOutMax(4*120000L);
+            Stopwatch stopwatch = Stopwatch.createStarted();
+            List<TarifaRPC> list = Product_Callers.getTarifas(ACSELE, parameter);
+            stopwatch.stop(); // optional
+            stopwatch.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[test_Tarifas]; Total time; " + stopwatch);
+            //System.out.println("[test_Tarifas];idProducto: "+product.getId()+"; Producto:"+product.getName()+"; Tarifas size: "+list.size());
+            if (isShowObjectResult) {
+                for (TarifaRPC t : list) {
+                    System.out.println("[test_Planes]; " + new Gson().toJson(t)/*t.toString()*/);
+                    //System.out.println("RenglonesTarifa size: "+t.getRenglonList().size());
+                }
             }
+        } catch (ServiceBaseException e) {
+            Log.debug("[test_Tarifas] ERROR:\n", e);
+
+        }
+    }
+    private void test_Tarifas_By_Cov_PlanVida(ProductRPC product, boolean isShowObjectResult) {
+        List<CoberturaRPC> list_ccv = ServicesResultsObjectCache.getListaCoberturas(product.getId());
+        final List<TRDataRPC> planVida = ServicesResultsObjectCache.getCachedPlanesVida(product.getId());
+        for (CoberturaRPC coberturaRPC : list_ccv) {
+            String msgProdCov = "productoId : "+product.getId()+";productoName: "+product.getName()+"; ccvId : "+coberturaRPC.getId() +"; ccvName : "+coberturaRPC.getName();
+            for (TRDataRPC trDataRPC : planVida) {
+                System.out.println("[test_Tarifas_By_Cov_PlanVida] Extraer Tarifas para ; "+msgProdCov+"; PlanVida: "+trDataRPC.getInput()+"; planVidaId: "+trDataRPC.getValue());
+                test_Tarifas(product.getId(), (long) trDataRPC.getValue(), coberturaRPC.getId(), isShowObjectResult);
+            }
+        }
+    }
+
+    private void test_Tarifas(long productId, long idPlanVida, long ccvId, boolean isShowObjectResult) {
+        try {
+            TarifaParameter parameter = new TarifaParameter(productId, idPlanVida, ccvId);
+            parameter.setTimeOutMax(4*120000L);
+            Stopwatch stopwatch = Stopwatch.createStarted();
+            List<TarifaRPC> list = Product_Callers.getTarifas(ACSELE, parameter);
+            stopwatch.stop(); // optional
+            stopwatch.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[test_Tarifas]; Total time; " + stopwatch);
+            System.out.println("[test_Tarifas]; Tarifas size: "+list.size());
+            if (isShowObjectResult) {
+                for (TarifaRPC t : list) {
+                    System.out.println("[test_Planes]; " + new Gson().toJson(t)/*t.toString()*/);
+
+                }
+            }
+        } catch (ServiceBaseException e) {
+            Log.debug("[test_Tarifas] ERROR:\n", e);
         }
     }
 
@@ -529,12 +555,13 @@ public class MyTestMethodCOT extends TestRunnerJC{
     }
 
 
-    private void conjuntoPruebasCotizacion() {
+    private void conjuntoPruebasCotizacion(ProductRPC productRPC) {
+        //long idProducto = 49183;    // Temporal
         final Long timeOut = new Long(60000 * 3);
-        long idProducto = 81099;    // Temporal
-        ProductParameter parameter = new ProductParameter(idProducto);
-        parameter.setTimeOutMax(13389493L);  // Lo voy a setear al id de la poliza Base para mis pruebas
-        CotizacionRPC cotizacionRPC = test_GetListCotizacionRPC(parameter);
+        BaseData json = getJSONBaseDataFromFile(productRPC.getName());  // cargamos los datos de la Poliza Base desde un archivo
+        ProductParameter parameter = new ProductParameter(json.idProducto);
+        parameter.setTimeOutMax(json.idPoliza);  // Lo voy a setear al id de la poliza Base para mis pruebas
+        CotizacionRPC cotizacionRPC = test_GetListCotizacionRPC(parameter); // Cargamos la cotizacion desde Acsele
         CreateCotizacion.cleanOutFields(cotizacionRPC, false);  // Limpiamos la original
         // Realizamos el calculo directo
         CotizacionRPC cRPC_directo = test_CalcularCotizacion(true, cotizacionRPC, timeOut);
@@ -548,9 +575,7 @@ public class MyTestMethodCOT extends TestRunnerJC{
         final List<ObjetoAsegCotizaRPC> iosCot = cRPC_inverso.getIosCot();
         // Faltaria probar el recalculo OJOOOOOOOOO
         // RECOTIZAR VERIFICAR ??????????? !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        parameter = new ProductParameter(idProducto);
-        parameter.setTimeOutMax(13389493L);  // Lo voy a setear al id de la poliza Base para mis pruebas
-        cotizacionRPC = test_GetListCotizacionRPC(parameter);
+        cotizacionRPC = test_GetListCotizacionRPC(parameter);   // Volvemos a cargar la Poliza Base
         CreateCotizacion.cleanOutFields(cotizacionRPC, false);  // Limpiamos la original
         cotizacionRPC.setIdPoliza(cRPC_inverso.getIdPoliza());
         cotizacionRPC.setIdOperation(cRPC_inverso.getIdOperation());
@@ -566,4 +591,43 @@ public class MyTestMethodCOT extends TestRunnerJC{
         return bd.doubleValue();
     }
 
+    public static BaseData getJSONBaseDataFromFile(String productName) {
+        try {
+            Gson gson = new Gson();
+            String filePath = "D:\\Git_Repo\\ServiciosWebInter\\PruebasJSONs_Cotizaciones\\JSONCotizaBase_"+productName+".json";
+            JsonReader reader = new JsonReader(new InputStreamReader(new FileInputStream(filePath), Charset.forName("UTF-8")));
+            BaseData data = gson.fromJson(reader, BaseData.class); // contains the whole reviews list
+            return data;
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
 }
+// Caso 1.0: Directa , [EducacionGarantizada] - Exitoso
+//test_CalcularCotizacion(true, p.getId(), idGrupoFamiliar);
+
+// Caso 1.1: Directa , [EducacionGarantizada] - Errores
+// Caso 3.0: Inversa , [EducacionGarantizada] - Exitoso
+// Caso 3.1: Inversa , [EducacionGarantizada] - Errores
+
+// Caso 2.0.0: Directa , [Vida Protegida] (Titular) - Exitoso
+// Caso 2.0.1: Directa , [Vida Protegida] (Titular/Conyuge) - Exitoso
+// Caso 2.0.2: Directa , [Vida Protegida] (Titular/Hijo) - Exitoso
+// Caso 2.0.3: Directa , [Vida Protegida] (Titular/Conyuge/Hijo) - Exitoso
+// Caso 2.1.0: Directa , [Vida Protegida] (Titular) - Errores
+// Caso 2.1.1: Directa , [Vida Protegida] (Titular/Conyuge) - Errores
+// Caso 2.1.2: Directa , [Vida Protegida] (Titular/Hijo) - Errores
+// Caso 2.1.3: Directa , [Vida Protegida] (Titular/Conyuge/Hijo) - Errores
+// Caso 4.0.0: Inversa , [Vida Protegida] (Titular) - Exitoso
+// Caso 4.0.1: Inversa , [Vida Protegida] (Titular/Conyuge) - Exitoso
+// Caso 4.0.2: Inversa , [Vida Protegida] (Titular/Hijo) - Exitoso
+// Caso 4.0.3: Inversa , [Vida Protegida] (Titular/Conyuge/Hijo) - Exitoso
+// Caso 4.1.0: Inversa , [Vida Protegida] (Titular) - Errores
+// Caso 4.1.1: Inversa , [Vida Protegida] (Titular/Conyuge) - Errores
+// Caso 4.1.2: Inversa , [Vida Protegida] (Titular/Hijo) - Errores
+// Caso 4.1.3: Inversa , [Vida Protegida] (Titular/Conyuge/Hijo) - Errores
+
+
+
