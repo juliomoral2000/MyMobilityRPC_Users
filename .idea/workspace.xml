@@ -6,11 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list id="e8234e39-a108-4592-90c0-d33145302e2a" name="Default" comment="El otro Proyecto" />
-    <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Servicios : Cambios a las pruebas . Creacion de Prueba Cargar Propuesta y Calcular cotizacion con este cargado, cambios por cotizacion inversa">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/BaseData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" />
+    <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Servicios : Cambios a las pruebas . Creacion de Prueba Cargar Propuesta y Calcular cotizacion con este cargado, cambios por cotizacion inversa. Cargar Cotizacion a traves de los datos desde un archivo json.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -49,10 +46,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyTestRunnerCOT.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyTestRunnerCOT.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.38408303">
               <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
@@ -79,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyTestMethodCOT.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyTestMethodCOT.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26877472">
-              <caret line="567" column="40" selection-start-line="567" selection-start-column="15" selection-end-line="567" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="597" column="35" selection-start-line="597" selection-start-column="12" selection-end-line="597" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#run#0;class#MyTestMethodCOT#0" expanded="true" />
@@ -100,22 +97,10 @@
                 <element signature="e#11523#11577#0" expanded="true" />
                 <element signature="method#test_GetProduct#0;class#MyTestMethodCOT#0" expanded="true" />
                 <element signature="method#test_Planes#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#test_Coberturas#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#test_CalcularCotizacion#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#test_CalcularCotizacion#1;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#test_CalcularTVG#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#createMap#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#createMapFromJSON#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#test_CumulusTercero#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#test_ExigenciasMedicas#0;class#MyTestMethodCOT#0" expanded="true" />
                 <element signature="e#24778#24823#0" expanded="true" />
-                <element signature="method#test_Tarifas_By_Cov_PlanVida#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#test_Tarifas#1;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#test_PeriodosCoberturas#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#test_StressTestingGetEdadActuarial#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="e#31508#31551#0" expanded="true" />
+                <element signature="method#conjuntoPruebasCotizacion#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#31605#31648#0" expanded="true" />
                 <element signature="method#redondearDosDecimales#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#getJSONBaseDataFromFile#0;class#MyTestMethodCOT#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -155,7 +140,27 @@
         <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+              <caret line="110" column="32" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Quotation_Callers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServicesBaseExecutor.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="92" column="94" selection-start-line="92" selection-start-column="94" selection-end-line="92" selection-end-column="94" />
               <folding />
             </state>
           </provider>
@@ -893,7 +898,12 @@
       <workItem from="1469150055174" duration="3317000" />
       <workItem from="1469673646792" duration="4250000" />
       <workItem from="1469743002819" duration="621000" />
-      <workItem from="1469813769395" duration="3420000" />
+      <workItem from="1469813769395" duration="14620000" />
+      <workItem from="1469845386529" duration="1840000" />
+      <workItem from="1469892599499" duration="831000" />
+      <workItem from="1470667903675" duration="1915000" />
+      <workItem from="1470840915870" duration="408000" />
+      <workItem from="1470864691700" duration="703000" />
     </task>
     <task id="LOCAL-00001" summary="nnn">
       <created>1453685565282</created>
@@ -1081,11 +1091,17 @@
       <option name="project" value="LOCAL" />
       <updated>1467610263879</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Servicios : Cambios a las pruebas . Creacion de Prueba Cargar Propuesta y Calcular cotizacion con este cargado, cambios por cotizacion inversa. Cargar Cotizacion a traves de los datos desde un archivo json.">
+      <created>1469821563817</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1469821563817</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="873397000" />
+    <option name="totallyTimeSpent" value="890294000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1098,7 +1114,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1107,39 +1123,39 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24659607" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="519" y="70" width="327" height="587" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5399361" sideWeight="0.49381697" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.443686" sideWeight="0.506183" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51916933" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5183413" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36611196" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24279211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5623003" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" x="92" y="92" width="1182" height="544" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53833866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5399361" sideWeight="0.49381697" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62700963" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5623003" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" x="92" y="92" width="1182" height="544" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2473525" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="519" y="70" width="327" height="587" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" x="92" y="92" width="1182" height="544" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2473525" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="519" y="70" width="327" height="587" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5784983" sideWeight="0.50537056" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5315162" sideWeight="0.4935553" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39183056" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.57240206" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1167,7 +1183,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se realizaron las pruebas de Performance, la primera llamada es la que tarda (por la inicializacion del contexto local y la del remoto), pero las subsecuentes llamadas estan en el rango del 1 a 3 ms por llamada.&#10;Faltaria ya el desarrollo de las nuevas invocaciones a los nuevos servicios.&#10;Y adicional podria mover este proyecto de su ubicacion actual.&#10;Faltaria un detalle a definir por mi parte de generar un solo jar para todos los clientes o crear un jar para cliente." />
     <MESSAGE value="Archivos de Idea" />
     <MESSAGE value="Antes configurar el proyecto para generar un jar para cada cliente.&#10;" />
     <MESSAGE value="Se agrego un system.property para obtener la clase de instancia del persitidor y unas clases de ejemplo para los clientes" />
@@ -1192,7 +1207,8 @@
     <MESSAGE value="Servicios : Cambios a las estructuras de los Parametros y bean de entrada salida, aplicacion del TimeOut, agregar el id de poliza y operacion a la cotizacion en la respuesta, creacion del servicio de calculo de la TVG." />
     <MESSAGE value="Servicios : Cambios a las pruebas . Creacion de Prueba Stress de Calcular Edad Actuarial" />
     <MESSAGE value="Servicios : Cambios a las pruebas . Creacion de Prueba Cargar Propuesta y Calcular cotizacion con este cargado, cambios por cotizacion inversa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servicios : Cambios a las pruebas . Creacion de Prueba Cargar Propuesta y Calcular cotizacion con este cargado, cambios por cotizacion inversa" />
+    <MESSAGE value="Servicios : Cambios a las pruebas . Creacion de Prueba Cargar Propuesta y Calcular cotizacion con este cargado, cambios por cotizacion inversa. Cargar Cotizacion a traves de los datos desde un archivo json." />
+    <option name="LAST_COMMIT_MESSAGE" value="Servicios : Cambios a las pruebas . Creacion de Prueba Cargar Propuesta y Calcular cotizacion con este cargado, cambios por cotizacion inversa. Cargar Cotizacion a traves de los datos desde un archivo json." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -1766,37 +1782,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>566</line>
+          <line>567</line>
           <properties />
           <option name="timeStamp" value="222" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>573</line>
+          <line>575</line>
           <properties />
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>570</line>
+          <line>572</line>
           <properties />
           <option name="timeStamp" value="224" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>574</line>
+          <line>576</line>
           <properties />
           <option name="timeStamp" value="225" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>582</line>
+          <line>584</line>
           <properties />
           <option name="timeStamp" value="226" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>583</line>
+          <line>585</line>
           <properties />
           <option name="timeStamp" value="227" />
         </line-breakpoint>
@@ -1866,11 +1882,23 @@
           <properties />
           <option name="timeStamp" value="238" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
+          <line>568</line>
+          <properties />
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
+          <line>579</line>
+          <properties />
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="239" />
+      <option name="time" value="243" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1930,7 +1958,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1938,7 +1965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14808363">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1946,9 +1972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.173516">
           <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-          <folding>
-            <element signature="method#setTimeOutMax#0;class#TarifaParameter#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1956,12 +1979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="docComment;method#PropertyParameter#0;class#PropertyParameter#0" expanded="false" />
-            <element signature="method#PropertyParameter#0;class#PropertyParameter#0" expanded="false" />
-            <element signature="method#toString#0;class#PropertyParameter#0" expanded="false" />
-            <element signature="method#PropertyParameter#0;class#PropertyParameter#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1984,13 +2001,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34505862">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <element signature="docComment;class#TVGParameter#0" expanded="false" />
-            <element signature="method#TVGParameter#0;class#TVGParameter#0" expanded="false" />
-            <element signature="method#TVGParameter#0;class#TVGParameter#0" expanded="false" />
-            <element signature="e#984#985#0" expanded="false" />
-            <element signature="e#1085#1086#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2030,12 +2040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="34" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="34" />
-          <folding>
-            <element signature="docComment;method#ActuarialAgeParameter#0;class#ActuarialAgeParameter#0" expanded="false" />
-            <element signature="method#ActuarialAgeParameter#0;class#ActuarialAgeParameter#0" expanded="false" />
-            <element signature="method#setTimeOutMax#0;class#ActuarialAgeParameter#0" expanded="false" />
-            <element signature="method#getTimeOutMax#0;class#ActuarialAgeParameter#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2311,47 +2315,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="247" column="15" selection-start-line="247" selection-start-column="15" selection-end-line="247" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#21767#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#Random#0" expanded="false" />
-            <element signature="docComment;field#serialVersionUID#0;class#Random#0" expanded="false" />
-            <element signature="docComment;field#seed#0;class#Random#0" expanded="false" />
-            <element signature="docComment;method#Random#0;class#Random#0" expanded="false" />
-            <element signature="docComment;method#Random#1;class#Random#0" expanded="false" />
-            <element signature="method#Random#1;class#Random#0" expanded="false" />
-            <element signature="docComment;method#setSeed#0;class#Random#0" expanded="false" />
-            <element signature="method#setSeed#0;class#Random#0" expanded="false" />
-            <element signature="docComment;method#next#0;class#Random#0" expanded="false" />
-            <element signature="method#next#0;class#Random#0" expanded="false" />
-            <element signature="docComment;method#nextBytes#0;class#Random#0" expanded="false" />
-            <element signature="method#nextBytes#0;class#Random#0" expanded="false" />
-            <element signature="docComment;method#nextInt#0;class#Random#0" expanded="false" />
-            <element signature="e#7381#7382#0" expanded="false" />
-            <element signature="e#7405#7406#0" expanded="false" />
-            <element signature="docComment;method#nextInt#1;class#Random#0" expanded="false" />
-            <element signature="docComment;method#nextLong#0;class#Random#0" expanded="false" />
-            <element signature="method#nextLong#0;class#Random#0" expanded="false" />
-            <element signature="docComment;method#nextBoolean#0;class#Random#0" expanded="false" />
-            <element signature="e#12396#12397#0" expanded="false" />
-            <element signature="e#12424#12425#0" expanded="false" />
-            <element signature="docComment;method#nextFloat#0;class#Random#0" expanded="false" />
-            <element signature="e#14460#14461#0" expanded="false" />
-            <element signature="e#14512#14513#0" expanded="false" />
-            <element signature="docComment;method#nextDouble#0;class#Random#0" expanded="false" />
-            <element signature="method#nextDouble#0;class#Random#0" expanded="false" />
-            <element signature="docComment;method#nextGaussian#0;class#Random#0" expanded="false" />
-            <element signature="method#nextGaussian#0;class#Random#0" expanded="false" />
-            <element signature="docComment;field#serialPersistentFields#0;class#Random#0" expanded="false" />
-            <element signature="docComment;method#readObject#0;class#Random#0" expanded="false" />
-            <element signature="method#readObject#0;class#Random#0" expanded="false" />
-            <element signature="e#20284#20326#0" expanded="false" />
-            <element signature="docComment;method#writeObject#0;class#Random#0" expanded="false" />
-            <element signature="method#writeObject#0;class#Random#0" expanded="false" />
-            <element signature="initializer##0;class#Random#0" expanded="false" />
-            <element signature="e#21680#21681#0" expanded="false" />
-            <element signature="e#21763#21764#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2413,40 +2376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="42" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#Quotation_Callers#0" expanded="false" />
-            <element signature="docComment;method#getEdadActuarial#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="method#getEdadActuarial#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="docComment;method#getCumulusTercero#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="method#getCumulusTercero#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="docComment;method#calcularCotizacion#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="method#calcularCotizacion#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="docComment;method#getCotizaciones#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="method#getCotizaciones#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="docComment;method#calcularTVG#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="method#calcularTVG#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="docComment;class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="method#GetEdadActuarial#0;class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="docComment;class#GetCumulusTercero#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="class#GetCumulusTercero#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="method#GetCumulusTercero#0;class#GetCumulusTercero#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="docComment;class#CalcularCotizacion#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="class#CalcularCotizacion#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="method#CalcularCotizacion#0;class#CalcularCotizacion#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="class#GetCotizaciones#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="method#GetCotizaciones#0;class#GetCotizaciones#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="class#CalcularTVG#0;class#Quotation_Callers#0" expanded="false" />
-            <element signature="method#CalcularTVG#0;class#CalcularTVG#0;class#Quotation_Callers#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18545455">
@@ -2468,16 +2397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#ProductParameter#0" expanded="false" />
-            <element signature="docComment;method#ProductParameter#0;class#ProductParameter#0" expanded="false" />
-            <element signature="docComment;method#ProductParameter#1;class#ProductParameter#0" expanded="false" />
-            <element signature="method#ProductParameter#1;class#ProductParameter#0" expanded="false" />
-            <element signature="method#toString#0;class#ProductParameter#0" expanded="false" />
-            <element signature="method#setTimeOutMax#0;class#ProductParameter#0" expanded="false" />
-            <element signature="method#getTimeOutMax#0;class#ProductParameter#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2516,27 +2435,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21702127">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CotizacionParameter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#CotizacionParameter#0" expanded="false" />
-            <element signature="docComment;method#CotizacionParameter#0;class#CotizacionParameter#0" expanded="false" />
-            <element signature="method#CotizacionParameter#0;class#CotizacionParameter#0" expanded="false" />
-            <element signature="method#toString#0;class#CotizacionParameter#0" expanded="false" />
-            <element signature="method#setTimeOutMax#0;class#CotizacionParameter#0" expanded="false" />
-            <element signature="method#getTimeOutMax#0;class#CotizacionParameter#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2559,14 +2461,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2603,14 +2497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="155" column="23" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2619,18 +2505,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <caret line="92" column="94" selection-start-line="92" selection-start-column="94" selection-end-line="92" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="32" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="155" column="23" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26877472">
-          <caret line="567" column="40" selection-start-line="567" selection-start-column="15" selection-end-line="567" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="597" column="35" selection-start-line="597" selection-start-column="12" selection-end-line="597" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#run#0;class#MyTestMethodCOT#0" expanded="true" />
@@ -2647,23 +2557,19 @@
             <element signature="e#11523#11577#0" expanded="true" />
             <element signature="method#test_GetProduct#0;class#MyTestMethodCOT#0" expanded="true" />
             <element signature="method#test_Planes#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#test_Coberturas#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#test_CalcularCotizacion#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#test_CalcularCotizacion#1;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#test_CalcularTVG#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#createMap#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#createMapFromJSON#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#test_CumulusTercero#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#test_ExigenciasMedicas#0;class#MyTestMethodCOT#0" expanded="true" />
             <element signature="e#24778#24823#0" expanded="true" />
-            <element signature="method#test_Tarifas_By_Cov_PlanVida#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#test_Tarifas#1;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#test_PeriodosCoberturas#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#test_StressTestingGetEdadActuarial#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="e#31508#31551#0" expanded="true" />
+            <element signature="method#conjuntoPruebasCotizacion#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#31605#31648#0" expanded="true" />
             <element signature="method#redondearDosDecimales#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#getJSONBaseDataFromFile#0;class#MyTestMethodCOT#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38408303">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

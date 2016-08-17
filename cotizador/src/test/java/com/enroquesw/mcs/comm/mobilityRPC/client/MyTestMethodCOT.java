@@ -564,7 +564,9 @@ public class MyTestMethodCOT extends TestRunnerJC{
         CotizacionRPC cotizacionRPC = test_GetListCotizacionRPC(parameter); // Cargamos la cotizacion desde Acsele
         CreateCotizacion.cleanOutFields(cotizacionRPC, false);  // Limpiamos la original
         // Realizamos el calculo directo
+        boolean fin_test = true;
         CotizacionRPC cRPC_directo = test_CalcularCotizacion(true, cotizacionRPC, timeOut);
+        if(cRPC_directo.getIdPoliza() == 0 || fin_test) return;
         double montoTotalPrimaFP_Inicial = cRPC_directo.getMontoTotalPrimaFP();    // sacamos la prima inicial de la poliza
         double porcentajeCambio = -25; // porcentaje de cambio a la prima [ si positivo es el 100 + este, si es negativo se le resta ese porcentaje a la prima original ]
         double nuevaprimaInv = redondearDosDecimales(porcentajeCambio >= 0 ? ((100+porcentajeCambio)*montoTotalPrimaFP_Inicial)/100 : (montoTotalPrimaFP_Inicial - ((-1*porcentajeCambio*montoTotalPrimaFP_Inicial)/100)));
