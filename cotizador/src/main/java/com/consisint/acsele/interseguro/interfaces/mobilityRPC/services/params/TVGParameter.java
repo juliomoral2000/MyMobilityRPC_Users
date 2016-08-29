@@ -1,13 +1,13 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params;
 
-import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
+import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameterBase;
 
 /**
  * La clase <code>TVGParameter</code> representa el Parametro de entrada Para el calculo de la Tabla de Valores Garantizados de Acsele.
  * idPoliza          Id de la Poliza (Cotizacion). (Requerido).
  *
  */
-public class TVGParameter implements ProcessParameter {
+public class TVGParameter extends ProcessParameterBase {
     public long idPoliza;
     public long idOperation;
     private Long timeOutMax;

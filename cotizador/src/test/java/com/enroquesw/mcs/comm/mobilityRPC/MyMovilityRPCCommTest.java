@@ -42,6 +42,7 @@ public class MyMovilityRPCCommTest extends SetUpBase {
         log.log(Level.INFO, "[MyMovilityRPCCommTest_COT] Espero por la finalizacion del Hilo "+thread.getName());
         MyTestRunnerCOT myTestRunner = new MyTestRunnerCOT();
         myTestRunner.start();
+        myTestRunner.join();    // Nuevo a ver si corre bien
         thread.join();
         System.out.println("[" + t.getName() + "] All threads have finished.");
     }

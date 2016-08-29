@@ -1,13 +1,13 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params;
 
-import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
+import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameterBase;
 
 import java.util.Date;
 
 /**
  * La clase <code>ProductParameter</code> representa el Parametro de entrada Para los Servicios de Producto
  */
-public class ProductParameter implements ProcessParameter {
+public class ProductParameter extends ProcessParameterBase {
     public long idProducto;     //Id del Producto
     public long fecha;          // valor campo "Fecha" de la tabla Dinamica
     private Long timeOutMax;

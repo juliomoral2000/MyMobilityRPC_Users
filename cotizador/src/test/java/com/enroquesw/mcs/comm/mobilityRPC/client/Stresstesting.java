@@ -6,9 +6,11 @@ import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.c
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Quotation_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ActuarialAgeParameter;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.CotizacionParameter;
+import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.ProductParameter;
 import com.enroquesw.mcs.comm.mobilityRPC.client.cotizacion.CreateCotizacion;
 import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.google.common.base.Stopwatch;
+import com.google.gson.Gson;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -185,6 +187,55 @@ public class Stresstesting {
                 try { System.out.println("[stressTestingGetEdadActuarial] Respuesta :\n"+future.get().toString()); } catch (ExecutionException e) { e.printStackTrace(); }
             }
         } catch (InterruptedException e1) {
+            e1.printStackTrace();
+        }
+    }
+
+    public static void stressTestingGetProduct(int numThread, int testNro, List<ProductRPC> productRPCList){
+        final int totalthread = numThread * productRPCList.size();   // numero de hilos por producto es numero total de hilos a manejar, ej numThread= 1 es un hilo por producto
+        System.out.println("[stressTestingGetProduct] INICIO .... Numero Prueba: "+testNro+"; Total de Productos: " + productRPCList.size()+"; Hilos x Producto: " + numThread+"; Total de Hilos: " + totalthread);
+        try {
+            class StressTask extends Thread {
+                long idProduct;
+                public StressTask(long idProduct){
+                    super();
+                    this.idProduct = idProduct;
+                }
+                @Override
+                public void run() {
+                    try {
+                        final StringBuffer requestIdOut = new StringBuffer();
+                        ProductRPC product = Product_Callers.getProduct(SystemName.ACSELE, new ProductParameter(idProduct), requestIdOut);
+                        final StringBuilder out = new StringBuilder("[StressTask]; threadId: ").append(this.getId()).append("; requestIdOut: ").append(requestIdOut).append("\nproduct: ").append(new Gson().toJson(product));
+                        System.out.println(out);
+                    }catch (Exception e){
+                        System.out.println("ver "+ e.getMessage());
+                    }
+                }
+            }
+
+            Thread[] threads = new Thread[totalthread];
+            Stopwatch stopwatch = Stopwatch.createStarted();
+            int j = 0;
+            for (ProductRPC productRPC : productRPCList) {
+                for (int i = 0; i < numThread; i++) {
+                    StressTask stressTask = new StressTask(productRPC.getId());
+                    threads[j++] = stressTask;
+                    //stressTask.start();
+                }
+            }
+            for(int i=0; i<threads.length; i++) {
+                try {
+                    threads[i].start();
+                    threads[i].join();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+            stopwatch.stop(); // optional
+            long millis = stopwatch.elapsed(TimeUnit.MILLISECONDS);
+            System.out.println("[stressTestingGetProduct] FINAl... Numero Prueba; "+testNro+"; Total time; " + stopwatch);
+        } catch (Exception e1) {
             e1.printStackTrace();
         }
     }

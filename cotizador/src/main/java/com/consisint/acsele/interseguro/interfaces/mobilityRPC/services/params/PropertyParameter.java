@@ -1,11 +1,11 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params;
 
-import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
+import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameterBase;
 
 /**
  * La clase <code>PropertyParameter</code> representa el Parametro de entrada Para los Servicios de Propiedades y Transformadores.
  */
-public class PropertyParameter implements ProcessParameter {
+public class PropertyParameter extends ProcessParameterBase {
     public long propertyId;         // Id de Propiedad de Acsele
     public String propertyName;     // Nombre de la Propiedad de Acsele [Simbolo]
     public boolean fetchDepends;    // Se extraen las Dependencias? [relaciones Padre-Hijo]

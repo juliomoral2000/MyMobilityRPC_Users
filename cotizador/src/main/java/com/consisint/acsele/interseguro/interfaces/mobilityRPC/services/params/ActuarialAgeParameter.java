@@ -1,6 +1,6 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params;
 
-import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
+import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameterBase;
 
 import java.util.Date;
 
@@ -9,7 +9,7 @@ import java.util.Date;
  * fechaCotiza          Fecha de la Cotizacion. (Requerido).
  * fechaNacimiento      Fecha de Nacimiento de la Persona. (Requerido)
  */
-public class ActuarialAgeParameter implements ProcessParameter {
+public class ActuarialAgeParameter extends ProcessParameterBase {
     public long fechaCotiza;
     public long fechaNacimiento;
     private Long timeOutMax;

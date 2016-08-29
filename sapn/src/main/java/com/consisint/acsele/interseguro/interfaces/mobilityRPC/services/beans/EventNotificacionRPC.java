@@ -1,6 +1,6 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans;
 
-import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
+import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameterBase;
 
 import java.util.Date;
 
@@ -9,7 +9,7 @@ import java.util.Date;
  * de Acsele para los servicios del MobilityRPC para
  * el Sistema Administrador de Plazos – Notificaciones [SAPN].
  */
-public class EventNotificacionRPC implements ProcessParameter {
+public class EventNotificacionRPC extends ProcessParameterBase {
     public long idProducto;
     public String nombreProducto;
     public long idPoliza;

@@ -26,7 +26,20 @@ public class Quotation_Callers <P extends ProcessParameter> {
      * @throws ServiceBaseException
      */
     public static Integer getEdadActuarial(SystemName remoteSystemName, ActuarialAgeParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetEdadActuarial.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetEdadActuarial.class, parameter, remoteSystemName, new StringBuffer());
+    }
+
+    /**
+     * Metodo para obtener la edad actuarial a traves de la invocacion Remota
+     *
+     * @param remoteSystemName Sistema remoto
+     * @param parameter        Parametro de entrada
+     * @param requestIdOut     Parametro de salida con el Identificador del request
+     * @return Integer
+     * @throws ServiceBaseException
+     */
+    public static Integer getEdadActuarial(SystemName remoteSystemName, ActuarialAgeParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetEdadActuarial.class, parameter, remoteSystemName, requestIdOut);
     }
 
     /**
@@ -37,7 +50,19 @@ public class Quotation_Callers <P extends ProcessParameter> {
      * @throws ServiceBaseException
      */
     public static CumulusTerceroRPC getCumulusTercero(SystemName remoteSystemName, CumulusTerceroParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetCumulusTercero.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetCumulusTercero.class, parameter, remoteSystemName, new StringBuffer());
+    }
+
+    /**
+     * Metodo para obtener el cumulus del tercero a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut Parametro de salida con el Identificador del request
+     * @return CumulusTerceroRPC
+     * @throws ServiceBaseException
+     */
+    public static CumulusTerceroRPC getCumulusTercero(SystemName remoteSystemName, CumulusTerceroParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetCumulusTercero.class, parameter, remoteSystemName, requestIdOut);
     }
 
     /**
@@ -48,7 +73,19 @@ public class Quotation_Callers <P extends ProcessParameter> {
      * @throws ServiceBaseException
      */
     public static CotizacionRPC calcularCotizacion(SystemName remoteSystemName, CotizacionParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(CalcularCotizacion.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(CalcularCotizacion.class, parameter, remoteSystemName, new StringBuffer());
+    }
+
+    /**
+     * Metodo para obtener el calculo de la cotizacion a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut Parametro de salida con el Identificador del request
+     * @return CotizacionRPC
+     * @throws ServiceBaseException
+     */
+    public static CotizacionRPC calcularCotizacion(SystemName remoteSystemName, CotizacionParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(CalcularCotizacion.class, parameter, remoteSystemName, requestIdOut);
     }
 
     /**
@@ -60,7 +97,20 @@ public class Quotation_Callers <P extends ProcessParameter> {
      * @throws ServiceBaseException
      */
     public static List<CotizacionRPC> getCotizaciones(SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetCotizaciones.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetCotizaciones.class, parameter, remoteSystemName, new StringBuffer());
+    }
+
+    /**
+     * Metodo utilitario para cargar una lista de Cotizaciones desde el core por producto
+     * a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut Parametro de salida con el Identificador del request
+     * @return List < CotizacionRPC >
+     * @throws ServiceBaseException
+     */
+    public static List<CotizacionRPC> getCotizaciones(SystemName remoteSystemName, ProductParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetCotizaciones.class, parameter, remoteSystemName, requestIdOut);
     }
 
     /**
@@ -71,8 +121,21 @@ public class Quotation_Callers <P extends ProcessParameter> {
      * @throws ServiceBaseException
      */
     public static TablaValorGarantizadoRPC calcularTVG(SystemName remoteSystemName, TVGParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(CalcularTVG.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(CalcularTVG.class, parameter, remoteSystemName, new StringBuffer());
     }
+
+    /**
+     * Metodo para obtener el calculo de la Tabla de Valores Garantizados a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut Parametro de salida con el Identificador del request
+     * @return CotizacionRPC
+     * @throws ServiceBaseException
+     */
+    public static TablaValorGarantizadoRPC calcularTVG(SystemName remoteSystemName, TVGParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(CalcularTVG.class, parameter, remoteSystemName, requestIdOut);
+    }
+
 
 /****************************** DECLARACION DE CLASES CallerOfProcess *************************************************/
 

@@ -1,6 +1,6 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params;
 
-import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
+import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameterBase;
 
 import java.util.Date;
 
@@ -17,7 +17,7 @@ import java.util.Date;
  * </ul>
  * </p>
  */
-public class TarifaParameter implements ProcessParameter {
+public class TarifaParameter extends ProcessParameterBase {
     public long idProducto;     // Id del Producto de la tabla de Tarifas
     public long idPlanVida;     // Id del PlanVida de la tabla de Tarifas
     public long idCobertura;    // Id del Cobertura de la tabla de Tarifas

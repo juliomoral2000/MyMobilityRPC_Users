@@ -7,8 +7,36 @@
   <component name="ChangeListManager">
     <list id="e8234e39-a108-4592-90c0-d33145302e2a" name="Default" comment="El otro Proyecto" />
     <list default="true" id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="Servicios : Cambios a las pruebas . Creacion de Prueba Cargar Propuesta y Calcular cotizacion con este cargado, cambios por cotizacion inversa. Cargar Cotizacion a traves de los datos desde un archivo json.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_enroquesw_mcs_comm_mobilityRPC_MyMobilityRPC_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CotizacionParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CotizacionParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java" afterPath="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/EventNotificationQuotationParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/EventNotificationQuotationParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MobilityRPC_Users.iml" afterPath="$PROJECT_DIR$/MobilityRPC_Users.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TVGParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TVGParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java" afterPath="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/cotizador.iml" afterPath="$PROJECT_DIR$/cotizador/cotizador.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/pom.xml" afterPath="$PROJECT_DIR$/cotizador/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sapn/pom.xml" afterPath="$PROJECT_DIR$/sapn/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sapn/sapn.iml" afterPath="$PROJECT_DIR$/sapn/sapn.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
+    <list id="a932a481-a870-4899-8f2a-fbb5c292df48" name="JUnit" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/FileUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" afterPath="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,6 +49,9 @@
     <ignored path="$PROJECT_DIR$/cotizador/target/" />
     <ignored path="$PROJECT_DIR$/sapn/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <file path="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" ignored="true" />
+    <file path="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java" ignored="true" />
+    <file path="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java" ignored="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,29 +80,11 @@
       <file leaf-file-name="MyTestRunnerCOT.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38408303">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyMovilityRPCCommTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestRunnerJC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/interfaces/TestRunnerJC.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-              <folding />
+            <state vertical-scroll-proportion="1.6103896">
+              <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+              <folding>
+                <element signature="e#974#1023#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,59 +92,124 @@
       <file leaf-file-name="MyTestMethodCOT.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="597" column="35" selection-start-line="597" selection-start-column="12" selection-end-line="597" selection-end-column="35" />
+            <state vertical-scroll-proportion="-4.172414">
+              <caret line="159" column="35" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="docComment;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#1889#1893#0" expanded="true" />
+                <element signature="e#1895#1899#0" expanded="true" />
                 <element signature="method#run#0;class#MyTestMethodCOT#0" expanded="true" />
                 <element signature="method#testMain#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="e#2182#2216#0" expanded="true" />
-                <element signature="e#2616#2635#0" expanded="true" />
-                <element signature="e#3035#3097#0" expanded="true" />
-                <element signature="e#3943#3977#0" expanded="true" />
                 <element signature="method#test_Otra_Cosa#0;class#MyTestMethodCOT#0" expanded="true" />
                 <element signature="method#test_GetEdadProducto#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#4825#4831#0" expanded="true" />
                 <element signature="method#test_GetListCotizacionRPC#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#6073#6079#0" expanded="true" />
+                <element signature="method#test_GetPropertyRPC_Dependencies#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#6546#6547#0" expanded="true" />
+                <element signature="e#8026#8031#0" expanded="true" />
+                <element signature="e#8033#8040#0" expanded="true" />
+                <element signature="e#8152#8158#0" expanded="true" />
+                <element signature="e#8218#8224#0" expanded="true" />
+                <element signature="e#8588#8589#0" expanded="true" />
                 <element signature="method#test_StressTestingGetProducts#0;class#MyTestMethodCOT#0" expanded="true" />
                 <element signature="method#test_GetProducts#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="e#11523#11577#0" expanded="true" />
+                <element signature="e#9817#9871#0" expanded="true" />
+                <element signature="e#10428#10434#0" expanded="true" />
                 <element signature="method#test_GetProduct#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="method#test_Planes#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="e#24778#24823#0" expanded="true" />
+                <element signature="e#11110#11116#0" expanded="true" />
+                <element signature="e#11863#11869#0" expanded="true" />
+                <element signature="method#test_PlanesFinanciamiento#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#12946#12952#0" expanded="true" />
+                <element signature="e#13779#13785#0" expanded="true" />
+                <element signature="method#test_CalcularCotizacion#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#15145#15151#0" expanded="true" />
+                <element signature="method#test_CalcularCotizacion#1;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#17001#17007#0" expanded="true" />
+                <element signature="e#18140#18146#0" expanded="true" />
+                <element signature="method#createMap#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#21715#21721#0" expanded="true" />
+                <element signature="method#test_EdadActuarial#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#22100#22102#0" expanded="true" />
+                <element signature="e#22771#22777#0" expanded="true" />
+                <element signature="method#test_ExigenciasMedicas#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#22963#22967#0" expanded="true" />
+                <element signature="e#22987#22988#0" expanded="true" />
+                <element signature="method#test_Tarifas#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#23914#23959#0" expanded="true" />
+                <element signature="e#24983#25008#0" expanded="true" />
+                <element signature="method#test_Tarifas_By_Cov_PlanVida#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="method#test_Tarifas#1;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#26872#26897#0" expanded="true" />
+                <element signature="method#test_PeriodosCoberturas#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="method#test_ServicesFactoryProccesor#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="method#test_StressTestingCalcularCotizacion#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="method#test_StressTestingGetEdadActuarial#0;class#MyTestMethodCOT#0" expanded="true" />
                 <element signature="method#conjuntoPruebasCotizacion#0;class#MyTestMethodCOT#0" expanded="true" />
-                <element signature="e#31605#31648#0" expanded="true" />
+                <element signature="e#29521#29572#0" expanded="true" />
+                <element signature="e#29923#29994#0" expanded="true" />
+                <element signature="e#30154#30247#0" expanded="true" />
+                <element signature="method#executeCalculoDirecto#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#31730#31735#0" expanded="true" />
+                <element signature="e#31737#31741#0" expanded="true" />
+                <element signature="e#31849#31853#0" expanded="true" />
+                <element signature="method#executeReCalculoDirecto#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#32250#32255#0" expanded="true" />
+                <element signature="e#32257#32262#0" expanded="true" />
+                <element signature="e#32386#32390#0" expanded="true" />
+                <element signature="method#executeCalculosInversos#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#33187#33192#0" expanded="true" />
+                <element signature="e#33194#33198#0" expanded="true" />
+                <element signature="e#33310#33314#0" expanded="true" />
+                <element signature="e#33513#33591#0" expanded="true" />
+                <element signature="e#34542#34547#0" expanded="true" />
+                <element signature="e#34549#34554#0" expanded="true" />
+                <element signature="e#34809#34814#0" expanded="true" />
+                <element signature="method#cargarCotizacionBase#0;class#MyTestMethodCOT#0" expanded="true" />
                 <element signature="method#redondearDosDecimales#0;class#MyTestMethodCOT#0" expanded="true" />
+                <element signature="e#36224#36225#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CotizacionRPC.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java">
+      <file leaf-file-name="Stresstesting.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="104" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="104" />
-              <folding />
+              <caret line="227" column="21" selection-start-line="227" selection-start-column="21" selection-end-line="227" selection-end-column="21" />
+              <folding>
+                <element signature="method#stressTestingGetProducts#0;class#Stresstesting#0" expanded="true" />
+                <element signature="class#1323:2378" expanded="true" />
+                <element signature="method#call#0;class#1323:2378" expanded="true" />
+                <element signature="class#3645:4030" expanded="true" />
+                <element signature="method#run#0;class#3645:4030" expanded="true" />
+                <element signature="method#stressTestingCalcularCotizacion#0;class#Stresstesting#0" expanded="true" />
+                <element signature="e#5018#5022#0" expanded="true" />
+                <element signature="class#5239:5975" expanded="true" />
+                <element signature="method#call#0;class#5239:5975" expanded="true" />
+                <element signature="e#6087#6110#0" expanded="true" />
+                <element signature="e#8030#8032#0" expanded="true" />
+                <element signature="class#10382:11334" expanded="true" />
+                <element signature="method#StressTask#0;class#10382:11334" expanded="true" />
+                <element signature="method#run#0;class#10382:11334" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/BaseData.java">
+      <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateCotizacion.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="155" column="23" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
-              <folding />
+            <state vertical-scroll-proportion="-4.3448277">
+              <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
+              <folding>
+                <element signature="method#writeJSONLogByProduct#0;class#FileUtil#0" expanded="true" />
+                <element signature="method#writeJSONLogByProduct#1;class#FileUtil#0" expanded="true" />
+                <element signature="e#3074#3078#0" expanded="true" />
+                <element signature="method#writeToFile#0;class#FileUtil#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -140,8 +218,12 @@
         <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="110" column="32" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
-              <folding />
+              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <element signature="method#calcularCotizacion#0;class#ServicesResultsObjectCache#0" expanded="true" />
+                <element signature="method#calcularCotizacion#1;class#ServicesResultsObjectCache#0" expanded="true" />
+                <element signature="method#getListaCotizaciones#0;class#ServicesResultsObjectCache#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -150,18 +232,44 @@
         <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ServicesBaseExecutor.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="94" selection-start-line="92" selection-start-column="94" selection-end-line="92" selection-end-column="94" />
-              <folding />
+              <caret line="86" column="136" selection-start-line="86" selection-start-column="111" selection-end-line="86" selection-end-column="136" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;method#getEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#getEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;method#getEdadActuarial#1;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#getEdadActuarial#1;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;method#getCumulusTercero#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#getCumulusTercero#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;method#getCumulusTercero#1;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#getCumulusTercero#1;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;method#calcularCotizacion#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#calcularCotizacion#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;method#calcularCotizacion#1;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#calcularCotizacion#1;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;method#getCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#getCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;method#getCotizaciones#1;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#getCotizaciones#1;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;method#calcularTVG#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#calcularTVG#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;method#calcularTVG#1;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#calcularTVG#1;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#GetEdadActuarial#0;class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;class#GetCumulusTercero#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="class#GetCumulusTercero#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#GetCumulusTercero#0;class#GetCumulusTercero#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="docComment;class#CalcularCotizacion#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="class#CalcularCotizacion#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#CalcularCotizacion#0;class#CalcularCotizacion#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="class#GetCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#GetCotizaciones#0;class#GetCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="class#CalcularTVG#0;class#Quotation_Callers#0" expanded="true" />
+                <element signature="method#CalcularTVG#0;class#CalcularTVG#0;class#Quotation_Callers#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -170,8 +278,10 @@
         <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-              <folding />
+              <caret line="133" column="42" selection-start-line="133" selection-start-column="42" selection-end-line="133" selection-end-column="42" />
+              <folding>
+                <element signature="docComment;method#getEdadProducto#1;class#Product_Callers#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -198,17 +308,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/base/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/externo/TestProcessorExternoBase.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_InvocarRemoto.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_InvocarRemotoBase.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_MyMovilityRPCCommRunner.java" />
-        <option value="$PROJECT_DIR$/base/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_MyMovilityRPCCommRunnerBase.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_InvocarRemoto.java" />
-        <option value="$PROJECT_DIR$/base/pom.xml" />
-        <option value="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/SetUpBase.java" />
-        <option value="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/NotificacionSAPNRPC.java" />
         <option value="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/externo/TestProcessorExterno.java" />
         <option value="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/server/processor/EventNotification_Processors.java" />
         <option value="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/Example_MyMovilityRPCCommRunner.java" />
@@ -221,34 +320,45 @@
         <option value="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunner.java" />
         <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunner.java" />
         <option value="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" />
         <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/interfaces/TestRunnerJC.java" />
         <option value="$PROJECT_DIR$/sapn/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerSAPN.java" />
         <option value="$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java" />
-        <option value="$PROJECT_DIR$/cotizador/pom.xml" />
         <option value="$MAVEN_REPOSITORY$/org/samba/jcifs/jcifs/1.3.18-kohsuke-1/jcifs-1.3.18-kohsuke-1.pom" />
-        <option value="$PROJECT_DIR$/sapn/pom.xml" />
-        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" />
         <option value="$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/googlecode/mobilityrpc/session/impl/MobilitySessionRPCImpl.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" />
         <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java" />
         <option value="$PROJECT_DIR$/cotizador/src/test/java/java/util/concurrent/ThreadLocalRandom.java" />
         <option value="$PROJECT_DIR$/cotizador/src/test/java/com/util/concurrent/ThreadLocalRandom.java" />
         <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/util/concurrent/ThreadLocalRandom.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java" />
         <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/concurrent/ThreadLocalRandom.java" />
-        <option value="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ObjetoAsegCotizaRPC.java" />
         <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java" />
         <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaCotizaRPC.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" />
-        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" />
         <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/BaseData.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/FileUtil.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java" />
+        <option value="$PROJECT_DIR$/cotizador/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/sapn/pom.xml" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CotizacionParameter.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/EventNotificationQuotationParameter.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ExigenciasMedicaParameter.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TVGParameter.java" />
+        <option value="$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java" />
+        <option value="$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java" />
         <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java" />
+        <option value="$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java" />
       </list>
     </option>
   </component>
@@ -325,7 +435,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -336,7 +446,31 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MobilityRPC_Users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
@@ -593,7 +727,7 @@
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/lib/guava-19.0.jar" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/sapn/target/MobilityRPC_Users_SAPN-1.0.jar" />
       <envs />
       <method />
     </configuration>
@@ -763,6 +897,7 @@
     <task active="true" id="Default" summary="Default task">
       <changelist id="e8234e39-a108-4592-90c0-d33145302e2a" name="Default" comment="" />
       <changelist id="fdeb2948-d1dc-4598-affb-45bea5b7cdd2" name="Inicial" comment="" />
+      <changelist id="a932a481-a870-4899-8f2a-fbb5c292df48" name="JUnit" comment="" />
       <created>1453680002223</created>
       <option name="number" value="Default" />
       <updated>1453680002223</updated>
@@ -904,6 +1039,10 @@
       <workItem from="1470667903675" duration="1915000" />
       <workItem from="1470840915870" duration="408000" />
       <workItem from="1470864691700" duration="703000" />
+      <workItem from="1471877499598" duration="29534000" />
+      <workItem from="1472094979663" duration="31975000" />
+      <workItem from="1472255938452" duration="7788000" />
+      <workItem from="1472326444601" duration="50028000" />
     </task>
     <task id="LOCAL-00001" summary="nnn">
       <created>1453685565282</created>
@@ -1101,7 +1240,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="890294000" />
+    <option name="totallyTimeSpent" value="1009619000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1114,34 +1253,34 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53833866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24659607" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" x="519" y="70" width="327" height="587" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928678" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50479233" sideWeight="0.49381697" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.443686" sideWeight="0.506183" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5183413" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51757187" sideWeight="0.4935553" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62700963" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36611196" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36611196" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24279211" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24205749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5623003" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" x="92" y="92" width="1182" height="544" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53833866" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5399361" sideWeight="0.49381697" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.62700963" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32980332" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5623003" sideWeight="0.49462944" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1209,7 +1348,6 @@
     <MESSAGE value="Servicios : Cambios a las pruebas . Creacion de Prueba Cargar Propuesta y Calcular cotizacion con este cargado, cambios por cotizacion inversa" />
     <MESSAGE value="Servicios : Cambios a las pruebas . Creacion de Prueba Cargar Propuesta y Calcular cotizacion con este cargado, cambios por cotizacion inversa. Cargar Cotizacion a traves de los datos desde un archivo json." />
     <option name="LAST_COMMIT_MESSAGE" value="Servicios : Cambios a las pruebas . Creacion de Prueba Cargar Propuesta y Calcular cotizacion con este cargado, cambios por cotizacion inversa. Cargar Cotizacion a traves de los datos desde un archivo json." />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1240,7 +1378,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/../MobilityRPC/src/main/java/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
-          <line>101</line>
+          <line>107</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -1249,12 +1387,6 @@
           <line>196</line>
           <properties />
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint suspend="NONE" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
-          <line>155</line>
-          <properties />
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java</url>
@@ -1316,24 +1448,6 @@
           <properties />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/impl/processor/ServicesFactory_Proccesors.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint suspend="NONE" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/impl/processor/ServicesFactory_Proccesors.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/factory/ServicesFactory.java</url>
-          <line>153</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java</url>
           <line>183</line>
@@ -1342,16 +1456,9 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java</url>
-          <line>76</line>
+          <line>78</line>
           <properties />
           <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint suspend="NONE" type="java-line">
-          <dependency id="0" />
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>109</line>
-          <properties />
-          <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <dependency id="0" />
@@ -1362,19 +1469,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>459</line>
+          <line>438</line>
           <properties />
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>433</line>
+          <line>412</line>
           <properties />
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>436</line>
+          <line>415</line>
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
@@ -1389,33 +1496,15 @@
         <line-breakpoint suspend="NONE" type="java-line">
           <condition disabled="true" expression="!exigRPC.getRenglonList().isEmpty()" language="JAVA" custom="" />
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>455</line>
+          <line>434</line>
           <properties />
           <option name="timeStamp" value="69" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
+        <line-breakpoint log-message="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java</url>
           <line>99</line>
           <properties />
           <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>105</line>
-          <properties />
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java</url>
-          <line>124</line>
-          <properties />
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java</url>
-          <line>138</line>
-          <properties />
-          <option name="timeStamp" value="88" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/SetUpBase.java</url>
@@ -1453,12 +1542,6 @@
           <properties />
           <option name="timeStamp" value="101" />
         </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>79</line>
-          <properties />
-          <option name="timeStamp" value="120" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/base/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java</url>
           <line>15</line>
@@ -1490,7 +1573,7 @@
           <properties />
           <option name="timeStamp" value="128" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
+        <line-breakpoint log-message="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/externo/TestProcessorExterno.java</url>
           <line>20</line>
           <properties />
@@ -1498,19 +1581,19 @@
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>147</line>
+          <line>101</line>
           <properties />
           <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>54</line>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="135" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>158</line>
+          <line>118</line>
           <properties />
           <option name="timeStamp" value="137" />
         </line-breakpoint>
@@ -1522,49 +1605,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java</url>
-          <line>47</line>
+          <line>49</line>
           <properties />
           <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java</url>
-          <line>49</line>
+          <line>51</line>
           <properties />
           <option name="timeStamp" value="150" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java</url>
-          <line>51</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="151" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" log-message="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
-          <line>154</line>
-          <properties />
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
-          <line>144</line>
-          <properties />
-          <option name="timeStamp" value="154" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="NONE" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
-          <line>140</line>
-          <properties />
-          <option name="timeStamp" value="155" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/processor/CallProcessor.java</url>
-          <line>42</line>
-          <properties />
-          <option name="timeStamp" value="160" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>135</line>
+          <line>88</line>
           <properties />
           <option name="timeStamp" value="161" />
         </line-breakpoint>
@@ -1582,13 +1641,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>115</line>
+          <line>68</line>
           <properties />
           <option name="timeStamp" value="166" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>120</line>
+          <line>73</line>
           <properties />
           <option name="timeStamp" value="167" />
         </line-breakpoint>
@@ -1612,7 +1671,7 @@
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java</url>
-          <line>96</line>
+          <line>98</line>
           <properties />
           <option name="timeStamp" value="175" />
         </line-breakpoint>
@@ -1634,41 +1693,17 @@
           <properties />
           <option name="timeStamp" value="178" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>307</line>
-          <properties />
-          <option name="timeStamp" value="179" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>318</line>
+          <line>289</line>
           <properties />
           <option name="timeStamp" value="180" />
-        </line-breakpoint>
-        <line-breakpoint suspend="NONE" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClient.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="181" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/com/googlecode/mobilityrpc/mobility-rpc/1.1.0/mobility-rpc-1.1.0-sources.jar!/com/googlecode/mobilityrpc/MobilityRPC.java</url>
           <line>38</line>
           <properties />
           <option name="timeStamp" value="182" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
-          <line>151</line>
-          <properties />
-          <option name="timeStamp" value="184" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
-          <line>153</line>
-          <properties />
-          <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java</url>
@@ -1682,40 +1717,22 @@
           <properties />
           <option name="timeStamp" value="187" />
         </line-breakpoint>
-        <line-breakpoint suspend="NONE" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/googlecode/mobilityrpc/session/impl/MobilitySessionRPCImpl.java</url>
-          <line>41</line>
-          <properties />
-          <option name="timeStamp" value="188" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>316</line>
+          <line>287</line>
           <log-expression expression="&quot;Calculado la Cotizacion IdPoliza &quot;+cotizacionRPC.getIdPoliza()" language="JAVA" custom="" />
           <properties />
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>345</line>
+          <line>324</line>
           <properties />
           <option name="timeStamp" value="193" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="195" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java</url>
-          <line>142</line>
-          <properties />
-          <option name="timeStamp" value="201" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>440</line>
+          <line>419</line>
           <properties />
           <option name="timeStamp" value="202" />
         </line-breakpoint>
@@ -1740,13 +1757,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>549</line>
+          <line>528</line>
           <properties />
           <option name="timeStamp" value="206" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java</url>
-          <line>145</line>
+          <line>147</line>
           <properties />
           <option name="timeStamp" value="207" />
         </line-breakpoint>
@@ -1756,149 +1773,262 @@
           <properties />
           <option name="timeStamp" value="208" />
         </line-breakpoint>
-        <line-breakpoint suspend="NONE" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
-          <line>159</line>
-          <properties />
-          <option name="timeStamp" value="210" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>153</line>
-          <properties />
-          <option name="timeStamp" value="213" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>325</line>
+          <line>298</line>
           <properties />
           <option name="timeStamp" value="216" />
         </line-breakpoint>
         <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>336</line>
+          <line>314</line>
           <properties />
           <option name="timeStamp" value="218" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>567</line>
-          <properties />
-          <option name="timeStamp" value="222" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>575</line>
-          <properties />
-          <option name="timeStamp" value="223" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>572</line>
-          <properties />
-          <option name="timeStamp" value="224" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>576</line>
-          <properties />
-          <option name="timeStamp" value="225" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>584</line>
-          <properties />
-          <option name="timeStamp" value="226" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>585</line>
-          <properties />
-          <option name="timeStamp" value="227" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="228" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java</url>
-          <line>92</line>
+          <line>94</line>
           <properties />
           <option name="timeStamp" value="229" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java</url>
-          <line>127</line>
+          <line>129</line>
           <properties />
           <option name="timeStamp" value="230" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java</url>
-          <line>146</line>
+          <line>148</line>
           <properties />
           <option name="timeStamp" value="231" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>495</line>
+          <line>474</line>
           <properties />
           <option name="timeStamp" value="232" />
         </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>482</line>
+          <line>461</line>
           <properties />
           <option name="timeStamp" value="233" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
-          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="234" />
-        </line-breakpoint>
         <line-breakpoint suspend="NONE" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java</url>
-          <line>142</line>
+          <line>144</line>
           <properties />
           <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" log-message="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
+          <line>303</line>
+          <properties />
+          <option name="timeStamp" value="245" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
           <line>110</line>
           <properties />
-          <option name="timeStamp" value="236" />
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/FileUtil.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="250" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>560</line>
+          <line>540</line>
           <properties />
-          <option name="timeStamp" value="237" />
+          <option name="timeStamp" value="251" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>70</line>
+          <line>546</line>
           <properties />
-          <option name="timeStamp" value="238" />
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
+          <line>608</line>
+          <properties />
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/FileUtil.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/FileUtil.java</url>
+          <line>111</line>
+          <properties />
+          <option name="timeStamp" value="257" />
+        </line-breakpoint>
+        <line-breakpoint suspend="NONE" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/FileUtil.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="258" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>568</line>
+          <line>549</line>
           <properties />
-          <option name="timeStamp" value="240" />
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint suspend="NONE" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
+          <line>126</line>
+          <properties />
+          <option name="timeStamp" value="263" />
+        </line-breakpoint>
+        <line-breakpoint suspend="NONE" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
+          <line>164</line>
+          <properties />
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint suspend="NONE" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java</url>
+          <line>113</line>
+          <properties />
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="266" />
+        </line-breakpoint>
+        <line-breakpoint suspend="NONE" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
+          <line>121</line>
+          <properties />
+          <option name="timeStamp" value="267" />
+        </line-breakpoint>
+        <line-breakpoint suspend="NONE" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/googlecode/mobilityrpc/session/impl/MobilitySessionRPCImpl.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/googlecode/mobilityrpc/session/impl/MobilitySessionRPCImpl.java</url>
+          <line>63</line>
+          <properties />
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint suspend="NONE" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/googlecode/mobilityrpc/session/impl/MobilitySessionRPCImpl.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="273" />
+        </line-breakpoint>
+        <line-breakpoint suspend="NONE" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/googlecode/mobilityrpc/mobility-rpc/1.1.0/mobility-rpc-1.1.0-sources.jar!/com/googlecode/mobilityrpc/protocol/pojo/ExecutionResponse.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="274" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
+          <line>99</line>
+          <properties />
+          <option name="timeStamp" value="275" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
+          <line>92</line>
+          <properties />
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/googlecode/mobilityrpc/session/impl/MobilitySessionRPCImpl.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="277" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/googlecode/mobilityrpc/session/impl/MobilitySessionRPCImpl.java</url>
+          <line>75</line>
+          <properties />
+          <option name="timeStamp" value="278" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/parameter/ProcessParameterBase.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="281" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
-          <line>579</line>
+          <line>543</line>
           <properties />
-          <option name="timeStamp" value="241" />
+          <option name="timeStamp" value="282" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="283" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="284" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
+          <line>279</line>
+          <properties />
+          <option name="timeStamp" value="285" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java</url>
+          <line>595</line>
+          <properties />
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="290" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
-        <breakpoints-dialog />
+        <breakpoints-dialog>
+          <selected-grouping-rules>
+            <grouping-rule id="XBreakpointGroupingByPackageRule" />
+            <grouping-rule id="by-file" />
+          </selected-grouping-rules>
+        </breakpoints-dialog>
       </breakpoints-dialog>
-      <option name="time" value="243" />
+      <option name="time" value="291" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1907,125 +2037,27 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/mobilityrpc/mobility-rpc/1.1.0/mobility-rpc-1.1.0-sources.jar!/com/googlecode/mobilityrpc/controller/impl/MobilityControllerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1954023">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/mobilityrpc/mobility-rpc/1.1.0/mobility-rpc-1.1.0-sources.jar!/com/googlecode/mobilityrpc/MobilityRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5553539">
-          <caret line="38" column="29" selection-start-line="28" selection-start-column="4" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <element signature="docComment;method#newController#0;class#MobilityRPC#0" expanded="false" />
-            <element signature="method#MobilityRPC#0;class#MobilityRPC#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCComm.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0921273">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <caret line="92" column="94" selection-start-line="92" selection-start-column="94" selection-end-line="92" selection-end-column="94" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/mobilityrpc/mobility-rpc/1.1.0/mobility-rpc-1.1.0-sources.jar!/com/googlecode/mobilityrpc/session/MobilitySession.java">
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ObjetoAsegCotizaRPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="194" column="10" selection-start-line="194" selection-start-column="10" selection-end-line="194" selection-end-column="10" />
+          <caret line="23" column="121" selection-start-line="23" selection-start-column="89" selection-end-line="23" selection-end-column="121" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java">
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/AseguradoRPC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ExigenciasMedicaParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14808363">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.173516">
-          <caret line="81" column="23" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/googlecode/mobilityrpc/session/impl/MobilitySessionRPCImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-          <folding>
-            <element signature="docComment;class#MobilitySessionRPCImpl#0" expanded="false" />
-            <element signature="method#execute#0;class#MobilitySessionRPCImpl#0" expanded="false" />
-            <element signature="e#2247#2251#0" expanded="false" />
-            <element signature="method#serialize#0;class#MobilitySessionRPCImpl#0" expanded="false" />
-            <element signature="method#getDefaultSerializerFromSuper#0;class#MobilitySessionRPCImpl#0" expanded="false" />
-            <element signature="method#getFutureExecutionResponsesFromSuper#0;class#MobilitySessionRPCImpl#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TVGParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34505862">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/example/externo/TestProcessorExterno.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34817815">
-          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/EventNotificationQuotationParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34412956">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCCommRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20268007">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding>
-            <element signature="method#startMyMovilityRPCCommRunner#1;class#MyMovilityRPCCommRunner#0" expanded="false" />
-            <element signature="method#MyMovilityRPCCommRunner#0;class#MyMovilityRPCCommRunner#0" expanded="false" />
-          </folding>
+          <caret line="26" column="144" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="144" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2036,495 +2068,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/server/MyMovilityRPCCommRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/src.zip!/java/util/Calendar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="598" column="28" selection-start-line="598" selection-start-column="28" selection-end-line="598" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#99212#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#Calendar#0" expanded="false" />
-            <element signature="e#14267#14291#0" expanded="false" />
-            <element signature="docComment;field#ERA#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#YEAR#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#MONTH#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#WEEK_OF_YEAR#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#WEEK_OF_MONTH#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#DATE#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#DAY_OF_MONTH#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#DAY_OF_YEAR#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#DAY_OF_WEEK#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#DAY_OF_WEEK_IN_MONTH#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#AM_PM#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#HOUR#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#HOUR_OF_DAY#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#MINUTE#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#SECOND#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#MILLISECOND#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#ZONE_OFFSET#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#DST_OFFSET#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#FIELD_COUNT#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#SUNDAY#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#MONDAY#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#TUESDAY#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#WEDNESDAY#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#THURSDAY#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#FRIDAY#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#SATURDAY#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#JANUARY#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#FEBRUARY#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#MARCH#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#APRIL#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#MAY#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#JUNE#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#JULY#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#AUGUST#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#SEPTEMBER#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#OCTOBER#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#NOVEMBER#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#DECEMBER#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#UNDECIMBER#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#AM#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#PM#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#ALL_STYLES#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#SHORT#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#LONG#0;class#Calendar#0" expanded="false" />
-            <element signature="e#28998#29016#0" expanded="false" />
-            <element signature="docComment;field#fields#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#isSet#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#stamp#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#time#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#isTimeSet#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#areFieldsSet#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#areAllFieldsSet#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#lenient#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#zone#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#sharedZone#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#firstDayOfWeek#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#minimalDaysInFirstWeek#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#cachedLocaleData#0;class#Calendar#0" expanded="false" />
-            <element signature="e#32723#32738#0" expanded="false" />
-            <element signature="docComment;field#UNSET#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#COMPUTED#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#MINIMUM_USER_STAMP#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#ALL_FIELDS#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#nextStamp#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;field#serialVersionOnStream#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#Calendar#0;class#Calendar#0" expanded="false" />
-            <element signature="method#Calendar#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#Calendar#1;class#Calendar#0" expanded="false" />
-            <element signature="method#Calendar#1;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getInstance#0;class#Calendar#0" expanded="false" />
-            <element signature="method#getInstance#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getInstance#1;class#Calendar#0" expanded="false" />
-            <element signature="e#37715#37716#0" expanded="false" />
-            <element signature="e#37779#37780#0" expanded="false" />
-            <element signature="docComment;method#getInstance#2;class#Calendar#0" expanded="false" />
-            <element signature="method#getInstance#2;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getInstance#3;class#Calendar#0" expanded="false" />
-            <element signature="method#getInstance#3;class#Calendar#0" expanded="false" />
-            <element signature="method#createCalendar#0;class#Calendar#0" expanded="false" />
-            <element signature="e#38812#38883#0" expanded="false" />
-            <element signature="docComment;method#getAvailableLocales#0;class#Calendar#0" expanded="false" />
-            <element signature="e#39820#39821#0" expanded="false" />
-            <element signature="e#39875#39876#0" expanded="false" />
-            <element signature="docComment;method#computeTime#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#computeFields#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getTime#0;class#Calendar#0" expanded="false" />
-            <element signature="e#40950#40951#0" expanded="false" />
-            <element signature="e#41000#41001#0" expanded="false" />
-            <element signature="docComment;method#setTime#0;class#Calendar#0" expanded="false" />
-            <element signature="e#41430#41431#0" expanded="false" />
-            <element signature="e#41477#41478#0" expanded="false" />
-            <element signature="docComment;method#getTimeInMillis#0;class#Calendar#0" expanded="false" />
-            <element signature="method#getTimeInMillis#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#setTimeInMillis#0;class#Calendar#0" expanded="false" />
-            <element signature="method#setTimeInMillis#0;class#Calendar#0" expanded="false" />
-            <element signature="e#42068#42129#0" expanded="false" />
-            <element signature="docComment;method#get#0;class#Calendar#0" expanded="false" />
-            <element signature="method#get#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#internalGet#0;class#Calendar#0" expanded="false" />
-            <element signature="e#43623#43624#0" expanded="false" />
-            <element signature="e#43659#43660#0" expanded="false" />
-            <element signature="docComment;method#internalSet#0;class#Calendar#0" expanded="false" />
-            <element signature="e#44161#44162#0" expanded="false" />
-            <element signature="e#44198#44199#0" expanded="false" />
-            <element signature="docComment;method#set#0;class#Calendar#0" expanded="false" />
-            <element signature="method#set#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#set#1;class#Calendar#0" expanded="false" />
-            <element signature="method#set#1;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#set#2;class#Calendar#0" expanded="false" />
-            <element signature="method#set#2;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#set#3;class#Calendar#0" expanded="false" />
-            <element signature="method#set#3;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#Calendar#0" expanded="false" />
-            <element signature="method#clear#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#clear#1;class#Calendar#0" expanded="false" />
-            <element signature="method#clear#1;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#isSet#0;class#Calendar#0" expanded="false" />
-            <element signature="e#50850#50851#0" expanded="false" />
-            <element signature="e#50894#50895#0" expanded="false" />
-            <element signature="docComment;method#getDisplayName#0;class#Calendar#0" expanded="false" />
-            <element signature="method#getDisplayName#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getDisplayNames#0;class#Calendar#0" expanded="false" />
-            <element signature="method#getDisplayNames#0;class#Calendar#0" expanded="false" />
-            <element signature="method#getDisplayNamesImpl#0;class#Calendar#0" expanded="false" />
-            <element signature="e#56629#56645#0" expanded="false" />
-            <element signature="method#checkDisplayNameParams#0;class#Calendar#0" expanded="false" />
-            <element signature="method#getFieldStrings#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#complete#0;class#Calendar#0" expanded="false" />
-            <element signature="method#complete#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#isExternallySet#0;class#Calendar#0" expanded="false" />
-            <element signature="e#58947#58948#0" expanded="false" />
-            <element signature="e#58997#58998#0" expanded="false" />
-            <element signature="docComment;method#getSetStateFields#0;class#Calendar#0" expanded="false" />
-            <element signature="method#getSetStateFields#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#setFieldsComputed#0;class#Calendar#0" expanded="false" />
-            <element signature="method#setFieldsComputed#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#setFieldsNormalized#0;class#Calendar#0" expanded="false" />
-            <element signature="method#setFieldsNormalized#0;class#Calendar#0" expanded="false" />
-            <element signature="e#61495#61544#0" expanded="false" />
-            <element signature="docComment;method#isPartiallyNormalized#0;class#Calendar#0" expanded="false" />
-            <element signature="e#61882#61883#0" expanded="false" />
-            <element signature="e#61930#61931#0" expanded="false" />
-            <element signature="docComment;method#isFullyNormalized#0;class#Calendar#0" expanded="false" />
-            <element signature="e#62076#62077#0" expanded="false" />
-            <element signature="e#62123#62124#0" expanded="false" />
-            <element signature="docComment;method#setUnnormalized#0;class#Calendar#0" expanded="false" />
-            <element signature="e#62217#62218#0" expanded="false" />
-            <element signature="e#62264#62265#0" expanded="false" />
-            <element signature="docComment;method#isFieldSet#0;class#Calendar#0" expanded="false" />
-            <element signature="e#62445#62446#0" expanded="false" />
-            <element signature="e#62492#62493#0" expanded="false" />
-            <element signature="docComment;method#selectFields#0;class#Calendar#0" expanded="false" />
-            <element signature="method#selectFields#0;class#Calendar#0" expanded="false" />
-            <element signature="e#63625#63696#0" expanded="false" />
-            <element signature="e#64010#64075#0" expanded="false" />
-            <element signature="e#67386#67451#0" expanded="false" />
-            <element signature="docComment;method#aggregateStamp#0;class#Calendar#0" expanded="false" />
-            <element signature="method#aggregateStamp#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#equals#0;class#Calendar#0" expanded="false" />
-            <element signature="method#equals#0;class#Calendar#0" expanded="false" />
-            <element signature="e#70474#70519#0" expanded="false" />
-            <element signature="docComment;method#hashCode#0;class#Calendar#0" expanded="false" />
-            <element signature="method#hashCode#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#before#0;class#Calendar#0" expanded="false" />
-            <element signature="method#before#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#after#0;class#Calendar#0" expanded="false" />
-            <element signature="method#after#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#compareTo#0;class#Calendar#0" expanded="false" />
-            <element signature="e#73764#73765#0" expanded="false" />
-            <element signature="e#73819#73820#0" expanded="false" />
-            <element signature="docComment;method#add#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#roll#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#roll#1;class#Calendar#0" expanded="false" />
-            <element signature="method#roll#1;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#setTimeZone#0;class#Calendar#0" expanded="false" />
-            <element signature="method#setTimeZone#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getTimeZone#0;class#Calendar#0" expanded="false" />
-            <element signature="method#getTimeZone#0;class#Calendar#0" expanded="false" />
-            <element signature="e#77727#77796#0" expanded="false" />
-            <element signature="docComment;method#getZone#0;class#Calendar#0" expanded="false" />
-            <element signature="e#78016#78017#0" expanded="false" />
-            <element signature="e#78036#78037#0" expanded="false" />
-            <element signature="docComment;method#setZoneShared#0;class#Calendar#0" expanded="false" />
-            <element signature="e#78150#78151#0" expanded="false" />
-            <element signature="e#78178#78179#0" expanded="false" />
-            <element signature="docComment;method#setLenient#0;class#Calendar#0" expanded="false" />
-            <element signature="e#78815#78816#0" expanded="false" />
-            <element signature="e#78853#78854#0" expanded="false" />
-            <element signature="docComment;method#isLenient#0;class#Calendar#0" expanded="false" />
-            <element signature="e#79137#79138#0" expanded="false" />
-            <element signature="e#79167#79168#0" expanded="false" />
-            <element signature="docComment;method#setFirstDayOfWeek#0;class#Calendar#0" expanded="false" />
-            <element signature="method#setFirstDayOfWeek#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getFirstDayOfWeek#0;class#Calendar#0" expanded="false" />
-            <element signature="e#79912#79913#0" expanded="false" />
-            <element signature="e#79949#79950#0" expanded="false" />
-            <element signature="docComment;method#setMinimalDaysInFirstWeek#0;class#Calendar#0" expanded="false" />
-            <element signature="method#setMinimalDaysInFirstWeek#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getMinimalDaysInFirstWeek#0;class#Calendar#0" expanded="false" />
-            <element signature="e#81065#81066#0" expanded="false" />
-            <element signature="e#81110#81111#0" expanded="false" />
-            <element signature="docComment;method#getMinimum#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getMaximum#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getGreatestMinimum#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getLeastMaximum#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getActualMinimum#0;class#Calendar#0" expanded="false" />
-            <element signature="method#getActualMinimum#0;class#Calendar#0" expanded="false" />
-            <element signature="e#85285#85356#0" expanded="false" />
-            <element signature="e#85493#85570#0" expanded="false" />
-            <element signature="docComment;method#getActualMaximum#0;class#Calendar#0" expanded="false" />
-            <element signature="method#getActualMaximum#0;class#Calendar#0" expanded="false" />
-            <element signature="e#87280#87351#0" expanded="false" />
-            <element signature="e#87489#87564#0" expanded="false" />
-            <element signature="e#87766#87843#0" expanded="false" />
-            <element signature="docComment;method#clone#0;class#Calendar#0" expanded="false" />
-            <element signature="method#clone#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#getFieldName#0;class#Calendar#0" expanded="false" />
-            <element signature="e#89742#89743#0" expanded="false" />
-            <element signature="e#89775#89776#0" expanded="false" />
-            <element signature="docComment;method#toString#0;class#Calendar#0" expanded="false" />
-            <element signature="method#toString#0;class#Calendar#0" expanded="false" />
-            <element signature="e#90175#90233#0" expanded="false" />
-            <element signature="method#appendValue#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#setWeekCountData#0;class#Calendar#0" expanded="false" />
-            <element signature="method#setWeekCountData#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#updateTime#0;class#Calendar#0" expanded="false" />
-            <element signature="method#updateTime#0;class#Calendar#0" expanded="false" />
-            <element signature="e#92565#92625#0" expanded="false" />
-            <element signature="method#compareTo#1;class#Calendar#0" expanded="false" />
-            <element signature="method#getMillisOf#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#adjustStamp#0;class#Calendar#0" expanded="false" />
-            <element signature="method#adjustStamp#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#invalidateWeekFields#0;class#Calendar#0" expanded="false" />
-            <element signature="method#invalidateWeekFields#0;class#Calendar#0" expanded="false" />
-            <element signature="e#94080#94145#0" expanded="false" />
-            <element signature="docComment;method#writeObject#0;class#Calendar#0" expanded="false" />
-            <element signature="method#writeObject#0;class#Calendar#0" expanded="false" />
-            <element signature="e#95600#95660#0" expanded="false" />
-            <element signature="e#95882#95935#0" expanded="false" />
-            <element signature="e#96370#96402#0" expanded="false" />
-            <element signature="class#CalendarAccessControlContext#0;class#Calendar#0" expanded="false" />
-            <element signature="initializer##0;class#CalendarAccessControlContext#0;class#Calendar#0" expanded="false" />
-            <element signature="docComment;method#readObject#0;class#Calendar#0" expanded="false" />
-            <element signature="method#readObject#0;class#Calendar#0" expanded="false" />
-            <element signature="e#97365#97429#0" expanded="false" />
-            <element signature="e#98133#98278#0" expanded="false" />
-            <element signature="e#98277#98278#0" expanded="false" />
-            <element signature="e#98780#98838#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/src.zip!/java/util/Random.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="247" column="15" selection-start-line="247" selection-start-column="15" selection-end-line="247" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0418848">
-          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/src.zip!/java/util/concurrent/locks/LockSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="24" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/src.zip!/java/lang/ThreadLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="56" selection-start-line="77" selection-start-column="46" selection-end-line="77" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/enums/SystemName.java">
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/DateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/server/processor/EventNotification_Processors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="78" selection-start-line="18" selection-start-column="78" selection-end-line="18" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/persister/memory/ServiceFactoryRegisterMemPersister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18545455">
-          <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
-          <folding>
-            <element signature="method#executeRequest#0;class#CallerOfProcess#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="15" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/AseguradoRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaCotizaRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CoberturaRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ObjetoAsegCotizaRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3418182">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CotizacionParameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/mobilityrpc/mobility-rpc/1.1.0/mobility-rpc-1.1.0-sources.jar!/com/googlecode/mobilityrpc/network/impl/tcp/IncomingByteStreamReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07234043">
-          <caret line="129" column="0" selection-start-line="129" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17085427">
-          <caret line="8" column="136" selection-start-line="8" selection-start-column="136" selection-end-line="8" selection-end-column="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyMovilityRPCClientTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22923589">
-          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/interfaces/TestRunnerJC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/BaseData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="104" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.0/MyMobilityRPC-1.0-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="94" selection-start-line="92" selection-start-column="94" selection-end-line="92" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="32" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2532,44 +2094,566 @@
     <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/cotizacion/CreateCotizacion.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="155" column="23" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
+          <caret line="185" column="72" selection-start-line="185" selection-start-column="72" selection-end-line="185" selection-end-column="72" />
+          <folding>
+            <element signature="method#createParameterFromCotizacion#0;class#CreateCotizacion#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/CotizacionRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+          <folding>
+            <element signature="method#CotizacionRPC#1;class#CotizacionRPC#0" expanded="false" />
+            <element signature="method#getIdPoliza#0;class#CotizacionRPC#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/src.zip!/java/text/Format.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="115" column="22" selection-start-line="115" selection-start-column="22" selection-end-line="115" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/src.zip!/java/text/DateFormat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="489" column="35" selection-start-line="489" selection-start-column="35" selection-end-line="489" selection-end-column="35" />
+          <folding>
+            <element signature="e#18132#18133#0" expanded="false" />
+            <element signature="e#18194#18195#0" expanded="false" />
+            <element signature="docComment;method#getDateInstance#1;class#DateFormat#0" expanded="false" />
+            <element signature="docComment;method#getDateInstance#2;class#DateFormat#0" expanded="false" />
+            <element signature="e#19258#19259#0" expanded="false" />
+            <element signature="e#19326#19327#0" expanded="false" />
+            <element signature="docComment;method#getDateTimeInstance#1;class#DateFormat#0" expanded="false" />
+            <element signature="method#getDateTimeInstance#1;class#DateFormat#0" expanded="false" />
+            <element signature="docComment;method#get#0;class#DateFormat#0" expanded="false" />
+            <element signature="method#get#0;class#DateFormat#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/ProductRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/enums/AcseleIPs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06827309">
+          <caret line="8" column="146" selection-start-line="8" selection-start-column="137" selection-end-line="8" selection-end-column="146" />
+          <folding>
+            <element signature="docComment;class#AcseleIPs#0" expanded="false" />
+            <element signature="method#AcseleIPs#0;class#AcseleIPs#0" expanded="false" />
+            <element signature="method#getIp#0;class#AcseleIPs#0" expanded="false" />
+            <element signature="method#getPort#0;class#AcseleIPs#0" expanded="false" />
+            <element signature="method#getByName#0;class#AcseleIPs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sapn/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5523466">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5523466">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <element signature="n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#resources#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#includes#0;n#resource#0;n#resources#0;n#build#0;n#project#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36823106">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#0;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+            <element signature="n#dependency#1;n#dependencies#0;n#project#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/mobilityrpc/mobility-rpc/1.1.0/mobility-rpc-1.1.0-sources.jar!/com/googlecode/mobilityrpc/protocol/pojo/ExecutionRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding>
+            <element signature="method#ExecutionRequest#0;class#ExecutionRequest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/mobilityrpc/mobility-rpc/1.1.0/mobility-rpc-1.1.0-sources.jar!/com/googlecode/mobilityrpc/protocol/pojo/ExecutionResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding>
+            <element signature="e#1538#1539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CumulusTerceroParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="66" selection-end-line="8" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ActuarialAgeParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/EventNotificationQuotationParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ProductParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/ExigenciasMedicaParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="63" selection-start-line="24" selection-start-column="63" selection-end-line="24" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/PropertyParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="60" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TarifaParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificationResponseRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificacionRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sapn/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/server/processor/EventNotification_Processors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="79" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/TVGParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42429283">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/beans/EventNotificationResponseRPC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2647059">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
+          <folding>
+            <element signature="e#6017#6018#0" expanded="false" />
+            <element signature="e#6055#6056#0" expanded="false" />
+            <element signature="method#toUnsignedString#0;class#Long#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/params/CotizacionParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/parameter/ProcessParameter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Property_Callers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="125" selection-start-line="24" selection-start-column="125" selection-end-line="24" selection-end-column="125" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="docComment;class#Property_Callers#0" expanded="false" />
+            <element signature="docComment;method#getPropertyValues#0;class#Property_Callers#0" expanded="false" />
+            <element signature="docComment;method#getPropertyValues#0;class#Property_Callers#0" expanded="false" />
+            <element signature="method#getPropertyValues#0;class#Property_Callers#0" expanded="false" />
+            <element signature="docComment;class#GetPropertyValues#0;class#Property_Callers#0" expanded="false" />
+            <element signature="class#GetPropertyValues#0;class#Property_Callers#0" expanded="false" />
+            <element signature="method#GetPropertyValues#0;class#GetPropertyValues#0;class#Property_Callers#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/parameter/ProcessParameterBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/googlecode/mobilityrpc/session/impl/MobilitySessionRPCImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Quotation_Callers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="136" selection-start-line="86" selection-start-column="111" selection-end-line="86" selection-end-column="136" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;method#getEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#getEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;method#getEdadActuarial#1;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#getEdadActuarial#1;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;method#getCumulusTercero#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#getCumulusTercero#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;method#getCumulusTercero#1;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#getCumulusTercero#1;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;method#calcularCotizacion#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#calcularCotizacion#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;method#calcularCotizacion#1;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#calcularCotizacion#1;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;method#getCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#getCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;method#getCotizaciones#1;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#getCotizaciones#1;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;method#calcularTVG#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#calcularTVG#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;method#calcularTVG#1;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#calcularTVG#1;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#GetEdadActuarial#0;class#GetEdadActuarial#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;class#GetCumulusTercero#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="class#GetCumulusTercero#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#GetCumulusTercero#0;class#GetCumulusTercero#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="docComment;class#CalcularCotizacion#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="class#CalcularCotizacion#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#CalcularCotizacion#0;class#CalcularCotizacion#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="class#GetCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#GetCotizaciones#0;class#GetCotizaciones#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="class#CalcularTVG#0;class#Quotation_Callers#0" expanded="true" />
+            <element signature="method#CalcularTVG#0;class#CalcularTVG#0;class#Quotation_Callers#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.3448277">
+          <caret line="94" column="48" selection-start-line="94" selection-start-column="48" selection-end-line="94" selection-end-column="48" />
+          <folding>
+            <element signature="method#writeJSONLogByProduct#0;class#FileUtil#0" expanded="true" />
+            <element signature="method#writeJSONLogByProduct#1;class#FileUtil#0" expanded="true" />
+            <element signature="e#3074#3078#0" expanded="true" />
+            <element signature="method#writeToFile#0;class#FileUtil#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/ServicesResultsObjectCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="method#calcularCotizacion#0;class#ServicesResultsObjectCache#0" expanded="true" />
+            <element signature="method#calcularCotizacion#1;class#ServicesResultsObjectCache#0" expanded="true" />
+            <element signature="method#getListaCotizaciones#0;class#ServicesResultsObjectCache#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/main/java/com/consisint/acsele/interseguro/interfaces/mobilityRPC/services/client/caller/Product_Callers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="133" column="42" selection-start-line="133" selection-start-column="42" selection-end-line="133" selection-end-column="42" />
+          <folding>
+            <element signature="docComment;method#getEdadProducto#1;class#Product_Callers#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/ServicesBaseExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4827586">
+          <caret line="111" column="43" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="43" />
+          <folding>
+            <element signature="method#executeProcessor#0;class#ServicesBaseExecutor#0" expanded="true" />
+            <element signature="docComment;method#executeCalling#0;class#ServicesBaseExecutor#0" expanded="true" />
+            <element signature="method#executeCalling#0;class#ServicesBaseExecutor#0" expanded="true" />
+            <element signature="docComment;method#executeCalling#1;class#ServicesBaseExecutor#0" expanded="true" />
+            <element signature="docComment;method#executeCalling#2;class#ServicesBaseExecutor#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/enroquesw/mcs/comm/mobilityRPC/MyMobilityRPC/1.1/MyMobilityRPC-1.1-sources.jar!/com/enroquesw/mcs/comm/mobilityRPC/services/callable/CallerOfProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="41" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="53" />
+          <folding>
+            <element signature="method#getCodUniqOfService#0;class#CallerOfProcess#0" expanded="true" />
+            <element signature="method#setRemote#0;class#CallerOfProcess#0" expanded="true" />
+            <element signature="method#getRequestId#0;class#CallerOfProcess#0" expanded="true" />
+            <element signature="e#4778#4810#0" expanded="true" />
+            <element signature="method#call#0;class#CallerOfProcess#0" expanded="true" />
+            <element signature="method#getInstance#0;class#CallerOfProcess#0" expanded="true" />
+            <element signature="method#executeCalling#0;class#CallerOfProcess#0" expanded="true" />
+            <element signature="method#executeCalling#1;class#CallerOfProcess#0" expanded="true" />
+            <element signature="e#8543#8552#0" expanded="true" />
+            <element signature="method#executeRequest#0;class#CallerOfProcess#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/src.zip!/java/security/SecureRandomSpi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/src.zip!/java/security/SecureRandom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="432" column="27" selection-start-line="432" selection-start-column="27" selection-end-line="432" selection-end-column="27" />
+          <folding>
+            <element signature="e#15439#15440#0" expanded="false" />
+            <element signature="e#15486#15487#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/src.zip!/java/util/UUID.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="416" column="15" selection-start-line="416" selection-start-column="15" selection-end-line="416" selection-end-column="15" />
+          <folding>
+            <element signature="method#randomUUID#0;class#UUID#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/interfaces/TestRunnerJC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.6.0_20/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33195022">
+          <caret line="585" column="29" selection-start-line="585" selection-start-column="29" selection-end-line="585" selection-end-column="29" />
+          <folding>
+            <element signature="method#start#0;class#Thread#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/Stresstesting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="227" column="21" selection-start-line="227" selection-start-column="21" selection-end-line="227" selection-end-column="21" />
+          <folding>
+            <element signature="method#stressTestingGetProducts#0;class#Stresstesting#0" expanded="true" />
+            <element signature="class#1323:2378" expanded="true" />
+            <element signature="method#call#0;class#1323:2378" expanded="true" />
+            <element signature="class#3645:4030" expanded="true" />
+            <element signature="method#run#0;class#3645:4030" expanded="true" />
+            <element signature="method#stressTestingCalcularCotizacion#0;class#Stresstesting#0" expanded="true" />
+            <element signature="e#5018#5022#0" expanded="true" />
+            <element signature="class#5239:5975" expanded="true" />
+            <element signature="method#call#0;class#5239:5975" expanded="true" />
+            <element signature="e#6087#6110#0" expanded="true" />
+            <element signature="e#8030#8032#0" expanded="true" />
+            <element signature="class#10382:11334" expanded="true" />
+            <element signature="method#StressTask#0;class#10382:11334" expanded="true" />
+            <element signature="method#run#0;class#10382:11334" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/MyMovilityRPCCommTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.64849627">
+          <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/client/MyTestMethodCOT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="597" column="35" selection-start-line="597" selection-start-column="12" selection-end-line="597" selection-end-column="35" />
+        <state vertical-scroll-proportion="-4.172414">
+          <caret line="159" column="35" selection-start-line="159" selection-start-column="35" selection-end-line="159" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#1889#1893#0" expanded="true" />
+            <element signature="e#1895#1899#0" expanded="true" />
             <element signature="method#run#0;class#MyTestMethodCOT#0" expanded="true" />
             <element signature="method#testMain#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="e#2182#2216#0" expanded="true" />
-            <element signature="e#2616#2635#0" expanded="true" />
-            <element signature="e#3035#3097#0" expanded="true" />
-            <element signature="e#3943#3977#0" expanded="true" />
             <element signature="method#test_Otra_Cosa#0;class#MyTestMethodCOT#0" expanded="true" />
             <element signature="method#test_GetEdadProducto#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#4825#4831#0" expanded="true" />
             <element signature="method#test_GetListCotizacionRPC#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#6073#6079#0" expanded="true" />
+            <element signature="method#test_GetPropertyRPC_Dependencies#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#6546#6547#0" expanded="true" />
+            <element signature="e#8026#8031#0" expanded="true" />
+            <element signature="e#8033#8040#0" expanded="true" />
+            <element signature="e#8152#8158#0" expanded="true" />
+            <element signature="e#8218#8224#0" expanded="true" />
+            <element signature="e#8588#8589#0" expanded="true" />
             <element signature="method#test_StressTestingGetProducts#0;class#MyTestMethodCOT#0" expanded="true" />
             <element signature="method#test_GetProducts#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="e#11523#11577#0" expanded="true" />
+            <element signature="e#9817#9871#0" expanded="true" />
+            <element signature="e#10428#10434#0" expanded="true" />
             <element signature="method#test_GetProduct#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="method#test_Planes#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="e#24778#24823#0" expanded="true" />
+            <element signature="e#11110#11116#0" expanded="true" />
+            <element signature="e#11863#11869#0" expanded="true" />
+            <element signature="method#test_PlanesFinanciamiento#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#12946#12952#0" expanded="true" />
+            <element signature="e#13779#13785#0" expanded="true" />
+            <element signature="method#test_CalcularCotizacion#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#15145#15151#0" expanded="true" />
+            <element signature="method#test_CalcularCotizacion#1;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#17001#17007#0" expanded="true" />
+            <element signature="e#18140#18146#0" expanded="true" />
+            <element signature="method#createMap#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#21715#21721#0" expanded="true" />
+            <element signature="method#test_EdadActuarial#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#22100#22102#0" expanded="true" />
+            <element signature="e#22771#22777#0" expanded="true" />
+            <element signature="method#test_ExigenciasMedicas#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#22963#22967#0" expanded="true" />
+            <element signature="e#22987#22988#0" expanded="true" />
+            <element signature="method#test_Tarifas#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#23914#23959#0" expanded="true" />
+            <element signature="e#24983#25008#0" expanded="true" />
+            <element signature="method#test_Tarifas_By_Cov_PlanVida#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="method#test_Tarifas#1;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#26872#26897#0" expanded="true" />
+            <element signature="method#test_PeriodosCoberturas#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="method#test_ServicesFactoryProccesor#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="method#test_StressTestingCalcularCotizacion#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="method#test_StressTestingGetEdadActuarial#0;class#MyTestMethodCOT#0" expanded="true" />
             <element signature="method#conjuntoPruebasCotizacion#0;class#MyTestMethodCOT#0" expanded="true" />
-            <element signature="e#31605#31648#0" expanded="true" />
+            <element signature="e#29521#29572#0" expanded="true" />
+            <element signature="e#29923#29994#0" expanded="true" />
+            <element signature="e#30154#30247#0" expanded="true" />
+            <element signature="method#executeCalculoDirecto#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#31730#31735#0" expanded="true" />
+            <element signature="e#31737#31741#0" expanded="true" />
+            <element signature="e#31849#31853#0" expanded="true" />
+            <element signature="method#executeReCalculoDirecto#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#32250#32255#0" expanded="true" />
+            <element signature="e#32257#32262#0" expanded="true" />
+            <element signature="e#32386#32390#0" expanded="true" />
+            <element signature="method#executeCalculosInversos#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#33187#33192#0" expanded="true" />
+            <element signature="e#33194#33198#0" expanded="true" />
+            <element signature="e#33310#33314#0" expanded="true" />
+            <element signature="e#33513#33591#0" expanded="true" />
+            <element signature="e#34542#34547#0" expanded="true" />
+            <element signature="e#34549#34554#0" expanded="true" />
+            <element signature="e#34809#34814#0" expanded="true" />
+            <element signature="method#cargarCotizacionBase#0;class#MyTestMethodCOT#0" expanded="true" />
             <element signature="method#redondearDosDecimales#0;class#MyTestMethodCOT#0" expanded="true" />
+            <element signature="e#36224#36225#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cotizador/src/test/java/com/enroquesw/mcs/comm/mobilityRPC/util/testRunner/MyTestRunnerCOT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38408303">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="1.6103896">
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+          <folding>
+            <element signature="e#974#1023#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

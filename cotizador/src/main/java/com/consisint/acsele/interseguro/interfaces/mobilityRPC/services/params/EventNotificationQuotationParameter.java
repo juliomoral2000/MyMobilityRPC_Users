@@ -1,6 +1,7 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params;
 
 import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
+import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameterBase;
 
 import java.util.Date;
 
@@ -9,7 +10,7 @@ import java.util.Date;
  * el servicio de recepcion de Notificaciones de Recargo del Sistema Cotizador.
  *
  */
-public class EventNotificationQuotationParameter  implements ProcessParameter {
+public class EventNotificationQuotationParameter extends ProcessParameterBase {
     public long   idPoliza;              // Id de Poliza [Propuesta] Acsel-e
     public String numeroPropuesta;       // Numero de Propuesta      -- TODO: Ideal seria el Id (si lo almacenara Acsele)
     public String numeroCotizacion;      // Numero de Cotizacion     -- TODO: Ideal seria el Id (si lo almacenara Acsele)

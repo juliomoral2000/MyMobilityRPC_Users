@@ -26,7 +26,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @throws ServiceBaseException
      */
     public static List<ProductRPC> getProducts(SystemName remoteSystemName) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetProducts.class, new VoidParameter(), remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetProducts.class, new VoidParameter(), remoteSystemName, new StringBuffer());
     }
 
     /**
@@ -37,7 +37,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @throws ServiceBaseException
      */
     public static ProductRPC getProduct(SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetProduct.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetProduct.class, parameter, remoteSystemName, new StringBuffer());
     }
 
     /**
@@ -48,7 +48,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @throws ServiceBaseException
      */
     public static List<PlanFinanciamientoRPC> getPlanesFinanciamiento(SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetPlanesFinanciamiento.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetPlanesFinanciamiento.class, parameter, remoteSystemName, new StringBuffer());
     }
 
     /**
@@ -58,7 +58,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @return List<PlanRPC>
      */
     public static List<PlanRPC> getPlanes(SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetPlanes.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetPlanes.class, parameter, remoteSystemName, new StringBuffer());
     }
 
     /**
@@ -68,7 +68,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @return List<CoberturaRPC>
      */
     public static List<CoberturaRPC> getCoberturas(SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetCoberturas.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetCoberturas.class, parameter, remoteSystemName, new StringBuffer());
     }
 
     /**
@@ -78,7 +78,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @return List<VigenciaRPC>
      */
     public static List<VigenciaRPC> getPeriodosCoberturas(SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetPeriodosCoberturas.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetPeriodosCoberturas.class, parameter, remoteSystemName, new StringBuffer());
     }
 
     /**
@@ -88,7 +88,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @return List<TarifaRPC>
      */
     public static List<TarifaRPC> getTarifas(SystemName remoteSystemName, TarifaParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetTarifas.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetTarifas.class, parameter, remoteSystemName, new StringBuffer());
     }
 
     /**
@@ -98,7 +98,7 @@ public class Product_Callers <P extends ProcessParameter>{
      * @return ExigenciasMedicaRPC
      */
     public static ExigenciasMedicaRPC getExigenciasMedicas (SystemName remoteSystemName, ExigenciasMedicaParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetExigenciasMedicas.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetExigenciasMedicas.class, parameter, remoteSystemName, new StringBuffer());
     }
 
     /**
@@ -108,7 +108,108 @@ public class Product_Callers <P extends ProcessParameter>{
      * @return ExigenciasMedicaRPC
      */
     public static EdadProductoRPC getEdadProducto (SystemName remoteSystemName, ProductParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetEdadProducto.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetEdadProducto.class, parameter, remoteSystemName, new StringBuffer());
+    }
+
+    /**
+     * Metodo para obtener la lista de Productos de Vida a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param requestIdOut     Parametro de salida con el Identificador del request
+     * @return  List<ProductRPC>
+     * @throws ServiceBaseException
+     */
+    public static List<ProductRPC> getProducts(SystemName remoteSystemName, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetProducts.class, new VoidParameter(), remoteSystemName, requestIdOut);
+    }
+
+    /**
+     * Metodo para obtener el Producto de Vida a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut     Parametro de salida con el Identificador del request
+     * @return ProductRPC
+     * @throws ServiceBaseException
+     */
+    public static ProductRPC getProduct(SystemName remoteSystemName, ProductParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetProduct.class, parameter, remoteSystemName, requestIdOut);
+    }
+
+    /**
+     * Metodo para obtener la lista de Planes de Financiamiento [PERIODO DE PAGO en el cotizador] a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut     Parametro de salida con el Identificador del request
+     * @return List<PlanFinanciamientoRPC>
+     * @throws ServiceBaseException
+     */
+    public static List<PlanFinanciamientoRPC> getPlanesFinanciamiento(SystemName remoteSystemName, ProductParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetPlanesFinanciamiento.class, parameter, remoteSystemName, requestIdOut);
+    }
+
+    /**
+     *  Metodo para obtener la lista de Planes del Producto [SIN REFERENCIA en el cotizador] a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut     Parametro de salida con el Identificador del request
+     * @return List<PlanRPC>
+     */
+    public static List<PlanRPC> getPlanes(SystemName remoteSystemName, ProductParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetPlanes.class, parameter, remoteSystemName, requestIdOut);
+    }
+
+    /**
+     *  Metodo para obtener la lista de Coberturas Configuradas del Producto [Coberturas en el cotizador] a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut     Parametro de salida con el Identificador del request
+     * @return List<CoberturaRPC>
+     */
+    public static List<CoberturaRPC> getCoberturas(SystemName remoteSystemName, ProductParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetCoberturas.class, parameter, remoteSystemName, requestIdOut);
+    }
+
+    /**
+     *  Metodo para obtener la lista de Vigencias Producto [PERIODO DE COBERTURA en el cotizador] a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut     Parametro de salida con el Identificador del request
+     * @return List<VigenciaRPC>
+     */
+    public static List<VigenciaRPC> getPeriodosCoberturas(SystemName remoteSystemName, ProductParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetPeriodosCoberturas.class, parameter, remoteSystemName, requestIdOut);
+    }
+
+    /**
+     *  Metodo para obtener la lista de Tarifas [Tarifas en el cotizador(contiene: PLAN o OPCION de PRODUCTO, PERIODO DE PAGO PRIMA)] a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut     Parametro de salida con el Identificador del request
+     * @return List<TarifaRPC>
+     */
+    public static List<TarifaRPC> getTarifas(SystemName remoteSystemName, TarifaParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetTarifas.class, parameter, remoteSystemName, requestIdOut);
+    }
+
+    /**
+     *  Metodo para obtener la lista de Requesitos de Asegurabilidad del Producto [EXIGENCIAS MEDICAS en el cotizador] a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut     Parametro de salida con el Identificador del request
+     * @return ExigenciasMedicaRPC
+     */
+    public static ExigenciasMedicaRPC getExigenciasMedicas (SystemName remoteSystemName, ExigenciasMedicaParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetExigenciasMedicas.class, parameter, remoteSystemName, requestIdOut);
+    }
+
+    /**
+     *  Metodo para obtener la lista de Edades del Producto a traves de la invocacion Remota
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut     Parametro de salida con el Identificador del request
+     * @return ExigenciasMedicaRPC
+     */
+    public static EdadProductoRPC getEdadProducto (SystemName remoteSystemName, ProductParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetEdadProducto.class, parameter, remoteSystemName, requestIdOut);
     }
 
 /****************************** DECLARACION DE CLASES CallerOfProcess *************************************************/

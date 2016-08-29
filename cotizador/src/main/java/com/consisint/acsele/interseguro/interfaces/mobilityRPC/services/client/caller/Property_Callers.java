@@ -22,7 +22,19 @@ public class Property_Callers<P extends ProcessParameter> {
      * @throws ServiceBaseException
      */
     public static PropertyValuesRPC getPropertyValues(SystemName remoteSystemName, PropertyParameter parameter) throws ServiceBaseException {
-        return ServicesBaseExecutor.executeCalling(GetPropertyValues.class, parameter, remoteSystemName);
+        return ServicesBaseExecutor.executeCalling(GetPropertyValues.class, parameter, remoteSystemName, new StringBuffer());
+    }
+    /**
+     * Metodo para obtener la propiedad de Acsele con su lista de Valores
+     *
+     * @param remoteSystemName Sistema remoto
+     * @param parameter Parametro de entrada
+     * @param requestIdOut     Parametro de salida con el Identificador del request
+     * @return PropertyValuesRPC
+     * @throws ServiceBaseException
+     */
+    public static PropertyValuesRPC getPropertyValues(SystemName remoteSystemName, PropertyParameter parameter, StringBuffer requestIdOut) throws ServiceBaseException {
+        return ServicesBaseExecutor.executeCalling(GetPropertyValues.class, parameter, remoteSystemName, requestIdOut);
     }
 
 /****************************** DECLARACION DE CLASES CallerOfProcess *************************************************/

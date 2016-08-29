@@ -1,12 +1,12 @@
 package com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params;
 
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.beans.CotizacionRPC;
-import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameter;
+import com.enroquesw.mcs.comm.mobilityRPC.services.parameter.ProcessParameterBase;
 
 /**
  * La clase <code>CotizacionParameter</code> representa el Parametro de entrada Para los Servicios de Cotizacion.
  */
-public class CotizacionParameter implements ProcessParameter {
+public class CotizacionParameter extends ProcessParameterBase {
     public CotizacionRPC cotizacionRPC;     // Objeto Cotizacion [contiene la data capturada por el Sistema Cotizador]
     public boolean isInverso = false;       // El calculo de la Catizacion es Inverso? true: Inverso [CotInverso] ; false: Directo [CotDirecto]. POL.TipoActivacion [PropManual, PropRapida, PropCanc, PropDesis, CotDirecto, CotInverso]
     private Long timeOutMax;
