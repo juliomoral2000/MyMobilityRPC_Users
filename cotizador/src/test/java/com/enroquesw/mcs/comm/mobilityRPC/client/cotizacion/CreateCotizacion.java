@@ -153,7 +153,8 @@ public class CreateCotizacion {
         return new AseguradoRPC( fechaNacimiento,  idSexo,  idFumador,  idProfesion,  idClaseAccPers,  idTipoAsegurado);
     }
 
-    public static void cleanOutFields(CotizacionRPC cRPC, boolean isCleanAmount) {
+    public static void cleanOutFields(CotizacionRPC cRPC, boolean isCleanAmount, boolean isCleanPolIds) {
+        if(isCleanPolIds){ cRPC.setIdPoliza(0); cRPC.setIdOperation(0); }
         cRPC.setMontoPrimaBruta(0.0);
         cRPC.setMontoPrimaVoluntaria(0.0);
         cRPC.setMontoPrimaPrograma(0.0);

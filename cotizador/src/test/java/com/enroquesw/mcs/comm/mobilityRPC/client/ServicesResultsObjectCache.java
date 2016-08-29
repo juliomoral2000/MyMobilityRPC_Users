@@ -44,7 +44,9 @@ public class ServicesResultsObjectCache {
         try {
             final ProductParameter productParameter = new ProductParameter(idProducto);
             productParameter.setTimeOutMax((long) (60000*10));
-            if(!products.containsKey(idProducto)) products.put(idProducto, Product_Callers.getProduct(SystemName.ACSELE, productParameter ));
+            StringBuffer req = new StringBuffer();
+            if(!products.containsKey(idProducto)) products.put(idProducto, Product_Callers.getProduct(SystemName.ACSELE, productParameter, req));
+            System.out.println("requestId = "+req.toString());
             return products.get(idProducto);
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
@@ -108,8 +110,8 @@ public class ServicesResultsObjectCache {
         return Product_Callers.getEdadProducto(SystemName.ACSELE, productParameter);
     }
 
-    public static CotizacionRPC calcularCotizacion(boolean isDirecta, long timeOut, CotizacionParameter parameter) {
-        return Quotation_Callers.calcularCotizacion(ACSELE, parameter);
+    public static CotizacionRPC calcularCotizacion(boolean isDirecta, long timeOut, CotizacionParameter parameter, StringBuffer requestIdOut) {
+        return Quotation_Callers.calcularCotizacion(ACSELE, parameter, requestIdOut == null? new StringBuffer(): requestIdOut);
     }
 
     public static CotizacionRPC calcularCotizacion(CotizacionParameter parameter) {
@@ -147,5 +149,30 @@ public class ServicesResultsObjectCache {
         final List<TRDataRPC> trDataRPCs = exist ? planesVidaPorProducto.get(productParent) : new FastArrayList();
         trDataRPCs.add(trData);
         if(!exist) planesVidaPorProducto.put(productParent, trDataRPCs);
+    }
+
+    public static CotizacionRPC cloneCotizacionRPC(CotizacionRPC cotBase) {
+        List<ObjetoAsegCotizaRPC> iosCot = new FastArrayList();
+        for (ObjetoAsegCotizaRPC ioRPC : cotBase.getIosCot())  iosCot.add(cloneObjetoAsegCotizaRPC(ioRPC));
+        ((FastArrayList) iosCot).setFast(true);
+        CotizacionRPC cotizacionRPC = new CotizacionRPC(cotBase.getIdProducto(), cotBase.getIdUnidadRiesgoType(), cotBase.getIdPlan(), cotBase.getIdPlanVida(), cotBase.getIdTipoDescuento(), cotBase.getIdPeriodoCobertura(), cotBase.getIdPeriodoDePago(), cotBase.getIdMoneda(), cotBase.getIdPeriodoPagoPrima(), cotBase.getIdPeriodoPagoBeneficio(), cotBase.getIdGrupoFamiliar(), cotBase.getFechaCotizacion(), cotBase.isIGV(), cotBase.getMontoTotalPrimaFP(), iosCot);
+        cotizacionRPC.setIdPoliza(cotBase.getIdPoliza());
+        cotizacionRPC.setIdOperation(cotBase.getIdOperation());
+        return cotizacionRPC;
+    }
+
+    private static ObjetoAsegCotizaRPC cloneObjetoAsegCotizaRPC(ObjetoAsegCotizaRPC ioRPC) {
+        List<CoberturaCotizaRPC> covsCot = new FastArrayList();
+        for (CoberturaCotizaRPC ccvRPC : ioRPC.getCovsCot())  covsCot.add(cloneCoberturaCotizaRPC(ccvRPC));
+        ((FastArrayList)covsCot).setFast(true);
+        return new ObjetoAsegCotizaRPC(ioRPC.getNumOA(),ioRPC.getIdInsuranceObjectType(), cloneAseguradoRPC(ioRPC.getAseg()), covsCot);
+    }
+
+    private static AseguradoRPC cloneAseguradoRPC(AseguradoRPC aseg) {
+        return new AseguradoRPC(aseg.getFechaNacimiento(),aseg.getIdSexo(), aseg.getIdFumador(), aseg.getIdProfesion(), aseg.getIdClaseAccPers(), aseg.getIdTipoAsegurado());
+    }
+
+    private static CoberturaCotizaRPC cloneCoberturaCotizaRPC(CoberturaCotizaRPC ccvRPC) {
+        return new CoberturaCotizaRPC(ccvRPC.getIdCobertura(), ccvRPC.isMandatory(), ccvRPC.isLeading(), ccvRPC.getMontoCapitalAsegurado());
     }
 }

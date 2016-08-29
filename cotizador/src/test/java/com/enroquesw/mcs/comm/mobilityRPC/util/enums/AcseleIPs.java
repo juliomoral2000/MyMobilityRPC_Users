@@ -6,7 +6,7 @@ import com.googlecode.mobilityrpc.quickstart.EmbeddedMobilityServer;
  * <code>AcseleIPs</code> enumera las ips opcionales segun el contexto donde se ejecute las pruebas
  */
 public enum AcseleIPs {
-    LOCAL("127.0.0.1", EmbeddedMobilityServer.DEFAULT_PORT), DESA("130.30.11.9"/*"126.26.12.81"*/, EmbeddedMobilityServer.DEFAULT_PORT);
+    LOCAL("127.0.0.1", EmbeddedMobilityServer.DEFAULT_PORT), DESA("130.30.11.9"/*"126.26.12.81"*/, EmbeddedMobilityServer.DEFAULT_PORT), LOCAL_RED("126.26.12.148", EmbeddedMobilityServer.DEFAULT_PORT);
     String ip;
     int port;
 
