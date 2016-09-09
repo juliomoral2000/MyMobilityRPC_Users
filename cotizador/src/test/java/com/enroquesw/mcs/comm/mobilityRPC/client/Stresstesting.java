@@ -12,10 +12,7 @@ import com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName;
 import com.google.common.base.Stopwatch;
 import com.google.gson.Gson;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.*;
 
 import static com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName.ACSELE;
@@ -101,7 +98,7 @@ public class Stresstesting {
     }
 
     public static void stressTestingCalcularCotizacion(int numThread, int testNro) {
-        System.out.println("[stressTestingCalcularCotizacion] Numero de Prueba: "+testNro);
+        /*System.out.println("[stressTestingCalcularCotizacion] Numero de Prueba: "+testNro);
         try {
             final CotizacionParameter parameter = CreateCotizacion.createParameterFromMap(true, MyTestMethodCOT.createMap());
             //parameter.setTimeOutMax(timeOut); Default TimeOut
@@ -141,7 +138,7 @@ public class Stresstesting {
             }
         } catch (InterruptedException e1) {
             e1.printStackTrace();
-        }
+        }*/
     }
 
     public static void stressTestingGetEdadActuarial(int numThread, int testNro) {
@@ -206,7 +203,7 @@ public class Stresstesting {
                     try {
                         final StringBuffer requestIdOut = new StringBuffer();
                         ProductRPC product = Product_Callers.getProduct(SystemName.ACSELE, new ProductParameter(idProduct), requestIdOut);
-                        final StringBuilder out = new StringBuilder("[StressTask]; threadId: ").append(this.getId()).append("; requestIdOut: ").append(requestIdOut).append("\nproduct: ").append(new Gson().toJson(product));
+                        final StringBuilder out = new StringBuilder("[StressTask]; threadId: ").append(this.getId()).append("; req_Id: ").append(UUID.fromString(requestIdOut.toString()).hashCode()).append("; requestIdOut: ").append(requestIdOut).append("\nproduct: ").append(new Gson().toJson(product));
                         System.out.println(out);
                     }catch (Exception e){
                         System.out.println("ver "+ e.getMessage());

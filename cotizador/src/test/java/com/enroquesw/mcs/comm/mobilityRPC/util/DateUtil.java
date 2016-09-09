@@ -1,11 +1,15 @@
 package com.enroquesw.mcs.comm.mobilityRPC.util;
 
+import java.text.DateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 /**
  * La clase <code>DateUtil</code> es una clase utilitaria de funciones de fechas
  */
 public class DateUtil {
+    public static final DateFormat DATE_FORMAT_DEF = DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT, new Locale("es", "es"));
+
     public static long getTime(int ano, int mes, int dia) {
         Calendar instance = Calendar.getInstance();
         int month = mes - 1;

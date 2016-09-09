@@ -5,7 +5,6 @@ import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.c
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Property_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.client.caller.Quotation_Callers;
 import com.consisint.acsele.interseguro.interfaces.mobilityRPC.services.params.*;
-import com.enroquesw.mcs.comm.mobilityRPC.client.cotizacion.CreateCotizacion;
 import com.enroquesw.mcs.comm.mobilityRPC.services.exception.ServiceBaseException;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.CallerRegister;
 import com.enroquesw.mcs.comm.mobilityRPC.services.factory.ProcessorRegister;
@@ -17,13 +16,13 @@ import com.esotericsoftware.minlog.Log;
 import com.google.common.base.Stopwatch;
 
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
-import java.text.DateFormat;
-import java.util.*;
+import java.util.Calendar;
+import java.util.List;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import static com.enroquesw.mcs.comm.mobilityRPC.client.cotizacion.ServiceCotizacionCallerTest.conjuntoPruebasCotizacion;
 import static com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName.ACSELE;
 
 /**
@@ -31,10 +30,7 @@ import static com.enroquesw.mcs.comm.mobilityRPC.enums.SystemName.ACSELE;
  */
 public class MyTestMethodCOT extends TestRunnerJC{
     public static AtomicInteger countExec = new AtomicInteger(0);
-    public static final String sep = "***************************************\n";
-    public static final DateFormat dateTimeInstance = DateFormat.getDateTimeInstance(DateFormat.SHORT, DateFormat.SHORT, new Locale("es", "es"));
 
-    /*public final static String PATH_TEST_JSON = "D:\\Git_Repo\\ServiciosWebInter\\PruebasJSONs_Cotizaciones";*/
     @Override
     public void run() {
         try {
@@ -51,10 +47,13 @@ public class MyTestMethodCOT extends TestRunnerJC{
     public void testMain() throws Exception {
         System.out.println("[testMain] Inicia ............................... ");
         Stopwatch stopwatch = Stopwatch.createStarted();
-        test_StressTestingGetProduct();
+        //test_StressTestingGetProduct();
         /*** Pruebas de Cotizacion *************************************************************************/
-        /*final ProductRPC p = ServicesResultsObjectCache.getProduct(49184);
-        conjuntoPruebasCotizacion(p, new Long(60000 * 3), false);*/
+        final ProductRPC p = ServicesResultsObjectCache.getProduct(77060);
+        conjuntoPruebasCotizacion(p, new Long(60000 * 3), false);
+        /*for (ProductRPC p : ServicesResultsObjectCache.getListaProductos()) {
+            conjuntoPruebasCotizacion(p, new Long(60000 * 3), false);
+        }*/
         /****************************************************************************/
         /*for (ProductRPC p : ServicesResultsObjectCache.getListaProductos()) {
             conjuntoPruebasCotizacion(p, new Long(60000 * 3));
@@ -94,34 +93,6 @@ public class MyTestMethodCOT extends TestRunnerJC{
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
         }
-    }
-
-    private CotizacionRPC test_GetListCotizacionRPC(ProductParameter parameter, String productName) {
-        try {
-            String x0 = "[test_GetListCotizacionRPC] Inicio ********************\n";
-            Stopwatch t = Stopwatch.createStarted();
-            List<CotizacionRPC> cRPCs = ServicesResultsObjectCache.getListaCotizaciones(parameter);
-            t.stop(); // optional
-            t.elapsed(TimeUnit.MILLISECONDS);
-            String x1 = "[test_GetListCotizacionRPC]; Total time; " + t;
-            System.out.println(x1);
-            t.reset(); t.start();
-            StringBuffer y0 = new StringBuffer();
-            for (CotizacionRPC cRPC : cRPCs) {
-                //System.out.println("[test_GetListCotizacionRPC] cotizacion Cargada Original: " + cRPC.toString());
-                String y1 = "[test_GetListCotizacionRPC] cotizacion Cargada Original: \n" + FileUtil.gson.toJson(cRPC);
-                y0.append(y1+"\n");
-                System.out.println(y1);
-            }
-            FileUtil.writeJSONLogByProduct(productName, sep + x0 + "\n" + y0.toString() + x1 + "\n" + sep);
-            return !cRPCs.isEmpty() ? cRPCs.get(0): null;
-        }catch (Exception e){
-            Log.debug("ver ", e);
-            String x = "[test_GetListCotizacionRPC] Error " + e.getMessage();
-            System.out.println(x);
-            FileUtil.writeJSONLogByProduct(productName, x + "\n" + sep);
-        }
-        return null;
     }
 
     private void test_GetPropertyRPC_Dependencies(String propertyName, boolean fetchDependence, boolean fetchDependenceChilds, String level, int numeroTest) {
@@ -268,115 +239,6 @@ public class MyTestMethodCOT extends TestRunnerJC{
         } catch (ServiceBaseException e) {
             Log.debug("ver ", e);
         }
-    }
-
-    private CotizacionRPC test_CalcularCotizacion(boolean isDirecta, long idProducto, double idGrupoFamiliar, long timeOut, String productName) {
-        try {
-            CotizacionParameter parameter = CreateCotizacion.createParameterFromMap(isDirecta, createMap());
-            parameter.setTimeOutMax(timeOut);
-            System.out.println("[test_CalcularCotizacion]; parametro de entrada:\n" + parameter.toString());
-            Stopwatch t = Stopwatch.createStarted();
-            StringBuffer requestIdOut = new StringBuffer();
-            CotizacionRPC cotizacionRPC = ServicesResultsObjectCache.calcularCotizacion(isDirecta, timeOut, parameter, requestIdOut);
-            t.stop(); // optional
-            t.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("***************************************");
-            System.out.println("[test_CalcularCotizacion]; resquestId: "+requestIdOut.toString()+"\nCalculo " + (isDirecta ? "Directo" : "Inverso") + " respuesta :\n" + cotizacionRPC.toString());
-            System.out.println("[test_CalcularCotizacion]; Total time; " + t);
-            System.out.println("***************************************");
-            System.out.println("[test_CalcularCotizacion]; Termine ....");
-            return cotizacionRPC;
-        }catch (Exception e){
-            Log.debug("ver ", e);
-            return null;
-        }
-    }
-
-    private CotizacionRPC test_CalcularCotizacion(boolean isDirecta, CotizacionRPC cotizacionRPCIn, long timeOut, String productName) {
-        try {
-            long idPoliza = cotizacionRPCIn.getIdPoliza();
-            String x = "[test_CalcularCotizacion] Inicio Calculo "+(isDirecta ? (idPoliza != 0 ? "RE_COTIZACION" : "DIRECTO") : "inverso") + "*************************************************\n";
-            CotizacionParameter parameter = CreateCotizacion.createParameterFromCotizacion(isDirecta, cotizacionRPCIn, timeOut);
-            String x0 = "[test_CalcularCotizacion]; parametro de entrada:\n" + FileUtil.gson.toJson(parameter);
-            System.out.println(x0);
-            Stopwatch t = Stopwatch.createStarted();
-            StringBuffer requestIdOut = new StringBuffer();
-            CotizacionRPC cotizacionRPC = ServicesResultsObjectCache.calcularCotizacion(isDirecta, timeOut, parameter, requestIdOut);
-            t.stop(); // optional
-            t.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println(sep);
-            String x1 = "[test_CalcularCotizacion]; resquestId: "+requestIdOut.toString()+"\nCalculo " + (isDirecta ? (idPoliza != 0 ? "Recotizar" : "Directo") : "Inverso") + " respuesta :\n" + FileUtil.gson.toJson(cotizacionRPC);
-            System.out.println(x1);
-            String x2 = "[test_CalcularCotizacion]; Total time; " + t;
-            System.out.println(x2);
-            System.out.println(sep);
-            System.out.println("[test_CalcularCotizacion]; Termine ...."+requestIdOut.toString());
-            FileUtil.writeJSONLogByProduct(productName, x + sep + x0 + "\n" + sep + x1 + "\n" + x2 + "\n" + "[test_CalcularCotizacion]; Termine ....\n" + sep);
-            return cotizacionRPC;
-        }catch (Exception e){
-            Log.debug("ver ", e);
-            FileUtil.writeJSONLogByProduct(productName, "[test_CalcularCotizacion]; Error " + e.getMessage() + "\n" + sep);
-            return null;
-        }
-    }
-
-    private void test_CalcularTVG(CotizacionRPC cRPC, Long timeOut) {
-        try {
-            TVGParameter parameter = new TVGParameter(cRPC.getIdPoliza(), cRPC.getIdOperation(), timeOut);
-            System.out.println("[test_CalcularTVG]; parametro de entrada:\n" + parameter.toString());
-            Stopwatch t = Stopwatch.createStarted();
-            final TablaValorGarantizadoRPC tvg = Quotation_Callers.calcularTVG(ACSELE, parameter);
-            t.stop(); // optional
-            t.elapsed(TimeUnit.MILLISECONDS);
-            System.out.println("***************************************");
-            System.out.println("[test_CalcularTVG]; Calculo respuesta :\n" + tvg.toString());
-            System.out.println("[test_CalcularTVG]; Total time; " + t);
-            System.out.println("***************************************");
-            System.out.println("[test_CalcularTVG]; Termine ....");
-        }catch (Exception e){
-            Log.debug("ver ", e);
-        }
-    }
-
-    public static Map<String, String> createMap() {
-        Map<String, String> mapa = new HashMap<String, String>();
-        /*long idProducto = */
-        mapa.put("idProducto", "49183");
-        mapa.put("idUnidadRiesgoType", "49838668");
-        mapa.put("idPlan", "48161");             // Id de Plan
-        mapa.put("idPlanVida", "602");   // Id de PlanVida
-        mapa.put("idTipoDescuento", "0");             // Id o valor Tipo de Descuento
-        mapa.put("idPeriodoCobertura", "168"); // Id o valor Periodo de Cobertura   ESTA expresado en meses
-        mapa.put("idPeriodoDePago", "47341");   // valor del Periodo de Pago
-        mapa.put("idMoneda", "2123");           // Id de la Moneda de ese Cotizacion
-        mapa.put("idPeriodoPagoPrima", "10"); // Id o valor periodo Pago Prima [Esta expresada en a#os]
-        mapa.put("idPeriodoPagoBeneficio", "1");    // Id o valor periodo Pago Beneficio
-        mapa.put("idGrupoFamiliar", "0");
-        mapa.put("ano","2016");
-        mapa.put("mes","7");
-        mapa.put("dia","01");
-        return mapa;
-
-    }
-
-    public static Map<String, String> createMapFromJSON(String filePath) {
-        Map<String, String> mapa = new HashMap<String, String>();
-        /*long idProducto = */
-        mapa.put("idProducto", "49183");
-        mapa.put("idPlan", "48161");             // Id de Plan
-        mapa.put("idPlanVida", "602");   // Id de PlanVida
-        mapa.put("idTipoDescuento", "0");             // Id o valor Tipo de Descuento
-        mapa.put("idPeriodoCobertura", "168"); // Id o valor Periodo de Cobertura   ESTA expresado en meses
-        mapa.put("idPeriodoDePago", "47341");   // valor del Periodo de Pago
-        mapa.put("idMoneda", "2123");           // Id de la Moneda de ese Cotizacion
-        mapa.put("idPeriodoPagoPrima", "10"); // Id o valor periodo Pago Prima [Esta expresada en a#os]
-        mapa.put("idPeriodoPagoBeneficio", "1");    // Id o valor periodo Pago Beneficio
-        mapa.put("idGrupoFamiliar", "0");
-        mapa.put("ano","2016");
-        mapa.put("mes","6");
-        mapa.put("dia","13");
-        return mapa;
-
     }
 
     private void test_CumulusTercero() {
@@ -534,86 +396,16 @@ public class MyTestMethodCOT extends TestRunnerJC{
     }
 
 
-    private void conjuntoPruebasCotizacion(ProductRPC productRPC, final Long timeOut, boolean overWriteLog) {
-        FileUtil.writeJSONLogByProduct(productRPC.getName(), dateTimeInstance.format(new Date())+"; [conjuntoPruebasCotizacion] INICIO...  producto: "+productRPC.getName()+"\n", overWriteLog);
-        try {
-            /*********************** CARGAMOS DATOS DE COTIZACION BASE O REFERENCIA ***************************************/
-            CotizacionRPC cotRPCBase = cargarCotizacionBase(productRPC);
-            if(cotRPCBase == null){ FileUtil.writeJSONLogByProduct(productRPC.getName(), "[conjuntoPruebasCotizacion] cotRPCBase ES NULO \n"); return;}
-            /************************** CALCULO aplica_[DIRECTO]/sobreUltimoApp_[]     "1 EVENTO - cotizarvida"  ***********************/
-            CotizacionRPC cotRPCDirecto = executeCalculoDirecto(productRPC, timeOut, cotRPCBase);
-            if(cotRPCDirecto.getIdPoliza() == 0){ FileUtil.writeJSONLogByProduct(productRPC.getName(), "[conjuntoPruebasCotizacion] cotRPCDirecto ERROR en Calculo Directo \n"); return;}
-            /************************** CALCULO aplica_[DIRECTO]/sobreUltimo_[DIRECTO]  "1 EVENTO - ReCotizar" ***********************/
-            //CotizacionRPC cRPC_Recalculo = executeReCalculoDirecto(productRPC, timeOut, cotRPCDirecto);
-            //cRPC_Recalculo.getIdPoliza();
-            /************************** CALCULO aplica_[INVERSO]/sobreUltimo_[DIRECTO]  "1 EVENTO - CotizarInv" ***********************/
-            CotizacionRPC cRPC_inverso = executeCalculosInversos(productRPC, timeOut, cotRPCBase);
-            if(cRPC_inverso != null) cRPC_inverso.getIdPoliza();
-            /************************** CALCULO aplica_[DIRECTO]/sobreUltimo_[INVERSO]   "1 EVENTO - ReCotizar" ***********************/
-            /********** RECALCULAR DIRECTO/INVERSO - SOBRE UNA COTIZACION ultima operacion Cotizacion Inversa  ************/
-            // FIXME_JULIO: Implementar
-            /************************** CALCULO aplica_[INVERSO]/sobreUltimo_[INVERSO]   "1 EVENTO - CotizarInv" ***********************/
-            /********** RECALCULAR INVERSO/INVERSO - SOBRE UNA COTIZACION ultima operacion Cotizacion Inversa  ************/
-            // FIXME_JULIO: Implementar
-        } finally {
-            FileUtil.writeJSONLogByProduct(productRPC.getName(), dateTimeInstance.format(new Date())+"; [conjuntoPruebasCotizacion] FINALIZO... producto: "+productRPC.getName()+"\n"+sep+sep+sep+sep);
-        }
-    }
 
-    private CotizacionRPC executeCalculoDirecto(ProductRPC productRPC, long timeOut, CotizacionRPC cotRPCBase) {
-        CotizacionRPC cotRPCDirecto = ServicesResultsObjectCache.cloneCotizacionRPC(cotRPCBase);        // Clonamos el cotBase
-        CreateCotizacion.cleanOutFields(cotRPCDirecto, false, true);                                    // Limpiamos El clone
-        cotRPCDirecto = test_CalcularCotizacion(true, cotRPCDirecto, timeOut, productRPC.getName());    // Realizamos el calculo directo
-        return cotRPCDirecto;
-    }
 
-    private CotizacionRPC executeReCalculoDirecto(ProductRPC productRPC, long timeOut, CotizacionRPC cotRPCDirecto) {
-        CotizacionRPC cRPC_Recalculo = ServicesResultsObjectCache.cloneCotizacionRPC(cotRPCDirecto);
-        CreateCotizacion.cleanOutFields(cRPC_Recalculo, false, false);  // Limpiamos al clon
-        cRPC_Recalculo.setMontoTotalPrimaFP(0.0);
-        cRPC_Recalculo = test_CalcularCotizacion(true, cRPC_Recalculo, timeOut, productRPC.getName());
-        cRPC_Recalculo.getIdPoliza();
-        return cRPC_Recalculo;
-    }
 
-    private CotizacionRPC executeCalculosInversos(ProductRPC productRPC, long timeOut, CotizacionRPC cotRPCBase ) {
-        if(productRPC.getDataDynamic().containsKey("IndCapital") && "CapitalTABLA".equalsIgnoreCase(productRPC.getDataDynamic().get("IndCapital").getInput())){
-            FileUtil.writeJSONLogByProduct(productRPC.getName(), "[conjuntoPruebasCotizacion] Para el producto "+productRPC.getName()+" no aplica el evento  'CotizarInverso'\n"); return null;
-        }
-        CotizacionRPC cotRPCDirectoToInver = ServicesResultsObjectCache.cloneCotizacionRPC(cotRPCBase);     // Clonamos el cotBase
-        CreateCotizacion.cleanOutFields(cotRPCDirectoToInver, false, true);                                 // Limpiamos El clone
-        cotRPCDirectoToInver = test_CalcularCotizacion(true, cotRPCDirectoToInver, timeOut, productRPC.getName());     // Realizamos el calculo directo
-        if(cotRPCDirectoToInver.getIdPoliza() == 0){ FileUtil.writeJSONLogByProduct(productRPC.getName(), "[conjuntoPruebasCotizacion] cotRPCDirectoToInver ERROR en Calculo Directo \n"); return null;}
-        double montoTotalPrimaFP_Inicial = cotRPCDirectoToInver.getMontoTotalPrimaFP();     // sacamos la prima inicial de la poliza
-        double porcentajeCambio = -25;                                                      // porcentaje de cambio a la prima [ si positivo es el 100 + este, si es negativo se le resta ese porcentaje a la prima original ]
-        double nuevaprimaInv = redondearDosDecimales(porcentajeCambio >= 0 ? ((100 + porcentajeCambio) * montoTotalPrimaFP_Inicial) / 100 : (montoTotalPrimaFP_Inicial - ((-1*porcentajeCambio*montoTotalPrimaFP_Inicial)/100)));
-        FileUtil.writeJSONLogByProduct(productRPC.getName(), "[executeCalculosInversos] Valor Nuevo Para inversaMontoTotalPrimaFP :"+nuevaprimaInv+"\n");
-        CotizacionRPC cRPC_inverso = ServicesResultsObjectCache.cloneCotizacionRPC(cotRPCDirectoToInver);   // Clonamos a la Cotizacion Directa
-        CreateCotizacion.cleanOutFields(cRPC_inverso, false, false);    // Limpiamos las salidas FIXME_JULIO: verificar si cambia el motoAsegurado en las coberturas
-        cRPC_inverso.setMontoTotalPrimaFP(nuevaprimaInv);               // Seteamos la prima Inversa Deseada
-        cRPC_inverso = test_CalcularCotizacion(false, cRPC_inverso, timeOut, productRPC.getName()); // Realizamos el calculo inverso
-        cRPC_inverso.getIdPoliza();
-        return cRPC_inverso;
-    }
 
-    private CotizacionRPC cargarCotizacionBase(ProductRPC productRPC) {
-        BaseData baseDataPolicyId = FileUtil.getJSONBaseDataFromFile(productRPC.getName());                     // cargamos los datos de la Poliza Base desde un archivo
-        CotizacionRPC cotRPCBase = FileUtil.getJSONFromFileByPolId(baseDataPolicyId, productRPC.getName());     // SI EXISTE EL ARCHIVO --> Cargamos la cotizacion base desde archivo ,
-        if(cotRPCBase == null){
-            ProductParameter parameter = new ProductParameter(baseDataPolicyId.idProducto);
-            parameter.setTimeOutMax(baseDataPolicyId.idPoliza);                         // Lo voy a setear al id de la poliza Base para mis pruebas
-            cotRPCBase = test_GetListCotizacionRPC(parameter, productRPC.getName());    // Cargamos la cotizacion desde El Servicio de Acsele
-            if(cotRPCBase != null) FileUtil.writeJSONByPolIdToFile(productRPC.getName() , cotRPCBase);
-        }
-        FileUtil.writeJSONLogByProduct(productRPC.getName(),sep+"[cargarCotizacionBase]; Cotizacion Base:\n" + FileUtil.gson.toJson(cotRPCBase)+sep);
-        return cotRPCBase;
-    }
 
-    private double redondearDosDecimales(double v) {
-        BigDecimal bd = new BigDecimal(v);
-        bd = bd.setScale(2, RoundingMode.HALF_UP);
-        return bd.doubleValue();
-    }
+
+
+
+
+
 
 
 
