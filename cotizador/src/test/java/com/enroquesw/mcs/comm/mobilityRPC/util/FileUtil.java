@@ -117,4 +117,14 @@ public class FileUtil {
         }
 
     }
+
+    public static long getProductIdForTest() {
+        try {
+            JsonReader reader = new JsonReader(new InputStreamReader(new FileInputStream(PATH_TEST_JSON + "\\EntradaJSON\\JSONProductBaseToTest.json"), Charset.forName("UTF-8")));
+            return ((BaseData)gson.fromJson(reader, BaseData.class)).getIdProducto();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            return -1;
+        }
+    }
 }

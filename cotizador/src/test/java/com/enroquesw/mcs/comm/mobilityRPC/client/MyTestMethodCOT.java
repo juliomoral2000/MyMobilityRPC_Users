@@ -49,7 +49,8 @@ public class MyTestMethodCOT extends TestRunnerJC{
         Stopwatch stopwatch = Stopwatch.createStarted();
         //test_StressTestingGetProduct();
         /*** Pruebas de Cotizacion *************************************************************************/
-        final ProductRPC p = ServicesResultsObjectCache.getProduct(77060);
+        long productIdToTest = FileUtil.getProductIdForTest();  // ver archivo [D:\Git_Repo\ServiciosWebInter\PruebasJSONs_Cotizaciones\JSONCotizaBase_TemporalconDevolucion.json]
+        final ProductRPC p = ServicesResultsObjectCache.getProduct(productIdToTest);
         conjuntoPruebasCotizacion(p, new Long(60000 * 3), false);
         /*for (ProductRPC p : ServicesResultsObjectCache.getListaProductos()) {
             conjuntoPruebasCotizacion(p, new Long(60000 * 3), false);
