@@ -36,11 +36,13 @@ public class MyTestMethodCOT extends TestRunnerJC{
         try {
             if(!Log.DEBUG) Log.DEBUG = true;
             testMain();
-            MyTestRunnerCOT.finalTest.set(true);
+            //MyTestRunnerCOT.finalTest.set(true);
         } catch (Exception e) {
             e.printStackTrace();
-            MyTestRunnerCOT.finalTest.set(true);
+            //MyTestRunnerCOT.finalTest.set(true);
             this.interrupt();
+        } finally {
+            MyTestRunnerCOT.finalTest.set(true);
         }
     }
 
